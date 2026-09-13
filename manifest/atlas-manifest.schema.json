@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://biomapa.local/atlas-manifest.schema.json",
+  "title": "Atlas 3D manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "generatedAt", "baseLicense", "attribution", "systems"],
+  "properties": {
+    "version": { "type": "string" },
+    "generatedAt": { "type": "string" },
+    "baseLicense": { "type": "string" },
+    "attribution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "title",
+        "source",
+        "sourceUrl",
+        "sourceCommit",
+        "derivedFrom",
+        "license",
+        "licenseUrl",
+        "modifications",
+        "citationText"
+      ],
+      "properties": {
+        "title": { "type": "string" },
+        "source": { "type": "string" },
+        "sourceUrl": { "type": "string" },
+        "sourceCommit": { "type": "string" },
+        "derivedFrom": { "type": "string" },
+        "license": { "type": "string" },
+        "licenseUrl": { "type": "string" },
+        "modifications": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "citationText": { "type": "string" }
+      }
+    },
+    "systems": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "label",
+          "file",
+          "bytes",
+          "sha256",
+          "meshCount",
+          "meshNames",
+          "defaultVisible",
+          "order"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "enum": ["skin", "muscles", "skeleton", "vessels", "nerves", "viscera"]
+          },
+          "label": { "type": "string" },
+          "file": { "type": ["string", "null"] },
+          "bytes": { "type": "integer", "minimum": 0 },
+          "sha256": { "type": ["string", "null"] },
+          "meshCount": { "type": "integer", "minimum": 0 },
+          "meshNames": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "defaultVisible": { "type": "boolean" },
+          "order": { "type": "integer" },
+          "decimateRatio": { "type": ["number", "null"] }
+        }
+      }
+    }
+  }
+}

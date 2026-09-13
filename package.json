@@ -1,0 +1,24 @@
+{
+  "name": "biomapa-atlas-assets",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Pipeline y assets derivados de Z-Anatomy para el Atlas 3D de Biomapa (CC BY-SA 4.0).",
+  "type": "module",
+  "scripts": {
+    "fetch:source": "bash pipeline/fetch-source.sh",
+    "export:skin": "bash pipeline/export.sh skin",
+    "export:muscles": "bash pipeline/export.sh muscles",
+    "export:skeleton": "bash pipeline/export.sh skeleton",
+    "export:vessels": "bash pipeline/export.sh vessels",
+    "export:nerves": "bash pipeline/export.sh nerves",
+    "export:viscera": "bash pipeline/export.sh viscera",
+    "pack": "bash pipeline/pack.sh",
+    "manifest": "node pipeline/build-manifest.mjs",
+    "serve": "npx serve dist -l 8787 --cors",
+    "build:all": "bash pipeline/build-all.sh"
+  },
+  "devDependencies": {
+    "gltfpack": "^1.2.0",
+    "serve": "^14.2.6"
+  }
+}

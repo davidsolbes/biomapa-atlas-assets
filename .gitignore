@@ -1,0 +1,9 @@
+source/
+dist/*.glb
+dist/raw/*.glb
+dist/.*.ratio
+dist/manifest/
+dist/ATTRIBUTIONS.md
+node_modules/
+.DS_Store
+*.log
