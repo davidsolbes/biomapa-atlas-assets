@@ -7,3 +7,4 @@ dist/ATTRIBUTIONS.md
 node_modules/
 .DS_Store
 *.log
+.wrangler/

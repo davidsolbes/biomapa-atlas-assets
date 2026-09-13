@@ -9,6 +9,7 @@
     "version": { "type": "string" },
     "generatedAt": { "type": "string" },
     "baseLicense": { "type": "string" },
+    "labelsFile": { "type": "string" },
     "attribution": {
       "type": "object",
       "additionalProperties": false,

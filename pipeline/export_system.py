@@ -41,11 +41,17 @@ def _parse_args(argv: list[str]) -> argparse.Namespace:
         action="store_true",
         help="Lista colecciones relevantes del .blend y sale",
     )
+    parser.add_argument(
+        "--extra-collection",
+        action="append",
+        default=[],
+        help="Colección adicional (repetible). Se unen las mallas exportables.",
+    )
     return parser.parse_args(argv)
 
 
 SYSTEM_ALIASES: dict[str, tuple[str, ...]] = {
-    "skin": ("integumentary", "skin", "dermal", "piel"),
+    "skin": ("integument", "integumentary", "skin", "dermal", "piel"),
     "muscles": ("muscular system", "muscles", "muscular", "muscle"),
     "skeleton": ("skeletal system", "skeleton", "bones", "skeletal", "bone", "huesos"),
     "vessels": (
@@ -67,6 +73,16 @@ SYSTEM_ALIASES: dict[str, tuple[str, ...]] = {
         "visceras",
     ),
 }
+
+FEMALE_REPRO_NAMES = (
+    "uterus'",
+    "ovary'",
+    "uterine tube'",
+    "vagina'",
+    "female external genitalia'",
+    "vulva'",
+    "clitoris'",
+)
 
 
 def _normalize(name: str) -> str:
@@ -155,14 +171,80 @@ def _list_collections() -> None:
     for col in hits:
         print(f"- {col.name}  objects={len(col.objects)} children={len(col.children)}")
 
-    print("\n=== SISTEMAS S0 (nombre taxonómico, sin prefijo numérico) ===")
-    for name in ("Skeletal system", "Visceral systems"):
+    print("\n=== SISTEMAS S0/S1 (nombre taxonómico, sin prefijo numérico) ===")
+    for name in (
+        "Skeletal system",
+        "Visceral systems",
+        "Muscular system",
+        "Cardiovascular system",
+        "Nervous system",
+        "Integument",
+        "6: Lymphoid organs",
+    ):
         col = next((c for c in bpy.data.collections if c.name == name), None)
         if col is None:
             print(f"- {name}: no encontrada")
             continue
         children = ", ".join(c.name for c in col.children) or "(sin hijas)"
         print(f"- {col.name}  hijas: {children}")
+
+    print("\n=== Aparato reproductor femenino (colecciones) ===")
+    print(_female_repro_note())
+
+
+def _count_meshes(collection) -> int:
+    return sum(1 for obj in _iter_collection_objects(collection) if obj.type == "MESH")
+
+
+def _female_repro_note() -> str:
+    import bpy
+
+    parts: list[str] = []
+    for wanted in FEMALE_REPRO_NAMES:
+        col = next(
+            (c for c in bpy.data.collections if _normalize(c.name) == _normalize(wanted)),
+            None,
+        )
+        if col is None:
+            parts.append(f"{wanted}: colección no encontrada")
+            continue
+        n = _count_meshes(col)
+        parts.append(f"{col.name}: {n} MESH")
+    if all(": 0 MESH" in p or "no encontrada" in p for p in parts):
+        return (
+            "Aparato reproductor femenino: colecciones Uterus'/Ovary'/Uterine tube'/"
+            "Vagina'/Vulva' existen en el .blend pero no tienen objetos MESH "
+            f"exportables ({'; '.join(parts)})."
+        )
+    return "Aparato reproductor femenino: " + "; ".join(parts)
+
+
+def _select_collection_meshes(collection) -> tuple[int, int]:
+    import bpy
+
+    exported = 0
+    excluded = 0
+    for obj in _iter_collection_objects(collection):
+        reason = _should_exclude(obj)
+        if reason is not None:
+            excluded += 1
+            continue
+        if obj.name not in bpy.context.view_layer.objects:
+            excluded += 1
+            continue
+        try:
+            obj.hide_set(False)
+        except RuntimeError:
+            pass
+        obj.hide_viewport = False
+        obj.hide_render = False
+        try:
+            obj.select_set(True)
+        except RuntimeError:
+            excluded += 1
+            continue
+        exported += 1
+    return exported, excluded
 
 
 def _write_meta(out_path: str, payload: dict) -> None:
@@ -189,41 +271,26 @@ def _export(args: argparse.Namespace) -> None:
             f"Disponibles: {', '.join(names[:40])}…"
         )
 
+    extras = []
+    for extra_name in args.extra_collection:
+        extra = _find_collection(extra_name)
+        if extra is None:
+            raise SystemExit(f"No se encontró la colección extra '{extra_name}'.")
+        extras.append(extra)
+
     bpy.ops.object.select_all(action="DESELECT")
     exported = 0
     excluded = 0
-    ratio = None
-    if args.decimate is not None:
-        ratio = max(0.01, min(1.0, float(args.decimate)))
-    for obj in _iter_collection_objects(collection):
-        reason = _should_exclude(obj)
-        if reason is not None:
-            excluded += 1
-            continue
-        if obj.name not in bpy.context.view_layer.objects:
-            excluded += 1
-            continue
-        try:
-            obj.hide_set(False)
-        except RuntimeError:
-            pass
-        obj.hide_viewport = False
-        obj.hide_render = False
-        try:
-            obj.select_set(True)
-        except RuntimeError:
-            excluded += 1
-            continue
-        if ratio is not None:
-            mesh = getattr(obj.data, "polygons", None)
-            if mesh is not None and len(mesh) > 3:
-                if "BiomapaDecimate" not in obj.modifiers:
-                    mod = obj.modifiers.new(name="BiomapaDecimate", type="DECIMATE")
-                    mod.ratio = ratio
-        exported += 1
+    for col in (collection, *extras):
+        exp, exc = _select_collection_meshes(col)
+        exported += exp
+        excluded += exc
 
     if exported == 0:
         raise SystemExit(f"La colección '{collection.name}' no tiene mallas exportables.")
+
+    source_names = " + ".join([collection.name, *[e.name for e in extras]])
+    female_note = _female_repro_note()
 
     bpy.ops.export_scene.gltf(
         filepath=args.out,
@@ -243,9 +310,10 @@ def _export(args: argparse.Namespace) -> None:
     _write_meta(
         args.out,
         {
-            "sourceCollection": collection.name,
+            "sourceCollection": source_names,
             "exportedObjects": exported,
             "excludedObjects": excluded,
+            "femaleReproductiveNote": female_note,
         },
     )
 

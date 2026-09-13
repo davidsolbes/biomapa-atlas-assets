@@ -59,17 +59,22 @@ Ver `LICENSE-ASSETS`.
 
 ## Modificaciones
 
-Por sistema (S0-FIX-01). Se actualizan al regenerar el manifiesto:
+Por sistema (S1 / manifiesto `0.2.0`). Se actualizan al regenerar el manifiesto:
 
-- **skeleton (Huesos):** exportación glTF de la colección taxonómica
-  `Skeletal system`. Solo objetos `MESH`. Rótulos excluidos (FONT/CURVE y
-  mallas en MAYÚSCULAS). **Sin** decimación Blender. Empaquetado
-  `gltfpack -cc -tc -kn` (meshopt; `-kn` conserva nombres); `-si` solo si el GLB supera 15 MB
-  (reintentos 0.7 → 0.5 → 0.35). Nombres de objeto conservados. Sin fusión
-  de mallas. Sin renombrados.
-- **viscera (Vísceras):** igual, desde `Visceral systems` (incluye digestivo,
-  respiratorio, urinario, reproductor, endocrino y `Lymphoid system`).
-- **skin, muscles, vessels, nerves:** no exportados en S0 (`file: null`).
+- **skeleton (Huesos):** colección taxonómica `Skeletal system`. Solo `MESH`.
+  Rótulos excluidos. Sin decimación Blender. `gltfpack -cc -tc -kn`; `-si` solo
+  si el GLB supera 15 MB (0.7 → 0.5 → 0.35).
+- **viscera (Vísceras):** `Visceral systems` + `6: Lymphoid organs` (bazo).
+  Aparato reproductor femenino: colecciones Uterus'/Ovary'/Uterine tube'
+  existen en el `.blend` pero no tienen MESH exportable.
+- **muscles:** `Muscular system`.
+- **nerves:** `Nervous system` (MESH; las CURVE periféricas quedan fuera).
+- **vessels:** `Cardiovascular system` (la mayoría de vasos son CURVE; solo
+  cavidades y válvulas cardíacas como MESH).
+- **skin:** `Integument` (solo apéndices: pelos y uñas; no hay malla continua
+  de piel).
+- **Etiquetas en español:** `source/z-anatomy/TA2.csv` (Terminologia Anatomica
+  2, misma licencia CC BY-SA 4.0 de Z-Anatomy) → `manifest/labels.es.json`.
 
 El `-si` final, triángulos, colección de origen y exclusiones quedan en
 `manifest/atlas-manifest.json` (`simplifyRatio`, `triangles`,

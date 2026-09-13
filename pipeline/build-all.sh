@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
-# S0-FIX-01: exporta skeleton + viscera sin DECIMATE Blender; empaqueta con
-# gltfpack -cc -tc y solo añade -si si el GLB supera 15 MB (0.7 → 0.5 → 0.35).
+# S1: exporta los 6 sistemas sin DECIMATE Blender; empaqueta con
+# gltfpack -cc -tc -kn y solo añade -si si el GLB supera 15 MB (0.7 → 0.5 → 0.35).
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 MAX_BYTES=$((15 * 1024 * 1024))
 SIMPLIFY_RATIOS=(1 0.7 0.5 0.35)
+SYSTEMS=(skin muscles skeleton vessels nerves viscera)
 
 have_blender=0
 if command -v blender >/dev/null 2>&1 || [[ -x /Applications/Blender.app/Contents/MacOS/Blender ]]; then
@@ -15,12 +16,14 @@ fi
 if [[ "$have_blender" -eq 0 ]]; then
   echo "Blender no disponible: se genera manifiesto con file: null en todos los sistemas."
   node "$ROOT/pipeline/build-manifest.mjs"
+  node "$ROOT/pipeline/build-labels.mjs"
   exit 0
 fi
 
 if ! find "$ROOT/source" -iname '*.blend' -print -quit 2>/dev/null | grep -q .; then
   echo "No hay .blend. Corre: npm run fetch:source"
   node "$ROOT/pipeline/build-manifest.mjs"
+  node "$ROOT/pipeline/build-labels.mjs"
   exit 0
 fi
 
@@ -40,6 +43,8 @@ pack_under_budget() {
   echo "Aviso: $system no bajó de 15 MB ni con -si ${SIMPLIFY_RATIOS[-1]}." >&2
 }
 
-pack_under_budget skeleton
-pack_under_budget viscera
+for system in "${SYSTEMS[@]}"; do
+  pack_under_budget "$system"
+done
 node "$ROOT/pipeline/build-manifest.mjs"
+node "$ROOT/pipeline/build-labels.mjs"

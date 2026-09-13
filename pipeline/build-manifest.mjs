@@ -28,9 +28,17 @@ const CITATION =
 
 const SYSTEM_NOTES = {
   viscera:
-    "sourceCollection taxonómica «Visceral systems»: Digestive system, Respiratory system, Urinary system, Genital systems', Endocrine glands, Thoracic cavity, Abdominopelvic cavity y Lymphoid system (ganglios linfáticos e hijas). El bazo vive en la colección hermana «6: Lymphoid organs» y no se exporta aquí. Reproductor masculino sí (testis, próstata, pene); útero/ovario no salen como MESH exportable en esta fuente. En el .blend no hay colecciones label/text/annotation; los rótulos son FONT (.t), CURVE y mallas en MAYÚSCULAS.",
+    "sourceCollection taxonómica «Visceral systems» + «6: Lymphoid organs» (bazo y órganos linfoides). Digestivo, respiratorio, urinario, reproductor masculino, endocrino, cavidades y Lymphoid system. Aparato reproductor femenino: colecciones Uterus'/Ovary'/Uterine tube'/Vagina'/Vulva' existen en el .blend pero no tienen objetos MESH exportables. Rótulos: FONT (.t), CURVE y mallas en MAYÚSCULAS.",
   skeleton:
     'sourceCollection taxonómica «Skeletal system». En el .blend no hay colecciones label/text/annotation; se excluyen FONT/CURVE y mallas en MAYÚSCULAS (p. ej. AXIAL SKELETON, BONES OF HAND).',
+  skin:
+    'sourceCollection taxonómica «Integument»: solo apéndices (pelos, uñas; ~14 MESH). No hay malla continua de piel. «9: Regions of human body» son regiones de superficie, no se exportan como skin.',
+  muscles:
+    'sourceCollection taxonómica «Muscular system». Solo MESH; se excluyen FONT y rótulos en MAYÚSCULAS.',
+  vessels:
+    'sourceCollection taxonómica «Cardiovascular system». La mayoría de arterias/venas son CURVE (no MESH); solo se exportan cavidades y válvulas cardíacas (~22 MESH).',
+  nerves:
+    'sourceCollection taxonómica «Nervous system» (no la colección plana «7: Nervous system & Sense organs»). Solo MESH; CURVE de nervios periféricos quedan fuera.',
 };
 
 function readSource() {
@@ -168,16 +176,20 @@ const systems = SYSTEMS.map((meta) => {
   };
 });
 
-if (modifications.length === 0) {
-  modifications.push(
-    'S0: pipeline listo; ningún sistema exportado todavía (file: null).',
+modifications.push(
+  'Etiquetas en español desde source/z-anatomy/TA2.csv (Terminologia Anatomica 2; misma licencia CC BY-SA 4.0 de Z-Anatomy).',
+);
+if (modifications.length === 1) {
+  modifications.unshift(
+    'S1: pipeline listo; ningún sistema exportado todavía (file: null).',
   );
 }
 
 const manifest = {
-  version: '0.1.0',
+  version: '0.2.0',
   generatedAt: new Date().toISOString(),
   baseLicense: 'CC-BY-SA-4.0',
+  labelsFile: 'manifest/labels.es.json',
   attribution: {
     title: 'Z-Anatomy — The libre 3D atlas of anatomy',
     source: 'Z-Anatomy',

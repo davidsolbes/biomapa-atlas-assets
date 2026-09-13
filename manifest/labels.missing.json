@@ -1,0 +1,305 @@
+{
+  "generatedAt": "2026-09-13T02:39:34.288Z",
+  "missing": [
+    {
+      "systemId": "muscles",
+      "meshName": "Subfacial prepatellar bursa.l",
+      "key": "subfacial prepatellar bursa"
+    },
+    {
+      "systemId": "muscles",
+      "meshName": "Subfacial prepatellar bursa.r",
+      "key": "subfacial prepatellar bursa"
+    },
+    {
+      "systemId": "muscles",
+      "meshName": "Tendon sheath of extensor digiti minimi manus.l",
+      "key": "tendon sheath of extensor digiti minimi manus"
+    },
+    {
+      "systemId": "muscles",
+      "meshName": "Tendon sheath of extensor digiti minimi manus.r",
+      "key": "tendon sheath of extensor digiti minimi manus"
+    },
+    {
+      "systemId": "muscles",
+      "meshName": "Tendon sheath of extensors carpi radialis.l",
+      "key": "tendon sheath of extensors carpi radialis"
+    },
+    {
+      "systemId": "muscles",
+      "meshName": "Tendon sheath of extensors carpi radialis.r",
+      "key": "tendon sheath of extensors carpi radialis"
+    },
+    {
+      "systemId": "muscles",
+      "meshName": "Tendon sheath of tibialis anterior.l",
+      "key": "tendon sheath of tibialis anterior"
+    },
+    {
+      "systemId": "muscles",
+      "meshName": "Tendon sheath of tibialis anterior.r",
+      "key": "tendon sheath of tibialis anterior"
+    },
+    {
+      "systemId": "muscles",
+      "meshName": "Trochanteric bursa of gluteus medius muscle.l",
+      "key": "trochanteric bursa of gluteus medius muscle"
+    },
+    {
+      "systemId": "muscles",
+      "meshName": "Trochanteric bursa of gluteus medius muscle.r",
+      "key": "trochanteric bursa of gluteus medius muscle"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": " Posterior transverse collateral sulcus.l",
+      "key": "posterior transverse collateral sulcus"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": " Posterior transverse collateral sulcus.r",
+      "key": "posterior transverse collateral sulcus"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Anterior occipital sulcus*.l",
+      "key": "anterior occipital sulcus*"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Anterior occipital sulcus*.r",
+      "key": "anterior occipital sulcus*"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Cingulate gyrus (Posteroventral part*).l",
+      "key": "cingulate gyrus (posteroventral part*)"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Cingulate gyrus (Posteroventral part*).r",
+      "key": "cingulate gyrus (posteroventral part*)"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Cingulate gyrus and sulcus (Middle anterior part).l",
+      "key": "cingulate gyrus and sulcus (middle anterior part)"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Cingulate gyrus and sulcus (Middle anterior part).r",
+      "key": "cingulate gyrus and sulcus (middle anterior part)"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Cingulate gyrus and sulcus (Middle posterior part).l",
+      "key": "cingulate gyrus and sulcus (middle posterior part)"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Cingulate gyrus and sulcus (Middle posterior part).r",
+      "key": "cingulate gyrus and sulcus (middle posterior part)"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Cingulate gyrus and sulcus (Posterior dorsal part).l",
+      "key": "cingulate gyrus and sulcus (posterior dorsal part)"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Cingulate gyrus and sulcus (Posterior dorsal part).r",
+      "key": "cingulate gyrus and sulcus (posterior dorsal part)"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Cingulate sulcus (Marginal part*).l",
+      "key": "cingulate sulcus (marginal part*)"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Cingulate sulcus (Marginal part*).r",
+      "key": "cingulate sulcus (marginal part*)"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Inferior occipital gyrus and sulcus*.l",
+      "key": "inferior occipital gyrus and sulcus*"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Inferior occipital gyrus and sulcus*.r",
+      "key": "inferior occipital gyrus and sulcus*"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Insula (Subcentral gyrus and ant. and post. sulci*).l",
+      "key": "insula (subcentral gyrus and ant. and post. sulci*)"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Insula (Subcentral gyrus and ant. and post. sulci*).r",
+      "key": "insula (subcentral gyrus and ant. and post. sulci*)"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Lat_Fis-ant-Horizont.l",
+      "key": "lat fis-ant-horizont"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Lat_Fis-ant-Horizont.r",
+      "key": "lat fis-ant-horizont"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Lat_Fis-ant-Vertical.l",
+      "key": "lat fis-ant-vertical"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Lat_Fis-ant-Vertical.r",
+      "key": "lat fis-ant-vertical"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Lat_Fis-post.l",
+      "key": "lat fis-post"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Lat_Fis-post.r",
+      "key": "lat fis-post"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Lateral occipital gyrus (Middle occipital gyrus*).l",
+      "key": "lateral occipital gyrus (middle occipital gyrus*)"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Lateral occipital gyrus (Middle occipital gyrus*).r",
+      "key": "lateral occipital gyrus (middle occipital gyrus*)"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Medial occipitotemporal gyrus (Parahippocampal*).l",
+      "key": "medial occipitotemporal gyrus (parahippocampal*)"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Medial occipitotemporal gyrus (Parahippocampal*).r",
+      "key": "medial occipitotemporal gyrus (parahippocampal*)"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Occipitotemporal sulcus (Lateral part*).l",
+      "key": "occipitotemporal sulcus (lateral part*)"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Occipitotemporal sulcus (Lateral part*).r",
+      "key": "occipitotemporal sulcus (lateral part*)"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Orbital gyri (Frontomarginal gyrus and sulcus*).l",
+      "key": "orbital gyri (frontomarginal gyrus and sulcus*)"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Orbital gyri (Frontomarginal gyrus and sulcus*).r",
+      "key": "orbital gyri (frontomarginal gyrus and sulcus*)"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Orbital sulci (H-shaped orbital sulci*).l",
+      "key": "orbital sulci (h-shaped orbital sulci*)"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Orbital sulci (H-shaped orbital sulci*).r",
+      "key": "orbital sulci (h-shaped orbital sulci*)"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Orbital sulci (Lateral Orbital sulcus*).l",
+      "key": "orbital sulci (lateral orbital sulcus*)"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Orbital sulci (Lateral Orbital sulcus*).r",
+      "key": "orbital sulci (lateral orbital sulcus*)"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Paracentral gyrus and sulcus*.l",
+      "key": "paracentral gyrus and sulcus*"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Paracentral gyrus and sulcus*.r",
+      "key": "paracentral gyrus and sulcus*"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Precentral sulcus (inferior part)*.l",
+      "key": "precentral sulcus (inferior part)*"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Precentral sulcus (inferior part)*.r",
+      "key": "precentral sulcus (inferior part)*"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Precentral sulcus (Superior part)*.l",
+      "key": "precentral sulcus (superior part)*"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Precentral sulcus (Superior part)*.r",
+      "key": "precentral sulcus (superior part)*"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Reticular formation.j",
+      "key": "reticular formation.j"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Straight gyrus (Gyrus rectus).l",
+      "key": "straight gyrus (gyrus rectus)"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Straight gyrus (Gyrus rectus).r",
+      "key": "straight gyrus (gyrus rectus)"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Sulcus interm_prim-Jensen.l",
+      "key": "sulcus interm prim-jensen"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Sulcus interm_prim-Jensen.r",
+      "key": "sulcus interm prim-jensen"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Superior temporal gyrus (Lateral part).l",
+      "key": "superior temporal gyrus (lateral part)"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Superior temporal gyrus (Lateral part).r",
+      "key": "superior temporal gyrus (lateral part)"
+    },
+    {
+      "systemId": "viscera",
+      "meshName": "Lymphoid organs.g",
+      "key": "lymphoid organs.g"
+    }
+  ]
+}

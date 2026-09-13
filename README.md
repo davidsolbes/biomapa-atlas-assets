@@ -30,10 +30,15 @@ npx gltfpack -v
 npm run fetch:source          # clona Z-Anatomy → source/ + source/SOURCE.json
 npm run export:skeleton       # Blender headless → dist/raw/skeleton.glb (sin DECIMATE)
 npm run export:viscera
+npm run export:muscles
+npm run export:nerves
+npm run export:vessels
+npm run export:skin
 npm run pack -- skeleton      # gltfpack -cc -tc -kn (sin -si)
 npm run pack -- viscera 0.7   # segundo arg = -si solo si hace falta (presupuesto 15 MB)
 npm run manifest              # regenera manifest/atlas-manifest.json
-npm run build:all             # export sin decimar + pack (1 → 0.7 → 0.5 → 0.35) + manifiesto
+npm run labels                # TA2.csv → manifest/labels.es.json
+npm run build:all             # export sin decimar + pack (1 → 0.7 → 0.5 → 0.35) + manifiesto + etiquetas
 npm run serve                 # http://localhost:8787 (CORS) — sirve dist/
 ```
 
@@ -53,7 +58,9 @@ Fuente oficial vigente (2026-09-12):
 `NEXT_PUBLIC_ATLAS_ASSETS_BASE_URL/manifest/atlas-manifest.json`.
 
 Sistemas fijos: `skin`, `muscles`, `skeleton`, `vessels`, `nerves`, `viscera`.
-En S0 solo se exportan `skeleton` y `viscera`; el resto queda `file: null`.
+S1 exporta los seis. `viscera` incluye `6: Lymphoid organs` (bazo). `skin` es
+solo apéndices (Integument). Las arterias/venas de `vessels` son CURVE y no
+salen como MESH.
 
 ## Colecciones del Startup.blend (verificado 2026-09-12)
 
@@ -93,18 +100,29 @@ no hubo simplify.
 `Visceral systems`. El bazo queda fuera (colección hermana
 `6: Lymphoid organs`); va en `notes` del sistema.
 
-## Cómo publicar a R2
+## Cómo publicar a R2 (`atlas/v0.2.0/`)
 
-1. Generar `dist/*.glb` y `dist/manifest/atlas-manifest.json` con `npm run build:all`.
-2. Subir el contenido de `dist/` al prefijo inmutable `atlas/v<semver>/` del
-   bucket ya existente de Biomapa.
-3. Variables (solo nombres; valores en el entorno de David / Railway, nunca aquí):
-   - `R2_ACCOUNT_ID`
-   - `R2_ACCESS_KEY_ID`
-   - `R2_SECRET_ACCESS_KEY`
-   - `R2_BUCKET`
-4. En Biomapa, `NEXT_PUBLIC_ATLAS_ASSETS_BASE_URL` apunta a la URL pública de
-   ese prefijo. En dev: `http://localhost:8787`.
+David publica. No hay push ni credenciales en este repo.
+
+```bash
+# 1) regenerar (si hace falta)
+npm run build:all
+
+# 2) subir dist/ al prefijo inmutable (nombres de variables; valores en el entorno)
+#    wrangler / aws s3 — ejemplo con AWS CLI compatible R2:
+# aws s3 sync dist/ s3://$R2_BUCKET/atlas/v0.2.0/ \
+#   --endpoint-url https://$R2_ACCOUNT_ID.r2.cloudflarestorage.com
+```
+
+Variables (solo nombres; valores en el entorno de David / Railway, nunca aquí):
+- `R2_ACCOUNT_ID`
+- `R2_ACCESS_KEY_ID`
+- `R2_SECRET_ACCESS_KEY`
+- `R2_BUCKET`
+
+En Biomapa, `NEXT_PUBLIC_ATLAS_ASSETS_BASE_URL` apunta a la URL pública de
+ese prefijo. En dev: `http://localhost:8787`. Incluye `manifest/atlas-manifest.json`
+y `manifest/labels.es.json`.
 
 Lectura pública, sin PII, caché larga. No commitear `.glb` ni secretos.
 

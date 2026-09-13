@@ -1,0 +1,4322 @@
+{
+  "eyelashes": {
+    "es": "Pestañas",
+    "ta2Id": "7057",
+    "latin": "Cilia"
+  },
+  "hairs of eyebrow": {
+    "es": "Pelos de ceja",
+    "ta2Id": "7056",
+    "latin": "Pili supercilii"
+  },
+  "hairs of head": {
+    "es": "Cabellos",
+    "ta2Id": "7055",
+    "latin": "Capilli"
+  },
+  "nail plate (foot)": {
+    "es": "Lámina de la uña (pie)",
+    "ta2Id": "7208",
+    "latin": "Lamina unguis (pedites)"
+  },
+  "nail plate": {
+    "es": "Lámina de la uña",
+    "ta2Id": "7066",
+    "latin": "Lamina unguis"
+  },
+  "perionyx (foot)": {
+    "es": "Perionyx (pie)",
+    "ta2Id": "7071*1",
+    "latin": "Perionyx (pedites)"
+  },
+  "perionyx": {
+    "es": "Perionyx",
+    "ta2Id": "7071",
+    "latin": "Perionyx"
+  },
+  "pubic hairs": {
+    "es": "Pelos púbicos",
+    "ta2Id": "7062",
+    "latin": "Pubes"
+  },
+  "abdominal part of pectoralis major muscle": {
+    "es": "(Porción abdominal del músculo pectoral mayor)",
+    "ta2Id": "2304",
+    "latin": "(Pars abdominalis musculi pectoralis majoris)"
+  },
+  "adductor minimus": {
+    "es": "(Aductor mínimo)",
+    "ta2Id": "2632",
+    "latin": "(Adductor minimus)"
+  },
+  "iliopectineal bursa": {
+    "es": "(Bolsa iliopectínea)",
+    "ta2Id": "2732",
+    "latin": "(Bursa iliopectinea)"
+  },
+  "opponens digiti minimi muscle of foot": {
+    "es": "(Músculo oponente del dedo mínimo del pie)",
+    "ta2Id": "2681",
+    "latin": "(Musculus opponens digiti minimi pedis)"
+  },
+  "abductor digiti minimi of foot": {
+    "es": "Abductor del dedo mínimo del pie",
+    "ta2Id": "2679",
+    "latin": "Abductor digiti minimi pedis"
+  },
+  "abductor digiti minimi of hand": {
+    "es": "Abductor del dedo mínimo de la mano",
+    "ta2Id": "2529",
+    "latin": "Abductor digiti minimi manus"
+  },
+  "abductor hallucis": {
+    "es": "Abductor del hállux",
+    "ta2Id": "2672",
+    "latin": "Abductor hallucis"
+  },
+  "abductor pollicis brevis": {
+    "es": "Abductor corto del pulgar",
+    "ta2Id": "2521",
+    "latin": "Abductor brevis pollicis"
+  },
+  "abductor pollicis longus": {
+    "es": "Abductor largo del pulgar",
+    "ta2Id": "2517",
+    "latin": "Abductor longus pollicis"
+  },
+  "acromial part of deltoid muscle": {
+    "es": "Porción acromial del músculo deltoides",
+    "ta2Id": "2454",
+    "latin": "Pars acromialis musculi deltoidei"
+  },
+  "adductor brevis": {
+    "es": "Aductor corto",
+    "ta2Id": "2629",
+    "latin": "Adductor brevis"
+  },
+  "adductor longus": {
+    "es": "Aductor largo",
+    "ta2Id": "2628",
+    "latin": "Adductor longus"
+  },
+  "adductor magnus": {
+    "es": "Aductor mayor",
+    "ta2Id": "2630",
+    "latin": "Adductor magnus"
+  },
+  "anconeus muscle": {
+    "es": "Músculo ancóneo",
+    "ta2Id": "2510",
+    "latin": "Musculus anconeus"
+  },
+  "anserine bursa": {
+    "es": "Bolsa anserina",
+    "ta2Id": "2743",
+    "latin": "Bursa anserina"
+  },
+  "antebrachial fascia": {
+    "es": "Fascia antebraquial",
+    "ta2Id": "2544",
+    "latin": "Fascia antebrachii"
+  },
+  "anterior belly of digastric muscle": {
+    "es": "Vientre anterior del músculo digástrico",
+    "ta2Id": "2161",
+    "latin": "Venter anterior musculi digastrici"
+  },
+  "anterior intermuscular septum of leg": {
+    "es": "Septo intermuscular anterior de la pierna",
+    "ta2Id": "2709",
+    "latin": "Septum intermusculare anterius cruris"
+  },
+  "anterior layer of thoracolumbar fascia": {
+    "es": "Lámina anterior de la fascia toracolumbar",
+    "ta2Id": "2246",
+    "latin": "Lamina anterior fasciae thoracolumbaris"
+  },
+  "ary-epiglottic part of oblique arytenoid muscle": {
+    "es": "Porción ariepiglótica del músculo aritenoideo oblicuo",
+    "ta2Id": "2204",
+    "latin": "Pars aryepiglottica musculi arytenoidei obliqui"
+  },
+  "ascending part of trapezius muscle": {
+    "es": "Porción ascendente del músculo trapecio",
+    "ta2Id": "2229",
+    "latin": "Pars ascendens musculi trapezii"
+  },
+  "bicipitoradial bursa": {
+    "es": "Bolsa bicipitoradial",
+    "ta2Id": "2567",
+    "latin": "Bursa bicipitoradialis"
+  },
+  "brachial fascia": {
+    "es": "Fascia braquial",
+    "ta2Id": "2541",
+    "latin": "Fascia brachii"
+  },
+  "brachialis muscle": {
+    "es": "Músculo braquial",
+    "ta2Id": "2469",
+    "latin": "Musculus brachialis"
+  },
+  "brachioradialis muscle": {
+    "es": "Músculo braquiorradial",
+    "ta2Id": "2496",
+    "latin": "Musculus brachioradialis"
+  },
+  "bucinator": {
+    "es": "Buccinador",
+    "ta2Id": "2086",
+    "latin": "Bucinator"
+  },
+  "bursa of piriformis muscle": {
+    "es": "Bolsa del músculo piriforme",
+    "ta2Id": "2727",
+    "latin": "Bursa musculi piriformis"
+  },
+  "calcaneal tendon": {
+    "es": "Tendón calcáneo",
+    "ta2Id": "2662",
+    "latin": "Tendo calcaneus"
+  },
+  "clavicular head of pectoralis major muscle": {
+    "es": "Porción clavicular del músculo pectoral mayor",
+    "ta2Id": "2302",
+    "latin": "Pars clavicularis musculi pectoralis majoris"
+  },
+  "clavicular part of deltoid muscle": {
+    "es": "Porción clavicular del músculo deltoides",
+    "ta2Id": "2453",
+    "latin": "Pars clavicularis musculi deltoidei"
+  },
+  "clavipectoral fascia": {
+    "es": "Fascia clavipectoral",
+    "ta2Id": "2318",
+    "latin": "Fascia clavipectoralis"
+  },
+  "coccygeus muscle": {
+    "es": "Músculo coccígeo",
+    "ta2Id": "2412",
+    "latin": "Musculus coccygeus"
+  },
+  "common flexor tendon sheath": {
+    "es": "Vaina del tendón flexor común",
+    "ta2Id": "2575",
+    "latin": "Vagina communis tendinum flexorum"
+  },
+  "common tendinous ring": {
+    "es": "Anillo tendinoso común",
+    "ta2Id": "2047",
+    "latin": "Anulus tendineus communis"
+  },
+  "common tendon sheath of fibularis muscles": {
+    "es": "Vaina tendinosa común de los músculos fibulares",
+    "ta2Id": "2764",
+    "latin": "Vagina communis tendinum musculorum fibularium"
+  },
+  "coracobrachial bursa": {
+    "es": "(Bolsa coracobraquial)",
+    "ta2Id": "2559",
+    "latin": "(Bursa musculi coracobrachialis)"
+  },
+  "coracobrachialis muscle": {
+    "es": "Músculo coracobraquial",
+    "ta2Id": "2468",
+    "latin": "Musculus coracobrachialis"
+  },
+  "corrugator supercilii": {
+    "es": "Músculo corrugador del supercilio",
+    "ta2Id": "2071",
+    "latin": "Musculus corrugator supercilii"
+  },
+  "crural fascia": {
+    "es": "Fascia crural",
+    "ta2Id": "2708",
+    "latin": "Fascia cruris"
+  },
+  "deep head of flexor pollicis brevis": {
+    "es": "Cabeza profunda del flexor corto del pulgar",
+    "ta2Id": "2524",
+    "latin": "Caput profundum flexoris brevis pollicis"
+  },
+  "deep head of pronator teres": {
+    "es": "Cabeza profunda del pronador redondo",
+    "ta2Id": "2480",
+    "latin": "Caput profundum pronatoris teretis"
+  },
+  "deep infrapatellar bursa": {
+    "es": "Bolsa infrapatelar profunda",
+    "ta2Id": "2740",
+    "latin": "Bursa infrapatellaris profunda"
+  },
+  "deep part of masseter": {
+    "es": "Porción profunda del masétero",
+    "ta2Id": "2107",
+    "latin": "Pars profunda masseteris"
+  },
+  "deltoid fascia": {
+    "es": "Fascia deltoidea",
+    "ta2Id": "2540",
+    "latin": "Fascia deltoidea"
+  },
+  "depressor anguli oris": {
+    "es": "Depresor del ángulo oral",
+    "ta2Id": "2076",
+    "latin": "Depressor anguli oris"
+  },
+  "depressor labii inferioris": {
+    "es": "Depresor del labio inferior",
+    "ta2Id": "2083",
+    "latin": "Depressor labii inferioris"
+  },
+  "depressor septi nasi": {
+    "es": "Depresor del septo nasal",
+    "ta2Id": "2065",
+    "latin": "Depressor septi nasi"
+  },
+  "descending part of trapezius muscle": {
+    "es": "Porción descendente del músculo trapecio",
+    "ta2Id": "2227",
+    "latin": "Pars descendens musculi trapezii"
+  },
+  "diaphragm": {
+    "es": "Diafragma",
+    "ta2Id": "2327",
+    "latin": "Diaphragma"
+  },
+  "diaphragmatic fascia": {
+    "es": "Fascia diafragmática",
+    "ta2Id": "2394",
+    "latin": "Fascia diaphragmatica"
+  },
+  "dorsal fascia of hand": {
+    "es": "Fascia dorsal de la mano",
+    "ta2Id": "2547",
+    "latin": "Fascia dorsalis manus"
+  },
+  "dorsal interossei muscles of foot": {
+    "es": "Músculos interóseos dorsales del pie",
+    "ta2Id": "2686",
+    "latin": "Musculi interossei dorsales pedis"
+  },
+  "dorsal interossei muscles of hand": {
+    "es": "Músculos interóseos dorsales de la mano",
+    "ta2Id": "2533",
+    "latin": "Musculi interossei dorsales manus"
+  },
+  "dorsal parts of lateral intertransversarii lumborum muscles": {
+    "es": "Partes dorsales de los m. lumbares intertransversarios lat.",
+    "ta2Id": "2240",
+    "latin": "Partes dors. musculorum intertransversariorum lat. lumborum"
+  },
+  "epicranial aponeurosis": {
+    "es": "Aponeurosis epicraneal",
+    "ta2Id": "2059",
+    "latin": "Galea aponeurotica"
+  },
+  "extensor carpi radialis brevis": {
+    "es": "Extensor radial corto del carpo",
+    "ta2Id": "2499",
+    "latin": "Extensor radialis brevis carpi"
+  },
+  "extensor carpi radialis longus": {
+    "es": "Extensor radial largo del carpo",
+    "ta2Id": "2497",
+    "latin": "Extensor radialis longus carpi"
+  },
+  "extensor digiti minimi": {
+    "es": "Extensor del dedo mínimo",
+    "ta2Id": "2506",
+    "latin": "Extensor digiti minimi"
+  },
+  "extensor digitorum brevis": {
+    "es": "Extensor corto de los dedos",
+    "ta2Id": "2671",
+    "latin": "Extensor brevis digitorum"
+  },
+  "extensor digitorum longus": {
+    "es": "Extensor largo de los dedos",
+    "ta2Id": "2645",
+    "latin": "Extensor longus digitorum"
+  },
+  "extensor digitorum": {
+    "es": "Extensor de los dedos",
+    "ta2Id": "2500",
+    "latin": "Extensor digitorum"
+  },
+  "extensor hallucis brevis": {
+    "es": "Extensor corto del hállux",
+    "ta2Id": "2670",
+    "latin": "Extensor brevis hallucis"
+  },
+  "extensor hallucis longus": {
+    "es": "Extensor largo del hállux",
+    "ta2Id": "2650",
+    "latin": "Extensor longus hallucis"
+  },
+  "extensor indicis": {
+    "es": "Extensor del índice",
+    "ta2Id": "2515",
+    "latin": "Extensor indicis"
+  },
+  "extensor pollicis brevis": {
+    "es": "Extensor corto del pulgar",
+    "ta2Id": "2518",
+    "latin": "Extensor brevis pollicis"
+  },
+  "extensor pollicis longus": {
+    "es": "Extensor largo del pulgar",
+    "ta2Id": "2516",
+    "latin": "Extensor longus pollicis"
+  },
+  "extensor retinaculum of wrist": {
+    "es": "Retináculo de los extensores del carpo",
+    "ta2Id": "2546",
+    "latin": "Retinaculum extensorium carpi"
+  },
+  "external abdominal oblique muscle": {
+    "es": "Músculo oblicuo externo del abdomen",
+    "ta2Id": "2364",
+    "latin": "Musculus obliquus externus abdominis"
+  },
+  "external anal sphincter": {
+    "es": "Esfínter anal externo",
+    "ta2Id": "2426",
+    "latin": "Sphincter externus ani"
+  },
+  "external intercostal muscles": {
+    "es": "Músculos intercostales externos",
+    "ta2Id": "2311",
+    "latin": "Musculi intercostales externi"
+  },
+  "external part of thyro-arytenoid muscle": {
+    "es": "Porción externa del músculo tiroaritenoideo",
+    "ta2Id": "2200",
+    "latin": "Pars externa musculi thyreoarytenoidei"
+  },
+  "fascia lata": {
+    "es": "Fascia lata",
+    "ta2Id": "2689",
+    "latin": "Fascia lata"
+  },
+  "fibularis brevis muscle": {
+    "es": "Músculo fibular corto",
+    "ta2Id": "2653",
+    "latin": "Musculus fibularis brevis"
+  },
+  "fibularis longus muscle": {
+    "es": "Músculo fibular largo",
+    "ta2Id": "2652",
+    "latin": "Musculus fibularis longus"
+  },
+  "fibularis tertius muscle": {
+    "es": "Músculo fibular tercero",
+    "ta2Id": "2649",
+    "latin": "Musculus fibularis tertius"
+  },
+  "flexor carpi radialis": {
+    "es": "Flexor radial del carpo",
+    "ta2Id": "2481",
+    "latin": "Flexor radialis carpi"
+  },
+  "flexor digiti minimi of foot": {
+    "es": "Flexor del dedo mínimo del pie",
+    "ta2Id": "2682",
+    "latin": "Flexor digiti minimi pedis pedis"
+  },
+  "flexor digiti minimi of hand": {
+    "es": "Flexor del dedo mínimo de la mano",
+    "ta2Id": "2530",
+    "latin": "Flexor digiti minimi manus"
+  },
+  "flexor digitorum brevis": {
+    "es": "Flexor corto de los dedos",
+    "ta2Id": "2683",
+    "latin": "Flexor brevis digitorum"
+  },
+  "flexor digitorum longus": {
+    "es": "Músculo flexor largo de los dedos",
+    "ta2Id": "2667",
+    "latin": "Musculus flexor digitorum longus"
+  },
+  "flexor digitorum profundus": {
+    "es": "Flexor profundo de los dedos",
+    "ta2Id": "2491",
+    "latin": "Flexor profundus digitorum"
+  },
+  "flexor hallucis longus": {
+    "es": "Flexor largo del hállux",
+    "ta2Id": "2668",
+    "latin": "Flexor longus hallucis"
+  },
+  "flexor pollicis longus": {
+    "es": "Flexor largo del pulgar",
+    "ta2Id": "2492",
+    "latin": "Flexor longus pollicis"
+  },
+  "flexor retinaculum of ankle": {
+    "es": "Retináculo de los flexores del tobillo",
+    "ta2Id": "2714",
+    "latin": "Retinaculum flexorium tali"
+  },
+  "flexor retinaculum of wrist": {
+    "es": "Retináculo de los flexores del carpo",
+    "ta2Id": "2550",
+    "latin": "Retinaculum flexorium carpi"
+  },
+  "frontalis muscle": {
+    "es": "Músculo frontal",
+    "ta2Id": "2056",
+    "latin": "Musculus frontalis"
+  },
+  "genioglossus muscle": {
+    "es": "Músculo geniogloso",
+    "ta2Id": "2117",
+    "latin": "Musculus genioglossus"
+  },
+  "geniohyoid muscle": {
+    "es": "Músculo geniohioideo",
+    "ta2Id": "2166",
+    "latin": "Musculus geniohyoideus"
+  },
+  "gluteus maximus muscle": {
+    "es": "Músculo glúteo máximo",
+    "ta2Id": "2598",
+    "latin": "Musculus gluteus maximus"
+  },
+  "gluteus medius muscle": {
+    "es": "Músculo glúteo medio",
+    "ta2Id": "2599",
+    "latin": "Musculus gluteus medius"
+  },
+  "gluteus minimus muscle": {
+    "es": "Músculo glúteo mínimo",
+    "ta2Id": "2600",
+    "latin": "Musculus gluteus minimus"
+  },
+  "gracilis muscle": {
+    "es": "Músculo grácil",
+    "ta2Id": "2635",
+    "latin": "Musculus gracilis"
+  },
+  "humeral head of extensor carpi ulnaris": {
+    "es": "Cabeza humeral del extensor ulnar del carpo",
+    "ta2Id": "2508",
+    "latin": "Caput humerale extensoris ulnaris carpi"
+  },
+  "humeral head of flexor carpi ulnaris": {
+    "es": "Cabeza humeral del flexor ulnar del carpo",
+    "ta2Id": "2484",
+    "latin": "Caput humerale flexoris ulnaris carpi"
+  },
+  "humero-ulnar head of flexor digitorum superficialis": {
+    "es": "Cabeza humeroulnar del flexor superficial de los dedos",
+    "ta2Id": "2487",
+    "latin": "Caput humeroulnare flexoris superficialis digitorum"
+  },
+  "hyoglossus muscle": {
+    "es": "Músculo hiogloso",
+    "ta2Id": "2118",
+    "latin": "Musculus hyoglossus"
+  },
+  "iliacus muscle": {
+    "es": "Músculo ilíaco",
+    "ta2Id": "2594",
+    "latin": "Musculus iliacus"
+  },
+  "iliococcygeus muscle": {
+    "es": "Músculo iliococcígeo",
+    "ta2Id": "2404",
+    "latin": "Musculus iliococcygeus"
+  },
+  "iliocostalis colli muscle": {
+    "es": "Músculo iliocostal del cuello",
+    "ta2Id": "2261",
+    "latin": "Musculus iliocostalis colli"
+  },
+  "iliocostalis lumborum muscle": {
+    "es": "Músculo iliocostal lumbar",
+    "ta2Id": "2258",
+    "latin": "Musculus iliocostalis lumborum"
+  },
+  "iliocostalis thoracis muscle": {
+    "es": "Músculo iliocostal del tórax",
+    "ta2Id": "2260",
+    "latin": "Musculus iliocostalis thoracis"
+  },
+  "iliopectineal arch": {
+    "es": "Arco iliopectinato",
+    "ta2Id": "2695",
+    "latin": "Arcus iliopectineus"
+  },
+  "iliopsoas fascia": {
+    "es": "Fascia del iliopsoas",
+    "ta2Id": "2386",
+    "latin": "Fascia iliopsoae"
+  },
+  "iliotibial tract": {
+    "es": "Tracto iliotibial",
+    "ta2Id": "2690",
+    "latin": "Tractus iliotibialis"
+  },
+  "inferior extensor retinaculum of ankle": {
+    "es": "Retináculo inferior de los extensores del tobillo",
+    "ta2Id": "2713",
+    "latin": "Retinaculum extensorium inferius tali"
+  },
+  "inferior fibular retinaculum": {
+    "es": "Retináculo fibular inferior",
+    "ta2Id": "2716",
+    "latin": "Retinaculum fibulare inferius"
+  },
+  "inferior gemellus muscle": {
+    "es": "Músculo gemelo inferior",
+    "ta2Id": "2607",
+    "latin": "Musculus gemellus inferior"
+  },
+  "inferior head of lateral pterygoid muscle": {
+    "es": "Cabeza inferior del músculo pterigoideo lateral",
+    "ta2Id": "2111",
+    "latin": "Caput inferius musculi pterygoidei lateralis"
+  },
+  "inferior oblique muscle": {
+    "es": "Músculo oblicuo inferior del bulbo ocular",
+    "ta2Id": "2051",
+    "latin": "Musculus obliquus inferior bulbi oculi"
+  },
+  "inferior pharyngeal constrictor": {
+    "es": "Constrictor inferior de la faringe",
+    "ta2Id": "2187",
+    "latin": "Constrictor inferior pharyngis"
+  },
+  "inferior rectus muscle": {
+    "es": "Músculo recto inferior",
+    "ta2Id": "2043",
+    "latin": "Musculus rectus inferior"
+  },
+  "inferior subtendinous bursa of biceps femoris muscle": {
+    "es": "Bolsa subtendínea inferior del músculo bíceps femoral",
+    "ta2Id": "2744",
+    "latin": "Bursa subtendinea inferior musculi bicipitis femoris"
+  },
+  "inferior tarsus": {
+    "es": "Tarso inferior",
+    "ta2Id": "6829",
+    "latin": "Tarsus inferior"
+  },
+  "infraspinatus muscle": {
+    "es": "Músculo infraespinoso",
+    "ta2Id": "2458",
+    "latin": "Musculus infraspinatus"
+  },
+  "inguinal ligament": {
+    "es": "Ligamento inguinal",
+    "ta2Id": "2365",
+    "latin": "Ligamentum inguinale"
+  },
+  "innermost intercostal muscles": {
+    "es": "Músculos intercostales íntimos",
+    "ta2Id": "2313",
+    "latin": "Musculi intercostales intimi"
+  },
+  "intermediate tendon of digastric muscle": {
+    "es": "Tendón intermedio del músculo digástrico",
+    "ta2Id": "2162",
+    "latin": "Tendo intermedius musculi digastrici"
+  },
+  "intermuscular gluteal bursae": {
+    "es": "Bolsas glúteas intermusculares",
+    "ta2Id": "2730",
+    "latin": "Bursae intermusculares gluteae"
+  },
+  "internal abdominal oblique muscle": {
+    "es": "Músculo oblicuo interno del abdomen",
+    "ta2Id": "2373",
+    "latin": "Musculus obliquus internus abdominis"
+  },
+  "internal intercostal muscles": {
+    "es": "Músculos intercostales internos",
+    "ta2Id": "2312",
+    "latin": "Musculi intercostales interni"
+  },
+  "interspinales colli muscles": {
+    "es": "Músculos interespinosos del cuello",
+    "ta2Id": "2293",
+    "latin": "Musculi interspinales colli"
+  },
+  "interspinales lumborum muscles": {
+    "es": "Músculos interespinosos lumbares",
+    "ta2Id": "2291",
+    "latin": "Musculi interspinales lumborum"
+  },
+  "interspinales thoracis muscles": {
+    "es": "Músculos interespinosos del tórax",
+    "ta2Id": "2292",
+    "latin": "Musculi interspinales thoracis"
+  },
+  "intertubercular tendon sheath": {
+    "es": "Vaina del tendón intertubercular",
+    "ta2Id": "2570",
+    "latin": "Vagina tendinis intertubercularis"
+  },
+  "investing abdominal fascia": {
+    "es": "Fascia de revestimiento del abdomen",
+    "ta2Id": "2384",
+    "latin": "Fascia investiens abdominis"
+  },
+  "lateral crico-arytenoid muscle": {
+    "es": "Músculo cricoaritenoideo lateral",
+    "ta2Id": "2198",
+    "latin": "Musculus cricoarytendoideus lateralis"
+  },
+  "lateral femoral intermuscular septum": {
+    "es": "Septo intermuscular femoral lateral",
+    "ta2Id": "2691",
+    "latin": "Septum intermusculare laterale femoris"
+  },
+  "lateral head of flexor hallucis brevis": {
+    "es": "Cabeza lateral del flexor corto del hállux",
+    "ta2Id": "2675",
+    "latin": "Caput laterale flexoris brevis hallucis"
+  },
+  "lateral head of gastrocnemius": {
+    "es": "Cabeza lateral del músculo gastrocnemio",
+    "ta2Id": "2658",
+    "latin": "Caput laterale musculi gastrocnemii"
+  },
+  "lateral head of triceps brachii": {
+    "es": "Cabeza lateral del músculo tríceps braquial",
+    "ta2Id": "2473",
+    "latin": "Caput laterale musculi tricipitis brachii"
+  },
+  "lateral intermuscular septum of arm": {
+    "es": "Septo intermuscular lateral del brazo",
+    "ta2Id": "2543",
+    "latin": "Septum intermusculare laterale brachii"
+  },
+  "lateral patellar retinaculum": {
+    "es": "Retináculo patelar lateral",
+    "ta2Id": "2624",
+    "latin": "Retinaculum laterale patellae"
+  },
+  "lateral rectus muscle": {
+    "es": "Músculo recto lateral",
+    "ta2Id": "2045",
+    "latin": "Musculus rectus lateralis bulbi oculi"
+  },
+  "lateral subtendinous bursa of gastrocnemius muscle": {
+    "es": "Bolsa subtendínea lateral del músculo gastrocnemio",
+    "ta2Id": "2746",
+    "latin": "Bursa subtendinea lateralis musculi gastrocnemii"
+  },
+  "latissimus dorsi muscle": {
+    "es": "Músculo latísimo del dorso",
+    "ta2Id": "2231",
+    "latin": "Musculus latissimus dorsi"
+  },
+  "levator anguli oris": {
+    "es": "Elevador del angulo de la boca",
+    "ta2Id": "2084",
+    "latin": "Levator anguli oris"
+  },
+  "levator labii superioris": {
+    "es": "Elevador del labio superior",
+    "ta2Id": "2081",
+    "latin": "Levator labii superioris"
+  },
+  "levator nasolabialis": {
+    "es": "Elevador nasolabial",
+    "ta2Id": "2082",
+    "latin": "Levator nasolabialis"
+  },
+  "levator palpebrae superioris": {
+    "es": "Elevador del párpado superior",
+    "ta2Id": "2052",
+    "latin": "Levator palpebrae superioris"
+  },
+  "levator scapulae": {
+    "es": "Elevador de la escápula",
+    "ta2Id": "2234",
+    "latin": "Levator scapulae"
+  },
+  "levatores breves costarum": {
+    "es": "Elevadores cortos de las costillas",
+    "ta2Id": "2310",
+    "latin": "Levatores breves costarum"
+  },
+  "levatores longi costarum": {
+    "es": "Elevadores largos de las costillas",
+    "ta2Id": "2309",
+    "latin": "Levatores longi costarum"
+  },
+  "linea alba": {
+    "es": "Linea alba",
+    "ta2Id": "2377",
+    "latin": "Linea alba"
+  },
+  "long head of biceps brachii": {
+    "es": "Cabeza larga del músculo bíceps braquial",
+    "ta2Id": "2465",
+    "latin": "Caput longum musculi bicipitis brachii"
+  },
+  "long head of biceps femoris": {
+    "es": "Cabeza larga del músculo bíceps femoral",
+    "ta2Id": "2639",
+    "latin": "Caput longum musculi bicipitis femoris"
+  },
+  "long head of triceps brachii": {
+    "es": "Cabeza larga del músculo tríceps braquial",
+    "ta2Id": "2472",
+    "latin": "Caput longum musculi tricipitis brachii"
+  },
+  "longissimus capitis muscle": {
+    "es": "Músculo longísimo de la cabeza",
+    "ta2Id": "2266",
+    "latin": "Musculus longissimus capitis"
+  },
+  "longissimus colli muscle": {
+    "es": "Músculo longísmo del cuello",
+    "ta2Id": "2265",
+    "latin": "Musculus longissimus colli"
+  },
+  "longissimus thoracis muscle": {
+    "es": "Músculo longísimo del tórax",
+    "ta2Id": "2263",
+    "latin": "Musculus longissimus thoracis"
+  },
+  "longus capitis muscle": {
+    "es": "Músculo largo de la cabeza",
+    "ta2Id": "2149",
+    "latin": "Musculus longus capitis"
+  },
+  "longus colli muscle": {
+    "es": "Músculo largo del cuello",
+    "ta2Id": "2148",
+    "latin": "Musculus longus colli"
+  },
+  "lumbrical muscles of foot": {
+    "es": "Músculos lumbricales del pie",
+    "ta2Id": "2685",
+    "latin": "Musculi lumbricales pedis"
+  },
+  "lumbrical muscles of hand": {
+    "es": "Músculos lumbricales de la mano",
+    "ta2Id": "2532",
+    "latin": "Musculi lumbricales manus"
+  },
+  "masseteric fascia": {
+    "es": "Fascia masetérica",
+    "ta2Id": "2136",
+    "latin": "Fascia masseterica"
+  },
+  "medial femoral intermuscular septum": {
+    "es": "Septo intermuscular femoral medial",
+    "ta2Id": "2692",
+    "latin": "Septum intermusculare mediale femoris"
+  },
+  "medial head of flexor hallucis brevis": {
+    "es": "Cabeza medial del flexor corto del hállux",
+    "ta2Id": "2674",
+    "latin": "Caput mediale flexoris brevis hallucis"
+  },
+  "medial head of gastrocnemius": {
+    "es": "Cabeza medial del músculo gastrocnemio",
+    "ta2Id": "2659",
+    "latin": "Caput mediale musculi gastrocnemii"
+  },
+  "medial head of triceps brachii": {
+    "es": "Cabeza medial del músculo tríceps braquial",
+    "ta2Id": "2474",
+    "latin": "Caput mediale musculi tricipitis caput brachii"
+  },
+  "medial intermuscular septum of arm": {
+    "es": "Septo intermuscular medial del brazo",
+    "ta2Id": "2542",
+    "latin": "Septum intermusculare mediale brachii"
+  },
+  "medial patellar retinaculum": {
+    "es": "Retináculo patelar medial",
+    "ta2Id": "2623",
+    "latin": "Retinaculum mediale patellae"
+  },
+  "medial pterygoid muscle": {
+    "es": "Músculo pterigoideo medial",
+    "ta2Id": "2113",
+    "latin": "Musculus pterygoideus medialis"
+  },
+  "medial rectus muscle": {
+    "es": "Músculo recto medial",
+    "ta2Id": "2044",
+    "latin": "Musculus rectus medialis"
+  },
+  "medial subtendinous bursa of gastrocnemius muscle": {
+    "es": "Bolsa subtendínea medial del músculo gastrocnemio",
+    "ta2Id": "2747",
+    "latin": "Bursa subtendinea medialis musculi gastrocnemii"
+  },
+  "mentalis muscle": {
+    "es": "Músculo mental",
+    "ta2Id": "2087",
+    "latin": "Musculus mentalis"
+  },
+  "middle layer of thoracolumbar fascia": {
+    "es": "Lámina media de la fascia toracolumbar",
+    "ta2Id": "2245",
+    "latin": "Lamina media fasciae thoracolumbaris"
+  },
+  "middle pharyngeal constrictor": {
+    "es": "Constrictor medio de la faringe",
+    "ta2Id": "2184",
+    "latin": "Constrictor medius pharyngis"
+  },
+  "multifidus colli muscle": {
+    "es": "Músculo multifido del cuello",
+    "ta2Id": "2279",
+    "latin": "Musculus multifidus colli"
+  },
+  "multifidus lumborum muscle": {
+    "es": "Músculo multifido lumbar",
+    "ta2Id": "2277",
+    "latin": "Musculus multifidus lumborum"
+  },
+  "multifidus thoracis muscle": {
+    "es": "Músculo multifido del tórax",
+    "ta2Id": "2278",
+    "latin": "Musculus multifidus thoracis"
+  },
+  "mylohyoid muscle": {
+    "es": "Músculo milohioideo",
+    "ta2Id": "2165",
+    "latin": "Musculus mylohyoideus"
+  },
+  "nasalis muscle": {
+    "es": "Músculo nasal",
+    "ta2Id": "2062",
+    "latin": "Musculus nasalis"
+  },
+  "oblique head of adductor hallucis": {
+    "es": "Cabeza oblicua del aductor del hállux",
+    "ta2Id": "2677",
+    "latin": "Caput obliquum adductoris hallucis"
+  },
+  "oblique head of adductor pollicis": {
+    "es": "Cabeza oblicua del aductor del pulgar",
+    "ta2Id": "2527",
+    "latin": "Caput obliquum adductoris pollicis"
+  },
+  "oblique part of cricothyroid muscle": {
+    "es": "Porción oblicua del músculo cricotiroideo",
+    "ta2Id": "2195",
+    "latin": "Pars obliqua musculi cricothyreoidei"
+  },
+  "obliquus inferior capitis muscle": {
+    "es": "Músculo oblicuo inferior de la cabeza",
+    "ta2Id": "2252",
+    "latin": "Musculus obliquus inferior capitis"
+  },
+  "obliquus superior capitis muscle": {
+    "es": "Músculo oblicuo superior de la cabeza",
+    "ta2Id": "2251",
+    "latin": "Musculus obliquus superior capitis"
+  },
+  "obturator externus": {
+    "es": "Obturador externo",
+    "ta2Id": "2636",
+    "latin": "Obturator externus"
+  },
+  "obturator internus": {
+    "es": "Obturador interno",
+    "ta2Id": "2605",
+    "latin": "Obturator internus"
+  },
+  "occipitalis muscle": {
+    "es": "Músculo occipital",
+    "ta2Id": "2057",
+    "latin": "Musculus occipitalis"
+  },
+  "omohyoid muscle": {
+    "es": "Músculo omohioideo",
+    "ta2Id": "2169",
+    "latin": "Musculus omohyoideus"
+  },
+  "opponens digiti minimi muscle of hand": {
+    "es": "Músculo oponente del dedo mínimo de la mano",
+    "ta2Id": "2531",
+    "latin": "Musculus opponens digiti minimi manus"
+  },
+  "opponens pollicis muscle": {
+    "es": "Músculo oponente del pulgar",
+    "ta2Id": "2525",
+    "latin": "Musculus opponens pollicis"
+  },
+  "orbicularis oris muscle": {
+    "es": "Músculo orbicular de la boca",
+    "ta2Id": "2073",
+    "latin": "Musculus orbicularis oris"
+  },
+  "orbital part of orbicularis oculi": {
+    "es": "Porción orbitaria del músculo orbicular del ojo",
+    "ta2Id": "2070",
+    "latin": "Pars orbitalis musculi orbicularis oculi"
+  },
+  "palatopharyngeus muscle": {
+    "es": "Músculo palatofaríngeo",
+    "ta2Id": "2132",
+    "latin": "Musculus palatopharyngeus"
+  },
+  "palmar aponeurosis": {
+    "es": "Aponeurosis palmar",
+    "ta2Id": "2549",
+    "latin": "Aponeurosis palmaris"
+  },
+  "palmar interossei muscles": {
+    "es": "Músculos interóseos palmares",
+    "ta2Id": "2534",
+    "latin": "Musculi interossei palmares"
+  },
+  "palmaris longus muscle": {
+    "es": "Músculo palmar largo",
+    "ta2Id": "2482",
+    "latin": "Musculus palmaris longus"
+  },
+  "palpebral part of orbicularis oculi": {
+    "es": "Parte palpebral del múculo orbicular del ojo",
+    "ta2Id": "2067",
+    "latin": "Pars palpebralis musculi orbicularis oculi"
+  },
+  "pectineus muscle": {
+    "es": "Músculo pectíneo",
+    "ta2Id": "2627",
+    "latin": "Musculus pectineus"
+  },
+  "pectoral fascia": {
+    "es": "Fascia pectoral",
+    "ta2Id": "2317",
+    "latin": "Fascia pectoralis"
+  },
+  "pectoralis minor muscle": {
+    "es": "Músculo pectoral menor",
+    "ta2Id": "2305",
+    "latin": "Musculus pectoralis minor"
+  },
+  "piriformis fascia": {
+    "es": "Fascia del músculo piriforme",
+    "ta2Id": "2437",
+    "latin": "Fascia musculi piriformis"
+  },
+  "piriformis muscle": {
+    "es": "Músculo piriforme",
+    "ta2Id": "2604",
+    "latin": "Musculus piriformis"
+  },
+  "plantar aponeurosis": {
+    "es": "Aponeurosis plantar",
+    "ta2Id": "2718",
+    "latin": "Aponeurosis plantaris"
+  },
+  "plantar interossei muscles": {
+    "es": "Músculos interóseos plantares",
+    "ta2Id": "2687",
+    "latin": "Musculi interossei plantares"
+  },
+  "plantar tendon sheath of fibularis longus muscle": {
+    "es": "Vaina tendinosa plantar del músculo fibular largo",
+    "ta2Id": "2765",
+    "latin": "Vagina plantaris tendinis musculi fibularis longi"
+  },
+  "plantaris muscle": {
+    "es": "Músculo plantar",
+    "ta2Id": "2663",
+    "latin": "Musculus plantaris"
+  },
+  "platysma": {
+    "es": "Platisma",
+    "ta2Id": "2147",
+    "latin": "Platysma"
+  },
+  "popliteal fascia": {
+    "es": "Fascia poplítea",
+    "ta2Id": "2707",
+    "latin": "Fascia poplitea"
+  },
+  "popliteus muscle": {
+    "es": "Músculo poplíteo",
+    "ta2Id": "2665",
+    "latin": "Musculus popliteus"
+  },
+  "posterior belly of digastric muscle": {
+    "es": "Vientre posterior del músculo digástrico",
+    "ta2Id": "2163",
+    "latin": "Venter posterior musculi digastrici"
+  },
+  "posterior crico-arytenoid muscle": {
+    "es": "Músculo crico-aritenoideo posterior",
+    "ta2Id": "2196",
+    "latin": "Musculus cricoarytenoideus posterior"
+  },
+  "posterior intermuscular septum of leg": {
+    "es": "Septo intermuscular posterior de la pierna",
+    "ta2Id": "2710",
+    "latin": "Septum intermusculare posterius cruris"
+  },
+  "posterior layer of thoracolumbar fascia": {
+    "es": "Lámina posterior de la fascia toracolumbar",
+    "ta2Id": "2243",
+    "latin": "Lamina posterior fasciae thoracolumbaris"
+  },
+  "procerus muscle": {
+    "es": "Músculo prócero",
+    "ta2Id": "2061",
+    "latin": "Musculus procerus"
+  },
+  "pronator quadratus": {
+    "es": "Pronador cuadrado",
+    "ta2Id": "2493",
+    "latin": "Pronator quadratus"
+  },
+  "psoas major": {
+    "es": "Psoas mayor",
+    "ta2Id": "2595",
+    "latin": "Psoas major"
+  },
+  "pubo-analis muscle": {
+    "es": "Músculo puboanal",
+    "ta2Id": "2406",
+    "latin": "Musculus puboanalis"
+  },
+  "pubococcygeus muscle": {
+    "es": "Músculo pubococcígeo",
+    "ta2Id": "2405",
+    "latin": "Musculus pubococcygeus"
+  },
+  "pyramidalis muscle": {
+    "es": "Músculo piramidal",
+    "ta2Id": "2363",
+    "latin": "Musculus pyramidalis"
+  },
+  "quadratus femoris muscle": {
+    "es": "Músculo cuadrado femoral",
+    "ta2Id": "2608",
+    "latin": "Musculus quadratus femoris"
+  },
+  "quadratus lumborum muscle": {
+    "es": "Músculo cuadrado lumbar",
+    "ta2Id": "2382",
+    "latin": "Musculus quadratus lumborum"
+  },
+  "quadratus plantae muscle": {
+    "es": "Músculo cuadrado plantar",
+    "ta2Id": "2684",
+    "latin": "Musculus quadratus plantae"
+  },
+  "radial head of flexor digitorum superficialis": {
+    "es": "Cabeza radial del flexor superficial de los dedos",
+    "ta2Id": "2488",
+    "latin": "Caput radiale flexoris superficialis digitorum"
+  },
+  "rectus abdominis muscle": {
+    "es": "Músculo recto del abdomen",
+    "ta2Id": "2357",
+    "latin": "Musculus rectus abdominis"
+  },
+  "rectus anterior capitis muscle": {
+    "es": "Músculo recto anterior de la cabeza",
+    "ta2Id": "2150",
+    "latin": "Musculus rectus anterior capitis"
+  },
+  "rectus femoris muscle": {
+    "es": "Músculo recto femoral",
+    "ta2Id": "2614",
+    "latin": "Musculus rectus femoris"
+  },
+  "rectus lateralis capitis muscle": {
+    "es": "Músculo recto lateral de la cabeza",
+    "ta2Id": "2151",
+    "latin": "Musculus rectus lateralis capitis"
+  },
+  "rectus posterior major capitis muscle": {
+    "es": "Músculo recto posterior mayor de la cabeza",
+    "ta2Id": "2249",
+    "latin": "Musculus rectus posterior major capitis"
+  },
+  "rectus posterior minor capitis muscle": {
+    "es": "Músculo recto posterior menor de la cabeza",
+    "ta2Id": "2250",
+    "latin": "Musculus rectus posterior minor capitis"
+  },
+  "rhomboid major muscle": {
+    "es": "Músculo romboides mayor",
+    "ta2Id": "2232",
+    "latin": "Musculus rhomboideus major"
+  },
+  "rhomboid minor muscle": {
+    "es": "Músculo romboides menor",
+    "ta2Id": "2233",
+    "latin": "Musculus rhomboideus minor"
+  },
+  "risorius muscle": {
+    "es": "Músculo risorio",
+    "ta2Id": "2078",
+    "latin": "Musculus risorius"
+  },
+  "rotatores": {
+    "es": "Rotadores",
+    "ta2Id": "2284",
+    "latin": "Rotatores"
+  },
+  "sartorius muscle": {
+    "es": "Músculo sartorio",
+    "ta2Id": "2610",
+    "latin": "Musculus sartorius"
+  },
+  "scalenus anterior muscle": {
+    "es": "Músculo escaleno anterior",
+    "ta2Id": "2152",
+    "latin": "Musculus scalenus anterior"
+  },
+  "scalenus medius muscle": {
+    "es": "Músculo escaleno medio",
+    "ta2Id": "2153",
+    "latin": "Musculus scalenus medius"
+  },
+  "scalenus posterior muscle": {
+    "es": "Músculo escaleno posterior",
+    "ta2Id": "2154",
+    "latin": "Musculus scalenus posterior"
+  },
+  "scapular spinal part of deltoid muscle": {
+    "es": "Porción espinal escapular del músculo deltoides",
+    "ta2Id": "2455",
+    "latin": "Pars spinalis scapularis musculi deltoidei"
+  },
+  "sciatic bursa of gluteus maximus muscle": {
+    "es": "Bolsa isquiática del músculo glúteo máximo",
+    "ta2Id": "2731",
+    "latin": "Bursa ischiadica musculi glutei maximi"
+  },
+  "sciatic bursa of obturator internus": {
+    "es": "Bolsa isquiática del obturador interno",
+    "ta2Id": "2728",
+    "latin": "Bursa ischiadica obturatoris interni"
+  },
+  "semimembranosus bursa": {
+    "es": "Bolsa del musculo semimembranoso",
+    "ta2Id": "2748",
+    "latin": "Bursa musculi semimembranosi"
+  },
+  "semimembranosus muscle": {
+    "es": "Músculo semimembranoso",
+    "ta2Id": "2642",
+    "latin": "Musculus semimembranosus"
+  },
+  "semispinalis colli muscle": {
+    "es": "Músculo semiespinoso del cuello",
+    "ta2Id": "2282",
+    "latin": "Musculus semispinalis colli"
+  },
+  "semispinalis thoracis muscle": {
+    "es": "Músculo semiespinoso del tórax",
+    "ta2Id": "2281",
+    "latin": "Musculus semispinalis thoracis"
+  },
+  "semitendinosus muscle": {
+    "es": "Músculo semitendinoso",
+    "ta2Id": "2641",
+    "latin": "Musculus semitendinosus"
+  },
+  "serratus anterior muscle": {
+    "es": "Músculo serrato anterior",
+    "ta2Id": "2307",
+    "latin": "Musculus serratus anterior"
+  },
+  "serratus posterior inferior muscle": {
+    "es": "Músculo serrato posterior inferior",
+    "ta2Id": "2235",
+    "latin": "Musculus serratus posterior inferior"
+  },
+  "serratus posterior superior muscle": {
+    "es": "Músculo serrato posterior superior",
+    "ta2Id": "2236",
+    "latin": "Musculus serratus posterior superior"
+  },
+  "short head of biceps brachii": {
+    "es": "Cabeza corta músculo del bíceps braquial",
+    "ta2Id": "2466",
+    "latin": "Caput breve musculi bicipitis brachii"
+  },
+  "short head of biceps femoris": {
+    "es": "Cabeza corta del músculo bíceps femoral",
+    "ta2Id": "2640",
+    "latin": "Caput breve musculi bicipitis femoris"
+  },
+  "soleus muscle": {
+    "es": "Músculo sóleo",
+    "ta2Id": "2660",
+    "latin": "Musculus soleus"
+  },
+  "spinalis capitis muscle": {
+    "es": "Músculo espinal de la cabeza",
+    "ta2Id": "2270",
+    "latin": "Musculus spinalis capitis"
+  },
+  "spinalis colli muscle": {
+    "es": "Músculo espinal del cuello",
+    "ta2Id": "2269",
+    "latin": "Musculus spinalis colli"
+  },
+  "spinalis thoracis muscle": {
+    "es": "Músculo espinal del tórax",
+    "ta2Id": "2268",
+    "latin": "Musculus spinalis thoracis"
+  },
+  "splenius capitis muscle": {
+    "es": "Músculo esplenio de la cabeza",
+    "ta2Id": "2273",
+    "latin": "Musculus splenius capitis"
+  },
+  "splenius colli muscle": {
+    "es": "Músculo esplenio del cuello",
+    "ta2Id": "2274",
+    "latin": "Musculus splenius colli"
+  },
+  "sternocleidomastoid muscle": {
+    "es": "Músculo esternocleidomastoideo",
+    "ta2Id": "2156",
+    "latin": "Musculus sternocleidomastoideus"
+  },
+  "sternocostal head of pectoralis major muscle": {
+    "es": "Porción esternocostal del músculo pectoral mayor",
+    "ta2Id": "2303",
+    "latin": "Pars sternocostalis musculi pectoralis majoris"
+  },
+  "sternohyoid muscle": {
+    "es": "Músculo esternohioideo",
+    "ta2Id": "2168",
+    "latin": "Musculus sternohyoideus"
+  },
+  "sternothyroid muscle": {
+    "es": "Músculo esternotiroideo",
+    "ta2Id": "2173",
+    "latin": "Musculus sternothyreoideus"
+  },
+  "straight part of cricothyroid muscle": {
+    "es": "Porción recta del músculo cricotiroideo",
+    "ta2Id": "2194",
+    "latin": "Pars recta musculi cricothyreoidei"
+  },
+  "stylohyoid muscle": {
+    "es": "Músculo estilohioideo",
+    "ta2Id": "2164",
+    "latin": "Musculus stylohyoideus"
+  },
+  "stylopharyngeus muscle": {
+    "es": "Músculo estilofaríngeo",
+    "ta2Id": "2190",
+    "latin": "Musculus stylopharyngeus"
+  },
+  "subacromial bursa": {
+    "es": "Bolsa subacromial",
+    "ta2Id": "2557",
+    "latin": "Bursa subacromialis"
+  },
+  "subclavius muscle": {
+    "es": "Músculo subclavio",
+    "ta2Id": "2306",
+    "latin": "Musculus subclavius"
+  },
+  "subcutaneous acromial bursa": {
+    "es": "(Bolsa acromial subcutánea)",
+    "ta2Id": "2556",
+    "latin": "(Bursa subcutanea acromialis)"
+  },
+  "subcutaneous bursa of lateral malleolus": {
+    "es": "Bolsa subcutánea del maléolo lateral",
+    "ta2Id": "2749",
+    "latin": "Bursa subcutanea malleoli lateralis"
+  },
+  "subcutaneous bursa of medial malleolus": {
+    "es": "Bolsa subcutánea del maléolo medial",
+    "ta2Id": "2750",
+    "latin": "Bursa subcutanea malleoli"
+  },
+  "subcutaneous bursa of tuberosity of tibia": {
+    "es": "Bolsa subcutánea de la tuberosidad de la tibia",
+    "ta2Id": "2741",
+    "latin": "Bursa subcutanea tuberositatis tibiae"
+  },
+  "subcutaneous calcaneal bursa": {
+    "es": "Bolsa calcánea subcutánea",
+    "ta2Id": "2752",
+    "latin": "Bursa subcutanea calcanea"
+  },
+  "subcutaneous infrapatellar bursa": {
+    "es": "Bolsa subcutánea infrapatelar",
+    "ta2Id": "2739",
+    "latin": "Bursa subcutanea infrapatellaris"
+  },
+  "subcutaneous prepatellar bursa": {
+    "es": "Bolsa prepatelar subcutánea",
+    "ta2Id": "2735",
+    "latin": "Bursa subcutanea prepatellaris"
+  },
+  "subcutaneous trochanteric bursa": {
+    "es": "Bolsa trocantérica subcutánea",
+    "ta2Id": "2723",
+    "latin": "Bursa subcutanea trochanterica"
+  },
+  "subdeltoid bursa": {
+    "es": "Bolsa subdeltoidea",
+    "ta2Id": "2558",
+    "latin": "Bursa subdeltoidea"
+  },
+  "subscapularis muscle": {
+    "es": "Músculo subescapular",
+    "ta2Id": "2460",
+    "latin": "Musculus subscapularis"
+  },
+  "subtendinous bursa of iliacus muscle": {
+    "es": "Bolsa subtendínea ilíaca",
+    "ta2Id": "2733",
+    "latin": "Bursa subtendinea iliaca"
+  },
+  "subtendinous bursa of infraspinatus muscle": {
+    "es": "Bolsa subtendinosa del músculo infraespinoso",
+    "ta2Id": "2560",
+    "latin": "Bursa subtendinea musculi infraspinati"
+  },
+  "subtendinous bursa of obturator internus": {
+    "es": "Bolsa subtendínea del obturador interno",
+    "ta2Id": "2729",
+    "latin": "Bursa subtendinea obturatoris interni"
+  },
+  "subtendinous bursa of sartorius muscle": {
+    "es": "Bolsa subtendínea del músculo sartorio",
+    "ta2Id": "2742",
+    "latin": "Bursa subtendinea musculi sartorii"
+  },
+  "subtendinous bursa of teres major muscle": {
+    "es": "Bolsa subtendinosa del músculo redondo mayor",
+    "ta2Id": "2562",
+    "latin": "Bursa subtendinea musculi teretis majoris"
+  },
+  "subtendinous bursa of tibialis anterior": {
+    "es": "Bolsa subtendínea del músculo tibial anterior",
+    "ta2Id": "2751",
+    "latin": "Bursa subtendinea musculi tibialis anterioris"
+  },
+  "subtendinous bursa of trapezius muscle": {
+    "es": "Bolsa subtendinosa del músculo trapecio",
+    "ta2Id": "2555",
+    "latin": "Bursa subtendinea musculi trapezii"
+  },
+  "subtendinous bursa of triceps brachii muscle": {
+    "es": "Bolsa subtendinosa del músculo tríceps braquial",
+    "ta2Id": "2566",
+    "latin": "Bursa subtendinea musculi tricipitis"
+  },
+  "subtendinous calcaneal bursa": {
+    "es": "Bolsa calcánea subtendinosa",
+    "ta2Id": "2753",
+    "latin": "Bursa subtendinea calcanea"
+  },
+  "subtendinous prepatellar bursa": {
+    "es": "(Bolsa prepatelar subtendinosa)",
+    "ta2Id": "2737",
+    "latin": "(Bursa subtendinea prepatellaris)"
+  },
+  "superficial head of flexor pollicis brevis": {
+    "es": "Cabeza superficial del flexor corto del pulgar",
+    "ta2Id": "2523",
+    "latin": "Caput superficiale flexoris brevis pollicis"
+  },
+  "superficial head of pronator teres": {
+    "es": "Cabeza superficial del pronador redondo",
+    "ta2Id": "2479",
+    "latin": "Caput superficiale pronatoris teretis"
+  },
+  "superficial investing cervical fascia": {
+    "es": "Fascia de revestimiento superficial del cuello",
+    "ta2Id": "2207",
+    "latin": "Fascia investiens superficialis colli lamina"
+  },
+  "superficial layer of temporal fascia": {
+    "es": "Lámina superficial de la fascia temporal",
+    "ta2Id": "2139",
+    "latin": "Lamina superficialis fasciae temporalis"
+  },
+  "superficial part of masseter": {
+    "es": "Porción superficial del masétero",
+    "ta2Id": "2106",
+    "latin": "Pars superficialis masseteris"
+  },
+  "superficial transverse metacarpal ligament": {
+    "es": "Ligamento metacarpiano transverso superficial",
+    "ta2Id": "2548",
+    "latin": "Ligamentum metacarpeum transversum superficiale"
+  },
+  "superficial transverse metatarsal ligament": {
+    "es": "Ligamento metatarsiano transverso superficial",
+    "ta2Id": "2721",
+    "latin": "Ligamentum metatarseum transversum superficiale"
+  },
+  "superior bursa of biceps femoris muscle": {
+    "es": "Bolsa superior del músculo bíceps femoral",
+    "ta2Id": "2734",
+    "latin": "Bursa superior musculi bicipitis femoris"
+  },
+  "superior extensor retinaculum of ankle": {
+    "es": "Retináculo superior de los extensores del tobillo",
+    "ta2Id": "2712",
+    "latin": "Retinaculum extensorium superius tali"
+  },
+  "superior fibular retinaculum": {
+    "es": "Retináculo fibular superior",
+    "ta2Id": "2715",
+    "latin": "Retinaculum fibulare superius"
+  },
+  "superior gemellus muscle": {
+    "es": "Músculo gemelo superior",
+    "ta2Id": "2606",
+    "latin": "Musculus gemellus superior"
+  },
+  "superior head of lateral pterygoid muscle": {
+    "es": "Cabeza superior del músculo pterigoideo lateral",
+    "ta2Id": "2110",
+    "latin": "Caput superius musculi pterygoidei lateralis"
+  },
+  "superior oblique muscle": {
+    "es": "Músculo oblicuo superior del bulbo ocular",
+    "ta2Id": "2048",
+    "latin": "Musculus obliquus superior bulbi oculi"
+  },
+  "superior pharyngeal constrictor": {
+    "es": "Constrictor superior de la faringe",
+    "ta2Id": "2179",
+    "latin": "Constrictor superior pharyngis"
+  },
+  "superior rectus muscle": {
+    "es": "Músculo recto superior",
+    "ta2Id": "2042",
+    "latin": "Musculus rectus superior"
+  },
+  "superior tarsus": {
+    "es": "Tarso superior",
+    "ta2Id": "6827",
+    "latin": "Tarsus superior"
+  },
+  "supinator": {
+    "es": "Supinador",
+    "ta2Id": "2512",
+    "latin": "Supinator"
+  },
+  "suprapatellar bursa": {
+    "es": "Bolsa suprapatelar",
+    "ta2Id": "2738",
+    "latin": "Bursa suprapatellaris"
+  },
+  "supraspinatus muscle": {
+    "es": "Músculo supraespinoso",
+    "ta2Id": "2457",
+    "latin": "Musculus supraspinatus"
+  },
+  "synovial sheaths of digits of hand": {
+    "es": "Vainas sinoviales de los dedos de la mano",
+    "ta2Id": "2587",
+    "latin": "Vaginae synoviales digitorum"
+  },
+  "temporalis muscle": {
+    "es": "Músculo temporal",
+    "ta2Id": "2108",
+    "latin": "Musculus temporalis"
+  },
+  "temporoparietalis muscle": {
+    "es": "Músculo temporoparietal",
+    "ta2Id": "2058",
+    "latin": "Musculus temporoparietalis"
+  },
+  "tendinous arch of levator ani": {
+    "es": "Arco tendinoso del elevador del ano",
+    "ta2Id": "2434",
+    "latin": "Arcus tendineus levatoris ani"
+  },
+  "tendon of extensor digitorum longus": {
+    "es": "Tendón del extensor largo de los dedos",
+    "ta2Id": "7201",
+    "latin": "Tendon extensoris digitorum longi"
+  },
+  "tendon sheath - abd. pollicis longus - ext. pollicis brevis": {
+    "es": "Vaina tendinosa del abductor largo y ext. corto del pulgar",
+    "ta2Id": "2577",
+    "latin": "Vagina tendinum abd. longi et extensoris brevis pollicis"
+  },
+  "tendon sheath of extensor carpi ulnaris": {
+    "es": "Vaina tendinosa del extensor ulnar del carpo",
+    "ta2Id": "2582",
+    "latin": "Vagina tendinis extensoris ulnaris carpi"
+  },
+  "tendon sheath of extensor digitorum and extensor indicis": {
+    "es": "Vaina tendinosa de los ext. de los dedos y el index",
+    "ta2Id": "2581",
+    "latin": "Vagina tendinum musc. ext. digitorum - extensoris indicis"
+  },
+  "tendon sheath of extensor digitorum longus": {
+    "es": "Vaina tendinosa del extensor largo de los dedos",
+    "ta2Id": "2758",
+    "latin": "Vagina tendinum extensoris longi digitorum"
+  },
+  "tendon sheath of extensor hallucis longus": {
+    "es": "Vaina tendinosa del extensor largo del hállux",
+    "ta2Id": "2757",
+    "latin": "Vagina tendinis extensoris longi hallucis"
+  },
+  "tendon sheath of extensor pollicis longus": {
+    "es": "Vaina tendinosa del extensor largo del pulgar",
+    "ta2Id": "2580",
+    "latin": "Vagina tendinis musculi extensoris pollicis longi"
+  },
+  "tendon sheath of flexor carpi radialis": {
+    "es": "Vaina tendinosa del flexor radial del carpo",
+    "ta2Id": "2574",
+    "latin": "Vagina tendinis flexoris radialis carpi"
+  },
+  "tendon sheath of flexor digitorum longus": {
+    "es": "Vaina tendinosa del flexor largo de los dedos",
+    "ta2Id": "2760",
+    "latin": "Vagina tendinis flexoris digitorum longus"
+  },
+  "tendon sheath of flexor hallucis longus": {
+    "es": "Vaina tendinosa del flexor largo del hállux",
+    "ta2Id": "2762",
+    "latin": "Vagina tendinis flexoris longi hallucis"
+  },
+  "tendon sheath of flexor pollicis longus": {
+    "es": "Vaina tendinosa del flexor largo del pulgar",
+    "ta2Id": "2573",
+    "latin": "Vagina tendinis flexoris longi pollicis"
+  },
+  "tendon sheath of tibialis posterior muscle": {
+    "es": "Vaina tendinosa del músculo tibial posterior",
+    "ta2Id": "2761",
+    "latin": "Vagina tendinis musculi tibialis posterioris"
+  },
+  "tensor fasciae latae": {
+    "es": "Tensor de la fascia lata",
+    "ta2Id": "2602",
+    "latin": "Tensor fasciae latae"
+  },
+  "teres major muscle": {
+    "es": "Músculo redondo mayor",
+    "ta2Id": "2462",
+    "latin": "Musculus teres major"
+  },
+  "teres minor muscle": {
+    "es": "Músculo redondo menor",
+    "ta2Id": "2459",
+    "latin": "Musculus teres minor"
+  },
+  "thyro-epiglottic part of thyro-arytenoid muscle": {
+    "es": "Porción tiroepiglótica del músculo tiroaritenoideo",
+    "ta2Id": "2201",
+    "latin": "Pars thyreoepiglottica musculi thyreoarytenoidei"
+  },
+  "thyrohyoid muscle": {
+    "es": "Músculo tirohioideo",
+    "ta2Id": "2174",
+    "latin": "Musculus thyreohyoideus"
+  },
+  "tibialis anterior muscle": {
+    "es": "Músculo tibial anterior",
+    "ta2Id": "2644",
+    "latin": "Musculus tibialis anterior"
+  },
+  "tibialis posterior muscle": {
+    "es": "Músculo tibial posterior",
+    "ta2Id": "2666",
+    "latin": "Musculus tibialis posterior"
+  },
+  "transversalis fascia": {
+    "es": "Fascia transversal",
+    "ta2Id": "2389",
+    "latin": "Fascia transversalis"
+  },
+  "transverse arytenoid muscle": {
+    "es": "Músculo aritenoideo transverso",
+    "ta2Id": "2205",
+    "latin": "Musculus arytenoideus transversus"
+  },
+  "transverse head of adductor hallucis": {
+    "es": "Cabeza transversa del aductor del hállux",
+    "ta2Id": "2678",
+    "latin": "Caput transversum adductoris hallucis"
+  },
+  "transverse head of adductor pollicis": {
+    "es": "Cabeza transversa del aductor del pulgar",
+    "ta2Id": "2528",
+    "latin": "Caput transversum adductoris pollicis"
+  },
+  "transverse intermuscular septum of leg": {
+    "es": "Septo intermuscular transverso de la pierna",
+    "ta2Id": "2711",
+    "latin": "Septum intermusculare transversum cruris"
+  },
+  "transverse part of trapezius muscle": {
+    "es": "Porción transversa del músculo trapecio",
+    "ta2Id": "2228",
+    "latin": "Pars transversa musculi trapezii"
+  },
+  "transversus abdominis muscle": {
+    "es": "Músculo transverso del abdomen",
+    "ta2Id": "2375",
+    "latin": "Musculus transversus abdominis"
+  },
+  "transversus thoracis muscle": {
+    "es": "Músculo transverso del tórax",
+    "ta2Id": "2315",
+    "latin": "Musculus transversus thoracis"
+  },
+  "trochanteric bursa of gluteus maximus muscle": {
+    "es": "Bolsa trocantérica del músculo glúteo máximo",
+    "ta2Id": "2724",
+    "latin": "Bursa trochanterica musculi glutei maximi"
+  },
+  "trochanteric bursa of gluteus minimus muscle": {
+    "es": "Bolsa trocantérica del músculo glúteo mínimo",
+    "ta2Id": "2726",
+    "latin": "Bursa trochanterica musculi glutei minimi"
+  },
+  "trochlea of superior oblique muscle": {
+    "es": "Tróclea del músculo oblicuo superior",
+    "ta2Id": "2049",
+    "latin": "Trochlea musculi obliqui superioris"
+  },
+  "ulnar head of extensor carpi ulnaris": {
+    "es": "Cabeza ulnar del extensor ulnar del carpo",
+    "ta2Id": "2509",
+    "latin": "Caput ulnare extensoris ulnaris carpi"
+  },
+  "ulnar head of flexor carpi ulnaris": {
+    "es": "Cabeza ulnar del flexor ulnar del carpo",
+    "ta2Id": "2485",
+    "latin": "Caput ulnare flexoris ulnaris carpi"
+  },
+  "vastus intermedius muscle": {
+    "es": "Músculo vasto intermedio",
+    "ta2Id": "2619",
+    "latin": "Musculus vastus intermedius"
+  },
+  "vastus lateralis muscle": {
+    "es": "Músculo vasto lateral",
+    "ta2Id": "2618",
+    "latin": "Musculus vastus lateralis"
+  },
+  "vastus medialis muscle": {
+    "es": "Músculo vasto medial",
+    "ta2Id": "2620",
+    "latin": "Musculus vastus medialis"
+  },
+  "ventral parts of lateral intertransversarii lumborum muscles": {
+    "es": "Partes ventrales de los m. lumbares intertransvarios lat.",
+    "ta2Id": "2241",
+    "latin": "Partes vent. musculorum intertransversariorum lat. lumborum"
+  },
+  "zygomaticus major muscle": {
+    "es": "Músculo cigomático mayor",
+    "ta2Id": "2079",
+    "latin": "Musculus zygomaticus major"
+  },
+  "zygomaticus minor muscle": {
+    "es": "Músculo cigomático menor",
+    "ta2Id": "2080",
+    "latin": "Musculus zygomaticus minor"
+  },
+  "anterior longitudinal ligament": {
+    "es": "Ligamento longitudinal anterior",
+    "ta2Id": "1679",
+    "latin": "Ligamentum longitudinale anterius"
+  },
+  "arytenoid cartilage": {
+    "es": "Cartílago aritenoides",
+    "ta2Id": "983",
+    "latin": "Cartilago arytenoidea"
+  },
+  "atlas (c1)": {
+    "es": "Atlas (C1)",
+    "ta2Id": "1038",
+    "latin": "Atlas (C1)"
+  },
+  "axis (c2)": {
+    "es": "Axis (C2)",
+    "ta2Id": "1050",
+    "latin": "Axis (C2)"
+  },
+  "body of sternum": {
+    "es": "Cuerpo del esternón",
+    "ta2Id": "1134",
+    "latin": "Corpus sterni"
+  },
+  "calcaneus": {
+    "es": "Calcáneo",
+    "ta2Id": "1468",
+    "latin": "Calcaneus"
+  },
+  "capitate bone": {
+    "es": "Hueso capitado",
+    "ta2Id": "1258",
+    "latin": "Os capitatum"
+  },
+  "clavicle": {
+    "es": "Clavícula",
+    "ta2Id": "1168",
+    "latin": "Clavicula"
+  },
+  "coccyx": {
+    "es": "Cóccix",
+    "ta2Id": "1092",
+    "latin": "Os coccygis"
+  },
+  "corniculate cartilage": {
+    "es": "Cartílago corniculado",
+    "ta2Id": "997",
+    "latin": "Cartilago corniculata"
+  },
+  "costal cartilage of eighth rib": {
+    "es": "Cartílago costal de la octava costilla",
+    "ta2Id": "1140*8",
+    "latin": "Cartilago costae octavae costae"
+  },
+  "costal cartilage of fifth rib": {
+    "es": "Cartílago costal de la quinta costilla",
+    "ta2Id": "1140*5",
+    "latin": "Cartilago costae quinti costae"
+  },
+  "costal cartilage of first rib": {
+    "es": "Cartílago costal de la primera costilla",
+    "ta2Id": "1140*1",
+    "latin": "Cartilago costae primae costae"
+  },
+  "costal cartilage of fourth rib": {
+    "es": "Cartílago costal de la cuarta costilla",
+    "ta2Id": "1140*4",
+    "latin": "Cartilago costae quarti costae"
+  },
+  "costal cartilage of ninth rib": {
+    "es": "Cartílago costal de la novena costilla",
+    "ta2Id": "1140*9",
+    "latin": "Costa cartilago nonae costae"
+  },
+  "costal cartilage of second rib": {
+    "es": "Cartílago costal de la segunda costilla",
+    "ta2Id": "1140*2",
+    "latin": "Cartilago costae secundae costae"
+  },
+  "costal cartilage of seventh rib": {
+    "es": "Cartílago costal de la séptima costilla",
+    "ta2Id": "1140*7",
+    "latin": "Cartilago costae septimi costae"
+  },
+  "costal cartilage of sixth rib": {
+    "es": "Cartílago costal de la sexta costilla",
+    "ta2Id": "1140*6",
+    "latin": "Cartilago costae sextae costae"
+  },
+  "costal cartilage of tenth rib": {
+    "es": "Cartílago costal de la décima costilla",
+    "ta2Id": "1140*10",
+    "latin": "Cartilago costae decimae costae"
+  },
+  "costal cartilage of third rib": {
+    "es": "Cartílago costal de la tercera costilla",
+    "ta2Id": "1140*3",
+    "latin": "Cartilago costae tertiae costae"
+  },
+  "cricoid cartilage": {
+    "es": "Cartílago cricoides",
+    "ta2Id": "978",
+    "latin": "Cartilago cricoidea"
+  },
+  "cuboid bone": {
+    "es": "Hueso cuboide",
+    "ta2Id": "1489",
+    "latin": "Os cuboideum"
+  },
+  "distal phalanx of fifth finger of foot": {
+    "es": "Falange distal del quinto dedo del pie",
+    "ta2Id": "1512*5",
+    "latin": "Phalanx distalis quintum digitorum pedis"
+  },
+  "distal phalanx of fifth finger of hand": {
+    "es": "Falange distal del quinto dedo de la mano",
+    "ta2Id": "1279*5",
+    "latin": "Phalanx distalis quintum digitorum manus"
+  },
+  "distal phalanx of first finger of foot": {
+    "es": "Falange distal del primer dedo del pie",
+    "ta2Id": "1512*1",
+    "latin": "Phalanx distalis primum digitorum pedis"
+  },
+  "distal phalanx of first finger of hand": {
+    "es": "Falange distal del primer dedo de la mano",
+    "ta2Id": "1279*1",
+    "latin": "Phalanx distalis primum digitorum manus"
+  },
+  "distal phalanx of fourth finger of foot": {
+    "es": "Falange distal del cuarto dedo del pie",
+    "ta2Id": "1512*4",
+    "latin": "Phalanx distalis quartum digitorum pedis"
+  },
+  "distal phalanx of fourth finger of hand": {
+    "es": "Falange distal del cuarto dedo de la mano",
+    "ta2Id": "1279*4",
+    "latin": "Phalanx distalis quartum digitorum manus"
+  },
+  "distal phalanx of second finger of foot": {
+    "es": "Falange distal del segundo dedo del pie",
+    "ta2Id": "1512*2",
+    "latin": "Phalanx distalis secundum digitorum pedis"
+  },
+  "distal phalanx of second finger of hand": {
+    "es": "Falange distal del segundo dedo de la mano",
+    "ta2Id": "1279*2",
+    "latin": "Phalanx distalis secundum digitorum manus"
+  },
+  "distal phalanx of third finger of foot": {
+    "es": "Falange distal del tercer dedo del pie",
+    "ta2Id": "1512*3",
+    "latin": "Phalanx distalis tertium digitorum pedis"
+  },
+  "distal phalanx of third finger of hand": {
+    "es": "Falange distal del tercer dedo de la mano",
+    "ta2Id": "1279*3",
+    "latin": "Phalanx distalis tertium digitorum manus"
+  },
+  "eighth rib": {
+    "es": "Octava costilla",
+    "ta2Id": "1113*8",
+    "latin": "Octava costa"
+  },
+  "eleventh rib": {
+    "es": "Undécima costilla",
+    "ta2Id": "1114*11",
+    "latin": "Undecima costa"
+  },
+  "ethmoid bone": {
+    "es": "Hueso etmoides",
+    "ta2Id": "721",
+    "latin": "Os ethmoideum"
+  },
+  "femur": {
+    "es": "Hueso Fémur",
+    "ta2Id": "1360",
+    "latin": "Os femoris"
+  },
+  "fibula": {
+    "es": "Fíbula",
+    "ta2Id": "1427",
+    "latin": "Fibula"
+  },
+  "fifth metacarpal bone": {
+    "es": "Quinto hueso metacarpiano",
+    "ta2Id": "1265*5",
+    "latin": "Os quintum metacarpi"
+  },
+  "fifth metatarsal bone": {
+    "es": "Quinto hueso metatarsiano",
+    "ta2Id": "1502",
+    "latin": "Os quintum metatarsi"
+  },
+  "fifth rib": {
+    "es": "Quinta costilla",
+    "ta2Id": "1106*5",
+    "latin": "Quinta costa"
+  },
+  "first metacarpal bone": {
+    "es": "Primer hueso metacarpiano",
+    "ta2Id": "1265*1",
+    "latin": "Os primum metarcapi"
+  },
+  "first metatarsal bone": {
+    "es": "Primer hueso metatarsiano",
+    "ta2Id": "1500",
+    "latin": "Os primum metatarsi"
+  },
+  "first rib": {
+    "es": "Primera costilla",
+    "ta2Id": "1107",
+    "latin": "Costa prima"
+  },
+  "fourth metacarpal bone": {
+    "es": "Cuarto hueso metacarpiano",
+    "ta2Id": "1265*4",
+    "latin": "Os quartum metacarpi"
+  },
+  "fourth metatarsal bone": {
+    "es": "Cuarto hueso metatarsiano",
+    "ta2Id": "1496*4",
+    "latin": "Os quatum metatarsi"
+  },
+  "fourth rib": {
+    "es": "Cuarta costilla",
+    "ta2Id": "1106*4",
+    "latin": "Quarta costa"
+  },
+  "frontal bone": {
+    "es": "Hueso frontal",
+    "ta2Id": "520",
+    "latin": "Os frontale"
+  },
+  "hamate bone": {
+    "es": "Hueso hamatal",
+    "ta2Id": "1259",
+    "latin": "Os hamatum"
+  },
+  "hip bone": {
+    "es": "Hueso coxal",
+    "ta2Id": "1307",
+    "latin": "Os coxae"
+  },
+  "humerus": {
+    "es": "Húmero",
+    "ta2Id": "1180",
+    "latin": "Humerus"
+  },
+  "hyoid bone": {
+    "es": "Hueso hioides",
+    "ta2Id": "876",
+    "latin": "Os hyoideum"
+  },
+  "incus": {
+    "es": "Incus",
+    "ta2Id": "888",
+    "latin": "Incus"
+  },
+  "inferior nasal concha bone": {
+    "es": "Hueso concha nasal inferior",
+    "ta2Id": "740",
+    "latin": "Concha nasalis inferior"
+  },
+  "intermediate cuneiform bone": {
+    "es": "Hueso cuneiforme intermedio",
+    "ta2Id": "1487",
+    "latin": "Os cuneiforme intermedium"
+  },
+  "interspinous ligaments": {
+    "es": "Ligamentos interespinosos",
+    "ta2Id": "1674",
+    "latin": "Ligamenta interspinalia"
+  },
+  "intertransverse ligaments": {
+    "es": "Ligamentos intertransversos",
+    "ta2Id": "1676",
+    "latin": "Ligamenta intertransversaria"
+  },
+  "intervertebral disc c2-c3": {
+    "es": "Disco intervertebral C2-C3",
+    "ta2Id": "7154",
+    "latin": "Discus intervertebralis C2-C3"
+  },
+  "intervertebral disc c3-c4": {
+    "es": "Disco intervertebral C3-C4",
+    "ta2Id": "7155",
+    "latin": "Discus intervertebralis C3-C4"
+  },
+  "intervertebral disc c4-c5": {
+    "es": "Disco intervertebral C4-C5",
+    "ta2Id": "7156",
+    "latin": "Discus intervertebralis C4-C5"
+  },
+  "intervertebral disc c5-c6": {
+    "es": "Disco intervertebral C5-C6",
+    "ta2Id": "7157",
+    "latin": "Discus intervertebralis C5-C6"
+  },
+  "intervertebral disc c6-c7": {
+    "es": "Disco intervertebral C6-C7",
+    "ta2Id": "7158",
+    "latin": "Discus intervertebralis C6-C7"
+  },
+  "intervertebral disc c7-t1": {
+    "es": "Disco intervertebral C7-T1",
+    "ta2Id": "7159",
+    "latin": "Discus intervertebralis C7-T1"
+  },
+  "intervertebral disc l1-l2": {
+    "es": "Disco intervertebral L1-L2",
+    "ta2Id": "7160",
+    "latin": "Discus intervertebralis L1-L2"
+  },
+  "intervertebral disc l2-l3": {
+    "es": "Disco intervertebral L2-L3",
+    "ta2Id": "7161",
+    "latin": "Discus intervertebralis L2-L3"
+  },
+  "intervertebral disc l3-l4": {
+    "es": "Disco intervertebral L3-L4",
+    "ta2Id": "7162",
+    "latin": "Discus intervertebralis L3-L4"
+  },
+  "intervertebral disc l4-l5": {
+    "es": "Disco intervertebral L4-L5",
+    "ta2Id": "7163",
+    "latin": "Discus intervertebralis L4-L5"
+  },
+  "intervertebral disc l5-s1": {
+    "es": "Disco intervertebral L5-S1",
+    "ta2Id": "7164",
+    "latin": "Discus intervertebralis L5-S1"
+  },
+  "intervertebral disc t1-t2": {
+    "es": "Disco intervertebral T1-T2",
+    "ta2Id": "7165",
+    "latin": "Discus intervertebralis T1-T2"
+  },
+  "intervertebral disc t10-t11": {
+    "es": "Disco intervertebral T10-T11",
+    "ta2Id": "7174",
+    "latin": "Discus intervertebralis T10-T11"
+  },
+  "intervertebral disc t11-t12": {
+    "es": "Disco intervertebral T11-T12",
+    "ta2Id": "7175",
+    "latin": "Discus intervertebralis T11-T12"
+  },
+  "intervertebral disc t12-l1": {
+    "es": "Disco intervertebral T12-L1",
+    "ta2Id": "7176",
+    "latin": "Discus intervertebralis T12-L1"
+  },
+  "intervertebral disc t2-t3": {
+    "es": "Disco intervertebral T2-T3",
+    "ta2Id": "7166",
+    "latin": "Discus intervertebralis T2-T3"
+  },
+  "intervertebral disc t3-t4": {
+    "es": "Disco intervertebral T3-T4",
+    "ta2Id": "7167",
+    "latin": "Discus intervertebralis T3-T4"
+  },
+  "intervertebral disc t4-t5": {
+    "es": "Disco intervertebral T4-T5",
+    "ta2Id": "7168",
+    "latin": "Discus intervertebralis T4-T5"
+  },
+  "intervertebral disc t5-t6": {
+    "es": "Disco intervertebral T5-T6",
+    "ta2Id": "7169",
+    "latin": "Discus intervertebralis T5-T6"
+  },
+  "intervertebral disc t6-t7": {
+    "es": "Disco intervertebral T6-T7",
+    "ta2Id": "7170",
+    "latin": "Discus intervertebralis T6-T7"
+  },
+  "intervertebral disc t7-t8": {
+    "es": "Disco intervertebral T7-T8",
+    "ta2Id": "7171",
+    "latin": "Discus intervertebralis T7-T8"
+  },
+  "intervertebral disc t8-t9": {
+    "es": "Disco intervertebral T8-T9",
+    "ta2Id": "7172",
+    "latin": "Discus intervertebralis T8-T9"
+  },
+  "intervertebral disc t9-t10": {
+    "es": "Disco intervertebral T9-T10",
+    "ta2Id": "7173",
+    "latin": "Discus intervertebralis T9-T10"
+  },
+  "intra-articular ligament of head of rib": {
+    "es": "Ligamento intra-articular de la cabeza de la costilla",
+    "ta2Id": "1723",
+    "latin": "Ligamentum intraarticulare capitis costae"
+  },
+  "lacrimal bone": {
+    "es": "Hueso lagrimal",
+    "ta2Id": "744",
+    "latin": "Os lacrimale"
+  },
+  "lateral cuneiform bone": {
+    "es": "Hueso cuneiforme lateral",
+    "ta2Id": "1488",
+    "latin": "Os cuneiforme laterale"
+  },
+  "lateral process of nasal septal cartilage": {
+    "es": "Proceso lateral del cartílago septal nasal",
+    "ta2Id": "947",
+    "latin": "Processus lateralis cartilaginis septi nasi"
+  },
+  "ligamenta flava": {
+    "es": "Ligamento amarillo",
+    "ta2Id": "1675",
+    "latin": "Ligamenta flava"
+  },
+  "lower canine": {
+    "es": "Diente canino inferior",
+    "ta2Id": "907*33",
+    "latin": "Dens caninus inferioris"
+  },
+  "lower first molar tooth": {
+    "es": "Diente primer molar inferior",
+    "ta2Id": "910*36",
+    "latin": "Dens molaris primus inferioris"
+  },
+  "lower first premolar": {
+    "es": "Diente primer premolar inferior",
+    "ta2Id": "909*34",
+    "latin": "Dens premolaris primus inferioris"
+  },
+  "lower lateral incisor": {
+    "es": "Diente incisivo inferolateral",
+    "ta2Id": "906*32",
+    "latin": "Dens incisivus lateralis inferioris"
+  },
+  "lower medial incisor": {
+    "es": "Diente incisivo inferomedial",
+    "ta2Id": "906*31",
+    "latin": "Dens incisivus medialis inferioris"
+  },
+  "lower second molar tooth": {
+    "es": "Diente segundo molar inferior",
+    "ta2Id": "910*37",
+    "latin": "Dens molaris secundus inferioris"
+  },
+  "lower second premolar": {
+    "es": "Diente segundo premolar inferior",
+    "ta2Id": "909*35",
+    "latin": "Dens premolaris secundus inferioris"
+  },
+  "lunate bone": {
+    "es": "Hueso lunado",
+    "ta2Id": "1252",
+    "latin": "Os lunatum"
+  },
+  "major alar cartilage": {
+    "es": "Cartílago alar mayor",
+    "ta2Id": "940",
+    "latin": "Cartilago alaris major"
+  },
+  "malleus": {
+    "es": "Malleus",
+    "ta2Id": "881",
+    "latin": "Malleus"
+  },
+  "mandible": {
+    "es": "Mandíbula",
+    "ta2Id": "835",
+    "latin": "Mandibula"
+  },
+  "manubrium of sternum": {
+    "es": "Manubrio del esternón",
+    "ta2Id": "1130",
+    "latin": "Manubrium sterni"
+  },
+  "maxilla": {
+    "es": "Hueso maxilar",
+    "ta2Id": "756",
+    "latin": "Maxilla"
+  },
+  "medial cuneiform bone": {
+    "es": "Hueso cuneiforme medial",
+    "ta2Id": "1486",
+    "latin": "Os cuneiforme mediale"
+  },
+  "middle phalanx of fifth finger of foot": {
+    "es": "Falange media del quinto dedo del pie",
+    "ta2Id": "1511*5",
+    "latin": "Phalanx media quintum digitorum pedis"
+  },
+  "middle phalanx of fifth finger of hand": {
+    "es": "Falange media del quinto dedo de la mano",
+    "ta2Id": "1278*5",
+    "latin": "Phalanx media quintum digitorum manus"
+  },
+  "middle phalanx of fourth finger of foot": {
+    "es": "Falange media del cuarto dedo del pie",
+    "ta2Id": "1511*4",
+    "latin": "Phalanx media quartum digitorum pedis"
+  },
+  "middle phalanx of fourth finger of hand": {
+    "es": "Falange media del cuarto dedo de la mano",
+    "ta2Id": "1278*4",
+    "latin": "Phalanx media quartum digitorum manus"
+  },
+  "middle phalanx of second finger of foot": {
+    "es": "Falange media del segundo dedo del pie",
+    "ta2Id": "1511*2",
+    "latin": "Phalanx media secundum digitorum pedis"
+  },
+  "middle phalanx of second finger of hand": {
+    "es": "Falange media del segundo dedo de la mano",
+    "ta2Id": "1278*2",
+    "latin": "Phalanx media scundum digitorum manus"
+  },
+  "middle phalanx of third finger of foot": {
+    "es": "Falange media del tercer dedo del pie",
+    "ta2Id": "1511*3",
+    "latin": "Phalanx media tertium digitorum pedis"
+  },
+  "middle phalanx of third finger of hand": {
+    "es": "Falange media del tercer dedo de la mano",
+    "ta2Id": "1278*3",
+    "latin": "Phalanx media tertium digitorum manus"
+  },
+  "nasal bone": {
+    "es": "Hueso nasal",
+    "ta2Id": "748",
+    "latin": "Os nasale"
+  },
+  "nasal septal cartilage": {
+    "es": "Cartílago del septo nasal",
+    "ta2Id": "946",
+    "latin": "Cartilago septi nasi"
+  },
+  "navicular bone": {
+    "es": "Hueso navicular",
+    "ta2Id": "1484",
+    "latin": "Os naviculare"
+  },
+  "ninth rib": {
+    "es": "Novena costilla",
+    "ta2Id": "1113*9",
+    "latin": "Nona costa"
+  },
+  "nuchal ligament": {
+    "es": "Ligamento nucal",
+    "ta2Id": "1678",
+    "latin": "Ligamentum nuchae"
+  },
+  "nucleus pulposus c2-c3": {
+    "es": "Núcleo pulposo C2-C3",
+    "ta2Id": "7178",
+    "latin": "Nucleus pulposus C2-C3"
+  },
+  "nucleus pulposus c3-c4": {
+    "es": "Núcleo pulposo C3-C4",
+    "ta2Id": "7179",
+    "latin": "Nucleus pulposus C3-C4"
+  },
+  "nucleus pulposus c4-c5": {
+    "es": "Núcleo pulposo C4-C5",
+    "ta2Id": "7180",
+    "latin": "Nucleus pulposus C4-C5"
+  },
+  "nucleus pulposus c5-c6": {
+    "es": "Núcleo pulposo C5-C6",
+    "ta2Id": "7181",
+    "latin": "Nucleus pulposus C5-C6"
+  },
+  "nucleus pulposus c6-c7": {
+    "es": "Núcleo pulposo C6-C7",
+    "ta2Id": "7182",
+    "latin": "Nucleus pulposus C6-C7"
+  },
+  "nucleus pulposus c7-t1": {
+    "es": "Núcleo pulposo C7-T1",
+    "ta2Id": "7183",
+    "latin": "Nucleus pulposus C7-T1"
+  },
+  "nucleus pulposus l1-l2": {
+    "es": "Núcleo pulposo L1-L2",
+    "ta2Id": "7184",
+    "latin": "Nucleus pulposus L1-L2"
+  },
+  "nucleus pulposus l2-l3": {
+    "es": "Núcleo pulposo L2-L3",
+    "ta2Id": "7185",
+    "latin": "Nucleus pulposus L2-L3"
+  },
+  "nucleus pulposus l3-l4": {
+    "es": "Núcleo pulposo L3-L4",
+    "ta2Id": "7186",
+    "latin": "Nucleus pulposus L3-L4"
+  },
+  "nucleus pulposus l4-l5": {
+    "es": "Núcleo pulposo L4-L5",
+    "ta2Id": "7187",
+    "latin": "Nucleus pulposus L4-L5"
+  },
+  "nucleus pulposus l5-s1": {
+    "es": "Núcleo pulposo L5-S1",
+    "ta2Id": "7188",
+    "latin": "Nucleus pulposus L5-S1"
+  },
+  "nucleus pulposus t1-t2": {
+    "es": "Núcleo pulposo T1-T2",
+    "ta2Id": "7189",
+    "latin": "Nucleus pulposus T1-T2"
+  },
+  "nucleus pulposus t10-t11": {
+    "es": "Núcleo pulposo T10-T11",
+    "ta2Id": "7198",
+    "latin": "Nucleus pulposus T10-T11"
+  },
+  "nucleus pulposus t11-t12": {
+    "es": "Núcleo pulposo T11-T12",
+    "ta2Id": "7199",
+    "latin": "Nucleus pulposus T11-T12"
+  },
+  "nucleus pulposus t12-l1": {
+    "es": "Núcleo pulposo T12-L1",
+    "ta2Id": "7200",
+    "latin": "Nucleus pulposus T12-L1"
+  },
+  "nucleus pulposus t2-t3": {
+    "es": "Núcleo pulposo T2-T3",
+    "ta2Id": "7190",
+    "latin": "Nucleus pulposus T2-T3"
+  },
+  "nucleus pulposus t3-t4": {
+    "es": "Núcleo pulposo T3-T4",
+    "ta2Id": "7191",
+    "latin": "Nucleus pulposus T3-T4"
+  },
+  "nucleus pulposus t4-t5": {
+    "es": "Núcleo pulposo T4-T5",
+    "ta2Id": "7192",
+    "latin": "Nucleus pulposus T4-T5"
+  },
+  "nucleus pulposus t5-t6": {
+    "es": "Núcleo pulposo T5-T6",
+    "ta2Id": "7193",
+    "latin": "Nucleus pulposus T5-T6"
+  },
+  "nucleus pulposus t6-t7": {
+    "es": "Núcleo pulposo T6-T7",
+    "ta2Id": "7194",
+    "latin": "Nucleus pulposus T6-T7"
+  },
+  "nucleus pulposus t7-t8": {
+    "es": "Núcleo pulposo T7-T8",
+    "ta2Id": "7195",
+    "latin": "Nucleus pulposus T7-T8"
+  },
+  "nucleus pulposus t8-t9": {
+    "es": "Núcleo pulposo T8-T9",
+    "ta2Id": "7196",
+    "latin": "Nucleus pulposus T8-T9"
+  },
+  "nucleus pulposus t9-t10": {
+    "es": "Núcleo pulposo T9-T10",
+    "ta2Id": "7197",
+    "latin": "Nucleus pulposus T9-T10"
+  },
+  "occipital bone": {
+    "es": "Hueso occipital",
+    "ta2Id": "552",
+    "latin": "Os occipitale"
+  },
+  "palatine bone": {
+    "es": "Hueso palatino",
+    "ta2Id": "798",
+    "latin": "Os palatinum"
+  },
+  "parietal bone": {
+    "es": "Hueso parietal",
+    "ta2Id": "504",
+    "latin": "Os parietale"
+  },
+  "patella": {
+    "es": "Patela",
+    "ta2Id": "1390",
+    "latin": "Patella"
+  },
+  "pisiform bone": {
+    "es": "Hueso pisiforme",
+    "ta2Id": "1254",
+    "latin": "Os pisiforme"
+  },
+  "posterior longitudinal ligament": {
+    "es": "Ligamento longitudinal posterior",
+    "ta2Id": "1680",
+    "latin": "Ligamentum longitudinale posterius"
+  },
+  "proximal phalanx of fifth finger of foot": {
+    "es": "Falange proximal del quinto dedo del pie",
+    "ta2Id": "1510*5",
+    "latin": "Phalanx proximalis quintum digitorum pedis"
+  },
+  "proximal phalanx of fifth finger of hand": {
+    "es": "Falange proximal del quinto dedo de la mano",
+    "ta2Id": "1277*5",
+    "latin": "Phalanx proximalis quintum digitorum manus"
+  },
+  "proximal phalanx of first finger of foot": {
+    "es": "Falange proximal del primer dedo del pie",
+    "ta2Id": "1510*1",
+    "latin": "Phalanx proximalis primum digitorum pedis"
+  },
+  "proximal phalanx of first finger of hand": {
+    "es": "Falange proximal del primer dedo de la mano",
+    "ta2Id": "1277*1",
+    "latin": "Phalanx proximalis primum digitorum manus"
+  },
+  "proximal phalanx of fourth finger of foot": {
+    "es": "Falange proximal del cuarto dedo del pie",
+    "ta2Id": "1510*4",
+    "latin": "Phalanx proximalis quartum digitorum pedis"
+  },
+  "proximal phalanx of fourth finger of hand": {
+    "es": "Falange proximal del cuarto dedo de la mano",
+    "ta2Id": "1277*4",
+    "latin": "Phalanx proximalis quartum digitorum manus"
+  },
+  "proximal phalanx of second finger of foot": {
+    "es": "Falange proximal del segundo dedo del pie",
+    "ta2Id": "1510*2",
+    "latin": "Phalanx proximalis secundum digitorum pedis"
+  },
+  "proximal phalanx of second finger of hand": {
+    "es": "Falange proximal del segundo dedo de la mano",
+    "ta2Id": "1277*2",
+    "latin": "Phalanx proximalis secundum digitorum manus"
+  },
+  "proximal phalanx of third finger of foot": {
+    "es": "Falange proximal del tercer dedo del pie",
+    "ta2Id": "1510*3",
+    "latin": "Phalanx proximalis tertium digitorum pedis"
+  },
+  "proximal phalanx of third finger of hand": {
+    "es": "Falange proximal del tercer dedo de la mano",
+    "ta2Id": "1277*3",
+    "latin": "Phalanx proximalis tertium digitorum manus"
+  },
+  "radiate ligament of head of rib": {
+    "es": "Ligamento radiado de la cabeza de la costilla",
+    "ta2Id": "1722",
+    "latin": "Ligamentum radiatum capitis costae"
+  },
+  "radius": {
+    "es": "Radio",
+    "ta2Id": "1210",
+    "latin": "Radius"
+  },
+  "sacrococcygeal symphysis": {
+    "es": "Sínfisis sacrococcígea",
+    "ta2Id": "7177",
+    "latin": "Symphysis Sacrococcygea"
+  },
+  "sacrum": {
+    "es": "Hueso sacro",
+    "ta2Id": "1071",
+    "latin": "Os sacrum"
+  },
+  "scaphoid bone": {
+    "es": "Hueso escafoides",
+    "ta2Id": "1250",
+    "latin": "Os scaphoideum"
+  },
+  "scapula": {
+    "es": "Escápula",
+    "ta2Id": "1143",
+    "latin": "Scapula"
+  },
+  "second metacarpal bone": {
+    "es": "Segundo hueso metacarpiano",
+    "ta2Id": "1265*2",
+    "latin": "Os secundum metacarpi"
+  },
+  "second metatarsal bone": {
+    "es": "Segundo hueso metatarsiano",
+    "ta2Id": "1496*2",
+    "latin": "Os secundum metatarsi"
+  },
+  "second rib": {
+    "es": "Segunda costilla",
+    "ta2Id": "1111",
+    "latin": "Costa secunda"
+  },
+  "sesamoid bones of foot": {
+    "es": "Huesos sesamoideos del pie",
+    "ta2Id": "1514",
+    "latin": "Ossa sesamoidea pedis"
+  },
+  "seventh rib": {
+    "es": "Séptima costilla",
+    "ta2Id": "1106*7",
+    "latin": "Septima costa"
+  },
+  "sinus of frontal bone": {
+    "es": "Seno del hueso frontal",
+    "ta2Id": "549",
+    "latin": "Sinus ossis frontalis"
+  },
+  "sinus of sphenoid bone": {
+    "es": "Seno del hueso esfenoidal",
+    "ta2Id": "600",
+    "latin": "Sinus ossis sphenoidei"
+  },
+  "sixth rib": {
+    "es": "Sexta costilla",
+    "ta2Id": "1106*6",
+    "latin": "Sexta costa"
+  },
+  "sphenoid bone": {
+    "es": "Hueso esfenoide",
+    "ta2Id": "584",
+    "latin": "Os sphenoideum"
+  },
+  "stapes": {
+    "es": "Estapedio",
+    "ta2Id": "895",
+    "latin": "Stapes"
+  },
+  "talus": {
+    "es": "Hueso Talo",
+    "ta2Id": "1448",
+    "latin": "Os tali"
+  },
+  "temporal bone": {
+    "es": "Hueso temporal",
+    "ta2Id": "641",
+    "latin": "Os temporale"
+  },
+  "tenth rib": {
+    "es": "Décima costilla",
+    "ta2Id": "1113*10",
+    "latin": "Decima costa"
+  },
+  "third metacarpal bone": {
+    "es": "Tercer hueso metacarpiano",
+    "ta2Id": "1269",
+    "latin": "Os tertium metacarpi"
+  },
+  "third metatarsal bone": {
+    "es": "Tercer hueso metatarsiano",
+    "ta2Id": "1496*3",
+    "latin": "Os tertium metatarsi"
+  },
+  "third rib": {
+    "es": "Tercera costilla",
+    "ta2Id": "1106*3",
+    "latin": "Tertia costa"
+  },
+  "thyroid cartilage": {
+    "es": "Cartílago tiroideo",
+    "ta2Id": "967",
+    "latin": "Cartilago thyreoidea"
+  },
+  "tibia": {
+    "es": "Tibia",
+    "ta2Id": "1397",
+    "latin": "Tibia"
+  },
+  "trapezium bone": {
+    "es": "Hueso trapecio",
+    "ta2Id": "1255",
+    "latin": "Os trapezium"
+  },
+  "trapezoid bone": {
+    "es": "Hueso trapezoide",
+    "ta2Id": "1257",
+    "latin": "Os trapezoideum"
+  },
+  "triquetrum bone": {
+    "es": "Hueso triquetral",
+    "ta2Id": "1253",
+    "latin": "Os triquetrum"
+  },
+  "twelfth rib": {
+    "es": "Duodécima costilla",
+    "ta2Id": "1114*12",
+    "latin": "Duodecima costa"
+  },
+  "ulna": {
+    "es": "Ulna",
+    "ta2Id": "1230",
+    "latin": "Ulna"
+  },
+  "upper canine": {
+    "es": "Diente canino superior",
+    "ta2Id": "907*13",
+    "latin": "Dens caninus superioris"
+  },
+  "upper first molar tooth": {
+    "es": "Diente primer molar superior",
+    "ta2Id": "910*16",
+    "latin": "Dens molaris primus suprioris"
+  },
+  "upper first premolar": {
+    "es": "Diente primer premolar superior",
+    "ta2Id": "909*14",
+    "latin": "Dens premolaris primus superioris"
+  },
+  "upper lateral incisor": {
+    "es": "Diente incisivo superolateral",
+    "ta2Id": "906*12",
+    "latin": "Dens incisivus lateralis superioris"
+  },
+  "upper medial incisor": {
+    "es": "Diente incisivo superomedial",
+    "ta2Id": "906*11",
+    "latin": "Dens incisivus medialis superioris"
+  },
+  "upper second molar tooth": {
+    "es": "Diente segundo molar superior",
+    "ta2Id": "910*17",
+    "latin": "Dens molaris secundus superioris"
+  },
+  "upper second premolar": {
+    "es": "Diente segundo premolar superior",
+    "ta2Id": "909*15",
+    "latin": "Dens premolaris secundus superioris"
+  },
+  "vertebra c3": {
+    "es": "Vértebra C3",
+    "ta2Id": "1032*3",
+    "latin": "Vertebra cervicalis III"
+  },
+  "vertebra c4": {
+    "es": "Vértebra C4",
+    "ta2Id": "1032*4",
+    "latin": "Vertebra cervicalis IV"
+  },
+  "vertebra c5": {
+    "es": "Vértebra C5",
+    "ta2Id": "1032*5",
+    "latin": "Vertebra cervicalis V"
+  },
+  "vertebra c6": {
+    "es": "Vértebra C6",
+    "ta2Id": "1055",
+    "latin": "Vertebra cervicalis VI"
+  },
+  "vertebra c7": {
+    "es": "Vértebra C7",
+    "ta2Id": "1032*7",
+    "latin": "Vertebra cervicalis VII"
+  },
+  "vertebra l1": {
+    "es": "Vértebra L1",
+    "ta2Id": "1068*1",
+    "latin": "Vertebra lumborum I"
+  },
+  "vertebra l2": {
+    "es": "Vértebra L2",
+    "ta2Id": "1068*2",
+    "latin": "Vertebra lumborum II"
+  },
+  "vertebra l3": {
+    "es": "Vértebra L3",
+    "ta2Id": "1068*3",
+    "latin": "Vertebra lumborum III"
+  },
+  "vertebra l4": {
+    "es": "Vértebra L4",
+    "ta2Id": "1068*4",
+    "latin": "Vertebra lumborum IV"
+  },
+  "vertebra l5": {
+    "es": "Vértebra L5",
+    "ta2Id": "1068*5",
+    "latin": "Vertebra lumborum V"
+  },
+  "vertebra t1": {
+    "es": "Vértebra T1",
+    "ta2Id": "1063*1",
+    "latin": "Vertebra thoracis I"
+  },
+  "vertebra t10": {
+    "es": "Vértebra T10",
+    "ta2Id": "1065*10",
+    "latin": "Vertebra thoracis X"
+  },
+  "vertebra t11": {
+    "es": "Vértebra T11",
+    "ta2Id": "1065*11",
+    "latin": "Vertebra thoracis XI"
+  },
+  "vertebra t12": {
+    "es": "Vértebra T12",
+    "ta2Id": "1065*12",
+    "latin": "Vertebra thoracis XII"
+  },
+  "vertebra t2": {
+    "es": "Vértebra T2",
+    "ta2Id": "1059*2",
+    "latin": "Vertebra thoracis II"
+  },
+  "vertebra t3": {
+    "es": "Vértebra T3",
+    "ta2Id": "1059*3",
+    "latin": "Vertebra thoracis III"
+  },
+  "vertebra t4": {
+    "es": "Vértebra T4",
+    "ta2Id": "1059*4",
+    "latin": "Vertebra thoracis IV"
+  },
+  "vertebra t5": {
+    "es": "Vértebra T5",
+    "ta2Id": "1059*5",
+    "latin": "Vertebra thoracis V"
+  },
+  "vertebra t6": {
+    "es": "Vértebra T6",
+    "ta2Id": "1059*6",
+    "latin": "Vertebra thoracis VI"
+  },
+  "vertebra t7": {
+    "es": "Vértebra T7",
+    "ta2Id": "1065*7",
+    "latin": "Vertebra thoracis VII"
+  },
+  "vertebra t8": {
+    "es": "Vértebra T8",
+    "ta2Id": "1065*8",
+    "latin": "Vertebra thoracis VIII"
+  },
+  "vertebra t9": {
+    "es": "Vértebra T9",
+    "ta2Id": "1065*9",
+    "latin": "Vertebra thoracis IX"
+  },
+  "vomer": {
+    "es": "Vómer",
+    "ta2Id": "751",
+    "latin": "Vomer"
+  },
+  "xiphoid process": {
+    "es": "Proceso xifoides",
+    "ta2Id": "1135",
+    "latin": "Processus xiphoideus"
+  },
+  "zygomatic bone": {
+    "es": "Hueso cigomático",
+    "ta2Id": "818",
+    "latin": "Os zygomaticum"
+  },
+  "anterior communicating artery": {
+    "es": "Arteria comunicante anterior",
+    "ta2Id": "4517",
+    "latin": "Arteria communicans anterior"
+  },
+  "anterior papillary muscle of right ventricle": {
+    "es": "Músculo papilar anterior del ventrículo derecho",
+    "ta2Id": "4044",
+    "latin": "Musculus papillaris anterior ventriculi dextri"
+  },
+  "anterior semilunar leaflet of pulmonary valve": {
+    "es": "Válvula semilunar anterior de la valva pulmonar",
+    "ta2Id": "4012",
+    "latin": "Valvula semilunaris anterior valvae trunci pulmonalis"
+  },
+  "basilar venous plexus": {
+    "es": "Plexo venoso basilar",
+    "ta2Id": "4866",
+    "latin": "Plexus venosus basilaris"
+  },
+  "cavernous sinus": {
+    "es": "Seno cavernoso",
+    "ta2Id": "4860",
+    "latin": "Sinus cavernosus"
+  },
+  "inferior leaflet of right atrioventricular valve": {
+    "es": "Válvula posterior de la valva atrioventricular derecha",
+    "ta2Id": "3985",
+    "latin": "Cuspis inferior valvae atrioventricularis dextrae"
+  },
+  "inferior papillary muscle of left ventricle": {
+    "es": "Músculo papilar inferior del ventrículo izquierdo",
+    "ta2Id": "4068",
+    "latin": "Musculus papillaris inferior ventriculi sinistri"
+  },
+  "inferior papillary muscle of right ventricle": {
+    "es": "Músculo papilar posterior del ventrículo derecho",
+    "ta2Id": "4045",
+    "latin": "Musculus papillaris inferior ventriculi dextri"
+  },
+  "left atrium": {
+    "es": "Atrio izquierdo",
+    "ta2Id": "4054",
+    "latin": "Atrium sinistrum"
+  },
+  "left coronary leaflet": {
+    "es": "Válvula coronaria aórtica izquierda",
+    "ta2Id": "3996",
+    "latin": "Valvula coronaria sinistra aortae"
+  },
+  "left semilunar leaflet of pulmonary valve": {
+    "es": "Válvula semilunar izquierda de la valva pulmonar",
+    "ta2Id": "4011",
+    "latin": "Valvula semilunaris sinistra valvae trunci pulmonalis"
+  },
+  "left ventricle": {
+    "es": "Ventrículo izquierdo",
+    "ta2Id": "4062",
+    "latin": "Ventriculus sinister"
+  },
+  "non-coronary leaflet": {
+    "es": "Válvula no coronaria de la valva aórtica",
+    "ta2Id": "3997",
+    "latin": "Valvula noncoronaria valvae aortae"
+  },
+  "posterior leaflet of left atrioventricular valve": {
+    "es": "Válvula posterior de la valva atrioventricular izquierda",
+    "ta2Id": "3990",
+    "latin": "Cuspis posterior valvae atrioventricularis sinistrae"
+  },
+  "pulmonary trunk": {
+    "es": "Tronco pulmonar",
+    "ta2Id": "4075",
+    "latin": "Truncus pulmonalis"
+  },
+  "right atrium": {
+    "es": "Atrio derecho",
+    "ta2Id": "4022",
+    "latin": "Atrium dextrum"
+  },
+  "right coronary leaflet": {
+    "es": "Válvula coronaria aórtica derecha",
+    "ta2Id": "3995",
+    "latin": "Valvula coronaria dextra aortae"
+  },
+  "right semilunar leaflet of pulmonary valve": {
+    "es": "Válvula semilunar derecha de la valva pulmonar",
+    "ta2Id": "4010",
+    "latin": "Valvula semilunaris dextra valvae trunci pulmonalis"
+  },
+  "right ventricle": {
+    "es": "Ventrículo derecho",
+    "ta2Id": "4038",
+    "latin": "Ventriculus dexter"
+  },
+  "septal leaflet of right atrioventricular valve": {
+    "es": "Válvula septal de la valva atrioventricular derecha",
+    "ta2Id": "3986",
+    "latin": "Cuspis septalis valvae atrioventricularis dextrae"
+  },
+  "septal papillary muscle of right ventricle": {
+    "es": "Musculo papilar septal del ventrículo derecho",
+    "ta2Id": "4046",
+    "latin": "Musculus papillaris septalis ventriculi dextri"
+  },
+  "accessory nucleus of oculomotor nerve": {
+    "es": "Núcleo accesorio del nervio oculomotor",
+    "ta2Id": "5893",
+    "latin": "Nucleus accessorius nervi oculomotorii"
+  },
+  "ampulla of lacrimal canaliculus": {
+    "es": "Ampulla del canalículo lacrimal",
+    "ta2Id": "6856",
+    "latin": "Ampulla canaliculi lacrimalis"
+  },
+  "amygdaloid body": {
+    "es": "Cuerpo amigdaloide",
+    "ta2Id": "5549",
+    "latin": "Corpus amygdaloideum"
+  },
+  "angular gyrus": {
+    "es": "Giro angular",
+    "ta2Id": "5472",
+    "latin": "Gyrus angularis"
+  },
+  "anterior cochlear nucleus": {
+    "es": "Núcleo coclear anterior",
+    "ta2Id": "6006",
+    "latin": "Nucleus cochlearis anterior"
+  },
+  "anterior commissure": {
+    "es": "Comisura anterior",
+    "ta2Id": "5613",
+    "latin": "Commissura anterior"
+  },
+  "anterior quadrangular lobule": {
+    "es": "Lóbulo cuadrangular anterior",
+    "ta2Id": "5808",
+    "latin": "Lobulus quadrangularis anterior"
+  },
+  "aqueduct of midbrain": {
+    "es": "Acueducto del mesencéfalo",
+    "ta2Id": "5910",
+    "latin": "Aquaeductus mesencephali"
+  },
+  "base of peduncle": {
+    "es": "Base del pedúnculo",
+    "ta2Id": "5879",
+    "latin": "Basis pedunculi"
+  },
+  "biventral lobule": {
+    "es": "Lóbulo biventral",
+    "ta2Id": "5816",
+    "latin": "Lobulus biventer"
+  },
+  "calcarine sulcus": {
+    "es": "Surco calcarino",
+    "ta2Id": "5486",
+    "latin": "Sulcus calcarinus"
+  },
+  "caudate nucleus": {
+    "es": "Núcleo caudado",
+    "ta2Id": "5561",
+    "latin": "Nucleus caudatus"
+  },
+  "central lobule": {
+    "es": "Lóbulo central",
+    "ta2Id": "5821",
+    "latin": "Lobulus centralis vermis"
+  },
+  "central sulcus": {
+    "es": "Surco central",
+    "ta2Id": "5435",
+    "latin": "Sulcus centralis"
+  },
+  "choroid plexus": {
+    "es": "Plexo coroideo",
+    "ta2Id": "5409",
+    "latin": "Plexus chorioideus"
+  },
+  "circular sulcus of insula": {
+    "es": "Surco circular de la ínsula",
+    "ta2Id": "5444",
+    "latin": "Sulcus circularis insulae"
+  },
+  "cochlea": {
+    "es": "Cóclea",
+    "ta2Id": "6964",
+    "latin": "Cochlea"
+  },
+  "cochlear nerve": {
+    "es": "Nervio coclear",
+    "ta2Id": "6318",
+    "latin": "Nervus cochlearis"
+  },
+  "collateral sulcus": {
+    "es": "Surco colateral",
+    "ta2Id": "5442",
+    "latin": "Sulcus collateralis"
+  },
+  "corpus callosum": {
+    "es": "Cuerpo calloso",
+    "ta2Id": "5604",
+    "latin": "Corpus callosum"
+  },
+  "culmen": {
+    "es": "Culmen",
+    "ta2Id": "5824",
+    "latin": "Culmen"
+  },
+  "cuneus": {
+    "es": "Cuneus",
+    "ta2Id": "5485",
+    "latin": "Cuneus"
+  },
+  "declive": {
+    "es": "Declive",
+    "ta2Id": "5827",
+    "latin": "Declive"
+  },
+  "falx cerebri": {
+    "es": "Hoz del cerebro",
+    "ta2Id": "5374",
+    "latin": "Falx cerebri"
+  },
+  "flocculus": {
+    "es": "Flocculus",
+    "ta2Id": "5818",
+    "latin": "Flocculus"
+  },
+  "folium of vermis": {
+    "es": "Folio del vermis",
+    "ta2Id": "5828",
+    "latin": "Folium vermis"
+  },
+  "fornix": {
+    "es": "Fornix",
+    "ta2Id": "5633",
+    "latin": "Fornix"
+  },
+  "fourth ventricle": {
+    "es": "Cuarto ventrículo",
+    "ta2Id": "5966",
+    "latin": "Ventriculus quartus"
+  },
+  "ganglia of sympathetic trunk": {
+    "es": "Ganglios del tronco simpático",
+    "ta2Id": "6606",
+    "latin": "Ganglia trunci sympathici"
+  },
+  "globus pallidus": {
+    "es": "Globo pálido",
+    "ta2Id": "5569",
+    "latin": "Globus pallidus"
+  },
+  "gracile lobule": {
+    "es": "Lóbulo grácil",
+    "ta2Id": "5815",
+    "latin": "Lobulus gracilis"
+  },
+  "habenula": {
+    "es": "Habénula",
+    "ta2Id": "5662",
+    "latin": "Habenula"
+  },
+  "hippocampal commissure": {
+    "es": "Comisura hipocampal",
+    "ta2Id": "5616",
+    "latin": "Commissura hippocampi"
+  },
+  "hippocampus": {
+    "es": "Hipocampo",
+    "ta2Id": "5518",
+    "latin": "Hippocampus"
+  },
+  "hypothalamus": {
+    "es": "Hipotálamo",
+    "ta2Id": "5714",
+    "latin": "Hypothalamus"
+  },
+  "inferior colliculus": {
+    "es": "Colículo inferior",
+    "ta2Id": "5916",
+    "latin": "Colliculus inferior"
+  },
+  "inferior frontal sulcus": {
+    "es": "Surco frontal inferior",
+    "ta2Id": "5453",
+    "latin": "Sulcus frontalis inferior"
+  },
+  "inferior semilunar lobule": {
+    "es": "Lóbulo semilunar inferior",
+    "ta2Id": "5814",
+    "latin": "Lobulus semilunaris inferior"
+  },
+  "inferior temporal gyrus": {
+    "es": "Giro temporal inferior",
+    "ta2Id": "5497",
+    "latin": "Gyrus temporalis inferior"
+  },
+  "inferior temporal sulcus": {
+    "es": "Surco temporal inferior",
+    "ta2Id": "5496",
+    "latin": "Sulcus temporalis inferior"
+  },
+  "interpeduncular fossa": {
+    "es": "Fosa interpeduncular",
+    "ta2Id": "5875",
+    "latin": "Fossa interpeduncularis"
+  },
+  "intraparietal sulcus": {
+    "es": "Surco intraparietal",
+    "ta2Id": "5475",
+    "latin": "Sulcus intraparietalis"
+  },
+  "lacrimal canaliculus": {
+    "es": "Canalículo lagrimal",
+    "ta2Id": "6855",
+    "latin": "Canaliculus lacrimalis"
+  },
+  "lacrimal gland": {
+    "es": "Glándula lagrimal",
+    "ta2Id": "6846",
+    "latin": "Glandula lacrimalis"
+  },
+  "lacrimal sac": {
+    "es": "Saco lagrimal",
+    "ta2Id": "6857",
+    "latin": "Saccus lacrimalis"
+  },
+  "lateral geniculate body": {
+    "es": "Cuerpo geniculado lateral",
+    "ta2Id": "5666",
+    "latin": "Corpus geniculatum laterale"
+  },
+  "lateral occipitotemporal gyrus": {
+    "es": "Giro occipitotemporal lateral",
+    "ta2Id": "5500",
+    "latin": "Gyrus occipitotemporalis lateralis"
+  },
+  "lateral ventricle": {
+    "es": "Ventrículo lateral",
+    "ta2Id": "5639",
+    "latin": "Ventriculus lateralis"
+  },
+  "lentiform nucleus": {
+    "es": "Núcleo lentiforme",
+    "ta2Id": "5567",
+    "latin": "Nucleus lentiformis"
+  },
+  "lingual gyrus": {
+    "es": "Giro lingual",
+    "ta2Id": "5487",
+    "latin": "Gyrus lingualis"
+  },
+  "lingula of cerebellum": {
+    "es": "Lingula del cerebelo",
+    "ta2Id": "5820",
+    "latin": "Lingula cerebelli"
+  },
+  "lunate sulcus": {
+    "es": "(Surco lunar)",
+    "ta2Id": "5483",
+    "latin": "(Sulcus lunatus)"
+  },
+  "mamillary body": {
+    "es": "Cuerpo mamilar",
+    "ta2Id": "5674",
+    "latin": "Corpus mammillare"
+  },
+  "medial geniculate body": {
+    "es": "Cuerpo geniculado medial",
+    "ta2Id": "5667",
+    "latin": "Corpus geniculatum mediale"
+  },
+  "medulla oblongata": {
+    "es": "Bulbo",
+    "ta2Id": "5983",
+    "latin": "Medulla oblongata"
+  },
+  "midbrain": {
+    "es": "Mesencéfalo",
+    "ta2Id": "5874",
+    "latin": "Mesencephalon"
+  },
+  "middle frontal gyrus": {
+    "es": "Giro frontal medio",
+    "ta2Id": "5454",
+    "latin": "Gyrus frontalis medius"
+  },
+  "middle temporal gyrus": {
+    "es": "Giro temporal medio",
+    "ta2Id": "5495",
+    "latin": "Gyrus temporalis medius"
+  },
+  "motor nucleus of facial nerve": {
+    "es": "Núcleo motor del nervio facial",
+    "ta2Id": "5939",
+    "latin": "Nucleus nervi facialis"
+  },
+  "motor root of trigeminal nerve": {
+    "es": "Raíz motora del nervio trigémino",
+    "ta2Id": "6195",
+    "latin": "Radix motoria nervi trigemini"
+  },
+  "nasolacrimal duct": {
+    "es": "Conducto nasolagrimal",
+    "ta2Id": "6859",
+    "latin": "Ductus nasolacrimalis"
+  },
+  "nodule of vermis": {
+    "es": "Nódulo del vermis",
+    "ta2Id": "5832",
+    "latin": "Nodulus vermis"
+  },
+  "nucleus of abducens nerve": {
+    "es": "Núcleo del nervio abducens",
+    "ta2Id": "5941",
+    "latin": "Nucleus nervi abducentis"
+  },
+  "nucleus of accessory nerve": {
+    "es": "Núcleo del nervio accesorio",
+    "ta2Id": "6082",
+    "latin": "Nucleus nervi accessorii"
+  },
+  "nucleus of oculomotor nerve": {
+    "es": "Núcleo del nervio oculomotor",
+    "ta2Id": "5892",
+    "latin": "Nucleus nervi oculomotorius"
+  },
+  "occipital pole": {
+    "es": "Polo occipital",
+    "ta2Id": "5421",
+    "latin": "Polus occipitalis"
+  },
+  "olfactory sulcus": {
+    "es": "Surco olfatorio",
+    "ta2Id": "5463",
+    "latin": "Sulcus olfactorius"
+  },
+  "olive": {
+    "es": "Oliva",
+    "ta2Id": "5988",
+    "latin": "Oliva"
+  },
+  "opercular part of inferior frontal gyrus": {
+    "es": "Parte opercular del giro frontal inferior",
+    "ta2Id": "5452",
+    "latin": "Pars opercularis gyri frontalis inferioris"
+  },
+  "optic chiasm": {
+    "es": "Quiasma óptico",
+    "ta2Id": "5668",
+    "latin": "Chiasma opticum"
+  },
+  "optic tract": {
+    "es": "Tracto óptico",
+    "ta2Id": "5669",
+    "latin": "Tractus opticus"
+  },
+  "orbital gyri": {
+    "es": "Giros orbitales",
+    "ta2Id": "5464",
+    "latin": "Gyri orbitales"
+  },
+  "orbital part of inferior frontal gyrus": {
+    "es": "Parte orbital del giro frontal inferior",
+    "ta2Id": "5448",
+    "latin": "Pars orbitalis gyri frontalis inferioris"
+  },
+  "paracentral sulcus": {
+    "es": "Surco paracentral",
+    "ta2Id": "5460",
+    "latin": "Sulcus paracentralis"
+  },
+  "parieto-occipital sulcus": {
+    "es": "Surco parieto-occipital",
+    "ta2Id": "5437",
+    "latin": "Sulcus parietooccipitalis"
+  },
+  "peduncle of flocculus": {
+    "es": "Pedúnculo del flóculo",
+    "ta2Id": "5844",
+    "latin": "Pedunculus flocculi"
+  },
+  "pons": {
+    "es": "Puente troncoencefálico",
+    "ta2Id": "5921",
+    "latin": "Pons"
+  },
+  "postcentral gyrus": {
+    "es": "Giro poscentral",
+    "ta2Id": "5469",
+    "latin": "Gyrus postcentralis"
+  },
+  "postcentral sulcus": {
+    "es": "Surco poscentral",
+    "ta2Id": "5470",
+    "latin": "Sulcus postcentralis"
+  },
+  "posterior commissure": {
+    "es": "Comisura posterior",
+    "ta2Id": "5749",
+    "latin": "Commissura posterior"
+  },
+  "posterior quadrangular lobule": {
+    "es": "Lóbulo cuadrangular posterior",
+    "ta2Id": "5811",
+    "latin": "Lobulus quadrangularis posterior"
+  },
+  "precentral gyrus": {
+    "es": "Giro precentral",
+    "ta2Id": "5458",
+    "latin": "Gyrus precentralis"
+  },
+  "precuneus": {
+    "es": "Precuneus",
+    "ta2Id": "5479",
+    "latin": "Precuneus"
+  },
+  "putamen": {
+    "es": "Putamen",
+    "ta2Id": "5566",
+    "latin": "Putamen"
+  },
+  "pyramid of medulla oblongata": {
+    "es": "Pirámide bulbar",
+    "ta2Id": "5985",
+    "latin": "Pyramis medullae oblongatae"
+  },
+  "pyramis of vermis": {
+    "es": "Pirámide del vermis",
+    "ta2Id": "5830",
+    "latin": "Pyramis vermis"
+  },
+  "red nucleus": {
+    "es": "Núcleo rojo",
+    "ta2Id": "5898",
+    "latin": "Nucleus ruber"
+  },
+  "sensory root of trigeminal nerve": {
+    "es": "Raíz sensorial del nervio trigémino",
+    "ta2Id": "6193",
+    "latin": "Radix sensoria nervi trigemini"
+  },
+  "septal nuclei": {
+    "es": "Núcleos septales",
+    "ta2Id": "5548",
+    "latin": "Nuclei septales"
+  },
+  "septum pellucidum": {
+    "es": "Septum pellucidum",
+    "ta2Id": "5647",
+    "latin": "Septum pellucidum"
+  },
+  "spinal dura": {
+    "es": "Dura espinal",
+    "ta2Id": "5382",
+    "latin": "Dura spinalis"
+  },
+  "stria medullaris thalami": {
+    "es": "Estrías talámicas medulares",
+    "ta2Id": "5747",
+    "latin": "Stria medullaris thalami"
+  },
+  "stria terminalis": {
+    "es": "Stria terminalis",
+    "ta2Id": "5592",
+    "latin": "Stria terminalis"
+  },
+  "subparietal sulcus": {
+    "es": "Surco subparietal",
+    "ta2Id": "5441",
+    "latin": "Sulcus subparietalis"
+  },
+  "superior cerebellar peduncle": {
+    "es": "Pedúnculo cerebeloso superior",
+    "ta2Id": "5846",
+    "latin": "Pedunculus cerebellaris superior"
+  },
+  "superior colliculus": {
+    "es": "Colículo superior",
+    "ta2Id": "5912",
+    "latin": "Colliculus superior"
+  },
+  "superior frontal gyrus": {
+    "es": "Giro frontal superior",
+    "ta2Id": "5456",
+    "latin": "Gyrus frontalis superior"
+  },
+  "superior frontal sulcus": {
+    "es": "Surco frontal superior",
+    "ta2Id": "5455",
+    "latin": "Sulcus frontalis superior"
+  },
+  "superior occipital gyri": {
+    "es": "Giros occipitales superiores",
+    "ta2Id": "5481",
+    "latin": "Gyri occipitales superiores"
+  },
+  "superior parietal lobule": {
+    "es": "Lóbulo parietal superior",
+    "ta2Id": "5476",
+    "latin": "Lobulus parietalis superior"
+  },
+  "superior salivatory nucleus": {
+    "es": "Núcleo salival superior",
+    "ta2Id": "5942",
+    "latin": "Nucleus salivatorius superior"
+  },
+  "superior semilunar lobule": {
+    "es": "Lóbulo semilunar superior",
+    "ta2Id": "5813",
+    "latin": "Lobulus semilunaris superior"
+  },
+  "superior temporal sulcus": {
+    "es": "Surco temporal superior",
+    "ta2Id": "5494",
+    "latin": "Sulcus temporalis superior"
+  },
+  "supramarginal gyrus": {
+    "es": "Giro supramarginal",
+    "ta2Id": "5473",
+    "latin": "Gyrus supramarginalis"
+  },
+  "suspensory ligament of eyeball": {
+    "es": "Ligamento suspensorio del globo ocular",
+    "ta2Id": "6818",
+    "latin": "Ligamentum suspensorium bulbi"
+  },
+  "temporal plane": {
+    "es": "Plano temporal",
+    "ta2Id": "5493",
+    "latin": "Planum temporale"
+  },
+  "temporal pole": {
+    "es": "Polo temporal",
+    "ta2Id": "5420",
+    "latin": "Polus temporalis"
+  },
+  "tentorium cerebelli": {
+    "es": "Tienda del cerebello",
+    "ta2Id": "5375",
+    "latin": "Tentorium cerebelli"
+  },
+  "thalamus": {
+    "es": "Tálamo",
+    "ta2Id": "5678",
+    "latin": "Thalamus"
+  },
+  "third ventricle": {
+    "es": "Tercer ventrículo",
+    "ta2Id": "5769",
+    "latin": "Ventriculus tertius"
+  },
+  "tonsil of cerebellum": {
+    "es": "Amígdala del cerebelo",
+    "ta2Id": "5817",
+    "latin": "Tonsilla cerebelli"
+  },
+  "transverse frontopolar gyrus and sulcus*": {
+    "es": "Giro y surco frontopolar transverso",
+    "ta2Id": "7210",
+    "latin": "Gyrus et sulcus transversus frontopolar"
+  },
+  "transverse occipital sulcus": {
+    "es": "Surco occipital transversal",
+    "ta2Id": "5484",
+    "latin": "Sulcus occipitalis transversus"
+  },
+  "transverse temporal gyri": {
+    "es": "Giros temporales transversos",
+    "ta2Id": "5491",
+    "latin": "Gyri temporales transversi"
+  },
+  "triangular part of inferior frontal gyrus": {
+    "es": "Parte triangular del giro frontal inferior",
+    "ta2Id": "5450",
+    "latin": "Pars triangularis gyri frontalis inferioris"
+  },
+  "tuber of vermis": {
+    "es": "Tubérculo del vermis",
+    "ta2Id": "5829",
+    "latin": "Tuber vermis"
+  },
+  "tympanic membrane": {
+    "es": "Membrana timpánica",
+    "ta2Id": "6870",
+    "latin": "Membrana tympanica"
+  },
+  "uvula of vermis": {
+    "es": "Úvula del vermis",
+    "ta2Id": "5831",
+    "latin": "Uvula vermis"
+  },
+  "vestibular nuclei": {
+    "es": "Núcleos vestibulares",
+    "ta2Id": "5933",
+    "latin": "Nuclei vestibulares"
+  },
+  "vestibule": {
+    "es": "Vestíbulo",
+    "ta2Id": "6942",
+    "latin": "Vestibulum"
+  },
+  "white matter of telencephalon": {
+    "es": "Sustancia blanca del telencéfalo",
+    "ta2Id": "5573",
+    "latin": "Substantia alba telencephali"
+  },
+  "wing of central lobule": {
+    "es": "Ala del lóbulo central",
+    "ta2Id": "5805",
+    "latin": "Ala lobuli centralis"
+  },
+  "accessory parotid gland": {
+    "es": "(Glándula parótida accesoria)",
+    "ta2Id": "2806",
+    "latin": "(Glandula parotidea accessoria)"
+  },
+  "anterior tibial node": {
+    "es": "(Nodo tibial anterior)",
+    "ta2Id": "5360",
+    "latin": "(Nodus tibialis anterior)"
+  },
+  "fibular node": {
+    "es": "(Nodo fibular)",
+    "ta2Id": "5362",
+    "latin": "(Nodus fibularis)"
+  },
+  "intermediate deep inguinal node": {
+    "es": "(Nodo inguinal profundo intermedio)",
+    "ta2Id": "5355",
+    "latin": "(Nodus inguinalis profundus intermedius)"
+  },
+  "intermediate lacunar node": {
+    "es": "(Nodo lacunar intermedio)",
+    "ta2Id": "5330",
+    "latin": "(Nodus lacunaris intermedius)"
+  },
+  "lateral lacunar node": {
+    "es": "(Nodo lacunar lateral)",
+    "ta2Id": "5331",
+    "latin": "(Nodus lacunaris lateralis)"
+  },
+  "medial lacunar node": {
+    "es": "(Nodo lacunar medial)",
+    "ta2Id": "5329",
+    "latin": "(Nodus lacunaris medialis)"
+  },
+  "posterior tibial node": {
+    "es": "(Nodo tibial posterior)",
+    "ta2Id": "5361",
+    "latin": "(Nodus tibialis posterior)"
+  },
+  "proximal deep inguinal node": {
+    "es": "(Nodo inguinal profundo proximal)",
+    "ta2Id": "5354",
+    "latin": "(Nodus inguinalis profundus proximalis)"
+  },
+  "retropyloric nodes": {
+    "es": "(Nodos retropilóricos)",
+    "ta2Id": "5291",
+    "latin": "(Nodi retropylorici)"
+  },
+  "subpyloric nodes": {
+    "es": "(Nodos subpilóricos)",
+    "ta2Id": "5290",
+    "latin": "(Nodi subpylorici)"
+  },
+  "suprapyloric node": {
+    "es": "(Nodo suprapilórico)",
+    "ta2Id": "5289",
+    "latin": "(Nodus suprapyloricus)"
+  },
+  "adenohypophysis": {
+    "es": "Adenohipófisis",
+    "ta2Id": "3855",
+    "latin": "Adenohypophysis"
+  },
+  "anterior axillary nodes": {
+    "es": "Nodos axilares anteriores",
+    "ta2Id": "5241",
+    "latin": "Nodi axillares anteriores nodi pectorales"
+  },
+  "anterior inferior jugular nodes": {
+    "es": "Nodos yugulares antero-inferiores",
+    "ta2Id": "5232",
+    "latin": "Nodi jugulares inferiores anteriores"
+  },
+  "anterior lateral segment of liver (vi)": {
+    "es": "Segmento anterior lateral del hígado (VI)",
+    "ta2Id": "3079",
+    "latin": "Segmentum anterius laterale dextrum hepatis (VI)"
+  },
+  "anterior medial segment of liver (v)": {
+    "es": "Segmento anterior medial del hígado (V)",
+    "ta2Id": "3076",
+    "latin": "Segmentum anterius mediale dextrum hepatis (V)"
+  },
+  "apical axillary nodes": {
+    "es": "Nodos axilares apicales",
+    "ta2Id": "5237",
+    "latin": "Nodi axillares apicales"
+  },
+  "appendicular nodes": {
+    "es": "Nodos apendiculares",
+    "ta2Id": "5308",
+    "latin": "Nodi appendiculares"
+  },
+  "ascending colon": {
+    "es": "Colon ascendente",
+    "ta2Id": "2982",
+    "latin": "Colon ascendens"
+  },
+  "brachial nodes": {
+    "es": "Nodos braquiales",
+    "ta2Id": "5244",
+    "latin": "Nodi brachiales"
+  },
+  "brachiocephalic nodes": {
+    "es": "Nodos braquiocefálicos",
+    "ta2Id": "5255",
+    "latin": "Nodi brachiocephalici"
+  },
+  "bucinator node": {
+    "es": "Nodo bucinador",
+    "ta2Id": "5207",
+    "latin": "Nodus bucinatorius"
+  },
+  "central axillary nodes": {
+    "es": "Nodos axilares centrales",
+    "ta2Id": "5238",
+    "latin": "Nodi axillares centrales"
+  },
+  "central superior mesenteric nodes": {
+    "es": "Nodos mesentéricos superiores centrales",
+    "ta2Id": "5304",
+    "latin": "Nodi mesenterici superiores centrales"
+  },
+  "coeliac nodes": {
+    "es": "Nodos celiacos",
+    "ta2Id": "5282",
+    "latin": "Nodi coeliaci"
+  },
+  "corpus cavernosum of penis": {
+    "es": "Cuerpo cavernoso del pene",
+    "ta2Id": "3678",
+    "latin": "Corpus cavernosum penis"
+  },
+  "corpus spongiosum of penis": {
+    "es": "Cuerpo esponjoso del pene",
+    "ta2Id": "3681",
+    "latin": "Corpus spongiosum penis"
+  },
+  "cubital nodes": {
+    "es": "Nodos cubitales",
+    "ta2Id": "5245",
+    "latin": "Nodi cubitales"
+  },
+  "cystic node": {
+    "es": "Nodo quístico",
+    "ta2Id": "5300",
+    "latin": "Nodus cysticus"
+  },
+  "deep popliteal nodes": {
+    "es": "Nodos poplíteos profundos",
+    "ta2Id": "5359",
+    "latin": "Nodi poplitei profundi"
+  },
+  "descending colon": {
+    "es": "Colon descendente",
+    "ta2Id": "2986",
+    "latin": "Colon descendens"
+  },
+  "duodenum": {
+    "es": "Duodeno",
+    "ta2Id": "2944",
+    "latin": "Duodenum"
+  },
+  "epididymis": {
+    "es": "Epidídimo",
+    "ta2Id": "3603",
+    "latin": "Epididymis"
+  },
+  "epiglottis": {
+    "es": "Epiglotis",
+    "ta2Id": "3190",
+    "latin": "Epiglottis"
+  },
+  "free taenia": {
+    "es": "Tenia libre",
+    "ta2Id": "2996",
+    "latin": "Taenia libera"
+  },
+  "gallbladder": {
+    "es": "Vesícula biliar",
+    "ta2Id": "3081",
+    "latin": "Vesica biliaris"
+  },
+  "gingiva": {
+    "es": "Gingiva",
+    "ta2Id": "2790",
+    "latin": "Gingiva"
+  },
+  "glans penis": {
+    "es": "Glande del pene",
+    "ta2Id": "3668",
+    "latin": "Glans penis"
+  },
+  "greater omentum": {
+    "es": "Omento mayor",
+    "ta2Id": "3757",
+    "latin": "Omentum maius"
+  },
+  "ileocolic nodes": {
+    "es": "Nodos ileocólicos",
+    "ta2Id": "5305",
+    "latin": "Nodi ileocolici"
+  },
+  "inferior deep lateral cervical nodes": {
+    "es": "Nodos cervicales laterales inferiores profundos",
+    "ta2Id": "5229",
+    "latin": "Nodi cervicales latérales profundi inferiores"
+  },
+  "inferior diaphragmatic nodes": {
+    "es": "Nodos diafragmáticos inferiores",
+    "ta2Id": "5279",
+    "latin": "Nodi phrenici inferiores"
+  },
+  "inferior epigastric nodes": {
+    "es": "Nodos epigástricos inferiores",
+    "ta2Id": "5280",
+    "latin": "Nodi epigastrici inferiores"
+  },
+  "inferior gluteal nodes": {
+    "es": "Nodos glúteos inferiores",
+    "ta2Id": "5337",
+    "latin": "Nodi glutei inferiores"
+  },
+  "inferior lobe of left lung": {
+    "es": "Lóbulo inferior del pulmón izquierdo",
+    "ta2Id": "3308",
+    "latin": "Lobus inferior pulmonis sinistri"
+  },
+  "inferior lobe of right lung": {
+    "es": "Lóbulo inferior del pulmón derecho",
+    "ta2Id": "3293",
+    "latin": "Lobus inferior pulmonis dextri"
+  },
+  "inferior pancreatic nodes": {
+    "es": "Nodos pancreáticos inferiores",
+    "ta2Id": "5294",
+    "latin": "Nodi pancreatici inferiores"
+  },
+  "inferior superficial inguinal nodes": {
+    "es": "Nodos inguinales superficiales inferiores",
+    "ta2Id": "5352",
+    "latin": "Nodi inguinales superficiales inferiores"
+  },
+  "inferior tracheobronchial nodes": {
+    "es": "Nodos traqueobronquiales inferiores",
+    "ta2Id": "5263",
+    "latin": "Nodi tracheobronchiales inferiores"
+  },
+  "infra-auricular nodes": {
+    "es": "Nodos infra-auriculares",
+    "ta2Id": "5204",
+    "latin": "Nodi infraauriculares"
+  },
+  "infraclavicular nodes": {
+    "es": "Nodos infraclaviculares",
+    "ta2Id": "5243",
+    "latin": "Nodi infraclaviculares nodi deltopectorales"
+  },
+  "intercostal nodes": {
+    "es": "Nodos intercostales",
+    "ta2Id": "5251",
+    "latin": "Nodi intercostales"
+  },
+  "intermediate common iliac nodes": {
+    "es": "Nodos ilíacos comunes intermedios",
+    "ta2Id": "5321",
+    "latin": "Nodi iliaci communes intermedii"
+  },
+  "intermediate external iliac nodes": {
+    "es": "Nodos ilíacos externos intermedios",
+    "ta2Id": "5327",
+    "latin": "Nodi iliaci externi intermedii"
+  },
+  "intermediate lumbar nodes": {
+    "es": "Nodos lumbares intermedios",
+    "ta2Id": "5274",
+    "latin": "Nodi lumbales intermedii"
+  },
+  "interpectoral nodes": {
+    "es": "Nodos interpectorales",
+    "ta2Id": "5242",
+    "latin": "Nodi interpectorales"
+  },
+  "intraglandular parotid nodes": {
+    "es": "Nodos parótidos intraglandulares",
+    "ta2Id": "5205",
+    "latin": "Nodi parotidei intraglandulares"
+  },
+  "intrapulmonary nodes": {
+    "es": "Nodos intrapulmonares",
+    "ta2Id": "5267",
+    "latin": "Nodi intrapulmonales"
+  },
+  "jugulodigastric node": {
+    "es": "Nodo yugulodigástrico",
+    "ta2Id": "5226",
+    "latin": "Nodus jugulodigastricus"
+  },
+  "juxta-intestinal mesenteric nodes": {
+    "es": "Nodos mesentéricos yuxta-intestinales",
+    "ta2Id": "5303",
+    "latin": "Nodi juxtaintestinales"
+  },
+  "juxta-oesophageal nodes": {
+    "es": "Nodos yuxta-esofágicos",
+    "ta2Id": "5264",
+    "latin": "Nodi juxtaoesophagei"
+  },
+  "kidney": {
+    "es": "Riñón",
+    "ta2Id": "3358",
+    "latin": "Ren"
+  },
+  "lateral aortic nodes": {
+    "es": "Nodos aórticos laterales",
+    "ta2Id": "5271",
+    "latin": "Nodi aortici latérales"
+  },
+  "lateral axillary nodes": {
+    "es": "Nodos axilares laterales",
+    "ta2Id": "5239",
+    "latin": "Nodi axillares latérales nodi humerales"
+  },
+  "lateral caval nodes": {
+    "es": "Nodos cavales laterales",
+    "ta2Id": "5276",
+    "latin": "Nodi cavales latérales"
+  },
+  "lateral common iliac nodes": {
+    "es": "Nodos ilíacos comunes laterales",
+    "ta2Id": "5322",
+    "latin": "Nodi iliaci communes latérales"
+  },
+  "lateral pericardial nodes": {
+    "es": "Nodos pericárdicos laterales",
+    "ta2Id": "5259",
+    "latin": "Nodi pericardiaci latérales"
+  },
+  "lateral sacral nodes": {
+    "es": "Nodos sacros laterales",
+    "ta2Id": "5338",
+    "latin": "Nodi sacrales latérales"
+  },
+  "lateral superior jugular node": {
+    "es": "Nodo yugular superolateral",
+    "ta2Id": "5227",
+    "latin": "Nodus jugularis superior lateralis"
+  },
+  "lateral vesical nodes": {
+    "es": "Nodos vesicales laterales",
+    "ta2Id": "5343",
+    "latin": "Nodi vesicales latérales"
+  },
+  "left anterior lateral segment of liver (iii)": {
+    "es": "Segmento anterior lateral izquierdo del hígado (III)",
+    "ta2Id": "3069",
+    "latin": "Segmentum anterius laterale sinistrum hepatis (III)"
+  },
+  "left colic nodes": {
+    "es": "Nodos cólicos izquierdos",
+    "ta2Id": "5314",
+    "latin": "Nodi colici sinistri"
+  },
+  "left lobe of thymus": {
+    "es": "Lóbulo izquierdo del timo",
+    "ta2Id": "7224",
+    "latin": "Lobus thymi sinistri"
+  },
+  "left medial segment of liver (iv)": {
+    "es": "Segmento medial izquierdo del hígado (IV)",
+    "ta2Id": "3071",
+    "latin": "Segmentum mediale sinistrum hepatis (IV)"
+  },
+  "left posterior lateral segment of liver (ii)": {
+    "es": "Segmento posterior lateral izquierdo del hígado (II)",
+    "ta2Id": "3068",
+    "latin": "Segmentum posterius laterale sinistrum hepatis (II)"
+  },
+  "lesser omentum": {
+    "es": "Omento menor",
+    "ta2Id": "3750",
+    "latin": "Omentum minus"
+  },
+  "liver": {
+    "es": "Hígado",
+    "ta2Id": "3023",
+    "latin": "Hepar"
+  },
+  "mandibular node": {
+    "es": "Nodo mandibular",
+    "ta2Id": "5210",
+    "latin": "Nodus mandibularis"
+  },
+  "mastoid nodes": {
+    "es": "Nodos mastoideos",
+    "ta2Id": "5200",
+    "latin": "Nodi mastoidei"
+  },
+  "medial common iliac nodes": {
+    "es": "Nodos ilíacos comunes mediales",
+    "ta2Id": "5320",
+    "latin": "Nodi iliaci communes mediales"
+  },
+  "medial external iliac nodes": {
+    "es": "Nodos iliacos externos mediales",
+    "ta2Id": "5326",
+    "latin": "Nodi iliaci externi mediales"
+  },
+  "median sacral nodes": {
+    "es": "Nodos sacros medianos",
+    "ta2Id": "5324",
+    "latin": "Nodi sacrales mediani"
+  },
+  "mesocolic taenia": {
+    "es": "Tenia mesocólica",
+    "ta2Id": "2994",
+    "latin": "Taenia mesocolica"
+  },
+  "mesocolon": {
+    "es": "Mesocolon",
+    "ta2Id": "3744",
+    "latin": "Mesocolon"
+  },
+  "middle colic nodes": {
+    "es": "Nodos cólicos medios",
+    "ta2Id": "5311",
+    "latin": "Nodi colici medii"
+  },
+  "middle lobe of right lung": {
+    "es": "Lóbulo medio del pulmón derecho",
+    "ta2Id": "3289",
+    "latin": "Lobus medius pulmonis dextri"
+  },
+  "mucosa of stomach": {
+    "es": "Capa mucosa del estómago",
+    "ta2Id": "2914",
+    "latin": "Tunica mucosa gastris"
+  },
+  "nasolabial node": {
+    "es": "Nodo nasolabial",
+    "ta2Id": "5208",
+    "latin": "Nodus nasolabialis"
+  },
+  "neurohypophysis": {
+    "es": "Neurohipófisis",
+    "ta2Id": "3859",
+    "latin": "Neurohypophysis"
+  },
+  "node of arch of azygos vein": {
+    "es": "(Nodo del arco de la vena ácigos)",
+    "ta2Id": "5257",
+    "latin": "(Nodus arcus venae azygae)"
+  },
+  "node of ligamentum arteriosum": {
+    "es": "(Nodo del ligamento arterioso)",
+    "ta2Id": "5256",
+    "latin": "(Nodus ligamenti arteriosi)"
+  },
+  "obturator nodes": {
+    "es": "Nodos obturadores",
+    "ta2Id": "5333",
+    "latin": "Nodi obturatorii"
+  },
+  "occipital nodes": {
+    "es": "Nodos occipitales",
+    "ta2Id": "5199",
+    "latin": "Nodi occipitales"
+  },
+  "omental taenia": {
+    "es": "Tenia omental",
+    "ta2Id": "2995",
+    "latin": "Taenia omentalis"
+  },
+  "palatine tonsil": {
+    "es": "Tonsila palatina",
+    "ta2Id": "2853",
+    "latin": "Tonsilla palatina"
+  },
+  "pancreas": {
+    "es": "Páncreas",
+    "ta2Id": "3114",
+    "latin": "Pancreas"
+  },
+  "paracolic superior mesenteric nodes": {
+    "es": "Nodos mesentéricos superiores paracólicos",
+    "ta2Id": "5309",
+    "latin": "Nodi mesenterici superiores paracolici"
+  },
+  "pararectal nodes": {
+    "es": "Nodos anorrectales",
+    "ta2Id": "5346",
+    "latin": "Nodi pararectales"
+  },
+  "parasternal nodes": {
+    "es": "Nodos para-esternales",
+    "ta2Id": "5250",
+    "latin": "Nodi parasternales"
+  },
+  "paratracheal cervical nodes": {
+    "es": "Nodos cervicales paratraqueales",
+    "ta2Id": "5222",
+    "latin": "Nodi paratrachéales colli"
+  },
+  "paratracheal thoracic nodes": {
+    "es": "Nodos torácicos paratraqueales",
+    "ta2Id": "5260",
+    "latin": "Nodi paratracheales thoracis"
+  },
+  "parotid gland": {
+    "es": "Glándula parótida",
+    "ta2Id": "2800",
+    "latin": "Glandula parotidea"
+  },
+  "pineal gland": {
+    "es": "Glándula pineal",
+    "ta2Id": "3862",
+    "latin": "Glandula pinealis"
+  },
+  "pleura": {
+    "es": "Pleura",
+    "ta2Id": "3322",
+    "latin": "Pleura"
+  },
+  "posterior axillary nodes": {
+    "es": "Nodos axilares posteriores",
+    "ta2Id": "5240",
+    "latin": "Nodi axillares posteriores nodi subscapulares"
+  },
+  "posterior lateral segment of liver (vii)": {
+    "es": "Segmento posterior lateral del hígado (VII)",
+    "ta2Id": "3080",
+    "latin": "Segmentum posterius laterale dextrum hepatis (VII)"
+  },
+  "posterior medial segment of liver (viii)": {
+    "es": "Segmento posterior medial derecho del hígado (VIII)",
+    "ta2Id": "3077",
+    "latin": "Segmentum posterius mediale dextrum hepatis (VIII)"
+  },
+  "posterior segment of liver (i)": {
+    "es": "Segmento posterior de hígado (I)",
+    "ta2Id": "3073",
+    "latin": "Segmentum posterius hepatis (I)"
+  },
+  "postvesical nodes": {
+    "es": "Nodos retrovesicales",
+    "ta2Id": "5342",
+    "latin": "Nodi postvesicales"
+  },
+  "pre-aortic nodes": {
+    "es": "Nodi prae-aortici",
+    "ta2Id": "5272",
+    "latin": "Nodi preaortici"
+  },
+  "pre-auricular nodes": {
+    "es": "Nodos pre-auriculares",
+    "ta2Id": "5203",
+    "latin": "Nodi preauriculares"
+  },
+  "precaecal nodes": {
+    "es": "Nodos praecaecales",
+    "ta2Id": "5306",
+    "latin": "Nodi precaecales"
+  },
+  "precaval nodes": {
+    "es": "Nodos praecavales",
+    "ta2Id": "5277",
+    "latin": "Nodi precavales"
+  },
+  "prepericardial nodes": {
+    "es": "Nodos prepericadiacos",
+    "ta2Id": "5258",
+    "latin": "Nodi prepericadiaci"
+  },
+  "pretracheal nodes": {
+    "es": "Nodos pretraqueales",
+    "ta2Id": "5221",
+    "latin": "Nodi pretracheales"
+  },
+  "prevertebral nodes": {
+    "es": "Nodos prevertebrales",
+    "ta2Id": "5252",
+    "latin": "Nodi prevertebrales"
+  },
+  "prevesical nodes": {
+    "es": "Nodos praevesicales",
+    "ta2Id": "5341",
+    "latin": "Nodi prevesicales"
+  },
+  "prostate": {
+    "es": "Próstata",
+    "ta2Id": "3637",
+    "latin": "Prostata"
+  },
+  "renal pelvis": {
+    "es": "Pelvis renal",
+    "ta2Id": "3384",
+    "latin": "Pelvis renalis"
+  },
+  "retro-aortic nodes": {
+    "es": "Nodi postaortici",
+    "ta2Id": "5273",
+    "latin": "Nodi retroaortici"
+  },
+  "retrocaecal nodes": {
+    "es": "Nodos retrocecales",
+    "ta2Id": "5307",
+    "latin": "Nodi retrocaecales"
+  },
+  "retrocaval nodes": {
+    "es": "Nodos postcavales",
+    "ta2Id": "5278",
+    "latin": "Nodi retrocavales"
+  },
+  "retropharyngeal nodes": {
+    "es": "Nodos retrofaríngeos",
+    "ta2Id": "5234",
+    "latin": "Nodi retropharyngei"
+  },
+  "right colic nodes": {
+    "es": "Nodos cólicos derechos",
+    "ta2Id": "5310",
+    "latin": "Nodi colici dextri"
+  },
+  "right gastric nodes": {
+    "es": "Nodos gástricos derechos",
+    "ta2Id": "5283",
+    "latin": "Nodi gastrici dextri caudales"
+  },
+  "right gastro-omental nodes": {
+    "es": "Nodos gastro-omentales derechos",
+    "ta2Id": "5286",
+    "latin": "Nodi gastroomentales dextri"
+  },
+  "right lobe of thymus": {
+    "es": "Lóbulo derecho del timo",
+    "ta2Id": "7223",
+    "latin": "Lobus thymi dextri"
+  },
+  "seminal gland": {
+    "es": "Glándula seminal",
+    "ta2Id": "3631",
+    "latin": "Glandula seminalis"
+  },
+  "sigmoid colon": {
+    "es": "Colon sigmoideo",
+    "ta2Id": "2987",
+    "latin": "Colon sigmoideum"
+  },
+  "sigmoid nodes": {
+    "es": "Nodos sigmoides",
+    "ta2Id": "5315",
+    "latin": "Nodi sigmoidei"
+  },
+  "spleen": {
+    "es": "Bazo",
+    "ta2Id": "5159",
+    "latin": "Lien"
+  },
+  "splenic nodes": {
+    "es": "Nodos lienales",
+    "ta2Id": "5295",
+    "latin": "Nodi splenici"
+  },
+  "stomach": {
+    "es": "Estómago",
+    "ta2Id": "2901",
+    "latin": "Gaster"
+  },
+  "subaortic nodes": {
+    "es": "Nodos subaórticos",
+    "ta2Id": "5323",
+    "latin": "Nodi subaortici"
+  },
+  "sublingual gland": {
+    "es": "Glándula sublingual",
+    "ta2Id": "2807",
+    "latin": "Glandula sublingualis"
+  },
+  "submandibular gland": {
+    "es": "Glándula submandibular",
+    "ta2Id": "2810",
+    "latin": "Glandula submandibularis"
+  },
+  "submandibular nodes": {
+    "es": "Nodos submandibulares",
+    "ta2Id": "5214",
+    "latin": "Nodi submandibulares"
+  },
+  "submental nodes": {
+    "es": "Nodos submentonianos",
+    "ta2Id": "5213",
+    "latin": "Nodi submentales"
+  },
+  "superficial anterior cervical nodes": {
+    "es": "Nodos cervicales anteriores superficiales",
+    "ta2Id": "5216",
+    "latin": "Nodi cervicales anteriores superficiales"
+  },
+  "superficial lateral cervical nodes": {
+    "es": "Nodos cervicales laterales superficiales",
+    "ta2Id": "5224",
+    "latin": "Nodi cervicales latérales superficiales"
+  },
+  "superficial parotid nodes": {
+    "es": "Nodos parótidos superficiales",
+    "ta2Id": "5201",
+    "latin": "Nodi parotidei superficiales"
+  },
+  "superficial popliteal nodes": {
+    "es": "Nodos poplíteos superficiales",
+    "ta2Id": "5358",
+    "latin": "Nodi poplitei superficiales"
+  },
+  "superior diaphragmatic nodes": {
+    "es": "Nodos diafragmáticos superiores",
+    "ta2Id": "5253",
+    "latin": "Nodi phrenici superiores"
+  },
+  "superior gluteal nodes": {
+    "es": "Nodos glúteos superiores",
+    "ta2Id": "5336",
+    "latin": "Nodi glutei superiores"
+  },
+  "superior lobe of left lung": {
+    "es": "Lóbulo superior del pulmón izquierdo",
+    "ta2Id": "3300",
+    "latin": "Lobus superior pulmonis sinistri"
+  },
+  "superior lobe of right lung": {
+    "es": "Lóbulo superior del pulmón derecho",
+    "ta2Id": "3284",
+    "latin": "Lobus superior pulmonis dextri"
+  },
+  "superior pancreatic nodes": {
+    "es": "Nodos pancreáticos superiores",
+    "ta2Id": "5293",
+    "latin": "Nodi pancreatici superiores"
+  },
+  "superior pancreaticoduodenal nodes": {
+    "es": "Nodos pancreatoduodenales superiores",
+    "ta2Id": "5297",
+    "latin": "Nodi pancreaticoduodenales superiores"
+  },
+  "superior tracheobronchial nodes": {
+    "es": "Nodos traqueobronquiales superiores",
+    "ta2Id": "5262",
+    "latin": "Nodi tracheobronchiales superiores"
+  },
+  "superolateral superficial inguinal nodes": {
+    "es": "Nodos inguinales superficiales superlaterales",
+    "ta2Id": "5351",
+    "latin": "Nodi inguinales superficiales superolaterales"
+  },
+  "superomedial superficial inguinal nodes": {
+    "es": "Nodos inguinales superficiales superomediales",
+    "ta2Id": "5350",
+    "latin": "Nodi inguinales superficiales superomediales"
+  },
+  "supraclavicular nodes": {
+    "es": "Nodos supraclaviculares",
+    "ta2Id": "5233",
+    "latin": "Nodi supraclaviculares"
+  },
+  "suprarenal gland": {
+    "es": "Glándula suprarrenal",
+    "ta2Id": "3874",
+    "latin": "Glandula suprarenalis"
+  },
+  "supratrochlear nodes": {
+    "es": "Nodos supratrocleares",
+    "ta2Id": "5246",
+    "latin": "Nodi supratrochleares"
+  },
+  "testis": {
+    "es": "Testículo",
+    "ta2Id": "3576",
+    "latin": "Testis"
+  },
+  "thyroid gland": {
+    "es": "Glándula tiroides",
+    "ta2Id": "3863",
+    "latin": "Glandula thyreoidea"
+  },
+  "thyroid nodes": {
+    "es": "Nodos tiroideos",
+    "ta2Id": "5220",
+    "latin": "Nodi thyreoidei"
+  },
+  "tongue": {
+    "es": "Lengua",
+    "ta2Id": "2820",
+    "latin": "Lingua"
+  },
+  "trachea": {
+    "es": "Tráquea",
+    "ta2Id": "3213",
+    "latin": "Trachea"
+  },
+  "transverse colon": {
+    "es": "Colon transverso",
+    "ta2Id": "2984",
+    "latin": "Colon transversum"
+  },
+  "urinary bladder": {
+    "es": "Vejiga urinaria",
+    "ta2Id": "3401",
+    "latin": "Vesica urinaria"
+  },
+  "uvula of palate": {
+    "es": "Úvula palatina",
+    "ta2Id": "2781",
+    "latin": "Uvula palatina"
+  },
+  "vermiform appendix": {
+    "es": "Apéndice vermiforme",
+    "ta2Id": "2976",
+    "latin": "Appendix vermiformis"
+  }
+}

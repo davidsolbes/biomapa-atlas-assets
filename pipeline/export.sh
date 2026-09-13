@@ -29,14 +29,18 @@ if [[ -z "$BLEND" ]]; then
   exit 1
 fi
 
-# Nombres taxonómicos en Z-Anatomy (sin el prefijo "8:" de la colección de escena).
+# Nombres taxonómicos en Z-Anatomy (sin el prefijo numérico de la colección de escena).
+EXTRA_ARGS=()
 case "$SYSTEM" in
-  skin) COLLECTION="Integumentary" ;;
+  skin) COLLECTION="Integument" ;;
   muscles) COLLECTION="Muscular system" ;;
   skeleton) COLLECTION="Skeletal system" ;;
   vessels) COLLECTION="Cardiovascular system" ;;
   nerves) COLLECTION="Nervous system" ;;
-  viscera) COLLECTION="Visceral systems" ;;
+  viscera)
+    COLLECTION="Visceral systems"
+    EXTRA_ARGS+=(--extra-collection "6: Lymphoid organs")
+    ;;
   *) echo "Sistema desconocido: $SYSTEM" >&2; exit 1 ;;
 esac
 
@@ -44,8 +48,12 @@ OUT="$ROOT/dist/raw/${SYSTEM}.glb"
 mkdir -p "$(dirname "$OUT")"
 
 echo "Exportando $SYSTEM desde $BLEND (colección '$COLLECTION', sin DECIMATE)"
-"$BLENDER_BIN" -b -P "$ROOT/pipeline/export_system.py" -- \
-  --blend "$BLEND" --collection "$COLLECTION" --out "$OUT"
+CMD=("$BLENDER_BIN" -b -P "$ROOT/pipeline/export_system.py" -- \
+  --blend "$BLEND" --collection "$COLLECTION" --out "$OUT")
+if ((${#EXTRA_ARGS[@]})); then
+  CMD+=("${EXTRA_ARGS[@]}")
+fi
+"${CMD[@]}"
 
 META="$ROOT/dist/raw/${SYSTEM}.meta.json"
 if [[ -f "$META" ]]; then
