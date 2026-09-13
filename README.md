@@ -36,7 +36,8 @@ npm run export:vessels
 npm run export:skin
 npm run pack -- skeleton      # gltfpack -cc -tc -kn (sin -si)
 npm run pack -- viscera 0.7   # segundo arg = -si solo si hace falta (presupuesto 15 MB)
-npm run manifest              # regenera manifest/atlas-manifest.json
+npm run validate              # geometría de dist/*.glb (nombres + bbox)
+npm run manifest              # valida + regenera manifest/atlas-manifest.json
 npm run labels                # TA2.csv → manifest/labels.es.json
 npm run build:all             # export sin decimar + pack (1 → 0.7 → 0.5 → 0.35) + manifiesto + etiquetas
 npm run serve                 # http://localhost:8787 (CORS) — sirve dist/
@@ -58,13 +59,21 @@ Fuente oficial vigente (2026-09-12):
 `NEXT_PUBLIC_ATLAS_ASSETS_BASE_URL/manifest/atlas-manifest.json`.
 
 Sistemas fijos: `skin`, `muscles`, `skeleton`, `vessels`, `nerves`, `viscera`.
-S1-FIX-02 exporta los seis en orden de precedencia
+S1-FIX-03 exporta los seis en orden de precedencia
 (`skeleton > muscles > viscera > vessels > nerves > skin`): un objeto
 pertenece a un solo sistema. `vessels` y `nerves` convierten CURVE → MESH
-(bevel mínimo 0.0015 m). `viscera` incluye `6: Lymphoid organs` (bazo).
-`skin` es apéndices (Integument); no hay malla continua de piel en este
-`.blend` (colección `Skin` = 0 MESH). S2 evaluará BodyParts3D para piel,
-útero y ovario.
+(bevel mínimo 0.0015 m) con el objeto en su transform de mundo (sin parent);
+excluyen perfiles de bisel/taper, helpers `-curve` / `.g` y nombres con `?`.
+`viscera` incluye `6: Lymphoid organs` (bazo) y omite el plano
+`Lymphoid organs.g`. `skin` es apéndices (Integument); no hay malla continua
+de piel en este `.blend` (colección `Skin` = 0 MESH). S2 evaluará BodyParts3D
+para piel, útero y ovario.
+
+**Validación geométrica.** `pipeline/validate-glb.mjs` (en `build:all` y
+`npm run manifest`) falla si un nodo con malla no tiene nombre, si la
+altura del sistema supera 1.95 m o la anchura 0.9 m, o si alguna malla
+excede 1.2 m en un eje. El manifiesto guarda `bbox: [w,h,d]` y
+`validated`. Nombres inválidos: `manifest/names.invalid.json`.
 
 Inventario / sistema:
 
@@ -131,7 +140,7 @@ no hubo simplify.
 `Visceral systems`. El bazo queda fuera (colección hermana
 `6: Lymphoid organs`); va en `notes` del sistema.
 
-## Cómo publicar a R2 (`atlas/v0.2.1/`)
+## Cómo publicar a R2 (`atlas/v0.2.2/`)
 
 David publica. No hay push ni credenciales en este repo.
 
@@ -141,7 +150,7 @@ npm run build:all
 
 # 2) subir dist/ al prefijo inmutable (nombres de variables; valores en el entorno)
 #    wrangler / aws s3 — ejemplo con AWS CLI compatible R2:
-# aws s3 sync dist/ s3://$R2_BUCKET/atlas/v0.2.1/ \
+# aws s3 sync dist/ s3://$R2_BUCKET/atlas/v0.2.2/ \
 #   --endpoint-url https://$R2_ACCOUNT_ID.r2.cloudflarestorage.com
 ```
 

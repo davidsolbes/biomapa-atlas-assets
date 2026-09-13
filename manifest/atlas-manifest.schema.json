@@ -76,9 +76,17 @@
           "excludedObjects": { "type": "integer", "minimum": 0 },
           "excludedByPrecedence": { "type": "integer", "minimum": 0 },
           "convertedCurves": { "type": "integer", "minimum": 0 },
+          "excludedProfiles": { "type": "integer", "minimum": 0 },
           "simplifyRatio": { "type": ["number", "null"] },
           "triangles": { "type": "integer", "minimum": 0 },
-          "notes": { "type": "string" }
+          "notes": { "type": "string" },
+          "bbox": {
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 3,
+            "items": { "type": "number" }
+          },
+          "validated": { "type": "boolean" }
         }
       }
     }

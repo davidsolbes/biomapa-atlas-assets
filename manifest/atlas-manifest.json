@@ -1,6 +1,6 @@
 {
-  "version": "0.2.1",
-  "generatedAt": "2026-09-13T03:17:20.665Z",
+  "version": "0.2.2",
+  "generatedAt": "2026-09-13T05:12:51.933Z",
   "baseLicense": "CC-BY-SA-4.0",
   "labelsFile": "manifest/labels.es.json",
   "attribution": {
@@ -15,10 +15,12 @@
       "skin: sin decimación Blender; exclusividad por precedencia; rótulos excluidos; gltfpack -cc -tc -kn (sin -si)",
       "muscles: sin decimación Blender; exclusividad por precedencia; rótulos excluidos; gltfpack -cc -tc -kn (sin -si)",
       "skeleton: sin decimación Blender; exclusividad por precedencia; rótulos excluidos; gltfpack -cc -tc -kn (sin -si)",
-      "vessels: sin decimación Blender; exclusividad por precedencia; rótulos excluidos; CURVE→MESH 654; gltfpack -cc -tc -kn (sin -si)",
-      "nerves: sin decimación Blender; exclusividad por precedencia; rótulos excluidos; CURVE→MESH 250; gltfpack -cc -tc -kn (sin -si)",
+      "vessels: sin decimación Blender; exclusividad por precedencia; rótulos excluidos; CURVE→MESH 651; gltfpack -cc -tc -kn (sin -si)",
+      "nerves: sin decimación Blender; exclusividad por precedencia; rótulos excluidos; CURVE→MESH 248; gltfpack -cc -tc -kn (sin -si)",
       "viscera: sin decimación Blender; exclusividad por precedencia; rótulos excluidos; gltfpack -cc -tc -kn (sin -si)",
-      "CURVE→MESH en vessels y nerves (duplicado + conversión; bevel mínimo 0.0015 m si la curva no tiene volumen). Nombres originales sin .001.",
+      "CURVE→MESH en vessels y nerves: convert(target=MESH) + parent_clear KEEP_TRANSFORM + transform_apply (location/rotation/scale). Bevel mínimo 0.0015 m si la curva no tiene volumen. Nombres originales sin .001.",
+      "Perfiles de bisel/taper (bevel_object, taper_object y curvas circle/bezier/profile/bevel/taper) excluidos. Nombres con caracteres de sustitución listados en manifest/names.invalid.json.",
+      "Validación geométrica de cada GLB (nodos con nombre, altura ≤ 1.95 m, anchura ≤ 0.9 m, malla ≤ 1.2 m por eje).",
       "Exclusividad por sistema (skeleton > muscles > viscera > vessels > nerves > skin).",
       "Etiquetas en español desde source/z-anatomy/TA2.csv (Terminologia Anatomica 2; misma licencia CC BY-SA 4.0 de Z-Anatomy)."
     ],
@@ -54,9 +56,16 @@
       "excludedObjects": 1,
       "excludedByPrecedence": 0,
       "convertedCurves": 0,
+      "excludedProfiles": 0,
       "simplifyRatio": 1,
       "triangles": 34386,
-      "notes": "sourceCollection taxonómica «Integument»: solo apéndices (pelos, uñas). No hay malla continua de piel en el .blend (búsqueda skin / body surface / integument = 0). S2 evaluará BodyParts3D para piel, útero y ovario. «9: Regions of human body» no se exporta como skin."
+      "notes": "sourceCollection taxonómica «Integument»: solo apéndices (pelos, uñas). No hay malla continua de piel en el .blend (búsqueda skin / body surface / integument = 0). S2 evaluará BodyParts3D para piel, útero y ovario. «9: Regions of human body» no se exporta como skin.",
+      "bbox": [
+        0.6801,
+        1.7283,
+        0.2758
+      ],
+      "validated": true
     },
     {
       "id": "muscles",
@@ -754,9 +763,16 @@
       "excludedObjects": 75,
       "excludedByPrecedence": 0,
       "convertedCurves": 0,
+      "excludedProfiles": 0,
       "simplifyRatio": 1,
       "triangles": 2314119,
-      "notes": "sourceCollection taxonómica «Muscular system». Precedencia skeleton > muscles. Solo MESH; se excluyen FONT y rótulos en MAYÚSCULAS."
+      "notes": "sourceCollection taxonómica «Muscular system». Precedencia skeleton > muscles. Solo MESH; se excluyen FONT y rótulos en MAYÚSCULAS.",
+      "bbox": [
+        0.6708,
+        1.7011,
+        0.2685
+      ],
+      "validated": true
     },
     {
       "id": "skeleton",
@@ -1102,21 +1118,25 @@
       "excludedObjects": 489,
       "excludedByPrecedence": 0,
       "convertedCurves": 0,
+      "excludedProfiles": 0,
       "simplifyRatio": 1,
       "triangles": 814835,
-      "notes": "sourceCollection taxonómica «Skeletal system». En el .blend no hay colecciones label/text/annotation; se excluyen FONT/CURVE y mallas en MAYÚSCULAS (p. ej. AXIAL SKELETON, BONES OF HAND)."
+      "notes": "sourceCollection taxonómica «Skeletal system». En el .blend no hay colecciones label/text/annotation; se excluyen FONT/CURVE y mallas en MAYÚSCULAS (p. ej. AXIAL SKELETON, BONES OF HAND).",
+      "bbox": [
+        0.6694,
+        1.6962,
+        0.2502
+      ],
+      "validated": true
     },
     {
       "id": "vessels",
       "label": "Vasos",
       "file": "vessels.glb",
-      "bytes": 7667408,
-      "sha256": "3183b27fa5695cbb710d2b6a13688fc5456415ce28bf546fd8ed77d21e5fbfac",
-      "meshCount": 676,
+      "bytes": 7870352,
+      "sha256": "0688538e496014904bbfb97952668a564541a1cea1f6b427fc01406f92497e05",
+      "meshCount": 673,
       "meshNames": [
-        "????????",
-        "?x.l",
-        "?x.r",
         "(Deep branch of transverse cervical artery).l",
         "(Deep branch of transverse cervical artery).r",
         "(Superficial branch of transverse cervical artery).l",
@@ -1794,19 +1814,26 @@
       "defaultVisible": false,
       "order": 4,
       "sourceCollection": "Cardiovascular system",
-      "excludedObjects": 675,
+      "excludedObjects": 24,
       "excludedByPrecedence": 0,
-      "convertedCurves": 654,
+      "convertedCurves": 651,
+      "excludedProfiles": 0,
       "simplifyRatio": 1,
-      "triangles": 3843768,
-      "notes": "sourceCollection taxonómica «Cardiovascular system». Arterias y venas CURVE se convierten a MESH (bevel mínimo 0.0015 m si no tienen volumen). Precedencia skeleton > muscles > viscera > vessels."
+      "triangles": 3898488,
+      "notes": "sourceCollection taxonómica «Cardiovascular system». Arterias y venas CURVE se convierten a MESH (bevel mínimo 0.0015 m si no tienen volumen) con transform de mundo aplicada. Se excluyen perfiles de bisel/taper y nombres con caracteres de sustitución. Precedencia skeleton > muscles > viscera > vessels.",
+      "bbox": [
+        0.6639,
+        1.6981,
+        0.2489
+      ],
+      "validated": true
     },
     {
       "id": "nerves",
       "label": "Nervios",
       "file": "nerves.glb",
-      "bytes": 2911984,
-      "sha256": "9cdc9e813e76f57f0941ba1f524572240d243b3188c5648cc84b7add31af8922",
+      "bytes": 2907028,
+      "sha256": "f0e0dc80a3e4fa344c04201875539ab116b988d1d24b9de10adbf1d8ba9979d5",
       "meshCount": 516,
       "meshNames": [
         " Posterior transverse collateral sulcus.l",
@@ -1873,7 +1900,6 @@
         "Chorda tympani.r",
         "Choroid plexus.l",
         "Choroid plexus.r",
-        "Ciliary body-curve.l",
         "Cingulate gyrus (Posteroventral part*).l",
         "Cingulate gyrus (Posteroventral part*).r",
         "Cingulate gyrus and sulcus (Middle anterior part).l",
@@ -2057,6 +2083,7 @@
         "Median nerve.l",
         "Median nerve.r",
         "Medulla oblongata.l",
+        "Medulla-path",
         "Meningeal branch of maxillary nerve.l",
         "Meningeal branch of maxillary nerve.r",
         "Mental nerve.l",
@@ -2329,20 +2356,27 @@
       "defaultVisible": false,
       "order": 5,
       "sourceCollection": "Nervous system",
-      "excludedObjects": 655,
+      "excludedObjects": 406,
       "excludedByPrecedence": 289,
-      "convertedCurves": 250,
+      "convertedCurves": 248,
+      "excludedProfiles": 2,
       "simplifyRatio": 1,
-      "triangles": 1987796,
-      "notes": "sourceCollection taxonómica «Nervous system» (no la colección plana «7: Nervous system & Sense organs»). Encéfalo/médula MESH + nervios periféricos CURVE→MESH. Músculos enlazados por inervación se omiten por precedencia (muscles > nerves)."
+      "triangles": 1986644,
+      "notes": "sourceCollection taxonómica «Nervous system» (no la colección plana «7: Nervous system & Sense organs»). Encéfalo/médula MESH + nervios periféricos CURVE→MESH con transform de mundo aplicada. Perfiles de bisel/taper excluidos. Músculos enlazados por inervación se omiten por precedencia (muscles > nerves).",
+      "bbox": [
+        0.6693,
+        1.6933,
+        0.244
+      ],
+      "validated": true
     },
     {
       "id": "viscera",
       "label": "Vísceras",
       "file": "viscera.glb",
-      "bytes": 1691036,
-      "sha256": "10a98c6fe115f78512e61ba64865feab87f37f9028e184640a58afc6335c79a2",
-      "meshCount": 229,
+      "bytes": 1688764,
+      "sha256": "36d7468fea1a53815405e1ba9f9d59b4f94c648cfc760aad59054239ebe75bad",
+      "meshCount": 228,
       "meshNames": [
         "(Accessory parotid gland).l",
         "(Accessory parotid gland).r",
@@ -2456,7 +2490,6 @@
         "Left posterior lateral segment of liver (II)",
         "Lesser omentum",
         "Liver",
-        "Lymphoid organs.g",
         "Mandibular node.l",
         "Mandibular node.r",
         "Mastoid nodes.l",
@@ -2577,12 +2610,19 @@
       "defaultVisible": true,
       "order": 6,
       "sourceCollection": "Visceral systems + 6: Lymphoid organs",
-      "excludedObjects": 132,
+      "excludedObjects": 133,
       "excludedByPrecedence": 31,
       "convertedCurves": 0,
+      "excludedProfiles": 1,
       "simplifyRatio": 1,
-      "triangles": 599948,
-      "notes": "sourceCollection taxonómica «Visceral systems» + «6: Lymphoid organs» (bazo y órganos linfoides). Precedencia skeleton > muscles > viscera: dientes, cartílagos y músculos compartidos quedan en el sistema anterior. Aparato reproductor femenino: colecciones Uterus'/Ovary'/Uterine tube'/Vagina'/Vulva' existen en el .blend pero no tienen objetos MESH exportables."
+      "triangles": 599277,
+      "notes": "sourceCollection taxonómica «Visceral systems» + «6: Lymphoid organs» (bazo y órganos linfoides). Precedencia skeleton > muscles > viscera: dientes, cartílagos y músculos compartidos quedan en el sistema anterior. Aparato reproductor femenino: colecciones Uterus'/Ovary'/Uterine tube'/Vagina'/Vulva' existen en el .blend pero no tienen objetos MESH exportables.",
+      "bbox": [
+        0.4673,
+        1.3029,
+        0.3207
+      ],
+      "validated": true
     }
   ]
 }

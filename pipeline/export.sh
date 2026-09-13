@@ -85,6 +85,13 @@ system = sys.argv[3]
 (dist / f".{system}.convertedCurves").write_text(
     f"{int(meta.get('convertedCurves', 0))}\n"
 )
+(dist / f".{system}.excludedProfiles").write_text(
+    f"{int(meta.get('excludedProfiles', 0))}\n"
+)
+invalid = meta.get("invalidNames") or []
+(dist / "raw" / f"{system}.invalid-names.json").write_text(
+    json.dumps(invalid, ensure_ascii=False, indent=2) + "\n"
+)
 if meta.get("skinSurfaceFound") is not None:
     (dist / f".{system}.skinSurfaceFound").write_text(
         f"{int(meta.get('skinSurfaceFound', 0))}\n"
@@ -93,7 +100,9 @@ print(
     f"sourceCollection={meta.get('sourceCollection')} "
     f"excludedObjects={meta.get('excludedObjects')} "
     f"excludedByPrecedence={meta.get('excludedByPrecedence')} "
-    f"convertedCurves={meta.get('convertedCurves')}"
+    f"convertedCurves={meta.get('convertedCurves')} "
+    f"excludedProfiles={meta.get('excludedProfiles')} "
+    f"invalidNames={len(meta.get('invalidNames') or [])}"
 )
 PY
 fi

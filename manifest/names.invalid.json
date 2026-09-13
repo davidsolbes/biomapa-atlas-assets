@@ -1,0 +1,24 @@
+{
+  "generatedAt": "2026-09-13T05:12:51.903Z",
+  "count": 3,
+  "names": [
+    {
+      "name": "????????",
+      "systemId": "vessels",
+      "reason": "substitution",
+      "when": "convert"
+    },
+    {
+      "name": "?x.r",
+      "systemId": "vessels",
+      "reason": "substitution",
+      "when": "convert"
+    },
+    {
+      "name": "?x.l",
+      "systemId": "vessels",
+      "reason": "substitution",
+      "when": "convert"
+    }
+  ]
+}

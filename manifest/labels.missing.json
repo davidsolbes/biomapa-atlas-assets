@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T03:17:20.741Z",
+  "generatedAt": "2026-09-13T05:12:52.108Z",
   "missing": [
     {
       "systemId": "muscles",
@@ -50,21 +50,6 @@
       "systemId": "muscles",
       "meshName": "Trochanteric bursa of gluteus medius muscle.r",
       "key": "trochanteric bursa of gluteus medius muscle"
-    },
-    {
-      "systemId": "vessels",
-      "meshName": "????????",
-      "key": "????????"
-    },
-    {
-      "systemId": "vessels",
-      "meshName": "?x.l",
-      "key": "?x"
-    },
-    {
-      "systemId": "vessels",
-      "meshName": "?x.r",
-      "key": "?x"
     },
     {
       "systemId": "vessels",
@@ -208,11 +193,6 @@
     },
     {
       "systemId": "nerves",
-      "meshName": "Ciliary body-curve.l",
-      "key": "ciliary body-curve"
-    },
-    {
-      "systemId": "nerves",
       "meshName": "Cingulate gyrus (Posteroventral part*).l",
       "key": "cingulate gyrus (posteroventral part*)"
     },
@@ -333,6 +313,11 @@
     },
     {
       "systemId": "nerves",
+      "meshName": "Medulla-path",
+      "key": "medulla-path"
+    },
+    {
+      "systemId": "nerves",
       "meshName": "Occipitotemporal sulcus (Lateral part*).l",
       "key": "occipitotemporal sulcus (lateral part*)"
     },
@@ -435,11 +420,6 @@
       "systemId": "nerves",
       "meshName": "Superior temporal gyrus (Lateral part).r",
       "key": "superior temporal gyrus (lateral part)"
-    },
-    {
-      "systemId": "viscera",
-      "meshName": "Lymphoid organs.g",
-      "key": "lymphoid organs.g"
     }
   ]
 }

@@ -8,9 +8,10 @@ Uso:
       --out /tmp/unused.glb --inventory [sistema]
 
 Solo MESH (más CURVE convertidas a MESH en vessels/nerves). Excluye rótulos
-(nombre en MAYÚSCULAS ≥ 3 letras) y objetos en colecciones label/text/annotation.
-`--exclude-names` omite nombres ya exportados por sistemas de mayor precedencia.
-Conserva nombres (las curvas convertidas no llevan .001).
+(nombre en MAYÚSCULAS ≥ 3 letras), objetos en colecciones label/text/annotation,
+perfiles de bisel/taper y nombres con caracteres de sustitución. Tras convertir
+una curva se aplica la transformación de mundo. `--exclude-names` omite nombres
+ya exportados por sistemas de mayor precedencia. Conserva nombres (sin .001).
 """
 
 from __future__ import annotations
@@ -25,6 +26,9 @@ LABEL_HINTS = ("label", "text", "annotation")
 CONVERTIBLE_TYPES = frozenset({"CURVE"})
 INVENTORY_TYPES = ("MESH", "CURVE", "FONT", "EMPTY")
 MIN_BEVEL_DEPTH = 0.0015
+PROFILE_NAME_HINTS = ("bezier", "profile", "bevel", "taper")
+# «circle» pero no «circulatory» / «circulation».
+PROFILE_CIRCLE_HINT = "circle"
 
 # Un objeto pertenece a un solo sistema. El pipeline encadena este orden.
 SYSTEM_PRECEDENCE = (
@@ -218,9 +222,68 @@ def _load_exclude_names(path: str | None) -> set[str]:
     return {line.strip() for line in text.splitlines() if line.strip()}
 
 
-def _should_exclude(obj, exclude_names: set[str]) -> str | None:
+def _invalid_name_reason(name: str) -> str | None:
+    if not name or not name.strip():
+        return "empty"
+    if "?" in name or "\ufffd" in name:
+        return "substitution"
+    if any(ord(ch) < 32 for ch in name):
+        return "control"
+    return None
+
+
+def _looks_like_profile_name(name: str) -> bool:
+    n = name.lower()
+    if any(hint in n for hint in PROFILE_NAME_HINTS):
+        return True
+    if PROFILE_CIRCLE_HINT in n and "circul" not in n:
+        return True
+    stripped = n
+    for suffix in (".l", ".r", ".s", ".t"):
+        if stripped.endswith(suffix):
+            stripped = stripped[: -len(suffix)]
+            break
+    if stripped.endswith(("-curve", "_curve", ".curve")):
+        return True
+    return False
+
+
+def _collect_profile_names() -> set[str]:
+    import bpy
+
+    names: set[str] = set()
+    for obj in bpy.data.objects:
+        if obj.type == "CURVE" and _looks_like_profile_name(obj.name):
+            names.add(obj.name)
+        data = getattr(obj, "data", None)
+        if data is None:
+            continue
+        bevel = getattr(data, "bevel_object", None)
+        taper = getattr(data, "taper_object", None)
+        if bevel is not None:
+            names.add(bevel.name)
+        if taper is not None:
+            names.add(taper.name)
+    return names
+
+
+def _is_group_helper(name: str) -> bool:
+    """Z-Anatomy usa el sufijo .g para grupos/gizmos (planos sin volumen)."""
+    return name.lower().endswith(".g")
+
+
+def _should_exclude(
+    obj, exclude_names: set[str], profile_names: set[str]
+) -> str | None:
     if obj.name in exclude_names:
         return "precedence"
+    if obj.name in profile_names:
+        return "profile"
+    invalid = _invalid_name_reason(obj.name)
+    if invalid:
+        return f"invalid_name:{invalid}"
+    if _is_group_helper(obj.name):
+        return "group_helper"
     if obj.type != "MESH":
         return f"type:{obj.type}"
     if _is_all_caps_label(obj.name):
@@ -381,42 +444,174 @@ def _ensure_curve_volume(obj) -> None:
         obj.data.bevel_depth = MIN_BEVEL_DEPTH
 
 
-def _convert_curve_to_mesh(obj):
-    """Duplica la curva a MESH conservando el nombre (sin .001)."""
+def _ensure_in_view_layer(obj) -> bool:
     import bpy
 
-    desired = obj.name
-    obj.name = f"{desired}.__curve_src__"
+    view = bpy.context.view_layer
+    if obj.name in view.objects:
+        return True
+    scene_col = bpy.context.scene.collection
+    if obj.name not in scene_col.objects:
+        try:
+            scene_col.objects.link(obj)
+        except RuntimeError:
+            return False
+    return obj.name in view.objects
+
+
+def _activate_object(obj) -> bool:
+    import bpy
+
+    if not _ensure_in_view_layer(obj):
+        return False
+    try:
+        obj.hide_set(False)
+    except RuntimeError:
+        pass
+    obj.hide_viewport = False
+    obj.hide_render = False
+    for other in bpy.context.view_layer.objects:
+        other.select_set(False)
+    try:
+        obj.select_set(True)
+    except RuntimeError:
+        return False
+    bpy.context.view_layer.objects.active = obj
+    if getattr(obj, "mode", "OBJECT") != "OBJECT":
+        try:
+            bpy.ops.object.mode_set(mode="OBJECT")
+        except RuntimeError:
+            return False
+    return True
+
+
+def _ops_override(obj):
+    import bpy
+
+    return bpy.context.temp_override(
+        active_object=obj,
+        object=obj,
+        selected_objects=[obj],
+        selected_editable_objects=[obj],
+        view_layer=bpy.context.view_layer,
+    )
+
+
+def _ensure_single_user_data(obj) -> None:
+    data = getattr(obj, "data", None)
+    if data is not None and getattr(data, "users", 1) > 1:
+        obj.data = data.copy()
+
+
+def _apply_world_transform(obj) -> None:
+    """Deja el objeto en su matrix_world sin parent.
+
+    No se bakea la malla aquí: en Blender 5.2, convert()/to_mesh() ya deja
+    vértices en espacio local y ``export_apply=True`` aplica el mundo una
+    sola vez. Bakear + export_apply duplicaba escala (~3.3 m de alto).
+    ``transform_apply`` con escala negativa (.l/.r) además volteaba
+    geometría por el origen.
+    """
+    from mathutils import Matrix
+
+    if getattr(obj, "library", None) is not None:
+        try:
+            obj.make_local()
+        except RuntimeError:
+            pass
+    _ensure_single_user_data(obj)
+    mw = obj.matrix_world.copy()
+    if obj.parent is not None:
+        obj.parent = None
+        obj.matrix_parent_inverse = Matrix.Identity(4)
+        obj.matrix_world = mw
+
+
+def _convert_via_to_mesh(obj, desired: str):
+    """Respaldo si convert() no tiene contexto editable."""
+    import bpy
+
     depsgraph = bpy.context.evaluated_depsgraph_get()
     eval_obj = obj.evaluated_get(depsgraph)
     temp_mesh = eval_obj.to_mesh()
     if temp_mesh is None or len(temp_mesh.vertices) == 0:
         if temp_mesh is not None:
             eval_obj.to_mesh_clear()
-        obj.name = desired
         return None
     mesh = temp_mesh.copy()
     mesh.name = desired
     eval_obj.to_mesh_clear()
+    src_name = obj.name
+    obj.name = f"{desired}.__curve_src__"
     new_obj = bpy.data.objects.new(desired, mesh)
     new_obj.matrix_world = obj.matrix_world.copy()
     for col in list(obj.users_collection):
         col.objects.link(new_obj)
     if new_obj.name != desired:
         new_obj.name = desired
+    # El original queda como CURVE (no se exporta).
+    if src_name == desired:
+        pass
     return new_obj
 
 
-def _convert_collection_curves(collection, exclude_names: set[str]) -> tuple[int, int]:
+def _convert_curve_to_mesh(obj):
+    """CURVE → MESH, luego apply de la transform de mundo. Conserva el nombre."""
+    import bpy
+
+    desired = obj.name
+    if not _activate_object(obj):
+        new_obj = _convert_via_to_mesh(obj, desired)
+        if new_obj is None:
+            return None
+        _apply_world_transform(new_obj)
+        return new_obj
+    if getattr(obj, "library", None) is not None:
+        try:
+            obj.make_local()
+        except RuntimeError:
+            pass
+    with _ops_override(obj):
+        bpy.ops.object.convert(target="MESH")
+    mesh_obj = bpy.context.view_layer.objects.active
+    if mesh_obj is None or mesh_obj.type != "MESH":
+        new_obj = _convert_via_to_mesh(obj, desired)
+        if new_obj is None:
+            return None
+        _apply_world_transform(new_obj)
+        return new_obj
+    if mesh_obj.name != desired:
+        mesh_obj.name = desired
+    verts = getattr(mesh_obj.data, "vertices", None)
+    if verts is None or len(verts) == 0:
+        return None
+    _apply_world_transform(mesh_obj)
+    return mesh_obj
+
+
+def _convert_collection_curves(
+    collection, exclude_names: set[str], profile_names: set[str]
+) -> tuple[int, int, list[dict]]:
     import bpy
 
     candidates = []
+    skipped_invalid: list[dict] = []
     for obj in list(_iter_collection_objects(collection)):
         if obj.type not in CONVERTIBLE_TYPES:
             continue
-        if obj.name in exclude_names:
+        if obj.name in exclude_names or obj.name in profile_names:
             continue
-        if _is_all_caps_label(obj.name) or _object_in_label_collection(obj):
+        invalid = _invalid_name_reason(obj.name)
+        if invalid:
+            skipped_invalid.append(
+                {"name": obj.name, "reason": invalid, "when": "convert"}
+            )
+            continue
+        if (
+            _is_all_caps_label(obj.name)
+            or _object_in_label_collection(obj)
+            or _is_group_helper(obj.name)
+        ):
             continue
         _ensure_curve_volume(obj)
         candidates.append(obj)
@@ -436,7 +631,7 @@ def _convert_collection_curves(collection, exclude_names: set[str]) -> tuple[int
         converted += 1
         if converted % 50 == 0:
             print(f"  CURVE→MESH progreso {converted}/{len(candidates)}")
-    return converted, failed
+    return converted, failed, skipped_invalid
 
 
 def _looks_like_body_surface_name(name: str) -> bool:
@@ -493,17 +688,29 @@ def _select_object(obj) -> bool:
 
 
 def _select_collection_meshes(
-    collection, exclude_names: set[str]
-) -> tuple[int, int, int, list[str]]:
+    collection, exclude_names: set[str], profile_names: set[str]
+) -> tuple[int, int, int, int, list[str], list[dict]]:
     exported = 0
     excluded = 0
     excluded_prec = 0
+    excluded_profiles = 0
     names: list[str] = []
+    invalid: list[dict] = []
     for obj in _iter_collection_objects(collection):
-        reason = _should_exclude(obj, exclude_names)
+        reason = _should_exclude(obj, exclude_names, profile_names)
         if reason is not None:
             if reason == "precedence":
                 excluded_prec += 1
+            elif reason == "profile":
+                excluded_profiles += 1
+            elif reason.startswith("invalid_name:"):
+                invalid.append(
+                    {
+                        "name": obj.name,
+                        "reason": reason.split(":", 1)[1],
+                        "when": "export",
+                    }
+                )
             excluded += 1
             continue
         if not _select_object(obj):
@@ -511,7 +718,7 @@ def _select_collection_meshes(
             continue
         exported += 1
         names.append(obj.name)
-    return exported, excluded, excluded_prec, names
+    return exported, excluded, excluded_prec, excluded_profiles, names, invalid
 
 
 def _write_meta(out_path: str, payload: dict) -> None:
@@ -522,7 +729,10 @@ def _write_meta(out_path: str, payload: dict) -> None:
         "".join(f"{n}\n" for n in payload.get("exportedNames", [])),
         encoding="utf-8",
     )
-    print(f"META {json.dumps({k: v for k, v in payload.items() if k != 'exportedNames'}, ensure_ascii=False)}")
+    skip = {"exportedNames", "invalidNames"}
+    print(
+        f"META {json.dumps({k: v for k, v in payload.items() if k not in skip}, ensure_ascii=False)}"
+    )
 
 
 def _export(args: argparse.Namespace) -> None:
@@ -554,26 +764,37 @@ def _export(args: argparse.Namespace) -> None:
         extras.append(extra)
 
     exclude_names = _load_exclude_names(args.exclude_names)
+    profile_names = _collect_profile_names()
+    print(f"Perfiles de bisel/taper identificados: {len(profile_names)}")
     converted = 0
     convert_failed = 0
+    invalid_names: list[dict] = []
     if args.convert_curves:
         for col in (collection, *extras):
-            conv, fail = _convert_collection_curves(col, exclude_names)
+            conv, fail, skipped = _convert_collection_curves(
+                col, exclude_names, profile_names
+            )
             converted += conv
             convert_failed += fail
+            invalid_names.extend(skipped)
         print(f"CURVE→MESH convertidas={converted} fallidas={convert_failed}")
 
     bpy.ops.object.select_all(action="DESELECT")
     exported = 0
     excluded = 0
     excluded_prec = 0
+    excluded_profiles = 0
     exported_names: list[str] = []
     for col in (collection, *extras):
-        exp, exc, prec, col_names = _select_collection_meshes(col, exclude_names)
+        exp, exc, prec, prof, col_names, invalid = _select_collection_meshes(
+            col, exclude_names, profile_names
+        )
         exported += exp
         excluded += exc
         excluded_prec += prec
+        excluded_profiles += prof
         exported_names.extend(col_names)
+        invalid_names.extend(invalid)
 
     skin_surface_found = 0
     if args.search_skin_surface:
@@ -581,6 +802,17 @@ def _export(args: argparse.Namespace) -> None:
         for obj in _iter_skin_surface_objects(already):
             if obj.name in exclude_names:
                 excluded_prec += 1
+                excluded += 1
+                continue
+            if obj.name in profile_names:
+                excluded_profiles += 1
+                excluded += 1
+                continue
+            invalid = _invalid_name_reason(obj.name)
+            if invalid:
+                invalid_names.append(
+                    {"name": obj.name, "reason": invalid, "when": "export"}
+                )
                 excluded += 1
                 continue
             if not _select_object(obj):
@@ -613,7 +845,8 @@ def _export(args: argparse.Namespace) -> None:
     )
     print(
         f"Exportado {exported} mallas (excluidos {excluded}, "
-        f"precedencia {excluded_prec}, curvas {converted}) → {args.out}"
+        f"precedencia {excluded_prec}, perfiles {excluded_profiles}, "
+        f"curvas {converted}) → {args.out}"
     )
     _write_meta(
         args.out,
@@ -624,6 +857,8 @@ def _export(args: argparse.Namespace) -> None:
             "excludedByPrecedence": excluded_prec,
             "convertedCurves": converted,
             "convertFailed": convert_failed,
+            "excludedProfiles": excluded_profiles,
+            "invalidNames": invalid_names,
             "skinSurfaceFound": skin_surface_found,
             "femaleReproductiveNote": female_note,
             "exportedNames": sorted(set(exported_names)),

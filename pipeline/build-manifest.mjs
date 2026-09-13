@@ -36,9 +36,9 @@ const SYSTEM_NOTES = {
   muscles:
     'sourceCollection taxonómica «Muscular system». Precedencia skeleton > muscles. Solo MESH; se excluyen FONT y rótulos en MAYÚSCULAS.',
   vessels:
-    'sourceCollection taxonómica «Cardiovascular system». Arterias y venas CURVE se convierten a MESH (bevel mínimo 0.0015 m si no tienen volumen). Precedencia skeleton > muscles > viscera > vessels.',
+    'sourceCollection taxonómica «Cardiovascular system». Arterias y venas CURVE se convierten a MESH (bevel mínimo 0.0015 m si no tienen volumen) con transform de mundo aplicada. Se excluyen perfiles de bisel/taper y nombres con caracteres de sustitución. Precedencia skeleton > muscles > viscera > vessels.',
   nerves:
-    'sourceCollection taxonómica «Nervous system» (no la colección plana «7: Nervous system & Sense organs»). Encéfalo/médula MESH + nervios periféricos CURVE→MESH. Músculos enlazados por inervación se omiten por precedencia (muscles > nerves).',
+    'sourceCollection taxonómica «Nervous system» (no la colección plana «7: Nervous system & Sense organs»). Encéfalo/médula MESH + nervios periféricos CURVE→MESH con transform de mundo aplicada. Perfiles de bisel/taper excluidos. Músculos enlazados por inervación se omiten por precedencia (muscles > nerves).',
 };
 
 function readSource() {
@@ -120,7 +120,53 @@ function readExportMeta(systemId) {
   }
 }
 
+function readValidation() {
+  const p = join(DIST, '.validation.json');
+  if (!existsSync(p)) return {};
+  try {
+    return JSON.parse(readFileSync(p, 'utf8'));
+  } catch {
+    return {};
+  }
+}
+
+function collectInvalidNames() {
+  const all = [];
+  for (const meta of SYSTEMS) {
+    const p = join(DIST, 'raw', `${meta.id}.invalid-names.json`);
+    if (!existsSync(p)) continue;
+    try {
+      const rows = JSON.parse(readFileSync(p, 'utf8'));
+      const seen = new Set();
+      for (const row of Array.isArray(rows) ? rows : []) {
+        const name = row.name ?? '';
+        const key = `${name}\t${row.reason ?? ''}`;
+        if (seen.has(key)) continue;
+        seen.add(key);
+        all.push({
+          name,
+          systemId: meta.id,
+          reason: row.reason ?? 'unknown',
+          when: row.when ?? null,
+        });
+      }
+    } catch {
+      // sidecar ilegible: se omite
+    }
+  }
+  const out = {
+    generatedAt: new Date().toISOString(),
+    count: all.length,
+    names: all,
+  };
+  const dest = join(ROOT, 'manifest', 'names.invalid.json');
+  writeFileSync(dest, `${JSON.stringify(out, null, 2)}\n`);
+  return out;
+}
+
 const source = readSource();
+const validation = readValidation();
+const invalidNames = collectInvalidNames();
 const modifications = [];
 const systems = SYSTEMS.map((meta) => {
   const filePath = join(DIST, `${meta.id}.glb`);
@@ -154,6 +200,13 @@ const systems = SYSTEMS.map((meta) => {
     readSidecarNumber(meta.id, 'convertedCurves') ??
     exportMeta?.convertedCurves ??
     0;
+  const excludedProfiles =
+    readSidecarNumber(meta.id, 'excludedProfiles') ??
+    exportMeta?.excludedProfiles ??
+    0;
+  const validationRow = validation[meta.id];
+  const bbox = validationRow?.bbox ?? undefined;
+  const validated = validationRow?.validated === true;
   const skinSurfaceFound =
     readSidecarNumber(meta.id, 'skinSurfaceFound') ??
     exportMeta?.skinSurfaceFound ??
@@ -193,14 +246,23 @@ const systems = SYSTEMS.map((meta) => {
       excludedFromFile ?? exportMeta?.excludedObjects ?? undefined,
     excludedByPrecedence,
     convertedCurves,
+    excludedProfiles,
     simplifyRatio: simplifyRatio ?? 1,
     triangles,
     notes,
+    ...(bbox ? { bbox } : {}),
+    validated,
   };
 });
 
 modifications.push(
-  'CURVE→MESH en vessels y nerves (duplicado + conversión; bevel mínimo 0.0015 m si la curva no tiene volumen). Nombres originales sin .001.',
+  'CURVE→MESH en vessels y nerves: convert(target=MESH) + parent_clear KEEP_TRANSFORM + transform_apply (location/rotation/scale). Bevel mínimo 0.0015 m si la curva no tiene volumen. Nombres originales sin .001.',
+);
+modifications.push(
+  'Perfiles de bisel/taper (bevel_object, taper_object y curvas circle/bezier/profile/bevel/taper) excluidos. Nombres con caracteres de sustitución listados en manifest/names.invalid.json.',
+);
+modifications.push(
+  'Validación geométrica de cada GLB (nodos con nombre, altura ≤ 1.95 m, anchura ≤ 0.9 m, malla ≤ 1.2 m por eje).',
 );
 modifications.push(
   'Exclusividad por sistema (skeleton > muscles > viscera > vessels > nerves > skin).',
@@ -215,7 +277,7 @@ if (modifications.length === 1) {
 }
 
 const manifest = {
-  version: '0.2.1',
+  version: '0.2.2',
   generatedAt: new Date().toISOString(),
   baseLicense: 'CC-BY-SA-4.0',
   labelsFile: 'manifest/labels.es.json',
@@ -244,10 +306,11 @@ if (existsSync(join(ROOT, 'ATTRIBUTIONS.md'))) {
   copyFileSync(join(ROOT, 'ATTRIBUTIONS.md'), join(DIST, 'ATTRIBUTIONS.md'));
 }
 console.log(`Manifiesto escrito: ${outGit}`);
+console.log(`Nombres inválidos: ${invalidNames.count} → manifest/names.invalid.json`);
 for (const s of systems) {
   const extra =
     s.file == null
       ? ''
-      : ` si=${s.simplifyRatio ?? 1} tris=${s.triangles ?? '?'} excl=${s.excludedObjects ?? '?'} prec=${s.excludedByPrecedence ?? 0} curves=${s.convertedCurves ?? 0}`;
+      : ` si=${s.simplifyRatio ?? 1} tris=${s.triangles ?? '?'} excl=${s.excludedObjects ?? '?'} prec=${s.excludedByPrecedence ?? 0} curves=${s.convertedCurves ?? 0} profiles=${s.excludedProfiles ?? 0} bbox=${s.bbox ? `[${s.bbox.join(',')}]` : 'n/a'} validated=${s.validated === true}`;
   console.log(`  ${s.id}: ${s.file ?? 'null'} ${s.bytes} bytes${extra}`);
 }

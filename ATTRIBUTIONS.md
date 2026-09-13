@@ -59,14 +59,24 @@ Ver `LICENSE-ASSETS`.
 
 ## Modificaciones
 
-Por sistema (S1-FIX-02 / manifiesto `0.2.1`). Se actualizan al regenerar el
+Por sistema (S1-FIX-03 / manifiesto `0.2.2`). Se actualizan al regenerar el
 manifiesto:
 
 - **Exclusividad:** un objeto pertenece a un solo sistema. Orden
   `skeleton > muscles > viscera > vessels > nerves > skin`.
-- **CURVE → MESH** (vasos y nervios): duplicado + conversión a malla
-  respetando bevel/profundidad; si la curva no tiene volumen se asigna
-  `bevel_depth` 0.0015 m. Se conserva el nombre original (sin `.001`).
+- **CURVE → MESH** (vasos y nervios): `convert(target='MESH')` y después
+  `parent_clear(KEEP_TRANSFORM)` + `transform_apply` (location/rotation/scale)
+  para dejar la geometría en coordenadas de mundo. Si la curva no tiene
+  volumen se asigna `bevel_depth` 0.0015 m. Se conserva el nombre original
+  (sin `.001`).
+- **Perfiles de bisel:** no se exportan objetos referenciados como
+  `bevel_object` / `taper_object` ni curvas cuyo nombre contiene `circle`,
+  `bezier`, `profile`, `bevel` o `taper` (excepto «circulatory»).
+- **Nombres inválidos:** nombres vacíos o con `?` / carácter de sustitución
+  se excluyen y se listan en `manifest/names.invalid.json`.
+- **Validación geométrica:** cada GLB debe tener nodos con nombre, altura
+  ≤ 1.95 m, anchura ≤ 0.9 m y ninguna malla > 1.2 m en un eje. El manifiesto
+  registra `bbox` y `validated`.
 - **skeleton (Huesos):** colección taxonómica `Skeletal system`. Solo `MESH`.
   Rótulos excluidos. Sin decimación Blender. `gltfpack -cc -tc -kn`; `-si` solo
   si el GLB supera 15 MB (0.7 → 0.5 → 0.35).
@@ -86,7 +96,8 @@ manifiesto:
 El `-si` final, triángulos, colección de origen y exclusiones quedan en
 `manifest/atlas-manifest.json` (`simplifyRatio`, `triangles`,
 `sourceCollection`, `excludedObjects`, `excludedByPrecedence`,
-`convertedCurves`, `bytes`, `modifications`).
+`convertedCurves`, `excludedProfiles`, `bbox`, `validated`, `bytes`,
+`modifications`).
 
 ## Cómo citar en Biomapa
 

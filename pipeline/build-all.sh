@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
-# S1-FIX-02: exporta los 6 sistemas en orden de precedencia
+# S1-FIX-03: exporta los 6 sistemas en orden de precedencia
 # (skeleton > muscles > viscera > vessels > nerves > skin),
-# omitiendo nombres ya exportados. CURVE→MESH en vessels/nerves.
-# Empaqueta con gltfpack -cc -tc -kn y solo añade -si si el GLB supera 15 MB
-# (0.7 → 0.5 → 0.35).
+# omitiendo nombres ya exportados. CURVE→MESH + transform apply en
+# vessels/nerves; excluye perfiles de bisel. Empaqueta con gltfpack
+# -cc -tc -kn y solo añade -si si el GLB supera 15 MB (0.7 → 0.5 → 0.35).
+# Valida geometría antes del manifiesto.
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
@@ -58,5 +59,6 @@ pack_under_budget() {
 for system in "${SYSTEMS[@]}"; do
   pack_under_budget "$system"
 done
+node "$ROOT/pipeline/validate-glb.mjs"
 node "$ROOT/pipeline/build-manifest.mjs"
 node "$ROOT/pipeline/build-labels.mjs"
