@@ -136,9 +136,23 @@ vasos/nervios) y excluye esas mayúsculas. El manifiesto registra
 del visor pierde el término). `simplifyRatio` en el manifiesto es `1` si
 no hubo simplify.
 
+## Publicar v0.2.3 (solo metadatos)
+
+Los seis GLB **no cambian** respecto a v0.2.2 (`bytes` / `sha256` iguales). David
+publica en R2:
+
+1. Subir `manifest/atlas-manifest.json` y `manifest/labels.es.json` a
+   `atlas/v0.2.3/manifest/`.
+2. **Copiar** los seis `.glb` de `atlas/v0.2.2/` a `atlas/v0.2.3/` (o
+   subirlos de nuevo). La app carga `<base>/<file>` relativo a
+   `NEXT_PUBLIC_ATLAS_ASSETS_BASE_URL`.
+3. En Biomapa: `atlas:seed-nodes --rename-version 0.2.2 0.2.3` (mismos
+   `node_key`; sin re-embed).
+
 **Ganglios.** Aparecen en `viscera` porque `Lymphoid system` es hija de
-`Visceral systems`. El bazo queda fuera (colección hermana
-`6: Lymphoid organs`); va en `notes` del sistema.
+`Visceral systems` (y `6: Lymphoid organs`). En el manifiesto 0.2.3 el grupo
+`linfatico_ganglios` tiene `defaultVisible: false`. El bazo / timo / amígdalas
+van en `linfatico_organos`.
 
 ## Cómo publicar a R2 (`atlas/v0.2.2/`)
 

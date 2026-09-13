@@ -187,6 +187,21 @@ def _find_collection(requested: str):
     return None
 
 
+def _object_in_collection_tree(col, obj) -> bool:
+    return any(o.name == obj.name for o in _iter_collection_objects(col))
+
+
+def _immediate_system_child(obj, system_roots: list) -> str | None:
+    """Colección hija inmediata del sistema que contiene el objeto."""
+    for root in system_roots:
+        for child in root.children:
+            if _object_in_collection_tree(child, obj):
+                return child.name
+        if obj.name in {o.name for o in root.objects}:
+            return root.name
+    return None
+
+
 def _iter_collection_objects(collection):
     seen: set[str] = set()
 
@@ -721,6 +736,21 @@ def _select_collection_meshes(
     return exported, excluded, excluded_prec, excluded_profiles, names, invalid
 
 
+def _mesh_groups_for_names(names: list[str], system_roots: list) -> dict[str, str]:
+    import bpy
+
+    by_name = {obj.name: obj for obj in bpy.data.objects}
+    out: dict[str, str] = {}
+    for name in names:
+        obj = by_name.get(name)
+        if obj is None:
+            continue
+        child = _immediate_system_child(obj, system_roots)
+        if child:
+            out[name] = child
+    return out
+
+
 def _write_meta(out_path: str, payload: dict) -> None:
     meta_path = Path(out_path).with_suffix(".meta.json")
     meta_path.write_text(f"{json.dumps(payload, ensure_ascii=False, indent=2)}\n")
@@ -729,7 +759,7 @@ def _write_meta(out_path: str, payload: dict) -> None:
         "".join(f"{n}\n" for n in payload.get("exportedNames", [])),
         encoding="utf-8",
     )
-    skip = {"exportedNames", "invalidNames"}
+    skip = {"exportedNames", "invalidNames", "meshGroups"}
     print(
         f"META {json.dumps({k: v for k, v in payload.items() if k not in skip}, ensure_ascii=False)}"
     )
@@ -848,6 +878,9 @@ def _export(args: argparse.Namespace) -> None:
         f"precedencia {excluded_prec}, perfiles {excluded_profiles}, "
         f"curvas {converted}) → {args.out}"
     )
+    mesh_groups = _mesh_groups_for_names(
+        sorted(set(exported_names)), [collection, *extras]
+    )
     _write_meta(
         args.out,
         {
@@ -862,6 +895,7 @@ def _export(args: argparse.Namespace) -> None:
             "skinSurfaceFound": skin_surface_found,
             "femaleReproductiveNote": female_note,
             "exportedNames": sorted(set(exported_names)),
+            "meshGroups": mesh_groups,
             "systemId": args.system_id,
         },
     )

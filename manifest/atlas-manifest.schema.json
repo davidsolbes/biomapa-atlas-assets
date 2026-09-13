@@ -86,7 +86,24 @@
             "maxItems": 3,
             "items": { "type": "number" }
           },
-          "validated": { "type": "boolean" }
+          "validated": { "type": "boolean" },
+          "groups": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["id", "label_es", "meshNames", "defaultVisible"],
+              "properties": {
+                "id": { "type": "string" },
+                "label_es": { "type": "string" },
+                "meshNames": {
+                  "type": "array",
+                  "items": { "type": "string" }
+                },
+                "defaultVisible": { "type": "boolean" }
+              }
+            }
+          }
         }
       }
     }

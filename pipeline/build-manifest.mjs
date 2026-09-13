@@ -8,6 +8,8 @@ import { copyFileSync, existsSync, mkdirSync, readFileSync, writeFileSync } from
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
+import { buildSystemGroups } from './mesh-groups.mjs';
+
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const DIST = join(ROOT, 'dist');
 const SOURCE_JSON = join(ROOT, 'source', 'SOURCE.json');
@@ -118,6 +120,25 @@ function readExportMeta(systemId) {
   } catch {
     return null;
   }
+}
+
+function readMeshGroups(systemId, exportMeta) {
+  const sidecar = join(DIST, 'raw', `${systemId}.groups.json`);
+  if (existsSync(sidecar)) {
+    try {
+      const json = JSON.parse(readFileSync(sidecar, 'utf8'));
+      if (json && typeof json === 'object' && json.meshGroups) {
+        return json.meshGroups;
+      }
+      if (json && typeof json === 'object') return json;
+    } catch {
+      // sidecar ilegible
+    }
+  }
+  if (exportMeta?.meshGroups && typeof exportMeta.meshGroups === 'object') {
+    return exportMeta.meshGroups;
+  }
+  return {};
 }
 
 function readValidation() {
@@ -252,6 +273,11 @@ const systems = SYSTEMS.map((meta) => {
     notes,
     ...(bbox ? { bbox } : {}),
     validated,
+    ...(function attachGroups() {
+      const meshGroups = readMeshGroups(meta.id, exportMeta);
+      const groups = buildSystemGroups(meta.id, names, meshGroups);
+      return groups?.length ? { groups } : {};
+    })(),
   };
 });
 
@@ -270,6 +296,9 @@ modifications.push(
 modifications.push(
   'Etiquetas en español desde source/z-anatomy/TA2.csv (Terminologia Anatomica 2; misma licencia CC BY-SA 4.0 de Z-Anatomy).',
 );
+modifications.push(
+  'Grupos por aparato en vísceras (y huesos si la colección lo permite). Ganglios linfáticos defaultVisible=false. Solo metadatos; los GLB no cambian.',
+);
 if (modifications.length === 1) {
   modifications.unshift(
     'S1: pipeline listo; ningún sistema exportado todavía (file: null).',
@@ -277,7 +306,7 @@ if (modifications.length === 1) {
 }
 
 const manifest = {
-  version: '0.2.2',
+  version: '0.2.3',
   generatedAt: new Date().toISOString(),
   baseLicense: 'CC-BY-SA-4.0',
   labelsFile: 'manifest/labels.es.json',
