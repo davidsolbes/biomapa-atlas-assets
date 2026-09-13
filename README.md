@@ -28,13 +28,21 @@ npx gltfpack -v
 
 ```bash
 npm run fetch:source          # clona Z-Anatomy → source/ + source/SOURCE.json
-npm run export:skeleton       # Blender headless → dist/raw/skeleton.glb
+npm run export:skeleton       # Blender headless → dist/raw/skeleton.glb (sin DECIMATE)
 npm run export:viscera
-npm run pack -- skeleton      # gltfpack meshopt → dist/skeleton.glb
-npm run pack -- viscera 0.25  # segundo arg = -si (simplify)
+npm run pack -- skeleton      # gltfpack -cc -tc -kn (sin -si)
+npm run pack -- viscera 0.7   # segundo arg = -si solo si hace falta (presupuesto 15 MB)
 npm run manifest              # regenera manifest/atlas-manifest.json
-npm run build:all             # skeleton + viscera ≤ 15 MB + manifiesto
+npm run build:all             # export sin decimar + pack (1 → 0.7 → 0.5 → 0.35) + manifiesto
 npm run serve                 # http://localhost:8787 (CORS) — sirve dist/
+```
+
+Listar colecciones del `.blend`:
+
+```bash
+blender -b -P pipeline/export_system.py -- \
+  --blend source/unpacked/Z-Anatomy/Startup.blend \
+  --collection dummy --out /tmp/unused.glb --list-collections
 ```
 
 Fuente oficial vigente (2026-09-12):
@@ -46,6 +54,44 @@ Fuente oficial vigente (2026-09-12):
 
 Sistemas fijos: `skin`, `muscles`, `skeleton`, `vessels`, `nerves`, `viscera`.
 En S0 solo se exportan `skeleton` y `viscera`; el resto queda `file: null`.
+
+## Colecciones del Startup.blend (verificado 2026-09-12)
+
+Top-level de escena (prefijo numérico de Z-Anatomy):
+
+1. `1: Skeletal system` (2218 objetos)
+2. `2: Muscular insertions`
+3. `3: Joints`
+4. `4: Muscular system`
+5. `5: Cardiovascular system`
+6. `6: Lymphoid organs` (bazo y órganos linfoides; **no** es hija de vísceras)
+7. `7: Nervous system & Sense organs`
+8. `8: Visceral systems` (479 objetos, plana)
+9. `9: Regions of human body`
+
+El pipeline **no** usa esas colecciones planas. Matchea el nombre taxonómico
+sin prefijo (el que tiene hijas):
+
+| Sistema | `sourceCollection` | Hijas relevantes |
+|---------|--------------------|------------------|
+| `skeleton` | `Skeletal system` | Axial / appendicular, cráneo, dientes, cartílagos, columna, tórax, miembros |
+| `viscera` | `Visceral systems` | `Digestive system`, `Respiratory system`, `Urinary system`, `Genital systems'`, `Endocrine glands`, `Thoracic cavity`, `Abdominopelvic cavity`, `Lymphoid system` |
+
+**Rótulos.** No hay colecciones cuyo nombre contenga `label`, `text` o
+`annotation`. Los rótulos de Z-Anatomy son objetos `FONT` (sufijo `.t`),
+`CURVE` y mallas en MAYÚSCULAS (`AXIAL SKELETON`, `BONES OF UPPER LIMB`,
+`BONES OF HAND`). `export_system.py` exporta solo `MESH` y excluye esas
+mayúsculas. El manifiesto registra `excludedObjects` por sistema.
+
+**Decimación.** Sin modificador Blender `DECIMATE`. Empaquetado
+`gltfpack -cc -tc -kn`; `-si` solo si el GLB supera 15 MB (0.7 → 0.5 → 0.35).
+`-kn` conserva nombres de nodo/malla (sin eso gltfpack fusiona y el clic
+del visor pierde el término). `simplifyRatio` en el manifiesto es `1` si
+no hubo simplify.
+
+**Ganglios.** Aparecen en `viscera` porque `Lymphoid system` es hija de
+`Visceral systems`. El bazo queda fuera (colección hermana
+`6: Lymphoid organs`); va en `notes` del sistema.
 
 ## Cómo publicar a R2
 

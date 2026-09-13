@@ -70,7 +70,12 @@
           },
           "defaultVisible": { "type": "boolean" },
           "order": { "type": "integer" },
-          "decimateRatio": { "type": ["number", "null"] }
+          "decimateRatio": { "type": ["number", "null"] },
+          "sourceCollection": { "type": "string" },
+          "excludedObjects": { "type": "integer", "minimum": 0 },
+          "simplifyRatio": { "type": ["number", "null"] },
+          "triangles": { "type": "integer", "minimum": 0 },
+          "notes": { "type": "string" }
         }
       }
     }

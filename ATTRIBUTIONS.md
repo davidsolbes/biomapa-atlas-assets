@@ -59,17 +59,21 @@ Ver `LICENSE-ASSETS`.
 
 ## Modificaciones
 
-Por sistema (S0). Se actualizan al regenerar el manifiesto:
+Por sistema (S0-FIX-01). Se actualizan al regenerar el manifiesto:
 
-- **skeleton (Huesos):** exportación glTF de la colección del template
-  Z-Anatomy; decimación Blender (`DECIMATE`) si hace falta; empaquetado
-  `gltfpack -cc -tc -si <ratio>` hasta ≤ 15 MB. Nombres de objeto conservados.
-  Sin fusión de mallas. Sin renombrados.
-- **viscera (Vísceras):** igual que skeleton.
+- **skeleton (Huesos):** exportación glTF de la colección taxonómica
+  `Skeletal system`. Solo objetos `MESH`. Rótulos excluidos (FONT/CURVE y
+  mallas en MAYÚSCULAS). **Sin** decimación Blender. Empaquetado
+  `gltfpack -cc -tc -kn` (meshopt; `-kn` conserva nombres); `-si` solo si el GLB supera 15 MB
+  (reintentos 0.7 → 0.5 → 0.35). Nombres de objeto conservados. Sin fusión
+  de mallas. Sin renombrados.
+- **viscera (Vísceras):** igual, desde `Visceral systems` (incluye digestivo,
+  respiratorio, urinario, reproductor, endocrino y `Lymphoid system`).
 - **skin, muscles, vessels, nerves:** no exportados en S0 (`file: null`).
 
-El ratio y el tamaño reales quedan en `manifest/atlas-manifest.json`
-(`decimateRatio`, `bytes`, `modifications`).
+El `-si` final, triángulos, colección de origen y exclusiones quedan en
+`manifest/atlas-manifest.json` (`simplifyRatio`, `triangles`,
+`sourceCollection`, `excludedObjects`, `bytes`, `modifications`).
 
 ## Cómo citar en Biomapa
 

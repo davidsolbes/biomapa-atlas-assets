@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 # Envuelve export_system.py: resuelve Blender, .blend y colección por id de sistema.
+# S0-FIX-01: exporta sin decimar en Blender.
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 SYSTEM="${1:-}"
-DECIMATE="${2:-}"
 
 if [[ -z "$SYSTEM" ]]; then
-  echo "Uso: pipeline/export.sh <sistema> [decimate_ratio]" >&2
+  echo "Uso: pipeline/export.sh <sistema>" >&2
   exit 1
 fi
 
@@ -29,8 +29,7 @@ if [[ -z "$BLEND" ]]; then
   exit 1
 fi
 
-# Nombres de colección en Z-Anatomy (inglés del template). El script Python
-# también acepta alias si el nombre exacto no existe.
+# Nombres taxonómicos en Z-Anatomy (sin el prefijo "8:" de la colección de escena).
 case "$SYSTEM" in
   skin) COLLECTION="Integumentary" ;;
   muscles) COLLECTION="Muscular system" ;;
@@ -44,10 +43,20 @@ esac
 OUT="$ROOT/dist/raw/${SYSTEM}.glb"
 mkdir -p "$(dirname "$OUT")"
 
-ARGS=(--blend "$BLEND" --collection "$COLLECTION" --out "$OUT")
-if [[ -n "$DECIMATE" ]]; then
-  ARGS+=(--decimate "$DECIMATE")
-fi
+echo "Exportando $SYSTEM desde $BLEND (colección '$COLLECTION', sin DECIMATE)"
+"$BLENDER_BIN" -b -P "$ROOT/pipeline/export_system.py" -- \
+  --blend "$BLEND" --collection "$COLLECTION" --out "$OUT"
 
-echo "Exportando $SYSTEM desde $BLEND (colección '$COLLECTION')"
-"$BLENDER_BIN" -b -P "$ROOT/pipeline/export_system.py" -- "${ARGS[@]}"
+META="$ROOT/dist/raw/${SYSTEM}.meta.json"
+if [[ -f "$META" ]]; then
+  python3 - "$META" "$ROOT/dist" "$SYSTEM" <<'PY'
+import json, sys
+from pathlib import Path
+meta = json.loads(Path(sys.argv[1]).read_text())
+dist = Path(sys.argv[2])
+system = sys.argv[3]
+(dist / f".{system}.collection").write_text(f"{meta.get('sourceCollection', '')}\n")
+(dist / f".{system}.excluded").write_text(f"{int(meta.get('excludedObjects', 0))}\n")
+print(f"sourceCollection={meta.get('sourceCollection')} excludedObjects={meta.get('excludedObjects')}")
+PY
+fi

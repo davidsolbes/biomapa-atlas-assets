@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Genera manifest/atlas-manifest.json (y copia a dist/manifest/)
- * a partir de dist/*.glb + source/SOURCE.json.
+ * a partir de dist/*.glb + source/SOURCE.json + sidecars del pipeline.
  */
 import { createHash } from 'node:crypto';
 import { copyFileSync, existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
@@ -25,6 +25,13 @@ const SOURCE_URL = 'https://github.com/Z-Anatomy/Models-of-human-anatomy';
 const LICENSE_URL = 'https://creativecommons.org/licenses/by-sa/4.0/';
 const CITATION =
   'Atlas 3D de Biomapa basado en Z-Anatomy — The libre 3D atlas of anatomy (Gauthier Kervyn, diseño/3D/anatomía; Marcin Zielinski, add-on Blender), derivado de BodyParts3D — The Database Center for Life Science (Kousaku Okubo), CC BY-SA 4.0. Modelos de referencia adicionales según ATTRIBUTIONS.md de Z-Anatomy.';
+
+const SYSTEM_NOTES = {
+  viscera:
+    "sourceCollection taxonómica «Visceral systems»: Digestive system, Respiratory system, Urinary system, Genital systems', Endocrine glands, Thoracic cavity, Abdominopelvic cavity y Lymphoid system (ganglios linfáticos e hijas). El bazo vive en la colección hermana «6: Lymphoid organs» y no se exporta aquí. Reproductor masculino sí (testis, próstata, pene); útero/ovario no salen como MESH exportable en esta fuente. En el .blend no hay colecciones label/text/annotation; los rótulos son FONT (.t), CURVE y mallas en MAYÚSCULAS.",
+  skeleton:
+    'sourceCollection taxonómica «Skeletal system». En el .blend no hay colecciones label/text/annotation; se excluyen FONT/CURVE y mallas en MAYÚSCULAS (p. ej. AXIAL SKELETON, BONES OF HAND).',
+};
 
 function readSource() {
   if (!existsSync(SOURCE_JSON)) {
@@ -57,18 +64,52 @@ function meshNamesFromGlb(buf) {
   for (const mesh of json.meshes ?? []) {
     if (mesh?.name) names.add(mesh.name);
   }
-  // gltfpack a menudo deja el nombre en el nodo padre, no en el que tiene `mesh`.
   for (const node of json.nodes ?? []) {
     if (node?.name) names.add(node.name);
   }
   return [...names].sort((a, b) => a.localeCompare(b));
 }
 
-function readRatio(systemId) {
-  const p = join(DIST, `.${systemId}.ratio`);
+function triangleCountFromGlb(buf) {
+  const json = parseGlbJson(buf);
+  if (!json?.accessors) return 0;
+  let tris = 0;
+  for (const mesh of json.meshes ?? []) {
+    for (const prim of mesh.primitives ?? []) {
+      if (prim.indices != null) {
+        const acc = json.accessors[prim.indices];
+        if (acc?.count) tris += Math.floor(acc.count / 3);
+      } else if (prim.attributes?.POSITION != null) {
+        const acc = json.accessors[prim.attributes.POSITION];
+        if (acc?.count) tris += Math.floor(acc.count / 3);
+      }
+    }
+  }
+  return tris;
+}
+
+function readSidecarNumber(systemId, suffix) {
+  const p = join(DIST, `.${systemId}.${suffix}`);
   if (!existsSync(p)) return null;
   const n = Number.parseFloat(readFileSync(p, 'utf8').trim());
   return Number.isFinite(n) ? n : null;
+}
+
+function readSidecarText(systemId, suffix) {
+  const p = join(DIST, `.${systemId}.${suffix}`);
+  if (!existsSync(p)) return null;
+  const t = readFileSync(p, 'utf8').trim();
+  return t || null;
+}
+
+function readExportMeta(systemId) {
+  const p = join(DIST, 'raw', `${systemId}.meta.json`);
+  if (!existsSync(p)) return null;
+  try {
+    return JSON.parse(readFileSync(p, 'utf8'));
+  } catch {
+    return null;
+  }
 }
 
 const source = readSource();
@@ -90,14 +131,22 @@ const systems = SYSTEMS.map((meta) => {
   }
   const buf = readFileSync(filePath);
   const names = meshNamesFromGlb(buf);
-  const ratio = readRatio(meta.id);
+  const exportMeta = readExportMeta(meta.id);
+  const simplifyRatio = readSidecarNumber(meta.id, 'ratio');
+  const excludedFromFile = readSidecarNumber(meta.id, 'excluded');
+  const collectionFromFile = readSidecarText(meta.id, 'collection');
+  const trisFromPack = readSidecarNumber(meta.id, 'triangles');
+  const triangles = trisFromPack ?? triangleCountFromGlb(buf);
   const sha256 = createHash('sha256').update(buf).digest('hex');
-  if (ratio != null && ratio < 1) {
+  const siLabel = simplifyRatio != null && simplifyRatio < 1 ? simplifyRatio : 1;
+  if (siLabel < 1) {
     modifications.push(
-      `${meta.id}: decimación Blender + gltfpack -si ${ratio} (≤ 15 MB)`,
+      `${meta.id}: sin decimación Blender; rótulos excluidos; gltfpack -cc -tc -kn -si ${siLabel} (≤ 15 MB)`,
     );
   } else {
-    modifications.push(`${meta.id}: exportación glTF + gltfpack -cc -tc (sin simplify)`);
+    modifications.push(
+      `${meta.id}: sin decimación Blender; rótulos excluidos; gltfpack -cc -tc -kn (sin -si)`,
+    );
   }
   return {
     id: meta.id,
@@ -109,7 +158,13 @@ const systems = SYSTEMS.map((meta) => {
     meshNames: names,
     defaultVisible: meta.defaultVisible,
     order: meta.order,
-    decimateRatio: ratio,
+    sourceCollection:
+      collectionFromFile ?? exportMeta?.sourceCollection ?? undefined,
+    excludedObjects:
+      excludedFromFile ?? exportMeta?.excludedObjects ?? undefined,
+    simplifyRatio: simplifyRatio ?? 1,
+    triangles,
+    notes: SYSTEM_NOTES[meta.id],
   };
 });
 
@@ -149,5 +204,9 @@ if (existsSync(join(ROOT, 'ATTRIBUTIONS.md'))) {
 }
 console.log(`Manifiesto escrito: ${outGit}`);
 for (const s of systems) {
-  console.log(`  ${s.id}: ${s.file ?? 'null'} ${s.bytes} bytes`);
+  const extra =
+    s.file == null
+      ? ''
+      : ` si=${s.simplifyRatio ?? 1} tris=${s.triangles ?? '?'} excl=${s.excludedObjects ?? '?'}`;
+  console.log(`  ${s.id}: ${s.file ?? 'null'} ${s.bytes} bytes${extra}`);
 }

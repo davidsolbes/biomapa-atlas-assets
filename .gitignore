@@ -1,7 +1,7 @@
 source/
 dist/*.glb
-dist/raw/*.glb
-dist/.*.ratio
+dist/raw/
+dist/.*
 dist/manifest/
 dist/ATTRIBUTIONS.md
 node_modules/

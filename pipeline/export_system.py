@@ -4,14 +4,19 @@ Uso:
   blender -b -P pipeline/export_system.py -- --blend <ruta> --collection <nombre> \\
       --out dist/raw/<sistema>.glb [--decimate <ratio>]
 
-Conserva los nombres de objeto. Si --collection no coincide, prueba alias
-case-insensitive y lista las colecciones disponibles al fallar.
+Solo MESH. Excluye rótulos (nombre en MAYÚSCULAS ≥ 3 letras) y objetos en
+colecciones cuyo nombre contiene label / text / annotation. Conserva nombres.
+Si --collection no coincide, prueba alias case-insensitive.
 """
 
 from __future__ import annotations
 
 import argparse
+import json
 import sys
+from pathlib import Path
+
+LABEL_HINTS = ("label", "text", "annotation")
 
 
 def _argv_after_double_dash(argv: list[str]) -> list[str]:
@@ -29,12 +34,12 @@ def _parse_args(argv: list[str]) -> argparse.Namespace:
         "--decimate",
         type=float,
         default=None,
-        help="Ratio de decimación (0–1]. Omite el modificador si no se pasa.",
+        help="Solo diagnóstico. El pipeline S0-FIX-01 no decima en Blender.",
     )
     parser.add_argument(
         "--list-collections",
         action="store_true",
-        help="Solo lista colecciones del .blend y sale",
+        help="Lista colecciones relevantes del .blend y sale",
     )
     return parser.parse_args(argv)
 
@@ -108,30 +113,95 @@ def _iter_collection_objects(collection):
     yield from walk(collection)
 
 
+def _is_all_caps_label(name: str) -> bool:
+    letters = [c for c in name if c.isalpha()]
+    return len(letters) >= 3 and all(c.isupper() for c in letters)
+
+
+def _collection_is_label(col) -> bool:
+    n = col.name.lower()
+    return any(hint in n for hint in LABEL_HINTS)
+
+
+def _object_in_label_collection(obj) -> bool:
+    return any(_collection_is_label(col) for col in obj.users_collection)
+
+
+def _should_exclude(obj) -> str | None:
+    if obj.type != "MESH":
+        return f"type:{obj.type}"
+    if _is_all_caps_label(obj.name):
+        return "all_caps"
+    if _object_in_label_collection(obj):
+        return "label_collection"
+    return None
+
+
+def _list_collections() -> None:
+    import bpy
+
+    print("=== TOP-LEVEL (escena) ===")
+    for col in bpy.context.scene.collection.children:
+        print(
+            f"- {col.name}  children={len(col.children)} objects={len(col.objects)}"
+        )
+
+    print("\n=== COLECCIONES label / text / annotation ===")
+    hits = [c for c in bpy.data.collections if _collection_is_label(c)]
+    if not hits:
+        print(
+            "(ninguna en este .blend; los rótulos son FONT/CURVE y mallas MAYÚSCULAS)"
+        )
+    for col in hits:
+        print(f"- {col.name}  objects={len(col.objects)} children={len(col.children)}")
+
+    print("\n=== SISTEMAS S0 (nombre taxonómico, sin prefijo numérico) ===")
+    for name in ("Skeletal system", "Visceral systems"):
+        col = next((c for c in bpy.data.collections if c.name == name), None)
+        if col is None:
+            print(f"- {name}: no encontrada")
+            continue
+        children = ", ".join(c.name for c in col.children) or "(sin hijas)"
+        print(f"- {col.name}  hijas: {children}")
+
+
+def _write_meta(out_path: str, payload: dict) -> None:
+    meta_path = Path(out_path).with_suffix(".meta.json")
+    meta_path.write_text(f"{json.dumps(payload, ensure_ascii=False, indent=2)}\n")
+    print(f"META {json.dumps(payload, ensure_ascii=False)}")
+
+
 def _export(args: argparse.Namespace) -> None:
     import bpy
 
     bpy.ops.wm.open_mainfile(filepath=args.blend)
 
     names = [c.name for c in _all_collections()]
-    print("Colecciones:", ", ".join(names) if names else "(ninguna)")
+    print("Colecciones (muestra):", ", ".join(names[:12]), "…")
     if args.list_collections:
+        _list_collections()
         return
 
     collection = _find_collection(args.collection)
     if collection is None:
         raise SystemExit(
             f"No se encontró la colección '{args.collection}'. "
-            f"Disponibles: {', '.join(names)}"
+            f"Disponibles: {', '.join(names[:40])}…"
         )
 
     bpy.ops.object.select_all(action="DESELECT")
     exported = 0
+    excluded = 0
     ratio = None
     if args.decimate is not None:
         ratio = max(0.01, min(1.0, float(args.decimate)))
     for obj in _iter_collection_objects(collection):
+        reason = _should_exclude(obj)
+        if reason is not None:
+            excluded += 1
+            continue
         if obj.name not in bpy.context.view_layer.objects:
+            excluded += 1
             continue
         try:
             obj.hide_set(False)
@@ -142,9 +212,9 @@ def _export(args: argparse.Namespace) -> None:
         try:
             obj.select_set(True)
         except RuntimeError:
+            excluded += 1
             continue
-        # No aplicar uno a uno (revienta el depsgraph). El export glTF usa export_apply.
-        if ratio is not None and obj.type == "MESH":
+        if ratio is not None:
             mesh = getattr(obj.data, "polygons", None)
             if mesh is not None and len(mesh) > 3:
                 if "BiomapaDecimate" not in obj.modifiers:
@@ -153,7 +223,7 @@ def _export(args: argparse.Namespace) -> None:
         exported += 1
 
     if exported == 0:
-        raise SystemExit(f"La colección '{collection.name}' no tiene objetos.")
+        raise SystemExit(f"La colección '{collection.name}' no tiene mallas exportables.")
 
     bpy.ops.export_scene.gltf(
         filepath=args.out,
@@ -169,7 +239,15 @@ def _export(args: argparse.Namespace) -> None:
         export_animations=False,
         export_yup=True,
     )
-    print(f"Exportado {exported} objetos → {args.out}")
+    print(f"Exportado {exported} mallas (excluidos {excluded}) → {args.out}")
+    _write_meta(
+        args.out,
+        {
+            "sourceCollection": collection.name,
+            "exportedObjects": exported,
+            "excludedObjects": excluded,
+        },
+    )
 
 
 def main() -> None:
