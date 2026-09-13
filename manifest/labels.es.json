@@ -2784,35 +2784,745 @@
     "ta2Id": "818",
     "latin": "Os zygomaticum"
   },
+  "deep branch of transverse cervical artery": {
+    "es": "(Rama profunda de la arteria cervical transversa)",
+    "ta2Id": "4605",
+    "latin": "(Ramus profundus arteriae transversae colli)"
+  },
+  "superficial branch of transverse cervical artery": {
+    "es": "(Rama superficial de la arteria cervical transversa)",
+    "ta2Id": "4602",
+    "latin": "(Ramus superficial arteriae transversae colli)"
+  },
+  "ulnar recurrent artery": {
+    "es": "(Arteria recurrente ulnar)",
+    "ta2Id": "4656",
+    "latin": "(Arteria recurrens ulnaris)"
+  },
+  "abdominal aorta": {
+    "es": "Aorta abdominal",
+    "ta2Id": "4205",
+    "latin": "Aorta abdominalis"
+  },
+  "accessory branch of middle meningeal artery": {
+    "es": "Rama accesoria de la arteria meníngea media",
+    "ta2Id": "4432",
+    "latin": "Ramus accessorius arteriae meningeae mediae"
+  },
+  "accessory hemi-azygos vein": {
+    "es": "Vena hemiácigos accessoria",
+    "ta2Id": "4758",
+    "latin": "Vena hemiazyga accessoria"
+  },
+  "angular artery": {
+    "es": "Arteria angular",
+    "ta2Id": "4397",
+    "latin": "Arteria angularis"
+  },
+  "angular vein": {
+    "es": "Vena angular",
+    "ta2Id": "4818",
+    "latin": "Vena angularis"
+  },
+  "anterior basal segmental artery of left lung": {
+    "es": "Arteria segmentaria basal anterior del pulmón izquierdo",
+    "ta2Id": "4103",
+    "latin": "Arteria segmentalis basalis anterior pulmonis sinistri"
+  },
+  "anterior basal segmental artery of right lung": {
+    "es": "Arteria segmentaria basal anterior del pulmón derecho",
+    "ta2Id": "4087",
+    "latin": "Arteria segmentalis basalis anterior pulmonis dextri"
+  },
+  "anterior branch of renal artery": {
+    "es": "Rama anterior de la arteria renal",
+    "ta2Id": "4272",
+    "latin": "Ramus anterior arteriae renalis"
+  },
+  "anterior cerebral artery": {
+    "es": "Arteria cerebral anterior",
+    "ta2Id": "4502",
+    "latin": "Arteria cerebri anterior"
+  },
+  "anterior circumflex humeral artery": {
+    "es": "Arteria circunfleja anterior del húmero",
+    "ta2Id": "4630",
+    "latin": "Arteria circumflexa anterior humeri"
+  },
+  "anterior circumflex humeral vein": {
+    "es": "Vena circunfleja humeral anterior",
+    "ta2Id": "4976",
+    "latin": "Vena circumflexa anterior humeri"
+  },
   "anterior communicating artery": {
     "es": "Arteria comunicante anterior",
     "ta2Id": "4517",
     "latin": "Arteria communicans anterior"
+  },
+  "anterior deep temporal artery": {
+    "es": "Arteria temporal profunda anterior",
+    "ta2Id": "4440",
+    "latin": "Arteria temporalis profunda anterior"
+  },
+  "anterior division of internal iliac artery": {
+    "es": "División anterior de la arteria ilíaca interna",
+    "ta2Id": "4315",
+    "latin": "Divisio anterior arteriae iliacae internae"
+  },
+  "anterior division of retromandibular vein": {
+    "es": "División anterior de la vena retromandibular",
+    "ta2Id": "4830",
+    "latin": "Divisio anterior venae mandibularis"
+  },
+  "anterior ethmoidal artery": {
+    "es": "Arteria etmoidal anterior",
+    "ta2Id": "4487",
+    "latin": "Arteria ethmoidea anterior"
+  },
+  "anterior inferior cerebellar artery": {
+    "es": "Arteria cerebelosa inferior anterior",
+    "ta2Id": "4550",
+    "latin": "Arteria cerebelli inferior anterior"
+  },
+  "anterior inferior pancreaticoduodenal artery": {
+    "es": "Arteria pancreáticoduodenal inferior anterior",
+    "ta2Id": "4254",
+    "latin": "Arteria pancreaticoduodenalis inferior anterior"
+  },
+  "anterior intercavernous sinus": {
+    "es": "Seno intercavernoso anterior",
+    "ta2Id": "4863",
+    "latin": "Sinus intercavernosus anterior"
+  },
+  "anterior interventricular artery": {
+    "es": "Arteria interventricular anterior",
+    "ta2Id": "4143",
+    "latin": "Arteria interventricularis ant. arteriae coronariae sinistrae"
+  },
+  "anterior jugular vein": {
+    "es": "Vena yugular anterior",
+    "ta2Id": "4959",
+    "latin": "Vena iugularis anterior"
   },
   "anterior papillary muscle of right ventricle": {
     "es": "Músculo papilar anterior del ventrículo derecho",
     "ta2Id": "4044",
     "latin": "Musculus papillaris anterior ventriculi dextri"
   },
+  "anterior segmental artery of left lung": {
+    "es": "Arteria segmentaria anterior del pulmón izquierdo",
+    "ta2Id": "4096",
+    "latin": "Arteria segmentalis anterior pulmonis sinistri"
+  },
+  "anterior segmental artery of right lung": {
+    "es": "Arteria segmentaria anterior del pulmón derecho",
+    "ta2Id": "4080",
+    "latin": "Arteria segmentalis anterior pulmonis dextri"
+  },
   "anterior semilunar leaflet of pulmonary valve": {
     "es": "Válvula semilunar anterior de la valva pulmonar",
     "ta2Id": "4012",
     "latin": "Valvula semilunaris anterior valvae trunci pulmonalis"
+  },
+  "anterior septal branches of anterior ethmoidal artery": {
+    "es": "Ramas del septales anteriores de la arteria etmoidal anterior",
+    "ta2Id": "4489",
+    "latin": "Rami septales anteriores arteriae ethmoideae anterioris"
+  },
+  "anterior spinal artery": {
+    "es": "Arteria espinal anterior",
+    "ta2Id": "4525",
+    "latin": "Arteria spinalis anterior"
+  },
+  "anterior tibial artery": {
+    "es": "Arteria tibial anterior",
+    "ta2Id": "4708",
+    "latin": "Arteria tibialis anterior"
+  },
+  "anterior tibial veins": {
+    "es": "Venas tibiales anteriores",
+    "ta2Id": "5075",
+    "latin": "Venae tibiales anteriores"
+  },
+  "anterior vein of left lung": {
+    "es": "Vena anterior del pulmón izquierdo",
+    "ta2Id": "4121",
+    "latin": "Vena anterior pulmonis sinistri"
+  },
+  "anterior vein of right lung": {
+    "es": "Vena anterior del pulmón derecho",
+    "ta2Id": "4110",
+    "latin": "Vena anterior pulmonis dextri"
+  },
+  "aortic arch": {
+    "es": "Arco aórtico",
+    "ta2Id": "4177",
+    "latin": "Arcus aortae"
+  },
+  "apical segmental artery of left lung": {
+    "es": "Arteria segmentaria apical del pulmón izquierdo",
+    "ta2Id": "4095",
+    "latin": "Arteria segmentalis apicalis pulmonis sinistri"
+  },
+  "apical segmental artery of right lung": {
+    "es": "Arteria segmentaria apical del pulmón derecho",
+    "ta2Id": "4079",
+    "latin": "Arteria segmentalis apicalis pulmonis dextri"
+  },
+  "apical vein of right lung": {
+    "es": "Vena apical del pulmón derecho",
+    "ta2Id": "4109",
+    "latin": "Vena apicalis pulmonis dextri"
+  },
+  "apicoposterior vein of left lung": {
+    "es": "Vena apicoposterior del pulmón izquierdo",
+    "ta2Id": "4120",
+    "latin": "Vena apicoposterior pulmonis sinistri"
+  },
+  "appendicular artery": {
+    "es": "Arteria apendicular",
+    "ta2Id": "4261",
+    "latin": "Arteria appendicularis"
+  },
+  "arcuate artery": {
+    "es": "Arteria arqueada",
+    "ta2Id": "4717",
+    "latin": "Arteria arcuata"
+  },
+  "artery of pterygoid canal": {
+    "es": "Arteria del canal pterigoideo",
+    "ta2Id": "4454",
+    "latin": "Arteria canalis pterygoidei"
+  },
+  "ascending aorta": {
+    "es": "Aorta ascendente",
+    "ta2Id": "4176",
+    "latin": "Aorta ascendens"
+  },
+  "ascending branch of left colic artery": {
+    "es": "Rama ascendente de la arteria cólica izquierda",
+    "ta2Id": "4293",
+    "latin": "Ramus ascendens arteriae"
+  },
+  "ascending pharyngeal artery": {
+    "es": "Arteria faríngea ascendente",
+    "ta2Id": "4378",
+    "latin": "Arteria pharyngea ascendens"
+  },
+  "axillary artery": {
+    "es": "Arteria axilar",
+    "ta2Id": "4616",
+    "latin": "Arteria axillaris"
+  },
+  "axillary vein": {
+    "es": "Vena axilar",
+    "ta2Id": "4963",
+    "latin": "Vena axillaris"
+  },
+  "azygos vein": {
+    "es": "Vena ácigos",
+    "ta2Id": "4747",
+    "latin": "Vena azyga"
+  },
+  "basilar artery": {
+    "es": "Arteria basilar",
+    "ta2Id": "4548",
+    "latin": "Arteria basilaris"
   },
   "basilar venous plexus": {
     "es": "Plexo venoso basilar",
     "ta2Id": "4866",
     "latin": "Plexus venosus basilaris"
   },
+  "basilic vein": {
+    "es": "Vena basílica",
+    "ta2Id": "4979",
+    "latin": "Vena basilica"
+  },
+  "bifurcation of pulmonary trunk": {
+    "es": "Bifurcación del tronco pulmonar",
+    "ta2Id": "4076",
+    "latin": "Bifurcatio trunci pulmonalis"
+  },
+  "brachial artery": {
+    "es": "Arteria braquial",
+    "ta2Id": "4632",
+    "latin": "Arteria brachialis"
+  },
+  "brachial veins": {
+    "es": "Venas braquiales",
+    "ta2Id": "4982",
+    "latin": "Venae brachiales"
+  },
+  "brachiocephalic trunk": {
+    "es": "Tronco braquiocefálico",
+    "ta2Id": "4179",
+    "latin": "Truncus brachiocephalicus"
+  },
+  "buccal artery": {
+    "es": "Arteria bucal",
+    "ta2Id": "4443",
+    "latin": "Arteria buccalis"
+  },
+  "calcaneal branches of fibular artery": {
+    "es": "Ramas calcáneas de la arteria fibular",
+    "ta2Id": "4731",
+    "latin": "Rami calcanei arteriae fibularis"
+  },
+  "calcaneal branches of posterior tibial artery": {
+    "es": "Ramas calcáneas de la arteria tibial posterior",
+    "ta2Id": "4726",
+    "latin": "Rami calcanei arteriae tibialis posterioris"
+  },
+  "callosomarginal artery": {
+    "es": "Arteria callosomarginal",
+    "ta2Id": "4505",
+    "latin": "Arteria callosomarginalis"
+  },
   "cavernous sinus": {
     "es": "Seno cavernoso",
     "ta2Id": "4860",
     "latin": "Sinus cavernosus"
   },
+  "central retinal artery": {
+    "es": "Arteria central de la retina",
+    "ta2Id": "4470",
+    "latin": "Arteria centralis retinae"
+  },
+  "cephalic vein": {
+    "es": "Vena cefálica",
+    "ta2Id": "4964",
+    "latin": "Vena cephalica"
+  },
+  "circumflex artery of heart": {
+    "es": "Arteria circunfleja del corazón",
+    "ta2Id": "4148",
+    "latin": "Arteria circumflexa cordis"
+  },
+  "circumflex scapular artery": {
+    "es": "Arteria circunfleja de la escápula",
+    "ta2Id": "4629",
+    "latin": "Arteria circumflexa scapulae"
+  },
+  "circumflex scapular vein": {
+    "es": "Vena circunfleja escapular",
+    "ta2Id": "4973",
+    "latin": "Vena circumflexa scapulae"
+  },
+  "coeliac trunk": {
+    "es": "Tronco celiaco",
+    "ta2Id": "4211",
+    "latin": "Truncus coeiiacus"
+  },
+  "colic branch of ileocolic artery": {
+    "es": "Rama cólica de la arteria ileocólica",
+    "ta2Id": "4263",
+    "latin": "Ramus colicus arteriae ileocolicae"
+  },
+  "common facial vein": {
+    "es": "Vena facial común",
+    "ta2Id": "4816",
+    "latin": "Vena facialis communis"
+  },
+  "common hepatic artery": {
+    "es": "Arteria hepática común",
+    "ta2Id": "4214",
+    "latin": "Arteria hepatica communis"
+  },
+  "common iliac artery": {
+    "es": "Arteria ilíaca común",
+    "ta2Id": "4301",
+    "latin": "Arteria iliaca communis"
+  },
+  "common iliac vein": {
+    "es": "Vena iliaca común",
+    "ta2Id": "5021",
+    "latin": "Vena iliaca communis"
+  },
+  "common interosseous artery": {
+    "es": "Arteria interósea común",
+    "ta2Id": "4661",
+    "latin": "Arteria interossea communis"
+  },
+  "common palmar digital arteries": {
+    "es": "Arterias digitales palmares comunes",
+    "ta2Id": "4672",
+    "latin": "Arteriae digitales palmares communes"
+  },
+  "common plantar digital arteries": {
+    "es": "Arterias digitales plantares comunes",
+    "ta2Id": "4741",
+    "latin": "Arteriae digitales plantares communes"
+  },
+  "coronary sinus": {
+    "es": "Seno coronario",
+    "ta2Id": "4158",
+    "latin": "Sinus coronarius"
+  },
+  "costocervical trunk": {
+    "es": "Tronco costocervical",
+    "ta2Id": "4607",
+    "latin": "Truncus costocervicalis"
+  },
+  "deep artery of penis": {
+    "es": "Arteria profunda del pene",
+    "ta2Id": "4350",
+    "latin": "Arteria profunda penis"
+  },
+  "deep brachial artery": {
+    "es": "Arteria braquial profunda",
+    "ta2Id": "4634",
+    "latin": "Arteria profunda brachii"
+  },
+  "deep cervical artery": {
+    "es": "Arteria cervical profunda",
+    "ta2Id": "4608",
+    "latin": "Arteria cervicalis profunda"
+  },
+  "deep dorsal vein of penis": {
+    "es": "Vena dorsal profunda del pene",
+    "ta2Id": "5044",
+    "latin": "Vena dorsalis profunda penis"
+  },
+  "deep external pudendal artery": {
+    "es": "Arteria pudenda externa profunda",
+    "ta2Id": "4678",
+    "latin": "Arteria pudendalis externa profunda"
+  },
+  "deep femoral artery": {
+    "es": "Arteria femoral profunda",
+    "ta2Id": "4685",
+    "latin": "Arteria profunda femoris"
+  },
+  "deep femoral vein": {
+    "es": "Vena femoral profunda",
+    "ta2Id": "5070",
+    "latin": "Vena profunda femoris"
+  },
+  "deep palmar arch": {
+    "es": "Arco palmar profundo",
+    "ta2Id": "4652",
+    "latin": "Arcus palmaris profundus"
+  },
+  "deep plantar artery": {
+    "es": "Arteria plantar profunda",
+    "ta2Id": "4720",
+    "latin": "Arteria plantaris profunda"
+  },
+  "deep venous palmar arch": {
+    "es": "Arco venoso palmar profundo",
+    "ta2Id": "4989",
+    "latin": "Arcus venosus palmaris profundus"
+  },
+  "descending branch of lateral circumflex femoral artery": {
+    "es": "Rama descendente de la arteria femoral circunfleja lateral",
+    "ta2Id": "4695",
+    "latin": "Ramus descendens arteriae circumflexae lateralis femoris"
+  },
+  "descending branch of left colic artery": {
+    "es": "Rama descendente de la arteria cólica izquierda",
+    "ta2Id": "4294",
+    "latin": "Ramus descendens arteriae colicae sinistrae"
+  },
+  "descending palatine artery": {
+    "es": "Arteria palatina descendente",
+    "ta2Id": "4456",
+    "latin": "Arteria palatina descendens"
+  },
+  "dorsal artery of penis": {
+    "es": "Arteria dorsal del pene",
+    "ta2Id": "4354",
+    "latin": "Arteria dorsalis penis"
+  },
+  "dorsal carpal anastomosis": {
+    "es": "Red carpiana dorsal",
+    "ta2Id": "4647",
+    "latin": "Rete dorsale carpi"
+  },
+  "dorsal carpal branch of ulnar artery": {
+    "es": "Rama carpiana dorsal de la arteria ulnar",
+    "ta2Id": "4668",
+    "latin": "Ramus carpeus dorsalis arteriae ulnaris"
+  },
+  "dorsal digital arteries of foot": {
+    "es": "Arterias digitales dorsales del pie",
+    "ta2Id": "4719",
+    "latin": "Arteriae digitales dorsales pedis"
+  },
+  "dorsal digital arteries of hand": {
+    "es": "Arterias digitales dorsales de la mano",
+    "ta2Id": "4649",
+    "latin": "Arteriae digitales dorsales manus"
+  },
+  "dorsal digital veins of foot": {
+    "es": "Venas digitales dorsales del pie",
+    "ta2Id": "5090",
+    "latin": "Venae digitales dorsales pedis"
+  },
+  "dorsal digital veins of hand": {
+    "es": "Venas digitales dorsales de la mano",
+    "ta2Id": "4970",
+    "latin": "Venae digitales dorsales manus"
+  },
+  "dorsal metacarpal arteries": {
+    "es": "Arterias metacarpianas dorsales",
+    "ta2Id": "4648",
+    "latin": "Arteriae metacarpeae dorsales"
+  },
+  "dorsal metatarsal arteries": {
+    "es": "Arterias metatarsianas dorsales",
+    "ta2Id": "4718",
+    "latin": "Arteriae metatarseae dorsales"
+  },
+  "dorsal metatarsal veins": {
+    "es": "Venas metatarsianas dorsales",
+    "ta2Id": "5089",
+    "latin": "Venae metatarseae dorsales"
+  },
+  "dorsal venous arch of foot": {
+    "es": "Arco venoso dorsal del pie",
+    "ta2Id": "5088",
+    "latin": "Arcus venosus dorsalis pedis"
+  },
+  "dorsal venous network of hand": {
+    "es": "Red venosa dorsal de la mano",
+    "ta2Id": "4967",
+    "latin": "Rete venosum dorsale manus"
+  },
+  "dorsalis pedis artery": {
+    "es": "Arteria dorsal del pie",
+    "ta2Id": "4714",
+    "latin": "Arteria dorsalis pedis"
+  },
+  "external carotid artery": {
+    "es": "Arteria carótida externa",
+    "ta2Id": "4369",
+    "latin": "Carotis externa"
+  },
+  "external iliac artery": {
+    "es": "Arteria iliaca externa",
+    "ta2Id": "4357",
+    "latin": "Arteria iliaca externa"
+  },
+  "external iliac vein": {
+    "es": "Vena iliaca externa",
+    "ta2Id": "5050",
+    "latin": "Vena iliaca externa"
+  },
+  "external jugular vein": {
+    "es": "Vena yugular externa",
+    "ta2Id": "4956",
+    "latin": "Vena iugularis externa"
+  },
+  "external pudendal veins": {
+    "es": "Venas pudendas externas",
+    "ta2Id": "5059",
+    "latin": "Venae pudendales extemae"
+  },
+  "facial artery": {
+    "es": "Arteria facial",
+    "ta2Id": "4388",
+    "latin": "Arteria facialis"
+  },
+  "facial vein": {
+    "es": "Vena facial",
+    "ta2Id": "4817",
+    "latin": "Vena facialis"
+  },
+  "femoral artery": {
+    "es": "Arteria femoral",
+    "ta2Id": "4674",
+    "latin": "Arteria femoralis"
+  },
+  "femoral vein": {
+    "es": "Vena femoral",
+    "ta2Id": "5055",
+    "latin": "Vena femoralis"
+  },
+  "fibular artery": {
+    "es": "Arteria fibular",
+    "ta2Id": "4727",
+    "latin": "Arteria fibularis"
+  },
+  "fibular veins": {
+    "es": "Venas fibulares",
+    "ta2Id": "5078",
+    "latin": "Venae fibulares"
+  },
+  "first posterior intercostal artery": {
+    "es": "Primera arteria intercostal posterior",
+    "ta2Id": "4610",
+    "latin": "Arteria intercostalis posterior prima"
+  },
+  "frontal branch of superficial temporal artery": {
+    "es": "Rama frontal de la arteria temporal superficial",
+    "ta2Id": "4420",
+    "latin": "Ramus fontale arteriae temporalis superficialis"
+  },
+  "frontal branches of callosomarginal artery": {
+    "es": "Ramas frontales de la arteria callosomarginal",
+    "ta2Id": "4506",
+    "latin": "Rami frontales arteriae callosomarginal"
+  },
+  "gastroduodenal artery": {
+    "es": "Arteria gastroduodenal",
+    "ta2Id": "4215",
+    "latin": "Arteria gastroduodenalis"
+  },
+  "genicular veins": {
+    "es": "Venas geniculares",
+    "ta2Id": "5074",
+    "latin": "Venae geniculares"
+  },
+  "great cardiac vein": {
+    "es": "Vena cardíaca mayor",
+    "ta2Id": "4159",
+    "latin": "Vena magna cordis"
+  },
+  "great saphenous vein": {
+    "es": "Gran vena safena",
+    "ta2Id": "5058",
+    "latin": "Vena saphena magna"
+  },
+  "greater palatine artery": {
+    "es": "Arteria palatina mayor",
+    "ta2Id": "4457",
+    "latin": "Arteria palatina major"
+  },
+  "hemi-azygos vein": {
+    "es": "Vena hemiácigos",
+    "ta2Id": "4764",
+    "latin": "Vena hemiazyga"
+  },
+  "hepatic portal vein": {
+    "es": "Vena porta hepática",
+    "ta2Id": "5092",
+    "latin": "Vena portae hepatis"
+  },
+  "hepatic veins": {
+    "es": "Venas hepáticas",
+    "ta2Id": "4994",
+    "latin": "Venae hepaticae"
+  },
+  "ileal branch of ileocolic artery": {
+    "es": "Rama ileal de la arteria ileocólica",
+    "ta2Id": "4262",
+    "latin": "Ramus ilealis arteriae ileocolicae"
+  },
+  "ileocolic artery": {
+    "es": "Arteria lleocólica",
+    "ta2Id": "4258",
+    "latin": "Arteria ileocolica"
+  },
+  "iliacus branch of iliolumbar artery": {
+    "es": "Rama ilíaca de la arteria iliolumbar",
+    "ta2Id": "4307",
+    "latin": "Ramus iliacus arteriae iliolumbalis"
+  },
+  "iliolumbar artery": {
+    "es": "Arteria iliolumbar",
+    "ta2Id": "4304",
+    "latin": "Arteria iliolumbalis"
+  },
+  "iliolumbar vein": {
+    "es": "Vena iliolumbar",
+    "ta2Id": "5023",
+    "latin": "Vena iliolumbalis"
+  },
+  "inferior alveolar artery": {
+    "es": "Arteria alveolar inferior",
+    "ta2Id": "4426",
+    "latin": "Arteria alveolaris inferior"
+  },
+  "inferior basal vein of left lung": {
+    "es": "Vena basal inferior del pulmón izquierdo",
+    "ta2Id": "4128",
+    "latin": "Vena basalis inferior pulmonis sinistri"
+  },
+  "inferior basal vein of right lung": {
+    "es": "Vena basal inferior del pulmón derecho",
+    "ta2Id": "4118",
+    "latin": "Vena basalis inferior pulmonis dextri"
+  },
+  "inferior epigastric artery": {
+    "es": "Arteria epigástrica inferior",
+    "ta2Id": "4358",
+    "latin": "Arteria epigastrica inferior"
+  },
+  "inferior epigastric vein": {
+    "es": "Vena epigástrica inferior",
+    "ta2Id": "5051",
+    "latin": "Vena epigastrica inferior"
+  },
+  "inferior gluteal artery": {
+    "es": "Arteria glútea inferior",
+    "ta2Id": "4355",
+    "latin": "Arteria glutea inferior"
+  },
+  "inferior gluteal veins": {
+    "es": "Venas glúteas inferiores",
+    "ta2Id": "5026",
+    "latin": "Venae gluteae inferiores"
+  },
+  "inferior labial artery": {
+    "es": "Arteria labial inferior",
+    "ta2Id": "4393",
+    "latin": "Arteria labialis inferior"
+  },
+  "inferior labial veins": {
+    "es": "Venas labiales inferiores",
+    "ta2Id": "4825",
+    "latin": "Venae labiales inferiores"
+  },
+  "inferior lateral genicular artery": {
+    "es": "Arteria genicular inferior lateral",
+    "ta2Id": "4704",
+    "latin": "Arteria inferior lateralis genus"
+  },
   "inferior leaflet of right atrioventricular valve": {
     "es": "Válvula posterior de la valva atrioventricular derecha",
     "ta2Id": "3985",
     "latin": "Cuspis inferior valvae atrioventricularis dextrae"
+  },
+  "inferior lingular artery of left lung": {
+    "es": "Arteria lingular inferior del pulmón izquierdo",
+    "ta2Id": "4099",
+    "latin": "Arteria lingularis inferior pulmonis sinistri"
+  },
+  "inferior lingular vein of left lung": {
+    "es": "Vena lingular inferior del pulmón izquierdo",
+    "ta2Id": "4124",
+    "latin": "Vena lingularis inferior pulmonis sinistri"
+  },
+  "inferior lobar artery of right lung": {
+    "es": "Arteria lobar inferior del pulmón derecho",
+    "ta2Id": "4085",
+    "latin": "Arteria lobaris inferior pulmonis dextri"
+  },
+  "inferior medial genicular artery": {
+    "es": "Arteria genicular inferior medial",
+    "ta2Id": "4705",
+    "latin": "Arteria inferior medialis genus"
+  },
+  "inferior mesenteric artery": {
+    "es": "Arteria mesentérica inferior",
+    "ta2Id": "4291",
+    "latin": "Arteria mesenterica inferior"
+  },
+  "inferior mesenteric vein": {
+    "es": "Vena mesentérica inferior",
+    "ta2Id": "5127",
+    "latin": "Vena mesenterica inferior"
+  },
+  "inferior ophthalmic vein": {
+    "es": "Vena oftálmica inferior",
+    "ta2Id": "4900",
+    "latin": "Vena ophthalmica inferior"
+  },
+  "inferior pancreaticoduodenal artery": {
+    "es": "Arteria pancreaticoduodenal inferior",
+    "ta2Id": "4253",
+    "latin": "Arteria pancreaticoduodenalis"
   },
   "inferior papillary muscle of left ventricle": {
     "es": "Músculo papilar inferior del ventrículo izquierdo",
@@ -2824,60 +3534,925 @@
     "ta2Id": "4045",
     "latin": "Musculus papillaris inferior ventriculi dextri"
   },
+  "inferior petrosal sinus": {
+    "es": "Seno petroso inferior",
+    "ta2Id": "4858",
+    "latin": "Sinus petrosus inferior"
+  },
+  "inferior phrenic artery": {
+    "es": "Arteria frénica inferior",
+    "ta2Id": "4206",
+    "latin": "Arteria phrenica inferior"
+  },
+  "inferior sagittal sinus": {
+    "es": "Seno sagital inferior",
+    "ta2Id": "4854",
+    "latin": "Sinus sagittalis inferior"
+  },
+  "inferior suprarenal artery": {
+    "es": "Arteria suprarrenal inferior",
+    "ta2Id": "4271",
+    "latin": "Arteria suprarenalis inferior"
+  },
+  "inferior thyroid artery": {
+    "es": "Arteria tiroidea inferior",
+    "ta2Id": "4591",
+    "latin": "Arteria thyreoidea inferior arteria thyroidea inferior"
+  },
+  "inferior ulnar collateral artery": {
+    "es": "Arteria colateral ulnar inferior",
+    "ta2Id": "4640",
+    "latin": "Arteria collateralis ulnaris inferior"
+  },
+  "inferior vein of left ventricle": {
+    "es": "Vena inferior del ventrículo izquierdo",
+    "ta2Id": "4162",
+    "latin": "Vena inferior ventriculi sinistri"
+  },
+  "inferior vena cava (abdominal part)": {
+    "es": "Vena cava inferior (parte abdominal)",
+    "ta2Id": "4991*2",
+    "latin": "Vena cava inferior (pars abdominis)"
+  },
+  "inferior vena cava (thoracic part)": {
+    "es": "Vena cava inferior (parte torácica)",
+    "ta2Id": "4991*1",
+    "latin": "Vena cava inferior (part thoracica)"
+  },
+  "infra-orbital artery": {
+    "es": "Arteria infraorbitaria",
+    "ta2Id": "4447",
+    "latin": "Arteria infraorbitalis"
+  },
+  "insular branches of middle cerebral artery (m2)": {
+    "es": "Ramas insulares de la arteria cerebra media (M2)",
+    "ta2Id": "4512",
+    "latin": "Rami insulares arteriae mediae cerebri (M2)"
+  },
+  "intercapitular veins of foot": {
+    "es": "Venas intercapitulares del pie",
+    "ta2Id": "5091",
+    "latin": "Venae intercapitulares pedis"
+  },
+  "internal carotid artery": {
+    "es": "Arteria carótida interna",
+    "ta2Id": "4463",
+    "latin": "Carotis interna"
+  },
+  "internal iliac artery": {
+    "es": "Arteria ilíaca interna",
+    "ta2Id": "4302",
+    "latin": "Arteria iliaca interna"
+  },
+  "internal iliac vein": {
+    "es": "Vena iliaca interna",
+    "ta2Id": "5024",
+    "latin": "Vena iliaca interna"
+  },
+  "internal jugular vein": {
+    "es": "Vena yugular interna",
+    "ta2Id": "4800",
+    "latin": "Vena jugularis interna"
+  },
+  "internal pudendal artery": {
+    "es": "Arteria pudenda interna",
+    "ta2Id": "4341",
+    "latin": "Arteria pudendalis interna"
+  },
+  "internal pudendal vein": {
+    "es": "Vena pudenda interna",
+    "ta2Id": "5032",
+    "latin": "Vena pudendalis interna"
+  },
+  "internal thoracic artery": {
+    "es": "Arteria torácica interna",
+    "ta2Id": "4576",
+    "latin": "Arteria thoracica interna"
+  },
+  "internal thoracic veins": {
+    "es": "Venas torácicas internas",
+    "ta2Id": "4786",
+    "latin": "Venae thoracicae internae"
+  },
+  "intrarenal arteries of left kidney": {
+    "es": "Arterias intrarrenales del riñón izquierdo",
+    "ta2Id": "7204",
+    "latin": "Arteriae intrarenales renis sinistri"
+  },
+  "intrarenal arteries of right kidney": {
+    "es": "Arterias intrarrenales del riñón derecho",
+    "ta2Id": "7205",
+    "latin": "Arteriae intrarenales renis dextri"
+  },
+  "intrarenal veins of left kidney": {
+    "es": "Venas intrarrenales del riñón izquierdo",
+    "ta2Id": "5008",
+    "latin": "Venae intrarenales renis sinistri"
+  },
+  "intrarenal veins of right kidney": {
+    "es": "Venas intrarrenales del riñón derecho",
+    "ta2Id": "5002",
+    "latin": "Venae intrarenales renis dextri"
+  },
+  "lacrimal artery": {
+    "es": "Arteria lagrimal",
+    "ta2Id": "4476",
+    "latin": "Arteria lacrimalis"
+  },
+  "lateral basal segmental artery of left lung": {
+    "es": "Arteria segmentaria basal lateral del pulmón izquierdo",
+    "ta2Id": "4104",
+    "latin": "Arteria segmentalis basalis lateralis pulmonis sinistri"
+  },
+  "lateral basal segmental artery of right lung": {
+    "es": "Arteria segmentaria basal lateral del pulmón derecho",
+    "ta2Id": "4088",
+    "latin": "Arteria segmentalis basalis lateralis pulmonis dextri"
+  },
+  "lateral circumflex femoral artery": {
+    "es": "Arteria circunfleja femoral lateral",
+    "ta2Id": "4692",
+    "latin": "Arteria circumflexa lateralis femoris"
+  },
+  "lateral circumflex femoral veins": {
+    "es": "Venas femorales circunflejas laterales",
+    "ta2Id": "5057",
+    "latin": "Venae circumflexae latérales"
+  },
+  "lateral occipital artery": {
+    "es": "Arteria occipital lateral",
+    "ta2Id": "4572",
+    "latin": "Arteria occipitalis lateralis"
+  },
+  "lateral plantar artery": {
+    "es": "Arteria plantar lateral",
+    "ta2Id": "4737",
+    "latin": "Arteria plantaris lateralis"
+  },
+  "lateral plantar veins": {
+    "es": "Venas plantares laterales",
+    "ta2Id": "5081",
+    "latin": "Venae plantares latérales"
+  },
+  "lateral pontine branches of basilar artery": {
+    "es": "Ramas pontinas laterales de la arteria basilar",
+    "ta2Id": "4561",
+    "latin": "Rami laterales pontis arteriae basilaris"
+  },
+  "lateral sacral veins": {
+    "es": "Venas sacras laterales",
+    "ta2Id": "5028",
+    "latin": "Venae sacrales latérales"
+  },
+  "lateral segmental artery of right lung": {
+    "es": "Arteria segmentaria lateral del pulmón derecho",
+    "ta2Id": "4084",
+    "latin": "Arteria segmentalis lateralis pulmonis dextri"
+  },
+  "lateral tarsal artery": {
+    "es": "Arteria tarsal lateral",
+    "ta2Id": "4715",
+    "latin": "Arteria tarsea lateralis"
+  },
+  "lateral thoracic artery": {
+    "es": "Arteria torácica lateral",
+    "ta2Id": "4625",
+    "latin": "Arteria thoracica lateralis"
+  },
+  "lateral thoracic vein": {
+    "es": "Vena torácica lateral",
+    "ta2Id": "4971",
+    "latin": "Vena thoracica lateralis"
+  },
+  "lateral vein of right lung": {
+    "es": "Vena lateral del pulmón derecho",
+    "ta2Id": "4113",
+    "latin": "Vena lateralis pulmonis dextri"
+  },
+  "left ascending lumbar vein": {
+    "es": "Vena lumbar ascendente izquierda",
+    "ta2Id": "4771",
+    "latin": "Vena lumbalis ascendens sinistra"
+  },
   "left atrium": {
     "es": "Atrio izquierdo",
     "ta2Id": "4054",
     "latin": "Atrium sinistrum"
+  },
+  "left brachiocephalic vein": {
+    "es": "Vena braquiocefálica izquierda",
+    "ta2Id": "4794",
+    "latin": "Vena brachiocephalica sinistra"
+  },
+  "left colic artery": {
+    "es": "Arteria cólica izquierda",
+    "ta2Id": "4292",
+    "latin": "Arteria colica sinistra"
+  },
+  "left common carotid artery": {
+    "es": "Arteria carótida común izquierda",
+    "ta2Id": "4183",
+    "latin": "Carotis communis sinistra"
+  },
+  "left coronary artery": {
+    "es": "Arteria coronaria izquierda",
+    "ta2Id": "4142",
+    "latin": "Arteria coronaria sinistra"
   },
   "left coronary leaflet": {
     "es": "Válvula coronaria aórtica izquierda",
     "ta2Id": "3996",
     "latin": "Valvula coronaria sinistra aortae"
   },
+  "left gastric artery": {
+    "es": "Arteria gástrica izquierda",
+    "ta2Id": "4212",
+    "latin": "Arteria gastrica sinistra"
+  },
+  "left gastro-omental vein": {
+    "es": "Vena gastro-omental izquierda",
+    "ta2Id": "5126",
+    "latin": "Vena gastroomentalis sinistra"
+  },
+  "left inferior pulmonary vein": {
+    "es": "Vena pulmonar inferior izquierda",
+    "ta2Id": "4125",
+    "latin": "Vena pulmonalis sinistra inferior"
+  },
+  "left pulmonary artery": {
+    "es": "Arteria pulmonar izquierda",
+    "ta2Id": "4091",
+    "latin": "Arteria pulmonalis sinistra"
+  },
+  "left renal artery": {
+    "es": "Arteria renal izquierda",
+    "ta2Id": "7202",
+    "latin": "Arteria renum sinistra"
+  },
+  "left renal vein": {
+    "es": "Vena renal izquierda",
+    "ta2Id": "5006",
+    "latin": "Vena renalis sinistra"
+  },
   "left semilunar leaflet of pulmonary valve": {
     "es": "Válvula semilunar izquierda de la valva pulmonar",
     "ta2Id": "4011",
     "latin": "Valvula semilunaris sinistra valvae trunci pulmonalis"
+  },
+  "left subclavian artery": {
+    "es": "Arteria subclavia izquierda",
+    "ta2Id": "4184",
+    "latin": "Arteria subclavia sinistra"
+  },
+  "left subclavian vein": {
+    "es": "Vena subclavia izquierda",
+    "ta2Id": "7211",
+    "latin": "Vena subclavia sinistra"
+  },
+  "left subcostal vein": {
+    "es": "Vena subcostal izquierda",
+    "ta2Id": "4770",
+    "latin": "Vena subcostalis sinistra"
+  },
+  "left superior intercostal vein": {
+    "es": "Vena intercostal superior izquierda",
+    "ta2Id": "4798",
+    "latin": "Vena intercostalis superior sinistra"
+  },
+  "left superior pulmonary vein": {
+    "es": "Vena pulmonar superior izquierda",
+    "ta2Id": "4119",
+    "latin": "Vena pulmonalis sinistra superior"
+  },
+  "left testicular artery": {
+    "es": "Arteria testicular izquierda",
+    "ta2Id": "7206",
+    "latin": "Arteria testicularis sinistra"
+  },
+  "left testicular vein": {
+    "es": "Vena testicular izquierda",
+    "ta2Id": "5015",
+    "latin": "Vena testicularis sinistra"
   },
   "left ventricle": {
     "es": "Ventrículo izquierdo",
     "ta2Id": "4062",
     "latin": "Ventriculus sinister"
   },
+  "lingual vein": {
+    "es": "Vena lingual",
+    "ta2Id": "4807",
+    "latin": "Vena lingualis"
+  },
+  "lingular vein of left lung": {
+    "es": "Vena lingular del pulmón izquierdo",
+    "ta2Id": "4122",
+    "latin": "Vena lingularis pulmonis sinistri"
+  },
+  "long posterior ciliary arteries": {
+    "es": "Arterias ciliares posteriores largas",
+    "ta2Id": "4481",
+    "latin": "Arteriae ciliares posteriores longae"
+  },
+  "lumbar arteries": {
+    "es": "Arterias lumbares",
+    "ta2Id": "4208",
+    "latin": "Arteriae lumbales"
+  },
+  "lumbar branch of iliolumbar artery": {
+    "es": "Rama lumbar de la arteria iliolumbar",
+    "ta2Id": "4305",
+    "latin": "Ramus lumbalis arteriae iliolumbalis"
+  },
+  "lumbar veins": {
+    "es": "Venas lumbares",
+    "ta2Id": "4993",
+    "latin": "Venae lumbales"
+  },
+  "marginal artery": {
+    "es": "Arteria marginal del colon",
+    "ta2Id": "4266",
+    "latin": "Arteria marginalis coli"
+  },
+  "maxillary artery": {
+    "es": "Arteria maxilar",
+    "ta2Id": "4422",
+    "latin": "Arteria maxillaris"
+  },
+  "maxillary veins": {
+    "es": "Venas maxilares",
+    "ta2Id": "4835",
+    "latin": "Venae maxillares"
+  },
+  "medial basal segmental artery of left lung": {
+    "es": "Arteria segmentaria basal medial del pulmón izquierdo",
+    "ta2Id": "4105",
+    "latin": "Arteria segmentalis basalis medialis pulmonis sinistri"
+  },
+  "medial basal segmental artery of right lung": {
+    "es": "Arteria segmentaria basal medial del pulmón derecho",
+    "ta2Id": "4089",
+    "latin": "Arteria segmentalis basalis medialis pulmonis dextri"
+  },
+  "medial circumflex femoral artery": {
+    "es": "Arteria femoral circunfleja medial",
+    "ta2Id": "4686",
+    "latin": "Arteria circumflexa medialis femoris"
+  },
+  "medial circumflex femoral veins": {
+    "es": "Venas femorales circunflejas mediales",
+    "ta2Id": "5056",
+    "latin": "Venae circumflexae mediales"
+  },
+  "medial occipital artery": {
+    "es": "Arteria occipital medial",
+    "ta2Id": "4574",
+    "latin": "Arteria occipitalis medialis"
+  },
+  "medial plantar artery": {
+    "es": "Arteria plantar medial",
+    "ta2Id": "4734",
+    "latin": "Arteria plantaris medialis"
+  },
+  "medial plantar veins": {
+    "es": "Venas plantares mediales",
+    "ta2Id": "5079",
+    "latin": "Venae plantares mediales"
+  },
+  "medial pontine branches of basilar artery": {
+    "es": "Ramas pontinas mediales de la arteria basilar",
+    "ta2Id": "4560",
+    "latin": "Rami mediales pontis arteriae basilaris"
+  },
+  "medial segmental artery of right lung": {
+    "es": "Arteria segmentaria medial del pulmón derecho",
+    "ta2Id": "4083",
+    "latin": "Arteria segmentalis medialis pulmonis dextri"
+  },
+  "medial vein of right lung": {
+    "es": "Vena medial del pulmón derecho",
+    "ta2Id": "4114",
+    "latin": "Vena medialis pulmonalis dextri"
+  },
+  "median antebrachial vein": {
+    "es": "Vena antebraquial mediana",
+    "ta2Id": "4981",
+    "latin": "Vena mediana antebrachii"
+  },
+  "median cubital vein": {
+    "es": "Vena cubital mediana",
+    "ta2Id": "4980",
+    "latin": "Vena mediana cubiti"
+  },
+  "median sacral artery": {
+    "es": "Arteria sacral mediana",
+    "ta2Id": "4298",
+    "latin": "Arteria sacralis mediana"
+  },
+  "mental branch of inferior alveolar artery": {
+    "es": "Rama mental de la arteria alveolar inferior",
+    "ta2Id": "4430",
+    "latin": "Ramus mentalis arteriae alveolaris inferioris"
+  },
+  "middle cardiac vein": {
+    "es": "Vena cardiaca media",
+    "ta2Id": "4165",
+    "latin": "Vena media cordis interventricularis inferior"
+  },
+  "middle cerebral artery (m1-segment)": {
+    "es": "Arteria cerebral media (Segmento M1)",
+    "ta2Id": "4509*1",
+    "latin": "Arteria cerebri media (Pars M1)"
+  },
+  "middle cerebral artery (m3 segment)": {
+    "es": "Arteria cerebral media (Segmento M3)",
+    "ta2Id": "4509*3",
+    "latin": "Arteria cerebri media (Pars M3)"
+  },
+  "middle cerebral artery (m3-segment)": {
+    "es": "Arteria cerebral media (Segmento M3)",
+    "ta2Id": "4509*3",
+    "latin": "Arteria cerebri media (Pars M3)"
+  },
+  "middle colic artery": {
+    "es": "Arteria cólica media",
+    "ta2Id": "4265",
+    "latin": "Arteria colica media"
+  },
+  "middle colic vein": {
+    "es": "Vena cólico media",
+    "ta2Id": "5122",
+    "latin": "Vena colica media"
+  },
+  "middle collateral artery": {
+    "es": "Arteria colateral media",
+    "ta2Id": "4637",
+    "latin": "Arteria collateralis media"
+  },
+  "middle genicular artery": {
+    "es": "Arteria genicular media",
+    "ta2Id": "4702",
+    "latin": "Arteria media genus"
+  },
+  "middle lobar artery of right lung": {
+    "es": "Arteria lobar media del pulmón derecho",
+    "ta2Id": "4082",
+    "latin": "Arteria lobaris media pulmonis dextri"
+  },
+  "middle meningeal artery": {
+    "es": "Arteria meníngea media",
+    "ta2Id": "4431",
+    "latin": "Arteria meningea media"
+  },
+  "musculophrenic artery": {
+    "es": "Arteria musculofrénica",
+    "ta2Id": "4587",
+    "latin": "Arteria musculoohrenica"
+  },
+  "musculophrenic veins": {
+    "es": "Venas musculofrénicas",
+    "ta2Id": "4789",
+    "latin": "Venae musculophrenicae"
+  },
+  "mylohyoid branch of inferior alveolar artery": {
+    "es": "Rama milohioidea de la arteria alveolar inferior",
+    "ta2Id": "4427",
+    "latin": "Ramus mylohyoideus arteriae alveolaris inferioris"
+  },
   "non-coronary leaflet": {
     "es": "Válvula no coronaria de la valva aórtica",
     "ta2Id": "3997",
     "latin": "Valvula noncoronaria valvae aortae"
+  },
+  "obturator artery": {
+    "es": "Arteria obturatriz",
+    "ta2Id": "4323",
+    "latin": "Arteria obturatoria"
+  },
+  "occipital artery": {
+    "es": "Arteria occipital",
+    "ta2Id": "4398",
+    "latin": "Arteria occipitalis"
+  },
+  "occipital sinus": {
+    "es": "Seno occipital",
+    "ta2Id": "4855",
+    "latin": "Sinus occipitalis"
+  },
+  "occipital vein": {
+    "es": "Vena occipital",
+    "ta2Id": "4781",
+    "latin": "Vena occipitalis"
+  },
+  "ophthalmic artery": {
+    "es": "Arteria oftálmica",
+    "ta2Id": "4469",
+    "latin": "Arteria ophthalmica"
+  },
+  "orbitofrontal branches of anterior cerebral artery": {
+    "es": "Ramas orbitofrontales de la arteria cerebral anterior",
+    "ta2Id": "4504",
+    "latin": "Rami orbitofrontales arteriae cerebri anterior"
+  },
+  "palmar carpal branch of radial artery": {
+    "es": "Rama carpiana palmar de la arteria radial",
+    "ta2Id": "4644",
+    "latin": "Ramus carpeus palmaris arteriae"
+  },
+  "palmar digital veins": {
+    "es": "Venas digitales palmares",
+    "ta2Id": "4987",
+    "latin": "Venae digitales palmares"
+  },
+  "palmar metacarpal arteries": {
+    "es": "Arterias metacarpianas palmares",
+    "ta2Id": "4653",
+    "latin": "Arteriae metacarpeae palmares"
+  },
+  "parietal branches of middle cerebral artery": {
+    "es": "Ramas parietales de la arteria cerebral media",
+    "ta2Id": "4515",
+    "latin": "Rami pariétales arteriae mediae cerebri"
+  },
+  "parieto-occipital artery": {
+    "es": "Arteria parietooccipital",
+    "ta2Id": "4571",
+    "latin": "Arteria paritooccipitale"
+  },
+  "patellar anastomosis": {
+    "es": "Anastomosis patelar",
+    "ta2Id": "4707",
+    "latin": "Rete patellare"
+  },
+  "pectoral branches of thoraco-acromial artery": {
+    "es": "Ramas pectorales de la arteria toracoacromial",
+    "ta2Id": "4624",
+    "latin": "Rami pectorales arteriae thoracoacromialis"
+  },
+  "perforating branches of plantar metatarsal arteries": {
+    "es": "Ramas perforantes de las arterias metatarsianas plantares",
+    "ta2Id": "4740",
+    "latin": "Rami perforantes arteriarum metatarsearum plantarium"
+  },
+  "perforating femoral arteries": {
+    "es": "Arterias femorales perforantes",
+    "ta2Id": "4696",
+    "latin": "Arteriae perforantes femoris"
+  },
+  "perforating veins": {
+    "es": "Venas perforantes",
+    "ta2Id": "5071",
+    "latin": "Venae perforantes"
+  },
+  "pericallosal artery": {
+    "es": "Arteria pericallosa",
+    "ta2Id": "4507",
+    "latin": "Arteria pericallosa"
+  },
+  "plantar arch": {
+    "es": "Arco plantar",
+    "ta2Id": "4738",
+    "latin": "Arcus plantaris"
+  },
+  "plantar digital veins": {
+    "es": "Venas digitales plantares",
+    "ta2Id": "5084",
+    "latin": "Venae digitales plantares"
+  },
+  "plantar metatarsal arteries": {
+    "es": "Arterias metatarsianas plantares",
+    "ta2Id": "4739",
+    "latin": "Arteriae metatarseae plantares"
+  },
+  "plantar metatarsal veins": {
+    "es": "Venas metatarsianas plantares",
+    "ta2Id": "5083",
+    "latin": "Venae metatarseae plantares"
+  },
+  "plantar venous arch": {
+    "es": "Arco venoso plantar",
+    "ta2Id": "5082",
+    "latin": "Arcus venosus plantaris"
+  },
+  "popliteal artery": {
+    "es": "Arteria poplítea",
+    "ta2Id": "4699",
+    "latin": "Arteria poplitea"
+  },
+  "popliteal vein": {
+    "es": "Vena poplítea",
+    "ta2Id": "5072",
+    "latin": "Vena poplitea"
+  },
+  "postcentral arterial branch": {
+    "es": "Rama arterial poscentral",
+    "ta2Id": "4530",
+    "latin": "Ramus arteriosus postcentralis"
+  },
+  "posterior auricular vein": {
+    "es": "Vena auricular posterior",
+    "ta2Id": "4958",
+    "latin": "Vena auricularis posterior"
+  },
+  "posterior basal segmental artery of left lung": {
+    "es": "Arteria segmentaria basal posterior del pulmón izquierdo",
+    "ta2Id": "4106",
+    "latin": "Arteria segmentalis basalis posterior pulmonis sinistri"
+  },
+  "posterior basal segmental artery of right lung": {
+    "es": "Arteria segmentaria basal posterior del pulmón derecho",
+    "ta2Id": "4090",
+    "latin": "Arteria segmentalis basalis posterior pulmonis dextri"
+  },
+  "posterior branch of renal artery": {
+    "es": "Rama posterior de la arteria renal",
+    "ta2Id": "4277",
+    "latin": "Ramus posterior arteriae renalis"
+  },
+  "posterior cerebral artery": {
+    "es": "Arteria cerebral posterior",
+    "ta2Id": "4565",
+    "latin": "Arteria cerebri posterior"
+  },
+  "posterior circumflex humeral artery": {
+    "es": "Arteria circunfleja posterior del húmero",
+    "ta2Id": "4631",
+    "latin": "Arteria circumflexa posterior humeri"
+  },
+  "posterior circumflex humeral vein": {
+    "es": "Vena circunfleja humeral posterior",
+    "ta2Id": "4975",
+    "latin": "Vena circumflexa posterior humeri"
+  },
+  "posterior communicating artery": {
+    "es": "Arteria comunicante posterior",
+    "ta2Id": "4521",
+    "latin": "Arteria communicans posterior"
+  },
+  "posterior deep temporal artery": {
+    "es": "Arteria temporal profunda posterior",
+    "ta2Id": "4441",
+    "latin": "Arteria temporalis profunda posterior"
+  },
+  "posterior division of internal iliac artery": {
+    "es": "División posterior de la arteria ilíaca interna",
+    "ta2Id": "4303",
+    "latin": "Divisio posterior arteriae iliacae internaecus"
+  },
+  "posterior division of retromandibular vein": {
+    "es": "División posterior de la vena retromandibular",
+    "ta2Id": "4957",
+    "latin": "Divisio posterior venae retromandibularis"
+  },
+  "posterior ethmoidal artery": {
+    "es": "Arteria etmoidal posterior",
+    "ta2Id": "4492",
+    "latin": "Arteria ethmoidea posterior"
+  },
+  "posterior inferior cerebellar artery": {
+    "es": "Arteria cerebelosa inferior posterior",
+    "ta2Id": "4542",
+    "latin": "Arteria cerebelli inferior posterior"
+  },
+  "posterior intercavernous sinus": {
+    "es": "Seno intercavernoso posterior",
+    "ta2Id": "4864",
+    "latin": "Sinus intercavernosus posterior"
+  },
+  "posterior intercostal arteries": {
+    "es": "Arterias intercostales posteriores",
+    "ta2Id": "4191",
+    "latin": "Arteriae intercostales posteriores"
+  },
+  "posterior interosseous artery": {
+    "es": "Arteria interósea posterior",
+    "ta2Id": "4665",
+    "latin": "Arteria interossea posterior"
+  },
+  "posterior lateral nasal branches of sphenopalatine artery.": {
+    "es": "Rr. nasales laterales posteriores-arteria esfenopalatina",
+    "ta2Id": "4461",
+    "latin": "Rami nasales latérales posteriores arteriae sphenopalatinae"
   },
   "posterior leaflet of left atrioventricular valve": {
     "es": "Válvula posterior de la valva atrioventricular izquierda",
     "ta2Id": "3990",
     "latin": "Cuspis posterior valvae atrioventricularis sinistrae"
   },
+  "posterior segmental artery of left lung": {
+    "es": "Arteria segmentaria posterior del pulmón izquierdo",
+    "ta2Id": "4097",
+    "latin": "Arteria segmentalis posterior pulmonis sinistri"
+  },
+  "posterior segmental artery of right lung": {
+    "es": "Arteria segmentaria posterior del pulmón derecho",
+    "ta2Id": "4081",
+    "latin": "Arteria segmentalis posterior pulmonis dextri"
+  },
+  "posterior septal branches of sphenopalatine artery": {
+    "es": "Ramas septales posteriores anteriores-arteria esfenopalatina",
+    "ta2Id": "4462",
+    "latin": "Rami septales posteriores arteriae sphenopalatinae"
+  },
+  "posterior superior alveolar artery": {
+    "es": "Arteria alveolar superior posterior",
+    "ta2Id": "4444",
+    "latin": "Arteria alveolaris superior posterior"
+  },
+  "posterior tibial artery": {
+    "es": "Arteria tibial posterior",
+    "ta2Id": "4721",
+    "latin": "Arteria tibialis posterior"
+  },
+  "posterior tibial veins": {
+    "es": "Venas tibiales posteriores",
+    "ta2Id": "5077",
+    "latin": "Venae tibiales posteriores"
+  },
+  "posterior vein of right lung": {
+    "es": "Vena posterior del pulmón derecho",
+    "ta2Id": "4111",
+    "latin": "Vena posterior pulmonis dextri"
+  },
+  "proper hepatic artery": {
+    "es": "Arteria hepática propia",
+    "ta2Id": "4227",
+    "latin": "Arteria hepatica propria"
+  },
+  "proper palmar digital arteries": {
+    "es": "Arterias digitales palmares propias",
+    "ta2Id": "4673",
+    "latin": "Arteriae digitales palmares propriae"
+  },
+  "proper plantar digital arteries": {
+    "es": "Arterias digitales plantares propias",
+    "ta2Id": "4742",
+    "latin": "Arteriae digitales plantares propriae"
+  },
   "pulmonary trunk": {
     "es": "Tronco pulmonar",
     "ta2Id": "4075",
     "latin": "Truncus pulmonalis"
+  },
+  "radial artery": {
+    "es": "Arteria radial",
+    "ta2Id": "4641",
+    "latin": "Arteria radialis"
+  },
+  "radial collateral artery": {
+    "es": "Arteria colateral radial",
+    "ta2Id": "4638",
+    "latin": "Arteria collateralis radialis"
+  },
+  "radial veins": {
+    "es": "Venas radiales",
+    "ta2Id": "4988",
+    "latin": "Venae radiales"
+  },
+  "recurrent interosseous artery": {
+    "es": "Arteria interósea recurrente",
+    "ta2Id": "4666",
+    "latin": "Arteria interossea recurrens"
+  },
+  "retromandibular vein": {
+    "es": "Vena retromandibular",
+    "ta2Id": "4831",
+    "latin": "Vena retromandibularis"
+  },
+  "right ascending lumbar vein": {
+    "es": "Vena lumbar ascendente derecha",
+    "ta2Id": "4757",
+    "latin": "Vena lumbalis ascendens dextra"
   },
   "right atrium": {
     "es": "Atrio derecho",
     "ta2Id": "4022",
     "latin": "Atrium dextrum"
   },
+  "right brachiocephalic vein": {
+    "es": "Vena braquiocefálica derecha",
+    "ta2Id": "4792",
+    "latin": "Vena brachiocephalica dextra"
+  },
+  "right colic artery": {
+    "es": "Arteria cólica derecha",
+    "ta2Id": "4264",
+    "latin": "Arteria colica dextra"
+  },
+  "right colic vein": {
+    "es": "Vena cólica derecha",
+    "ta2Id": "5121",
+    "latin": "Vena colica dextra"
+  },
+  "right common carotid artery": {
+    "es": "Arteria carótida común derecha",
+    "ta2Id": "4181",
+    "latin": "Carotis communis dextra"
+  },
+  "right coronary artery": {
+    "es": "Arteria coronaria derecha",
+    "ta2Id": "4131",
+    "latin": "Arteria coronaria dextra"
+  },
   "right coronary leaflet": {
     "es": "Válvula coronaria aórtica derecha",
     "ta2Id": "3995",
     "latin": "Valvula coronaria dextra aortae"
+  },
+  "right gastro-omental vein": {
+    "es": "Vena gastro-omental derecha",
+    "ta2Id": "5116",
+    "latin": "Vena gastroomentalis dextra"
+  },
+  "right inferior pulmonary vein": {
+    "es": "Vena pulmonar inferior derecha",
+    "ta2Id": "4115",
+    "latin": "Vena pulmonalis dextra inferior"
+  },
+  "right inferolateral branch of right coronary artery": {
+    "es": "Rama inferolateral derecha de la arteria coronaria derecha",
+    "ta2Id": "4141",
+    "latin": "(Ramus inferolateralis dexter arteriae coronariae dextrae)"
+  },
+  "right pulmonary artery": {
+    "es": "Arteria pulmonar derecha",
+    "ta2Id": "4077",
+    "latin": "Arteria pulmonalis dextra"
+  },
+  "right renal artery": {
+    "es": "Arteria renal derecha",
+    "ta2Id": "7203",
+    "latin": "Arteria renum dextra"
+  },
+  "right renal vein": {
+    "es": "Vena renal derecha",
+    "ta2Id": "5000",
+    "latin": "Vena renalis dextra"
   },
   "right semilunar leaflet of pulmonary valve": {
     "es": "Válvula semilunar derecha de la valva pulmonar",
     "ta2Id": "4010",
     "latin": "Valvula semilunaris dextra valvae trunci pulmonalis"
   },
+  "right subclavian artery": {
+    "es": "Arteria subclavia derecha",
+    "ta2Id": "4182",
+    "latin": "Arteria subclavia dextra"
+  },
+  "right subclavian vein": {
+    "es": "Vena subclavia derecha",
+    "ta2Id": "7212",
+    "latin": "Vena subclavia dextra"
+  },
+  "right subcostal vein": {
+    "es": "Vena subcostal derecha",
+    "ta2Id": "4756",
+    "latin": "Vena subcostalis dextra"
+  },
+  "right superior intercostal vein": {
+    "es": "Vena intercostal superior derecha",
+    "ta2Id": "4749",
+    "latin": "Vena intercostalis superior dextra"
+  },
+  "right superior phrenic vein": {
+    "es": "Vena frénica superior derecha",
+    "ta2Id": "4755",
+    "latin": "Vena phrenica superior dextra"
+  },
+  "right superior pulmonary vein": {
+    "es": "Vena ulmonar superior derecha",
+    "ta2Id": "4108",
+    "latin": "Vena pulmonalis dextra superior"
+  },
+  "right testicular artery": {
+    "es": "Arteria testicular derecha",
+    "ta2Id": "7207",
+    "latin": "Arteria testicularis dextra"
+  },
+  "right testicular vein": {
+    "es": "Vena testicular derecha",
+    "ta2Id": "5018",
+    "latin": "Vena testicularis dextra"
+  },
   "right ventricle": {
     "es": "Ventrículo derecho",
     "ta2Id": "4038",
     "latin": "Ventriculus dexter"
+  },
+  "second posterior intercostal artery": {
+    "es": "Segunda arteria intercostal posterior",
+    "ta2Id": "4613",
+    "latin": "Arteria intercostalis posterior secunda"
+  },
+  "septal branches of anterior interventricular artery": {
+    "es": "Ramas septales de la arteria interventricular anterior",
+    "ta2Id": "4147",
+    "latin": "Rami sept. art. Intervent. ant. sept. arteriae coron. sinis."
+  },
+  "septal branches of posterior ethmoidal artery": {
+    "es": "Ramas septales de la arteria etmoidal posterior",
+    "ta2Id": "4494",
+    "latin": "Rami septales arteriae ethmoideae posterioris"
   },
   "septal leaflet of right atrioventricular valve": {
     "es": "Válvula septal de la valva atrioventricular derecha",
@@ -2888,6 +4463,366 @@
     "es": "Musculo papilar septal del ventrículo derecho",
     "ta2Id": "4046",
     "latin": "Musculus papillaris septalis ventriculi dextri"
+  },
+  "short posterior ciliary arteries": {
+    "es": "Arterias ciliares posteriores cortas",
+    "ta2Id": "4479",
+    "latin": "Arteriae ciliares posteriores breves"
+  },
+  "sigmoid arteries": {
+    "es": "Arterias sigmoideas",
+    "ta2Id": "4295",
+    "latin": "Arteriae sigmoideae"
+  },
+  "sigmoid sinus": {
+    "es": "Seno sigmoideo",
+    "ta2Id": "4847",
+    "latin": "Sinus sigmoideus"
+  },
+  "sigmoid veins": {
+    "es": "Venas sigmoideas",
+    "ta2Id": "5129",
+    "latin": "Venae sigmoideae"
+  },
+  "small saphenous vein": {
+    "es": "Pequeña vena safena",
+    "ta2Id": "5085",
+    "latin": "Vena saphena parva"
+  },
+  "spinal branch of iliolumbar artery": {
+    "es": "Rama espinal de la arteria iliolumbar",
+    "ta2Id": "4306",
+    "latin": "Ramus spinalis arteriae iliolumbalis"
+  },
+  "splenic artery": {
+    "es": "Arteria esplénica",
+    "ta2Id": "4239",
+    "latin": "Arteria splenica"
+  },
+  "splenic vein": {
+    "es": "Vena esplénica",
+    "ta2Id": "5123",
+    "latin": "Vena splenica"
+  },
+  "straight sinus": {
+    "es": "Seno recto",
+    "ta2Id": "4853",
+    "latin": "Sinus rectus"
+  },
+  "subcostal artery": {
+    "es": "Arteria subcostal",
+    "ta2Id": "4202",
+    "latin": "Arteria subcostalis"
+  },
+  "submental artery": {
+    "es": "Arteria submental",
+    "ta2Id": "4391",
+    "latin": "Arteria submentalis"
+  },
+  "submental vein": {
+    "es": "Vena submental",
+    "ta2Id": "4829",
+    "latin": "Vena submentalis"
+  },
+  "subscapular artery": {
+    "es": "Arteria subescapular",
+    "ta2Id": "4627",
+    "latin": "Arteria subscapularis"
+  },
+  "subscapular vein": {
+    "es": "Vena subescapular",
+    "ta2Id": "4972",
+    "latin": "Vena subscapularis"
+  },
+  "superficial branch of medial plantar artery": {
+    "es": "Rama superficial de la arteria plantar medial",
+    "ta2Id": "4736",
+    "latin": "Ramus superficialis arteriae plantaris medialis"
+  },
+  "superficial dorsal veins of penis": {
+    "es": "Venas dorsales superficiales del pene",
+    "ta2Id": "5063",
+    "latin": "Venae dorsales superficiales penis"
+  },
+  "superficial epigastric artery": {
+    "es": "Arteria epigástrica superficial",
+    "ta2Id": "4675",
+    "latin": "Arteria epigastrica superficialis"
+  },
+  "superficial epigastric vein": {
+    "es": "Vena epigástrica superficial",
+    "ta2Id": "5067",
+    "latin": "Vena epigastrica superficialis"
+  },
+  "superficial external pudendal artery": {
+    "es": "Arteria pudenda externa superficial",
+    "ta2Id": "4677",
+    "latin": "Arteria pudendalis externa superficialis"
+  },
+  "superficial palmar arch": {
+    "es": "Arco palmar superficial",
+    "ta2Id": "4671",
+    "latin": "Arcus palmaris superficialis"
+  },
+  "superficial temporal artery": {
+    "es": "Arteria temporal superficial",
+    "ta2Id": "4413",
+    "latin": "Arteria temporalis superficialis"
+  },
+  "superficial temporal veins": {
+    "es": "Venas temporales superficiales",
+    "ta2Id": "4832",
+    "latin": "Venae temporales superficiales"
+  },
+  "superficial venous palmar arch": {
+    "es": "Arco venoso palmar superficial",
+    "ta2Id": "4986",
+    "latin": "Arcus venosus palmaris superficialis"
+  },
+  "superior anorectal artery": {
+    "es": "Arteria anorrectal superior",
+    "ta2Id": "4296",
+    "latin": "Arteria anorectalis superior"
+  },
+  "superior basal vein of left lung": {
+    "es": "Vena basal superior del pulmón izquierdo",
+    "ta2Id": "4127",
+    "latin": "Vena basalis superior pulmonis sinistri"
+  },
+  "superior basal vein of right lung": {
+    "es": "Vena basal superior del pulmón derecho",
+    "ta2Id": "4117",
+    "latin": "Vena basalis superior pulmonis dextri"
+  },
+  "superior cerebellar artery": {
+    "es": "Arteria cerebelosa superior",
+    "ta2Id": "4563",
+    "latin": "Arteria cerebelli superior"
+  },
+  "superior epigastric artery": {
+    "es": "Arteria epigástrica superior",
+    "ta2Id": "4588",
+    "latin": "Arteria epigastrica superior"
+  },
+  "superior epigastric veins": {
+    "es": "Venas epigástricas superiores",
+    "ta2Id": "4787",
+    "latin": "Venae epigastricae superiores"
+  },
+  "superior gluteal artery": {
+    "es": "Arteria glútea superior",
+    "ta2Id": "4310",
+    "latin": "Arteria glutea superior"
+  },
+  "superior gluteal veins": {
+    "es": "Venas glúteas superiores",
+    "ta2Id": "5025",
+    "latin": "Venae gluteae superiores"
+  },
+  "superior labial artery": {
+    "es": "Arteria labial superior",
+    "ta2Id": "4394",
+    "latin": "Arteria labialis superior"
+  },
+  "superior labial vein": {
+    "es": "Vena labial superior",
+    "ta2Id": "4824",
+    "latin": "Vena labialis superior"
+  },
+  "superior lateral genicular artery": {
+    "es": "Arteria genicular superior lateral",
+    "ta2Id": "4700",
+    "latin": "Arteria superior lateralis genus"
+  },
+  "superior lingular artery of left lung": {
+    "es": "Arteria lingular superior del pulmón izquierdo",
+    "ta2Id": "4100",
+    "latin": "Arteria lingularis superior pulmonis sinistri"
+  },
+  "superior lingular vein of left lung": {
+    "es": "Vena lingular superior del pulmón izquierdo",
+    "ta2Id": "4123",
+    "latin": "Vena lingularis superior pulmonis sinistri"
+  },
+  "superior lobar artery of right lung": {
+    "es": "Arteria lobar superior del pulmón derecho",
+    "ta2Id": "4078",
+    "latin": "Arteria lobaris superior pulmonis dextri"
+  },
+  "superior medial genicular artery": {
+    "es": "Arteria genicular superior medial",
+    "ta2Id": "4701",
+    "latin": "Arteria superior medialis genus"
+  },
+  "superior mesenteric artery": {
+    "es": "Arteria mesentérica superior",
+    "ta2Id": "4252",
+    "latin": "Arteria mesenteries superior"
+  },
+  "superior mesenteric vein": {
+    "es": "Vena mesentérica superior",
+    "ta2Id": "5113",
+    "latin": "Vena mesenterica superior"
+  },
+  "superior ophthalmic vein": {
+    "es": "Vena oftalmica superior",
+    "ta2Id": "4887",
+    "latin": "Vena ophthalmica superior"
+  },
+  "superior petrosal sinus": {
+    "es": "Seno petroso superior",
+    "ta2Id": "4850",
+    "latin": "Sinus petrosus superior"
+  },
+  "superior phrenic arteries": {
+    "es": "Arterias frénicas superiores",
+    "ta2Id": "4201",
+    "latin": "Arteriae phrenicae superiores"
+  },
+  "superior sagittal sinus": {
+    "es": "Seno sagital superior",
+    "ta2Id": "4856",
+    "latin": "Sinus sagittalis superior"
+  },
+  "superior segmental artery of left lung": {
+    "es": "Arteria segmentaria superior del pulmón izquierdo",
+    "ta2Id": "4102",
+    "latin": "Arteria segmentalis superior pulmonis sinistri"
+  },
+  "superior segmental artery of right lung": {
+    "es": "Arteria segmentaria superior del pulmón derecho",
+    "ta2Id": "4086",
+    "latin": "Arteria segmentalis superior pulmonis dextri"
+  },
+  "superior thyroid vein": {
+    "es": "Vena tiroidea superior",
+    "ta2Id": "4812",
+    "latin": "Vena thyreoidea superior"
+  },
+  "superior ulnar collateral artery": {
+    "es": "Arteria colateral ulnar superior",
+    "ta2Id": "4639",
+    "latin": "Arteria collateralis ulnaris superior"
+  },
+  "superior vein of left lung": {
+    "es": "Vena superior del pulmón izquierdo",
+    "ta2Id": "4126",
+    "latin": "Vena superior pulmonis sinistri"
+  },
+  "superior vein of right lung": {
+    "es": "Vena superior del pulmón derecho",
+    "ta2Id": "4116",
+    "latin": "Vena superior pulmonis dextri"
+  },
+  "superior vena cava": {
+    "es": "Vena cava superior",
+    "ta2Id": "4745",
+    "latin": "Vena cava superior"
+  },
+  "supra-orbital artery": {
+    "es": "Arteria supraorbitaria",
+    "ta2Id": "4486",
+    "latin": "Arteria supraorbitalis"
+  },
+  "suprascapular artery": {
+    "es": "Arteria supraescapular",
+    "ta2Id": "4599",
+    "latin": "Arteria suprascapularis"
+  },
+  "suprascapular vein": {
+    "es": "Vena supraescapular",
+    "ta2Id": "4961",
+    "latin": "Vena suprascapularis"
+  },
+  "supratrochlear artery": {
+    "es": "Arteria supratroclear",
+    "ta2Id": "4499",
+    "latin": "Arteria supratrochlearis"
+  },
+  "supreme intercostal artery": {
+    "es": "Arteria intercostal suprema",
+    "ta2Id": "4609",
+    "latin": "Arteria intercostalis suprema"
+  },
+  "temporal branches of middle cerebral artery": {
+    "es": "Ramas temporales de la arteria cerebral media",
+    "ta2Id": "4513",
+    "latin": "Rami temporales arteriae mediae cerebri"
+  },
+  "thoracic aorta": {
+    "es": "Aorta torácica",
+    "ta2Id": "4186",
+    "latin": "Aorta thoracica"
+  },
+  "thoraco-acromial artery": {
+    "es": "Arteria toracoacromial",
+    "ta2Id": "4619",
+    "latin": "Arteria thoracoacromialis"
+  },
+  "thoracodorsal artery": {
+    "es": "Arteria toracodorsal",
+    "ta2Id": "4628",
+    "latin": "Arteria thoracodorsalis"
+  },
+  "thoracodorsal vein": {
+    "es": "Vena toracodorsal",
+    "ta2Id": "4974",
+    "latin": "Vena thoracodorsalis"
+  },
+  "thyrocervical trunk": {
+    "es": "Tronco tirocervical",
+    "ta2Id": "4590",
+    "latin": "Truncus thyreocervicalis"
+  },
+  "transverse cervical artery": {
+    "es": "Arteria cervical transversal",
+    "ta2Id": "4601",
+    "latin": "Arteria transversa colli arteria transversa cervicis"
+  },
+  "transverse facial artery": {
+    "es": "Arteria facial transversa",
+    "ta2Id": "4416",
+    "latin": "Arteria transversa faciei"
+  },
+  "transverse sinus": {
+    "es": "Seno transverso",
+    "ta2Id": "4849",
+    "latin": "Sinus transversus"
+  },
+  "ulnar artery": {
+    "es": "Arteria ulnar",
+    "ta2Id": "4655",
+    "latin": "Arteria ulnaris"
+  },
+  "ulnar veins": {
+    "es": "Venas ulnares",
+    "ta2Id": "4985",
+    "latin": "Venae ulnares"
+  },
+  "vertebral artery": {
+    "es": "Arteria vertebral",
+    "ta2Id": "4538",
+    "latin": "Arteria vertebralis"
+  },
+  "vertebral vein": {
+    "es": "Vena vertebral",
+    "ta2Id": "4780",
+    "latin": "Vena vertebralis"
+  },
+  "communicating branch of median nerve with ulnar nerve": {
+    "es": "(Ramo comunicante del nervio mediano con el nervio ulnar)",
+    "ta2Id": "6463",
+    "latin": "(Ramus communicans ulnaris nervi mediani)"
+  },
+  "abducens nerve (vi)": {
+    "es": "Nervio abducens (VI)",
+    "ta2Id": "6283",
+    "latin": "Nervus abducens (VI)"
+  },
+  "accessory nerve (xi)": {
+    "es": "Nervio accesorio (XI)",
+    "ta2Id": "6352",
+    "latin": "Nervus accessorius (XI)"
   },
   "accessory nucleus of oculomotor nerve": {
     "es": "Núcleo accesorio del nervio oculomotor",
@@ -2909,6 +4844,16 @@
     "ta2Id": "5472",
     "latin": "Gyrus angularis"
   },
+  "anterior branch of medial antebrachial cutaneous nerve": {
+    "es": "Ramo anterior del nervio cutáneo antebraquial medial",
+    "ta2Id": "6447",
+    "latin": "Ramus anterior nervi cutanei medialis antebrachii"
+  },
+  "anterior branch of obturator nerve": {
+    "es": "Ramo anterior del nervio obturador",
+    "ta2Id": "6533",
+    "latin": "Ramus anterior nervi obturatorii"
+  },
   "anterior cochlear nucleus": {
     "es": "Núcleo coclear anterior",
     "ta2Id": "6006",
@@ -2919,15 +4864,60 @@
     "ta2Id": "5613",
     "latin": "Commissura anterior"
   },
+  "anterior cutaneous branches of femoral nerve": {
+    "es": "Ramos cutáneos anteriores del nervio femoral",
+    "ta2Id": "6524",
+    "latin": "Rami cutanei anteriores nervi femoralis"
+  },
+  "anterior division of inferior trunk of brachial plexus": {
+    "es": "División anterior del tronco inferior del plexo braquial",
+    "ta2Id": "6405",
+    "latin": "Divisio anterior trunci inferioris plexus brachialis"
+  },
+  "anterior division of mandibular nerve": {
+    "es": "División anterior del nervio mandibular",
+    "ta2Id": "6249",
+    "latin": "Divisio anterior nervi mandibularis"
+  },
+  "anterior division of middle trunk of brachial plexus": {
+    "es": "División anterior del tronco medio del plexo braquial",
+    "ta2Id": "6402",
+    "latin": "Divisio anterior trunci medii plexus brachialis"
+  },
+  "anterior division of superior trunk of brachial plexus": {
+    "es": "División anterior del tronco superior del plexo braquial",
+    "ta2Id": "6399",
+    "latin": "Divisio anterior trunci superioris plexus brachialis"
+  },
+  "anterior interosseous nerve of forearm": {
+    "es": "Nervio interóseo anterior del antebrazo",
+    "ta2Id": "6460",
+    "latin": "Nervus interosseus anterior antebrachii"
+  },
   "anterior quadrangular lobule": {
     "es": "Lóbulo cuadrangular anterior",
     "ta2Id": "5808",
     "latin": "Lobulus quadrangularis anterior"
   },
+  "anterior root of posterior femoral cutaneous nerve": {
+    "es": "Raíz anterior del nervio cutáneo femoral posterior",
+    "ta2Id": "6564",
+    "latin": "Radix anterior nervi cutanei femoris"
+  },
+  "anterior root of spinal nerve": {
+    "es": "Raíz anterior del nervio espinal",
+    "ta2Id": "6145",
+    "latin": "Radix anterior nervi spinalis"
+  },
   "aqueduct of midbrain": {
     "es": "Acueducto del mesencéfalo",
     "ta2Id": "5910",
     "latin": "Aquaeductus mesencephali"
+  },
+  "axillary nerve": {
+    "es": "Nervio axilar",
+    "ta2Id": "6440",
+    "latin": "Nervus axillaris"
   },
   "base of peduncle": {
     "es": "Base del pedúnculo",
@@ -2939,15 +4929,30 @@
     "ta2Id": "5816",
     "latin": "Lobulus biventer"
   },
+  "buccal nerve": {
+    "es": "Nervio bucal",
+    "ta2Id": "6258",
+    "latin": "Nervus buccalis"
+  },
   "calcarine sulcus": {
     "es": "Surco calcarino",
     "ta2Id": "5486",
     "latin": "Sulcus calcarinus"
   },
+  "cauda equina": {
+    "es": "Cauda equina",
+    "ta2Id": "6163",
+    "latin": "Cauda equina"
+  },
   "caudate nucleus": {
     "es": "Núcleo caudado",
     "ta2Id": "5561",
     "latin": "Nucleus caudatus"
+  },
+  "central canal'": {
+    "es": "Canal central",
+    "ta2Id": "6127",
+    "latin": "Canalis centralis"
   },
   "central lobule": {
     "es": "Lóbulo central",
@@ -2958,6 +4963,11 @@
     "es": "Surco central",
     "ta2Id": "5435",
     "latin": "Sulcus centralis"
+  },
+  "chorda tympani": {
+    "es": "Cuerda del tímpano",
+    "ta2Id": "6292",
+    "latin": "Chorda tympani"
   },
   "choroid plexus": {
     "es": "Plexo coroideo",
@@ -2984,6 +4994,31 @@
     "ta2Id": "5442",
     "latin": "Sulcus collateralis"
   },
+  "common fibular nerve": {
+    "es": "Nervio fibular común",
+    "ta2Id": "6571",
+    "latin": "Nervus fibularis communis"
+  },
+  "common palmar digital branches of median nerve": {
+    "es": "Ramos digitales palmares comunes del nervio mediano",
+    "ta2Id": "6465",
+    "latin": "Rami digitales palmares communes nervi mediani"
+  },
+  "common palmar digital branches of ulnar nerve": {
+    "es": "Ramos digitales palmares comunes del nervio ulnar",
+    "ta2Id": "6455",
+    "latin": "Rami digitales palmares communes nervi ulnaris"
+  },
+  "common plantar digital branches of lateral plantar nerve": {
+    "es": "Ramos digitales plantares comunes del nervio plantar lateral",
+    "ta2Id": "6595",
+    "latin": "Rami digitales plantares communes nervi plantaris lateralis"
+  },
+  "common plantar digital branches of medial plantar nerve": {
+    "es": "Ramos digitales plantares comunes del nervio plantar medial",
+    "ta2Id": "6591",
+    "latin": "Rami digitales plantares communes nervi plantaris medialis"
+  },
   "corpus callosum": {
     "es": "Cuerpo calloso",
     "ta2Id": "5604",
@@ -3004,10 +5039,70 @@
     "ta2Id": "5827",
     "latin": "Declive"
   },
+  "deep branch of radial nerve": {
+    "es": "Ramo profundo del nervio radial",
+    "ta2Id": "6436",
+    "latin": "Ramus profundus nervi radialis"
+  },
+  "deep branch of ulnar nerve": {
+    "es": "Ramo profunda del nervio ulnar",
+    "ta2Id": "6457",
+    "latin": "Ramus profundus nervi ulnaris"
+  },
+  "deep fibular nerve": {
+    "es": "Nervio fibular profundo",
+    "ta2Id": "6579",
+    "latin": "Nervus fibularis profundus"
+  },
+  "dorsal branch of ulnar nerve": {
+    "es": "Ramo dorsal del nervio ulnar",
+    "ta2Id": "6451",
+    "latin": "Ramus dorsalis nervi ulnaris"
+  },
+  "dorsal digital branches of deep fibular nerve": {
+    "es": "Ramos digitales dorsales del nervio fibular profundo",
+    "ta2Id": "6581",
+    "latin": "Rami digitales dorsales nervi fibularis profundi"
+  },
+  "dorsal digital branches of radial nerve": {
+    "es": "Ramos digitales dorsales del nervio radial",
+    "ta2Id": "6439",
+    "latin": "Rami digitales dorsales nervi radialis"
+  },
+  "dorsal digital branches of superficial fibular nerve": {
+    "es": "Ramos digitales dorsales del nervio fibularo superficial",
+    "ta2Id": "6578",
+    "latin": "Rami digitales dorsales nervi fibularis superficialis"
+  },
+  "dorsal digital branches of ulnar nerve": {
+    "es": "Ramos digitales dorsales del nervio ulnar",
+    "ta2Id": "6452",
+    "latin": "Rami digitales dorsales nervi ulnaris"
+  },
+  "dorsal scapular nerve": {
+    "es": "Nervio dorsal de la escápula",
+    "ta2Id": "6409",
+    "latin": "Nervus dorsalis scapulae"
+  },
+  "facial nerve (vii)": {
+    "es": "Nervio facial (VII)",
+    "ta2Id": "6284",
+    "latin": "Nervus facialis (VII)"
+  },
   "falx cerebri": {
     "es": "Hoz del cerebro",
     "ta2Id": "5374",
     "latin": "Falx cerebri"
+  },
+  "femoral branch of genitofemoral nerve": {
+    "es": "Ramo femoral del nervio genitofemoral",
+    "ta2Id": "6531",
+    "latin": "Ramus femoralis nervi genitofemoralis"
+  },
+  "femoral nerve": {
+    "es": "Nervio femoral",
+    "ta2Id": "6522",
+    "latin": "Nervus femoralis"
   },
   "flocculus": {
     "es": "Flocculus",
@@ -3034,10 +5129,25 @@
     "ta2Id": "6606",
     "latin": "Ganglia trunci sympathici"
   },
+  "genital branch of genitofemoral nerve": {
+    "es": "Ramo genital del nervio genitofemoral",
+    "ta2Id": "6530",
+    "latin": "Ramus genitalis nervi genitofemoralis"
+  },
+  "genitofemoral nerve": {
+    "es": "Nervio genitofemoral",
+    "ta2Id": "6529",
+    "latin": "Nervus genitofemoralis"
+  },
   "globus pallidus": {
     "es": "Globo pálido",
     "ta2Id": "5569",
     "latin": "Globus pallidus"
+  },
+  "glossopharyngeal nerve (ix)": {
+    "es": "Nervio glosofaríngeo (IX)",
+    "ta2Id": "6320",
+    "latin": "Nervus glossopharyngeus (IX)"
   },
   "gracile lobule": {
     "es": "Lóbulo grácil",
@@ -3059,10 +5169,30 @@
     "ta2Id": "5518",
     "latin": "Hippocampus"
   },
+  "hypoglossal nerve (xii)": {
+    "es": "Nervio hipogloso (XII)",
+    "ta2Id": "6357",
+    "latin": "Nervus hypoglossus (XII)"
+  },
   "hypothalamus": {
     "es": "Hipotálamo",
     "ta2Id": "5714",
     "latin": "Hypothalamus"
+  },
+  "ilio-inguinal nerve": {
+    "es": "Nervio ilioinguinal",
+    "ta2Id": "6499",
+    "latin": "Nervus ilioinguinalis"
+  },
+  "iliohypogastric nerve": {
+    "es": "Nervio iliohipogástrico",
+    "ta2Id": "6496",
+    "latin": "Nervus iliohypogastricus"
+  },
+  "inferior alveolar nerve": {
+    "es": "Nervio alveolar inferior",
+    "ta2Id": "6274",
+    "latin": "Nervus alveolaris inferior"
   },
   "inferior colliculus": {
     "es": "Colículo inferior",
@@ -3074,10 +5204,20 @@
     "ta2Id": "5453",
     "latin": "Sulcus frontalis inferior"
   },
+  "inferior lateral brachial cutaneous nerve": {
+    "es": "Nervio cutáneo braquial lateral inferior",
+    "ta2Id": "6433",
+    "latin": "Nervus cutaneus lateralis inferior brachii"
+  },
   "inferior semilunar lobule": {
     "es": "Lóbulo semilunar inferior",
     "ta2Id": "5814",
     "latin": "Lobulus semilunaris inferior"
+  },
+  "inferior subscapular nerve": {
+    "es": "Nervio subescapular inferior",
+    "ta2Id": "6429",
+    "latin": "Nervus subscapularis inferior"
   },
   "inferior temporal gyrus": {
     "es": "Giro temporal inferior",
@@ -3088,6 +5228,26 @@
     "es": "Surco temporal inferior",
     "ta2Id": "5496",
     "latin": "Sulcus temporalis inferior"
+  },
+  "inferior trunk of brachial plexus": {
+    "es": "Tronco inferior del plexo braquial",
+    "ta2Id": "6404",
+    "latin": "Truncus inferior plexus brachialis"
+  },
+  "infrapatellar branch of saphenous nerve": {
+    "es": "Ramo infrapatelar del nervio safeno",
+    "ta2Id": "6526",
+    "latin": "Ramus infrapatellaris nervi sapheni"
+  },
+  "intercostal nerves": {
+    "es": "Nervios intercostales",
+    "ta2Id": "6471",
+    "latin": "Nervi intercostales"
+  },
+  "intermediate dorsal cutaneous nerve of foot": {
+    "es": "Nervio cutáneo dorsal intermedio del pie",
+    "ta2Id": "6577",
+    "latin": "Nervus cutaneus intermedius dorsalis pedis"
   },
   "interpeduncular fossa": {
     "es": "Fosa interpeduncular",
@@ -3114,6 +5274,16 @@
     "ta2Id": "6857",
     "latin": "Saccus lacrimalis"
   },
+  "lateral antebrachial cutaneous nerve": {
+    "es": "Nervio cutáneo antebraquial lateral",
+    "ta2Id": "6423",
+    "latin": "Nervus cutaneus lateralis antebrachii"
+  },
+  "lateral femoral cutaneous nerve": {
+    "es": "Nervio cutáneo femoral lateral",
+    "ta2Id": "6521",
+    "latin": "Nervus cutaneus lateralis femoris"
+  },
   "lateral geniculate body": {
     "es": "Cuerpo geniculado lateral",
     "ta2Id": "5666",
@@ -3123,6 +5293,16 @@
     "es": "Giro occipitotemporal lateral",
     "ta2Id": "5500",
     "latin": "Gyrus occipitotemporalis lateralis"
+  },
+  "lateral pectoral nerve": {
+    "es": "Nervio pectoral lateral",
+    "ta2Id": "6419",
+    "latin": "Nervus pectoralis lateralis"
+  },
+  "lateral plantar nerve": {
+    "es": "Nervio plantar lateral",
+    "ta2Id": "6593",
+    "latin": "Nervus plantaris lateralis"
   },
   "lateral ventricle": {
     "es": "Ventrículo lateral",
@@ -3139,10 +5319,20 @@
     "ta2Id": "5487",
     "latin": "Gyrus lingualis"
   },
+  "lingual nerve": {
+    "es": "Nervio lingual",
+    "ta2Id": "6267",
+    "latin": "Nervus lingualis"
+  },
   "lingula of cerebellum": {
     "es": "Lingula del cerebelo",
     "ta2Id": "5820",
     "latin": "Lingula cerebelli"
+  },
+  "long thoracic nerve": {
+    "es": "Nervio torácico largo",
+    "ta2Id": "6410",
+    "latin": "Nervus thoracicus longus"
   },
   "lunate sulcus": {
     "es": "(Surco lunar)",
@@ -3154,15 +5344,70 @@
     "ta2Id": "5674",
     "latin": "Corpus mammillare"
   },
+  "maxillary nerve": {
+    "es": "Nervio maxilar",
+    "ta2Id": "6216",
+    "latin": "Nervus maxillaris"
+  },
+  "medial antebrachial cutaneous nerve": {
+    "es": "Nervio cutáneo antebraquial medial",
+    "ta2Id": "6446",
+    "latin": "Nervus cutaneus medialis antebrachii"
+  },
+  "medial brachial cutaneous nerve": {
+    "es": "Nervio cutáneo braquial medial",
+    "ta2Id": "6445",
+    "latin": "Nervus cutaneus medialis brachii"
+  },
+  "medial crural cutaneous branches of saphenous nerve": {
+    "es": "Ramos cutáneos crurales mediales del nervio safeno",
+    "ta2Id": "6527",
+    "latin": "Rami cutanei mediales cruris nervi sapheni"
+  },
+  "medial dorsal cutaneous nerve of foot": {
+    "es": "Nervio cutáneo dorsal medial del pie",
+    "ta2Id": "6576",
+    "latin": "Nervus cutaneus medialis dorsalis pedis"
+  },
   "medial geniculate body": {
     "es": "Cuerpo geniculado medial",
     "ta2Id": "5667",
     "latin": "Corpus geniculatum mediale"
   },
+  "medial pectoral nerve": {
+    "es": "Nervio pectoral medial",
+    "ta2Id": "6444",
+    "latin": "Nervus pectoralis medialis"
+  },
+  "medial plantar nerve": {
+    "es": "Nervio plantar medial",
+    "ta2Id": "6590",
+    "latin": "Nervus plantaris medialis"
+  },
+  "medial sural cutaneous nerve": {
+    "es": "Nervio cutáneo sural medial",
+    "ta2Id": "6585",
+    "latin": "Nervus cutaneus medialis surae"
+  },
+  "median nerve": {
+    "es": "Nervio mediano",
+    "ta2Id": "6459",
+    "latin": "Nervus medianus"
+  },
   "medulla oblongata": {
     "es": "Bulbo",
     "ta2Id": "5983",
     "latin": "Medulla oblongata"
+  },
+  "meningeal branch of maxillary nerve": {
+    "es": "Ramo meníngeo del nervio maxilar",
+    "ta2Id": "6217",
+    "latin": "Ramus meningeus nervi maxillaris"
+  },
+  "mental nerve": {
+    "es": "Nervio mental",
+    "ta2Id": "6279",
+    "latin": "Nervus mentalis"
   },
   "midbrain": {
     "es": "Mesencéfalo",
@@ -3179,6 +5424,11 @@
     "ta2Id": "5495",
     "latin": "Gyrus temporalis medius"
   },
+  "middle trunk of brachial plexus": {
+    "es": "Tronco medio del plexo braquial",
+    "ta2Id": "6401",
+    "latin": "Truncus medius plexus brachialis"
+  },
   "motor nucleus of facial nerve": {
     "es": "Núcleo motor del nervio facial",
     "ta2Id": "5939",
@@ -3189,10 +5439,55 @@
     "ta2Id": "6195",
     "latin": "Radix motoria nervi trigemini"
   },
+  "muscular branches of axillary nerve": {
+    "es": "Ramos musculares del nervio axilar",
+    "ta2Id": "6441",
+    "latin": "Rami musculares nervi axillaris"
+  },
+  "muscular branches of deep fibular nerve": {
+    "es": "Ramos musculares del nervio fibular profundo",
+    "ta2Id": "6580",
+    "latin": "Rami musculares nervi fibularis profundi"
+  },
+  "muscular branches of median nerve": {
+    "es": "Ramos musculares del nervio mediano",
+    "ta2Id": "6461",
+    "latin": "Rami musculares nervi mediani"
+  },
+  "muscular branches of radial nerve": {
+    "es": "Ramos musculares del nervio radial",
+    "ta2Id": "6435",
+    "latin": "Rami musculares nervi radialis"
+  },
+  "muscular branches of ulnar nerve": {
+    "es": "Ramos musculares del nervio ulnar",
+    "ta2Id": "6450",
+    "latin": "Rami musculares nervi ulnaris"
+  },
+  "musculocutaneous nerve": {
+    "es": "Nervio musculocutáneo",
+    "ta2Id": "6421",
+    "latin": "Nervus musculocutaneus"
+  },
   "nasolacrimal duct": {
     "es": "Conducto nasolagrimal",
     "ta2Id": "6859",
     "latin": "Ductus nasolacrimalis"
+  },
+  "nerve to mylohyoid muscle": {
+    "es": "Nervio del músculo milohioideo",
+    "ta2Id": "6275",
+    "latin": "Nervus mylohyoideus"
+  },
+  "nerve to piriformis muscle": {
+    "es": "Nervio del músculo piriforme",
+    "ta2Id": "6545",
+    "latin": "Nervus musculi piriformis"
+  },
+  "nerve to quadratus femoris muscle": {
+    "es": "Nervio del músculo cuadrado femoral",
+    "ta2Id": "6551",
+    "latin": "Nervus musculi quadrati femoris"
   },
   "nodule of vermis": {
     "es": "Nódulo del vermis",
@@ -3214,10 +5509,25 @@
     "ta2Id": "5892",
     "latin": "Nucleus nervi oculomotorius"
   },
+  "obturator nerve": {
+    "es": "Nervio obturador",
+    "ta2Id": "6532",
+    "latin": "Nervus obturatorius"
+  },
   "occipital pole": {
     "es": "Polo occipital",
     "ta2Id": "5421",
     "latin": "Polus occipitalis"
+  },
+  "oculomotor nerve (iii)": {
+    "es": "Nervio oculomotor (III)",
+    "ta2Id": "6187",
+    "latin": "Nervus oculomotorius (III)"
+  },
+  "olfactory nerve (i)": {
+    "es": "Nervio olfatorio (I)",
+    "ta2Id": "6181",
+    "latin": "Nervus olfactorius (I)"
   },
   "olfactory sulcus": {
     "es": "Surco olfatorio",
@@ -3234,10 +5544,20 @@
     "ta2Id": "5452",
     "latin": "Pars opercularis gyri frontalis inferioris"
   },
+  "ophthalmic nerve": {
+    "es": "Nervio oftálmico",
+    "ta2Id": "6196",
+    "latin": "Nervus ophthalmicus"
+  },
   "optic chiasm": {
     "es": "Quiasma óptico",
     "ta2Id": "5668",
     "latin": "Chiasma opticum"
+  },
+  "optic nerve (ii)": {
+    "es": "Nervio óptico (II)",
+    "ta2Id": "6183",
+    "latin": "Nervus opticus (II)"
   },
   "optic tract": {
     "es": "Tracto óptico",
@@ -3253,6 +5573,16 @@
     "es": "Parte orbital del giro frontal inferior",
     "ta2Id": "5448",
     "latin": "Pars orbitalis gyri frontalis inferioris"
+  },
+  "palmar branch of median nerve": {
+    "es": "Ramo palmar del nervio mediano",
+    "ta2Id": "6462",
+    "latin": "Ramus palmaris nervi mediani"
+  },
+  "palmar branch of ulnar nerve": {
+    "es": "Ramo palmar del nervio ulnar",
+    "ta2Id": "6453",
+    "latin": "Ramus palmaris nervi ulnaris"
   },
   "paracentral sulcus": {
     "es": "Surco paracentral",
@@ -3284,15 +5614,75 @@
     "ta2Id": "5470",
     "latin": "Sulcus postcentralis"
   },
+  "posterior antebrachial cutaneous nerve": {
+    "es": "Nervio cutáneo antebraquial posterior",
+    "ta2Id": "6434",
+    "latin": "Nervus cutaneus posterior antebrachii"
+  },
+  "posterior branch of medial antebrachial cutaneous nerve": {
+    "es": "Ramo posterior del nervio cutáneo antebraquial medial",
+    "ta2Id": "6448",
+    "latin": "Ramus posterior nervi cutanei medialis antebrachii"
+  },
+  "posterior branch of obturator nerve": {
+    "es": "Ramo posterior del nervio obturador",
+    "ta2Id": "6536",
+    "latin": "Ramus posterior nervi obturatorii"
+  },
   "posterior commissure": {
     "es": "Comisura posterior",
     "ta2Id": "5749",
     "latin": "Commissura posterior"
   },
+  "posterior cord of brachial plexus": {
+    "es": "Fascículo posterior del plexo braquial",
+    "ta2Id": "6416",
+    "latin": "Fasciculus posterior plexus brachialis"
+  },
+  "posterior division of inferior trunk of brachial plexus": {
+    "es": "División posterior del tronco inferior del plexo braquial",
+    "ta2Id": "6406",
+    "latin": "Divisio posterior trunci inferioris plexus brachialis"
+  },
+  "posterior division of mandibular nerve": {
+    "es": "División posterior del nervio mandibular",
+    "ta2Id": "6260",
+    "latin": "Divisio posterior nervi mandibularis"
+  },
+  "posterior division of middle trunk of brachial plexus": {
+    "es": "División posterior del tronco medio del plexo braquial",
+    "ta2Id": "6403",
+    "latin": "Divisio posterior trunci medii plexus brachialis"
+  },
+  "posterior division of superior trunk of brachial plexus": {
+    "es": "División posterior del tronco superior del plexo braquial",
+    "ta2Id": "6400",
+    "latin": "Divisio posterior trunci superioris plexus brachialis"
+  },
+  "posterior femoral cutaneous nerve": {
+    "es": "Nervio cutáneo femoral posterior",
+    "ta2Id": "6566",
+    "latin": "Nervus cutaneus posterior femoris"
+  },
+  "posterior interosseous nerve of forearm": {
+    "es": "Nervio interóseo posterior del antebrazo",
+    "ta2Id": "6437",
+    "latin": "Nervus interosseus posterior antebrachii"
+  },
   "posterior quadrangular lobule": {
     "es": "Lóbulo cuadrangular posterior",
     "ta2Id": "5811",
     "latin": "Lobulus quadrangularis posterior"
+  },
+  "posterior root of posterior femoral cutaneous nerve": {
+    "es": "Raíz posterior del nervio cutáneo femoral posterior",
+    "ta2Id": "6547",
+    "latin": "Radix posterior nervi cutanei posterioris femoris"
+  },
+  "posterior root of spinal nerve": {
+    "es": "Raíz posterior del nervio espinal",
+    "ta2Id": "6146",
+    "latin": "Radix posterior nervi spinalis"
   },
   "precentral gyrus": {
     "es": "Giro precentral",
@@ -3303,6 +5693,31 @@
     "es": "Precuneus",
     "ta2Id": "5479",
     "latin": "Precuneus"
+  },
+  "proper palmar digital branches of median nerve": {
+    "es": "Ramos digitales palmares propias del nervio mediano",
+    "ta2Id": "6466",
+    "latin": "Rami digitales palmares proprii nervi mediani"
+  },
+  "proper palmar digital branches of ulnar nerve": {
+    "es": "Ramos digitales palmares propias del nervio ulnar",
+    "ta2Id": "6456",
+    "latin": "Rami digitales palmares proprii nervi ulnaris"
+  },
+  "proper plantar digital branches of lateral plantar nerve": {
+    "es": "Ramos digitales plantares propios del nervio plantar lateral",
+    "ta2Id": "6596",
+    "latin": "Rami digitales plantares proprii nervi plantaris lateralis"
+  },
+  "proper plantar digital branches of medial plantar nerve": {
+    "es": "Ramos digitales plantares propios del nervio plantar medial",
+    "ta2Id": "6592",
+    "latin": "Rami digitales plantares proprii nervi plantaris medialis"
+  },
+  "pudendal nerve": {
+    "es": "Nervio pudendo",
+    "ta2Id": "6554",
+    "latin": "Nervus pudendalis"
   },
   "putamen": {
     "es": "Putamen",
@@ -3319,10 +5734,30 @@
     "ta2Id": "5830",
     "latin": "Pyramis vermis"
   },
+  "radial nerve": {
+    "es": "Nervio radial",
+    "ta2Id": "6431",
+    "latin": "Nervus radialis"
+  },
   "red nucleus": {
     "es": "Núcleo rojo",
     "ta2Id": "5898",
     "latin": "Nucleus ruber"
+  },
+  "roots of brachial plexus": {
+    "es": "Raíces del plexo braquial",
+    "ta2Id": "6397",
+    "latin": "Radices plexus brachialis"
+  },
+  "saphenous nerve": {
+    "es": "Nervio safeno",
+    "ta2Id": "6525",
+    "latin": "Nervus saphenus"
+  },
+  "sciatic nerve": {
+    "es": "Nervio ciático",
+    "ta2Id": "6569",
+    "latin": "Nervus ischiadicus"
   },
   "sensory root of trigeminal nerve": {
     "es": "Raíz sensorial del nervio trigémino",
@@ -3354,10 +5789,30 @@
     "ta2Id": "5592",
     "latin": "Stria terminalis"
   },
+  "subclavian nerve": {
+    "es": "Nervio subclavio",
+    "ta2Id": "6412",
+    "latin": "Nervus subclavius"
+  },
   "subparietal sulcus": {
     "es": "Surco subparietal",
     "ta2Id": "5441",
     "latin": "Sulcus subparietalis"
+  },
+  "superficial branch of radial nerve": {
+    "es": "Ramo superficial del nervio radial",
+    "ta2Id": "6438",
+    "latin": "Ramus superficialis nervi radialis"
+  },
+  "superficial branch of ulnar nerve": {
+    "es": "Ramo superficial del nervio ulnar",
+    "ta2Id": "6454",
+    "latin": "Ramus superficialis nervi ulnaris"
+  },
+  "superficial fibular nerve": {
+    "es": "Nervio fibular superficial",
+    "ta2Id": "6574",
+    "latin": "Nervus fibularis superficialis"
   },
   "superior cerebellar peduncle": {
     "es": "Pedúnculo cerebeloso superior",
@@ -3379,6 +5834,16 @@
     "ta2Id": "5455",
     "latin": "Sulcus frontalis superior"
   },
+  "superior gluteal nerve": {
+    "es": "Nervio glúteo superior",
+    "ta2Id": "6543",
+    "latin": "Nervus gluteus superior"
+  },
+  "superior lateral brachial cutaneous nerve": {
+    "es": "Nervio cutáneo braquial lateroposterior",
+    "ta2Id": "6442",
+    "latin": "Nervus cutaneus lateralis posterioris femoris"
+  },
   "superior occipital gyri": {
     "es": "Giros occipitales superiores",
     "ta2Id": "5481",
@@ -3399,20 +5864,55 @@
     "ta2Id": "5813",
     "latin": "Lobulus semilunaris superior"
   },
+  "superior subscapular nerve": {
+    "es": "Nervio subescapular superior",
+    "ta2Id": "6428",
+    "latin": "Nervus subscapularis superior"
+  },
   "superior temporal sulcus": {
     "es": "Surco temporal superior",
     "ta2Id": "5494",
     "latin": "Sulcus temporalis superior"
+  },
+  "superior trunk of brachial plexus": {
+    "es": "Tronco superior del plexo braquial",
+    "ta2Id": "6398",
+    "latin": "Truncus superior plexus brachialis"
   },
   "supramarginal gyrus": {
     "es": "Giro supramarginal",
     "ta2Id": "5473",
     "latin": "Gyrus supramarginalis"
   },
+  "suprascapular nerve": {
+    "es": "Nervio supraescapular",
+    "ta2Id": "6411",
+    "latin": "Nervus suprascapularis"
+  },
+  "sural communicating branch of common fibular nerve": {
+    "es": "Ramo sural comunicante del nervio fibular común",
+    "ta2Id": "6573",
+    "latin": "Ramus communicans suralis nervi fibularis communis"
+  },
+  "sural nerve": {
+    "es": "Nervio sural",
+    "ta2Id": "6586",
+    "latin": "Nervus suralis"
+  },
   "suspensory ligament of eyeball": {
     "es": "Ligamento suspensorio del globo ocular",
     "ta2Id": "6818",
     "latin": "Ligamentum suspensorium bulbi"
+  },
+  "sympathetic nerves": {
+    "es": "Nervios simpáticos",
+    "ta2Id": "6617",
+    "latin": "Nervi sympathici"
+  },
+  "sympathetic trunk": {
+    "es": "Tronco simpático",
+    "ta2Id": "6602",
+    "latin": "Truncus sympathicus"
   },
   "temporal plane": {
     "es": "Plano temporal",
@@ -3439,6 +5939,16 @@
     "ta2Id": "5769",
     "latin": "Ventriculus tertius"
   },
+  "thoracodorsal nerve": {
+    "es": "Nervio toracodorsal",
+    "ta2Id": "6430",
+    "latin": "Nervus thoracodorsalis"
+  },
+  "tibial nerve": {
+    "es": "Nervio tibial",
+    "ta2Id": "6582",
+    "latin": "Nervus tibialis"
+  },
   "tonsil of cerebellum": {
     "es": "Amígdala del cerebelo",
     "ta2Id": "5817",
@@ -3464,6 +5974,16 @@
     "ta2Id": "5450",
     "latin": "Pars triangularis gyri frontalis inferioris"
   },
+  "trigeminal nerve (v)": {
+    "es": "Nervio trigémino (V)",
+    "ta2Id": "6192",
+    "latin": "Nervus trigeminus (V)"
+  },
+  "trochlear nerve (iv)": {
+    "es": "Nervio troclear (IV)",
+    "ta2Id": "6191",
+    "latin": "Nervus trochlearis (IV)"
+  },
   "tuber of vermis": {
     "es": "Tubérculo del vermis",
     "ta2Id": "5829",
@@ -3474,10 +5994,25 @@
     "ta2Id": "6870",
     "latin": "Membrana tympanica"
   },
+  "ulnar nerve": {
+    "es": "Nervio ulnar",
+    "ta2Id": "6449",
+    "latin": "Nervus ulnaris"
+  },
   "uvula of vermis": {
     "es": "Úvula del vermis",
     "ta2Id": "5831",
     "latin": "Uvula vermis"
+  },
+  "vagus nerve (x)": {
+    "es": "Nervio vago (X)",
+    "ta2Id": "6332",
+    "latin": "Nervus vagus (X)"
+  },
+  "vestibular nerve": {
+    "es": "Nervio vestibular",
+    "ta2Id": "6308",
+    "latin": "Nervus vestibularis"
   },
   "vestibular nuclei": {
     "es": "Núcleos vestibulares",
@@ -3488,6 +6023,11 @@
     "es": "Vestíbulo",
     "ta2Id": "6942",
     "latin": "Vestibulum"
+  },
+  "vestibulocochlear nerve (viii)": {
+    "es": "Nervio vestibulococlear (VIII)",
+    "ta2Id": "6307",
+    "latin": "Nervus vestibulocochlearis (VIII)"
   },
   "white matter of telencephalon": {
     "es": "Sustancia blanca del telencéfalo",

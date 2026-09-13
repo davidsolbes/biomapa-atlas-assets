@@ -59,8 +59,14 @@ Ver `LICENSE-ASSETS`.
 
 ## Modificaciones
 
-Por sistema (S1 / manifiesto `0.2.0`). Se actualizan al regenerar el manifiesto:
+Por sistema (S1-FIX-02 / manifiesto `0.2.1`). Se actualizan al regenerar el
+manifiesto:
 
+- **Exclusividad:** un objeto pertenece a un solo sistema. Orden
+  `skeleton > muscles > viscera > vessels > nerves > skin`.
+- **CURVE → MESH** (vasos y nervios): duplicado + conversión a malla
+  respetando bevel/profundidad; si la curva no tiene volumen se asigna
+  `bevel_depth` 0.0015 m. Se conserva el nombre original (sin `.001`).
 - **skeleton (Huesos):** colección taxonómica `Skeletal system`. Solo `MESH`.
   Rótulos excluidos. Sin decimación Blender. `gltfpack -cc -tc -kn`; `-si` solo
   si el GLB supera 15 MB (0.7 → 0.5 → 0.35).
@@ -68,17 +74,19 @@ Por sistema (S1 / manifiesto `0.2.0`). Se actualizan al regenerar el manifiesto:
   Aparato reproductor femenino: colecciones Uterus'/Ovary'/Uterine tube'
   existen en el `.blend` pero no tienen MESH exportable.
 - **muscles:** `Muscular system`.
-- **nerves:** `Nervous system` (MESH; las CURVE periféricas quedan fuera).
-- **vessels:** `Cardiovascular system` (la mayoría de vasos son CURVE; solo
-  cavidades y válvulas cardíacas como MESH).
-- **skin:** `Integument` (solo apéndices: pelos y uñas; no hay malla continua
-  de piel).
+- **nerves:** `Nervous system` — encéfalo/médula MESH + nervios periféricos
+  CURVE→MESH. Músculos enlazados por inervación se omiten por precedencia.
+- **vessels:** `Cardiovascular system` — corazón MESH + arterias/venas
+  CURVE→MESH.
+- **skin:** `Integument` (apéndices: pelos y uñas). Colección `Skin` = 0 MESH;
+  no hay superficie corporal en este `.blend`. S2 evaluará BodyParts3D.
 - **Etiquetas en español:** `source/z-anatomy/TA2.csv` (Terminologia Anatomica
   2, misma licencia CC BY-SA 4.0 de Z-Anatomy) → `manifest/labels.es.json`.
 
 El `-si` final, triángulos, colección de origen y exclusiones quedan en
 `manifest/atlas-manifest.json` (`simplifyRatio`, `triangles`,
-`sourceCollection`, `excludedObjects`, `bytes`, `modifications`).
+`sourceCollection`, `excludedObjects`, `excludedByPrecedence`,
+`convertedCurves`, `bytes`, `modifications`).
 
 ## Cómo citar en Biomapa
 

@@ -58,11 +58,24 @@ Fuente oficial vigente (2026-09-12):
 `NEXT_PUBLIC_ATLAS_ASSETS_BASE_URL/manifest/atlas-manifest.json`.
 
 Sistemas fijos: `skin`, `muscles`, `skeleton`, `vessels`, `nerves`, `viscera`.
-S1 exporta los seis. `viscera` incluye `6: Lymphoid organs` (bazo). `skin` es
-solo apéndices (Integument). Las arterias/venas de `vessels` son CURVE y no
-salen como MESH.
+S1-FIX-02 exporta los seis en orden de precedencia
+(`skeleton > muscles > viscera > vessels > nerves > skin`): un objeto
+pertenece a un solo sistema. `vessels` y `nerves` convierten CURVE → MESH
+(bevel mínimo 0.0015 m). `viscera` incluye `6: Lymphoid organs` (bazo).
+`skin` es apéndices (Integument); no hay malla continua de piel en este
+`.blend` (colección `Skin` = 0 MESH). S2 evaluará BodyParts3D para piel,
+útero y ovario.
 
-## Colecciones del Startup.blend (verificado 2026-09-12)
+Inventario / sistema:
+
+```bash
+blender -b -P pipeline/export_system.py -- \
+  --blend source/unpacked/Z-Anatomy/Startup.blend \
+  --collection dummy --out /tmp/unused.glb --inventory all
+# o --inventory nerves
+```
+
+## Colecciones del Startup.blend (verificado 2026-09-13)
 
 Top-level de escena (prefijo numérico de Z-Anatomy):
 
@@ -79,6 +92,23 @@ Top-level de escena (prefijo numérico de Z-Anatomy):
 El pipeline **no** usa esas colecciones planas. Matchea el nombre taxonómico
 sin prefijo (el que tiene hijas):
 
+| Sistema | `sourceCollection` | MESH | CURVE | FONT | EMPTY | OTHER | total |
+|---------|--------------------|-----:|------:|-----:|------:|------:|------:|
+| `skeleton` | `Skeletal system` | 804 | 0 | 489 | 0 | 0 | 1293 |
+| `muscles` | `Muscular system` | 731 | 0 | 72 | 0 | 3 | 806 |
+| `viscera` | `Visceral systems` | 177 | 45 | 0 | 0 | 0 | 222 |
+| (extra) | `6: Lymphoid organs` | 220 | 0 | 56 | 0 | 0 | 276 |
+| `vessels` | `Cardiovascular system` | 22 | 654 | 21 | 0 | 0 | 697 |
+| `nerves` | `Nervous system` | 606 | 250 | 111 | 0 | 3 | 970 |
+| `skin` | `Integument` | 14 | 1 | 0 | 0 | 0 | 15 |
+| (no export) | `9: Regions of human body` | 299 | 0 | 44 | 0 | 0 | 343 |
+
+`Nervous system` **enlaza músculos** (inervación): esos MESH se omiten por
+precedencia. Los nervios periféricos son CURVE (`Cauda equina`,
+`Nerve to quadratus femoris`…). `Cardiovascular system` tiene el corazón en
+MESH y arterias/venas en CURVE. `Skin` (colección) = 0 MESH; `Skin appendages`
+= pelos y uñas. No hay MESH cuyo nombre contenga `skin` / `body surface`.
+
 | Sistema | `sourceCollection` | Hijas relevantes |
 |---------|--------------------|------------------|
 | `skeleton` | `Skeletal system` | Axial / appendicular, cráneo, dientes, cartílagos, columna, tórax, miembros |
@@ -87,8 +117,9 @@ sin prefijo (el que tiene hijas):
 **Rótulos.** No hay colecciones cuyo nombre contenga `label`, `text` o
 `annotation`. Los rótulos de Z-Anatomy son objetos `FONT` (sufijo `.t`),
 `CURVE` y mallas en MAYÚSCULAS (`AXIAL SKELETON`, `BONES OF UPPER LIMB`,
-`BONES OF HAND`). `export_system.py` exporta solo `MESH` y excluye esas
-mayúsculas. El manifiesto registra `excludedObjects` por sistema.
+`BONES OF HAND`). `export_system.py` exporta `MESH` (y CURVE convertidas en
+vasos/nervios) y excluye esas mayúsculas. El manifiesto registra
+`excludedObjects`, `excludedByPrecedence` y `convertedCurves` por sistema.
 
 **Decimación.** Sin modificador Blender `DECIMATE`. Empaquetado
 `gltfpack -cc -tc -kn`; `-si` solo si el GLB supera 15 MB (0.7 → 0.5 → 0.35).
@@ -100,7 +131,7 @@ no hubo simplify.
 `Visceral systems`. El bazo queda fuera (colección hermana
 `6: Lymphoid organs`); va en `notes` del sistema.
 
-## Cómo publicar a R2 (`atlas/v0.2.0/`)
+## Cómo publicar a R2 (`atlas/v0.2.1/`)
 
 David publica. No hay push ni credenciales en este repo.
 
@@ -110,7 +141,7 @@ npm run build:all
 
 # 2) subir dist/ al prefijo inmutable (nombres de variables; valores en el entorno)
 #    wrangler / aws s3 — ejemplo con AWS CLI compatible R2:
-# aws s3 sync dist/ s3://$R2_BUCKET/atlas/v0.2.0/ \
+# aws s3 sync dist/ s3://$R2_BUCKET/atlas/v0.2.1/ \
 #   --endpoint-url https://$R2_ACCOUNT_ID.r2.cloudflarestorage.com
 ```
 

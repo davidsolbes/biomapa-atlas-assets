@@ -28,17 +28,17 @@ const CITATION =
 
 const SYSTEM_NOTES = {
   viscera:
-    "sourceCollection taxonómica «Visceral systems» + «6: Lymphoid organs» (bazo y órganos linfoides). Digestivo, respiratorio, urinario, reproductor masculino, endocrino, cavidades y Lymphoid system. Aparato reproductor femenino: colecciones Uterus'/Ovary'/Uterine tube'/Vagina'/Vulva' existen en el .blend pero no tienen objetos MESH exportables. Rótulos: FONT (.t), CURVE y mallas en MAYÚSCULAS.",
+    "sourceCollection taxonómica «Visceral systems» + «6: Lymphoid organs» (bazo y órganos linfoides). Precedencia skeleton > muscles > viscera: dientes, cartílagos y músculos compartidos quedan en el sistema anterior. Aparato reproductor femenino: colecciones Uterus'/Ovary'/Uterine tube'/Vagina'/Vulva' existen en el .blend pero no tienen objetos MESH exportables.",
   skeleton:
     'sourceCollection taxonómica «Skeletal system». En el .blend no hay colecciones label/text/annotation; se excluyen FONT/CURVE y mallas en MAYÚSCULAS (p. ej. AXIAL SKELETON, BONES OF HAND).',
   skin:
-    'sourceCollection taxonómica «Integument»: solo apéndices (pelos, uñas; ~14 MESH). No hay malla continua de piel. «9: Regions of human body» son regiones de superficie, no se exportan como skin.',
+    'sourceCollection taxonómica «Integument» (pelos y uñas) más búsqueda de superficie corporal (skin / body surface / integument). Si no hay malla continua de piel, S2 evaluará BodyParts3D para piel, útero y ovario. «9: Regions of human body» no se exporta como skin.',
   muscles:
-    'sourceCollection taxonómica «Muscular system». Solo MESH; se excluyen FONT y rótulos en MAYÚSCULAS.',
+    'sourceCollection taxonómica «Muscular system». Precedencia skeleton > muscles. Solo MESH; se excluyen FONT y rótulos en MAYÚSCULAS.',
   vessels:
-    'sourceCollection taxonómica «Cardiovascular system». La mayoría de arterias/venas son CURVE (no MESH); solo se exportan cavidades y válvulas cardíacas (~22 MESH).',
+    'sourceCollection taxonómica «Cardiovascular system». Arterias y venas CURVE se convierten a MESH (bevel mínimo 0.0015 m si no tienen volumen). Precedencia skeleton > muscles > viscera > vessels.',
   nerves:
-    'sourceCollection taxonómica «Nervous system» (no la colección plana «7: Nervous system & Sense organs»). Solo MESH; CURVE de nervios periféricos quedan fuera.',
+    'sourceCollection taxonómica «Nervous system» (no la colección plana «7: Nervous system & Sense organs»). Encéfalo/médula MESH + nervios periféricos CURVE→MESH. Músculos enlazados por inervación se omiten por precedencia (muscles > nerves).',
 };
 
 function readSource() {
@@ -146,15 +146,36 @@ const systems = SYSTEMS.map((meta) => {
   const trisFromPack = readSidecarNumber(meta.id, 'triangles');
   const triangles = trisFromPack ?? triangleCountFromGlb(buf);
   const sha256 = createHash('sha256').update(buf).digest('hex');
+  const excludedByPrecedence =
+    readSidecarNumber(meta.id, 'excludedByPrecedence') ??
+    exportMeta?.excludedByPrecedence ??
+    0;
+  const convertedCurves =
+    readSidecarNumber(meta.id, 'convertedCurves') ??
+    exportMeta?.convertedCurves ??
+    0;
+  const skinSurfaceFound =
+    readSidecarNumber(meta.id, 'skinSurfaceFound') ??
+    exportMeta?.skinSurfaceFound ??
+    null;
   const siLabel = simplifyRatio != null && simplifyRatio < 1 ? simplifyRatio : 1;
+  const curveNote =
+    convertedCurves > 0 ? `; CURVE→MESH ${convertedCurves}` : '';
   if (siLabel < 1) {
     modifications.push(
-      `${meta.id}: sin decimación Blender; rótulos excluidos; gltfpack -cc -tc -kn -si ${siLabel} (≤ 15 MB)`,
+      `${meta.id}: sin decimación Blender; exclusividad por precedencia; rótulos excluidos${curveNote}; gltfpack -cc -tc -kn -si ${siLabel} (≤ 15 MB)`,
     );
   } else {
     modifications.push(
-      `${meta.id}: sin decimación Blender; rótulos excluidos; gltfpack -cc -tc -kn (sin -si)`,
+      `${meta.id}: sin decimación Blender; exclusividad por precedencia; rótulos excluidos${curveNote}; gltfpack -cc -tc -kn (sin -si)`,
     );
+  }
+  let notes = SYSTEM_NOTES[meta.id];
+  if (meta.id === 'skin' && skinSurfaceFound === 0) {
+    notes =
+      'sourceCollection taxonómica «Integument»: solo apéndices (pelos, uñas). No hay malla continua de piel en el .blend (búsqueda skin / body surface / integument = 0). S2 evaluará BodyParts3D para piel, útero y ovario. «9: Regions of human body» no se exporta como skin.';
+  } else if (meta.id === 'skin' && skinSurfaceFound > 0) {
+    notes = `${SYSTEM_NOTES.skin} Superficie corporal extra: ${skinSurfaceFound} MESH.`;
   }
   return {
     id: meta.id,
@@ -170,12 +191,20 @@ const systems = SYSTEMS.map((meta) => {
       collectionFromFile ?? exportMeta?.sourceCollection ?? undefined,
     excludedObjects:
       excludedFromFile ?? exportMeta?.excludedObjects ?? undefined,
+    excludedByPrecedence,
+    convertedCurves,
     simplifyRatio: simplifyRatio ?? 1,
     triangles,
-    notes: SYSTEM_NOTES[meta.id],
+    notes,
   };
 });
 
+modifications.push(
+  'CURVE→MESH en vessels y nerves (duplicado + conversión; bevel mínimo 0.0015 m si la curva no tiene volumen). Nombres originales sin .001.',
+);
+modifications.push(
+  'Exclusividad por sistema (skeleton > muscles > viscera > vessels > nerves > skin).',
+);
 modifications.push(
   'Etiquetas en español desde source/z-anatomy/TA2.csv (Terminologia Anatomica 2; misma licencia CC BY-SA 4.0 de Z-Anatomy).',
 );
@@ -186,7 +215,7 @@ if (modifications.length === 1) {
 }
 
 const manifest = {
-  version: '0.2.0',
+  version: '0.2.1',
   generatedAt: new Date().toISOString(),
   baseLicense: 'CC-BY-SA-4.0',
   labelsFile: 'manifest/labels.es.json',
@@ -219,6 +248,6 @@ for (const s of systems) {
   const extra =
     s.file == null
       ? ''
-      : ` si=${s.simplifyRatio ?? 1} tris=${s.triangles ?? '?'} excl=${s.excludedObjects ?? '?'}`;
+      : ` si=${s.simplifyRatio ?? 1} tris=${s.triangles ?? '?'} excl=${s.excludedObjects ?? '?'} prec=${s.excludedByPrecedence ?? 0} curves=${s.convertedCurves ?? 0}`;
   console.log(`  ${s.id}: ${s.file ?? 'null'} ${s.bytes} bytes${extra}`);
 }

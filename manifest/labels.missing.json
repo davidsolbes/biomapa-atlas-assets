@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T02:39:34.288Z",
+  "generatedAt": "2026-09-13T03:17:20.741Z",
   "missing": [
     {
       "systemId": "muscles",
@@ -52,6 +52,141 @@
       "key": "trochanteric bursa of gluteus medius muscle"
     },
     {
+      "systemId": "vessels",
+      "meshName": "????????",
+      "key": "????????"
+    },
+    {
+      "systemId": "vessels",
+      "meshName": "?x.l",
+      "key": "?x"
+    },
+    {
+      "systemId": "vessels",
+      "meshName": "?x.r",
+      "key": "?x"
+    },
+    {
+      "systemId": "vessels",
+      "meshName": "Anterior temporal branch.l",
+      "key": "anterior temporal branch"
+    },
+    {
+      "systemId": "vessels",
+      "meshName": "Anterior temporal branch.r",
+      "key": "anterior temporal branch"
+    },
+    {
+      "systemId": "vessels",
+      "meshName": "Artery of central sulcus.l",
+      "key": "artery of central sulcus"
+    },
+    {
+      "systemId": "vessels",
+      "meshName": "Artery of central sulcus.r",
+      "key": "artery of central sulcus"
+    },
+    {
+      "systemId": "vessels",
+      "meshName": "Artery of precentral sulcus.l",
+      "key": "artery of precentral sulcus"
+    },
+    {
+      "systemId": "vessels",
+      "meshName": "Artery of precentral sulcus.r",
+      "key": "artery of precentral sulcus"
+    },
+    {
+      "systemId": "vessels",
+      "meshName": "Branch to angular gyrus.l",
+      "key": "branch to angular gyrus"
+    },
+    {
+      "systemId": "vessels",
+      "meshName": "Branch to angular gyrus.r",
+      "key": "branch to angular gyrus"
+    },
+    {
+      "systemId": "vessels",
+      "meshName": "Distal lateral striate branches.l",
+      "key": "distal lateral striate branches"
+    },
+    {
+      "systemId": "vessels",
+      "meshName": "Distal lateral striate branches.r",
+      "key": "distal lateral striate branches"
+    },
+    {
+      "systemId": "vessels",
+      "meshName": "Inferior vein of left ventricle (//Posterior '')",
+      "key": "inferior vein of left ventricle (//posterior '')"
+    },
+    {
+      "systemId": "vessels",
+      "meshName": "Insular branches of middle cerebral artery (M2-segment).l",
+      "key": "insular branches of middle cerebral artery (m2-segment)"
+    },
+    {
+      "systemId": "vessels",
+      "meshName": "Lateral frontobasal artery.l",
+      "key": "lateral frontobasal artery"
+    },
+    {
+      "systemId": "vessels",
+      "meshName": "Lateral frontobasal artery.r",
+      "key": "lateral frontobasal artery"
+    },
+    {
+      "systemId": "vessels",
+      "meshName": "Posterior parietal artery.l",
+      "key": "posterior parietal artery"
+    },
+    {
+      "systemId": "vessels",
+      "meshName": "Posterior parietal artery.r",
+      "key": "posterior parietal artery"
+    },
+    {
+      "systemId": "vessels",
+      "meshName": "Posterior temporal branch.l",
+      "key": "posterior temporal branch"
+    },
+    {
+      "systemId": "vessels",
+      "meshName": "Posterior temporal branch.r",
+      "key": "posterior temporal branch"
+    },
+    {
+      "systemId": "vessels",
+      "meshName": "Prefrontal artery.l",
+      "key": "prefrontal artery"
+    },
+    {
+      "systemId": "vessels",
+      "meshName": "Prefrontal artery.r",
+      "key": "prefrontal artery"
+    },
+    {
+      "systemId": "vessels",
+      "meshName": "Proximal lateral striate branches.l",
+      "key": "proximal lateral striate branches"
+    },
+    {
+      "systemId": "vessels",
+      "meshName": "Proximal lateral striate branches.r",
+      "key": "proximal lateral striate branches"
+    },
+    {
+      "systemId": "vessels",
+      "meshName": "Temporo-occipital branch.l",
+      "key": "temporo-occipital branch"
+    },
+    {
+      "systemId": "vessels",
+      "meshName": "Temporo-occipital branch.r",
+      "key": "temporo-occipital branch"
+    },
+    {
       "systemId": "nerves",
       "meshName": " Posterior transverse collateral sulcus.l",
       "key": "posterior transverse collateral sulcus"
@@ -70,6 +205,11 @@
       "systemId": "nerves",
       "meshName": "Anterior occipital sulcus*.r",
       "key": "anterior occipital sulcus*"
+    },
+    {
+      "systemId": "nerves",
+      "meshName": "Ciliary body-curve.l",
+      "key": "ciliary body-curve"
     },
     {
       "systemId": "nerves",
