@@ -1,0 +1,2262 @@
+{
+  "generated_at": "2026-09-15T04:45:38Z",
+  "repo": "biomapa-atlas-assets",
+  "script": "pipeline/inventory-external.py",
+  "bodyparts3d": {
+    "source": "BodyParts3D 4.0",
+    "zip_bytes": 142903898,
+    "resolved_parts": {
+      "skin": {
+        "ok": true,
+        "fma_id": "FMA7163",
+        "element_file_id": "FJ2810",
+        "bp_id": "BP9115",
+        "en": "skin",
+        "zip_member": "isa_BP3D_4.0_obj_99/FJ2810.obj",
+        "path": "source/external/extracted/FJ2810.obj",
+        "bytes": 14465502,
+        "requested_ids": [
+          "FMA7163"
+        ],
+        "note": "OBJ nombrado por element file id FJ2810.obj (isa_element_parts.txt); concept FMA7163"
+      },
+      "femur": {
+        "ok": true,
+        "fma_id": "FMA24474",
+        "element_file_id": "FJ3365",
+        "bp_id": "BP8920",
+        "en": "right femur",
+        "zip_member": "isa_BP3D_4.0_obj_99/FJ3365.obj",
+        "path": "source/external/extracted/FJ3365.obj",
+        "bytes": 192114,
+        "requested_ids": [
+          "FMA24474",
+          "FMA9611",
+          "FMA24475"
+        ],
+        "note": "OBJ nombrado por element file id FJ3365.obj (isa_element_parts.txt); concept FMA24474; id preferido de la spec FMA9611 → equivalente FMA24474"
+      },
+      "hip_bone": {
+        "ok": true,
+        "fma_id": "FMA16586",
+        "element_file_id": "FJ3152",
+        "bp_id": "BP8768",
+        "en": "right hip bone",
+        "zip_member": "isa_BP3D_4.0_obj_99/FJ3152.obj",
+        "path": "source/external/extracted/FJ3152.obj",
+        "bytes": 149387,
+        "requested_ids": [
+          "FMA16586",
+          "FMA16585",
+          "FMA16587"
+        ],
+        "note": "OBJ nombrado por element file id FJ3152.obj (isa_element_parts.txt); concept FMA16586; id preferido de la spec FMA16585 → equivalente FMA16586"
+      }
+    },
+    "skin": {
+      "name": "FJ2810",
+      "vertices": 102467,
+      "triangles": 203382,
+      "non_manifold_edges": 1512,
+      "connected_components": 100,
+      "external_components": 1,
+      "external_heuristic": "largest_area_or_bbox_wrap",
+      "islands": [
+        {
+          "verts": 54949,
+          "faces": 109183,
+          "area": 1780460.258,
+          "bbox_size": [
+            666.944,
+            292.0306,
+            1719.4712
+          ],
+          "bbox_min": [
+            -334.119,
+            -246.783,
+            -78.1112
+          ],
+          "bbox_max": [
+            332.825,
+            45.2476,
+            1641.36
+          ],
+          "external_candidate": true
+        },
+        {
+          "verts": 47178,
+          "faces": 94055,
+          "area": 1722073.6988,
+          "bbox_size": [
+            662.935,
+            288.0227,
+            1715.4741
+          ],
+          "bbox_min": [
+            -332.134,
+            -244.777,
+            -76.1542
+          ],
+          "bbox_max": [
+            330.801,
+            43.2457,
+            1639.3199
+          ],
+          "external_candidate": false
+        },
+        {
+          "verts": 5,
+          "faces": 3,
+          "area": 3.2849,
+          "bbox_size": [
+            0.7,
+            4.4278,
+            7.97
+          ],
+          "bbox_min": [
+            147.086,
+            -31.1546,
+            1150.29
+          ],
+          "bbox_max": [
+            147.786,
+            -26.7268,
+            1158.26
+          ],
+          "external_candidate": false
+        },
+        {
+          "verts": 5,
+          "faces": 3,
+          "area": 2.7107,
+          "bbox_size": [
+            0.737,
+            3.5564,
+            5.49
+          ],
+          "bbox_min": [
+            -160.951,
+            -89.2016,
+            1134.71
+          ],
+          "bbox_max": [
+            -160.214,
+            -85.6452,
+            1140.2
+          ],
+          "external_candidate": false
+        },
+        {
+          "verts": 5,
+          "faces": 3,
+          "area": 1.48,
+          "bbox_size": [
+            2.8,
+            0.472,
+            0.7
+          ],
+          "bbox_min": [
+            -33.5141,
+            -158.507,
+            1523.16
+          ],
+          "bbox_max": [
+            -30.7141,
+            -158.035,
+            1523.86
+          ],
+          "external_candidate": false
+        },
+        {
+          "verts": 4,
+          "faces": 2,
+          "area": 1.4677,
+          "bbox_size": [
+            3.5,
+            0.506,
+            0.8099
+          ],
+          "bbox_min": [
+            28.7859,
+            -158.555,
+            1523.05
+          ],
+          "bbox_max": [
+            32.2859,
+            -158.049,
+            1523.86
+          ],
+          "external_candidate": false
+        },
+        {
+          "verts": 5,
+          "faces": 3,
+          "area": 1.459,
+          "bbox_size": [
+            3.5,
+            0.7,
+            0.575
+          ],
+          "bbox_min": [
+            -239.314,
+            -153.655,
+            713.382
+          ],
+          "bbox_max": [
+            -235.814,
+            -152.955,
+            713.957
+          ],
+          "external_candidate": false
+        },
+        {
+          "verts": 4,
+          "faces": 2,
+          "area": 1.4514,
+          "bbox_size": [
+            3.5,
+            1.111,
+            0.66
+          ],
+          "bbox_min": [
+            33.6859,
+            -157.855,
+            1522.5
+          ],
+          "bbox_max": [
+            37.1859,
+            -156.744,
+            1523.16
+          ],
+          "external_candidate": false
+        },
+        {
+          "verts": 4,
+          "faces": 2,
+          "area": 1.4399,
+          "bbox_size": [
+            3.5,
+            0.914,
+            0.54
+          ],
+          "bbox_min": [
+            -37.7141,
+            -157.855,
+            1522.62
+          ],
+          "bbox_max": [
+            -34.2141,
+            -156.941,
+            1523.16
+          ],
+          "external_candidate": false
+        },
+        {
+          "verts": 4,
+          "faces": 2,
+          "area": 1.347,
+          "bbox_size": [
+            4.2,
+            2.197,
+            2.27
+          ],
+          "bbox_min": [
+            38.5859,
+            -155.852,
+            1520.1899
+          ],
+          "bbox_max": [
+            42.7859,
+            -153.655,
+            1522.46
+          ],
+          "external_candidate": false
+        },
+        {
+          "verts": 4,
+          "faces": 2,
+          "area": 1.3295,
+          "bbox_size": [
+            3.3725,
+            1.726,
+            0.7001
+          ],
+          "bbox_min": [
+            -40.5141,
+            -156.699,
+            1513.36
+          ],
+          "bbox_max": [
+            -37.1416,
+            -154.973,
+            1514.0601
+          ],
+          "external_candidate": false
+        },
+        {
+          "verts": 3,
+          "faces": 1,
+          "area": 1.1874,
+          "bbox_size": [
+            4.2,
+            0.751,
+            0.41
+          ],
+          "bbox_min": [
+            -30.7141,
+            -159.255,
+            1522.75
+          ],
+          "bbox_max": [
+            -26.5141,
+            -158.504,
+            1523.16
+          ],
+          "external_candidate": false
+        },
+        {
+          "verts": 4,
+          "faces": 2,
+          "area": 1.1871,
+          "bbox_size": [
+            0.908,
+            2.4189,
+            2.1
+          ],
+          "bbox_min": [
+            148.316,
+            -54.2546,
+            1124.16
+          ],
+          "bbox_max": [
+            149.224,
+            -51.8357,
+            1126.26
+          ],
+          "external_candidate": false
+        },
+        {
+          "verts": 4,
+          "faces": 2,
+          "area": 1.1777,
+          "bbox_size": [
+            0.7,
+            2.1,
+            1.9299
+          ],
+          "bbox_min": [
+            156.886,
+            -82.2546,
+            1128.3101
+          ],
+          "bbox_max": [
+            157.586,
+            -80.1546,
+            1130.24
+          ],
+          "external_candidate": false
+        },
+        {
+          "verts": 4,
+          "faces": 2,
+          "area": 1.173,
+          "bbox_size": [
+            0.7,
+            2.8,
+            0.38
+          ],
+          "bbox_min": [
+            151.986,
+            -66.8546,
+            1121.52
+          ],
+          "bbox_max": [
+            152.686,
+            -64.0546,
+            1121.9
+          ],
+          "external_candidate": false
+        },
+        {
+          "verts": 4,
+          "faces": 2,
+          "area": 1.0978,
+          "bbox_size": [
+            2.1,
+            1.085,
+            0.88
+          ],
+          "bbox_min": [
+            -44.0141,
+            -155.055,
+            1520.88
+          ],
+          "bbox_max": [
+            -41.9141,
+            -153.97,
+            1521.76
+          ],
+          "external_candidate": false
+        },
+        {
+          "verts": 4,
+          "faces": 2,
+          "area": 1.0977,
+          "bbox_size": [
+            2.1,
+            0.541,
+            1.5599
+          ],
+          "bbox_min": [
+            18.9859,
+            -159.955,
+            1518.8
+          ],
+          "bbox_max": [
+            21.0859,
+            -159.414,
+            1520.36
+          ],
+          "external_candidate": false
+        },
+        {
+          "verts": 8,
+          "faces": 6,
+          "area": 1.0734,
+          "bbox_size": [
+            2.8,
+            1.001,
+            0.53
+          ],
+          "bbox_min": [
+            -29.3141,
+            -159.955,
+            1513.36
+          ],
+          "bbox_max": [
+            -26.5141,
+            -158.954,
+            1513.89
+          ],
+          "external_candidate": false
+        },
+        {
+          "verts": 4,
+          "faces": 2,
+          "area": 1.0365,
+          "bbox_size": [
+            0.7,
+            2.8,
+            0.99
+          ],
+          "bbox_min": [
+            -151.114,
+            -58.4546,
+            1122.97
+          ],
+          "bbox_max": [
+            -150.414,
+            -55.6546,
+            1123.96
+          ],
+          "external_candidate": false
+        },
+        {
+          "verts": 5,
+          "faces": 3,
+          "area": 1.0253,
+          "bbox_size": [
+            0.7,
+            0.117,
+            2.1
+          ],
+          "bbox_min": [
+            16.8859,
+            -161.355,
+            1516.16
+          ],
+          "bbox_max": [
+            17.5859,
+            -161.238,
+            1518.26
+          ],
+          "external_candidate": false
+        }
+      ],
+      "island_count_total": 100,
+      "bbox_native": {
+        "min": [
+          -334.118988,
+          -1641.359985,
+          -246.783005
+        ],
+        "max": [
+          332.825012,
+          78.111198,
+          45.247723
+        ],
+        "size": [
+          666.944,
+          1719.471184,
+          292.030727
+        ],
+        "center": [
+          -0.646988,
+          -781.624393,
+          -100.767641
+        ]
+      },
+      "obj_bytes": 14465502,
+      "fma_id": "FMA7163",
+      "budget": {
+        "triangles": 203382,
+        "est_bytes_si1": 5694696,
+        "est_bytes_si_0_25": 1423674,
+        "est_bytes_si_0_1": 569469,
+        "est_mb_si1": 5.43,
+        "est_mb_si_0_25": 1.36,
+        "est_mb_si_0_1": 0.54,
+        "adr_budget_mb": 15,
+        "fits_si_0_25": true,
+        "fits_si_0_1": true,
+        "note": "Estimación proporcional (no se corrió gltfpack); factor empírico ~28 B/tri a si=1"
+      },
+      "bbox_file_native_mm": {
+        "min_mm": [
+          -334.119,
+          -246.783,
+          -78.1112
+        ],
+        "max_mm": [
+          332.825,
+          45.2476,
+          1641.36
+        ],
+        "size_mm": [
+          666.944,
+          292.0306,
+          1719.4712
+        ],
+        "height_mm": 1719.4712,
+        "up_axis_by_size": "Z",
+        "source": "OBJ header Bounds(mm)",
+        "note": "Archivo nativo: milímetros, eje largo = Z (cabeza-pies). Blender OBJ import reorienta; bbox_native del inventario es post-import."
+      }
+    },
+    "alignment": {
+      "scale": 0.001,
+      "scale_measured": 0.0009749775381793025,
+      "scale_note": "canonical mm→m (0.001); measured ratio close",
+      "rotation": "Rx_-90deg (Z-up → Y-up)",
+      "translation_m": [
+        0.000779,
+        0.101158,
+        0.055885
+      ],
+      "matrix_4x4": [
+        [
+          0.0010000000474974513,
+          0.0,
+          0.0,
+          0.0007791519165039062
+        ],
+        [
+          0.0,
+          -4.371138867531599e-11,
+          0.0010000000474974513,
+          0.1011580228805542
+        ],
+        [
+          0.0,
+          -0.0010000000474974513,
+          -4.371138867531599e-11,
+          0.05588501691818237
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "femur_bp3d_bbox_native": {
+        "min": [
+          -150.134003,
+          -834.252014,
+          -112.191971
+        ],
+        "max": [
+          -31.8943,
+          -368.149994,
+          -49.530136
+        ],
+        "size": [
+          118.239702,
+          466.10202,
+          62.661835
+        ],
+        "center": [
+          -91.014152,
+          -601.201004,
+          -80.861053
+        ]
+      },
+      "femur_zanatomy_bbox_m": {
+        "min": [
+          -0.148531,
+          -0.018758,
+          0.429866
+        ],
+        "max": [
+          -0.031938,
+          0.059353,
+          0.884305
+        ],
+        "size": [
+          0.116593,
+          0.078111,
+          0.454439
+        ],
+        "center": [
+          -0.090235,
+          0.020297,
+          0.657086
+        ]
+      },
+      "femur_center_error_m": 0.0,
+      "femur_residuo_mean_corner_m": 0.009714,
+      "femur_residuo_mean_corner_mm": 9.714,
+      "coxal_control": {
+        "bbox_transformed_m": {
+          "min": [
+            -0.144093,
+            -0.037861,
+            0.808038
+          ],
+          "max": [
+            -0.002011,
+            0.100039,
+            1.013754
+          ],
+          "size": [
+            0.142082,
+            0.1379,
+            0.205716
+          ],
+          "center": [
+            -0.073052,
+            0.031089,
+            0.910896
+          ]
+        },
+        "note": "misma matriz M del fémur aplicada al coxal (control)",
+        "zanatomy_hip": "Hip bone.r",
+        "residuo_mean_corner_m": 0.01863,
+        "residuo_mean_corner_mm": 18.63
+      },
+      "axis_guess": {
+        "bp3d_bbox_size": [
+          118.239702,
+          466.10202,
+          62.661835
+        ],
+        "zanatomy_bbox_size": [
+          0.116593,
+          0.078111,
+          0.454439
+        ],
+        "bp3d_likely_up_axis": "Y",
+        "zanatomy_likely_up_axis": "Z",
+        "assumed_bp3d": "Z-up millimeters",
+        "assumed_zanatomy": "Y-up meters (glTF)"
+      },
+      "bp3d_femur": {
+        "fma_id": "FMA24474",
+        "name": "FJ3365",
+        "triangles": 3102
+      },
+      "zanatomy_femur": {
+        "name": "Femur.r",
+        "triangles": 3794
+      },
+      "bp3d_coxal": {
+        "fma_id": "FMA16586",
+        "name": "FJ3152",
+        "triangles": 2374
+      }
+    },
+    "errors": [],
+    "axis_convention_note": "BP3D OBJ header: mm, Z-up (altura ~1719 mm). Tras import Blender el bbox del inventario refleja la conversión del importer; la matriz de alineación se calcula sobre geometría ya importada + skeleton.glb (glTF)."
+  },
+  "hra_united_female": {
+    "source": "HuBMAP HRA united-female v1.5",
+    "glb_bytes": 211624968,
+    "objects_total": 1073,
+    "meshes_total": 888,
+    "triangles_total": 5554101,
+    "bbox_total": {
+      "min": [
+        -0.489562,
+        -0.232665,
+        -0.794761
+      ],
+      "max": [
+        0.477881,
+        0.22262,
+        0.871587
+      ],
+      "size": [
+        0.967442,
+        0.455285,
+        1.666348
+      ],
+      "center": [
+        -0.005841,
+        -0.005023,
+        0.038413
+      ]
+    },
+    "height_m": 1.6663,
+    "likely_up_axis": "Z",
+    "assumed_units": "meters (glTF)",
+    "ontology_id_in_names": {
+      "uberon": 0,
+      "fma": 0,
+      "neither": 888
+    },
+    "first_level_groups": [
+      {
+        "group": "VH",
+        "meshes": 599,
+        "triangles": 4650303
+      },
+      {
+        "group": "Allen",
+        "meshes": 282,
+        "triangles": 649506
+      },
+      {
+        "group": "Yao",
+        "meshes": 7,
+        "triangles": 254292
+      }
+    ],
+    "keyword_meshes": [
+      {
+        "name": "Allen_body_of_caudate_L",
+        "triangles": 1708,
+        "vertices": 856,
+        "system_guess": "nerves",
+        "matched_keywords": [
+          "body"
+        ]
+      },
+      {
+        "name": "Allen_body_of_caudate_R",
+        "triangles": 1708,
+        "vertices": 856,
+        "system_guess": "nerves",
+        "matched_keywords": [
+          "body"
+        ]
+      },
+      {
+        "name": "Allen_body_of_hippocampus_L",
+        "triangles": 430,
+        "vertices": 217,
+        "system_guess": "nerves",
+        "matched_keywords": [
+          "body"
+        ]
+      },
+      {
+        "name": "Allen_body_of_hippocampus_R",
+        "triangles": 430,
+        "vertices": 217,
+        "system_guess": "nerves",
+        "matched_keywords": [
+          "body"
+        ]
+      },
+      {
+        "name": "Allen_body_of_lateral_ventricle_L",
+        "triangles": 1544,
+        "vertices": 774,
+        "system_guess": "nerves",
+        "matched_keywords": [
+          "body"
+        ]
+      },
+      {
+        "name": "Allen_body_of_lateral_ventricle_R",
+        "triangles": 1544,
+        "vertices": 774,
+        "system_guess": "nerves",
+        "matched_keywords": [
+          "body"
+        ]
+      },
+      {
+        "name": "Allen_pineal_body_L",
+        "triangles": 98,
+        "vertices": 51,
+        "system_guess": "nerves",
+        "matched_keywords": [
+          "body"
+        ]
+      },
+      {
+        "name": "Allen_pineal_body_R",
+        "triangles": 98,
+        "vertices": 51,
+        "system_guess": "nerves",
+        "matched_keywords": [
+          "body"
+        ]
+      },
+      {
+        "name": "VH_F_anterior_wall_of_uterus",
+        "triangles": 10147,
+        "vertices": 5584,
+        "system_guess": "viscera",
+        "matched_keywords": [
+          "uterus"
+        ]
+      },
+      {
+        "name": "VH_F_body_of_pancreas",
+        "triangles": 3595,
+        "vertices": 7373,
+        "system_guess": "viscera",
+        "matched_keywords": [
+          "body"
+        ]
+      },
+      {
+        "name": "VH_F_body_of_uterus",
+        "triangles": 5344,
+        "vertices": 2823,
+        "system_guess": "viscera",
+        "matched_keywords": [
+          "uterus",
+          "body"
+        ]
+      },
+      {
+        "name": "VH_F_cervicovaginal_junction",
+        "triangles": 3766,
+        "vertices": 1952,
+        "system_guess": "viscera",
+        "matched_keywords": [
+          "vagina"
+        ]
+      },
+      {
+        "name": "VH_F_cervix",
+        "triangles": 3508,
+        "vertices": 1825,
+        "system_guess": "viscera",
+        "matched_keywords": [
+          "cervix"
+        ]
+      },
+      {
+        "name": "VH_F_ciliary_body_L",
+        "triangles": 15886,
+        "vertices": 31768,
+        "system_guess": "sin_sistema",
+        "matched_keywords": [
+          "body"
+        ]
+      },
+      {
+        "name": "VH_F_ciliary_body_R",
+        "triangles": 15886,
+        "vertices": 31767,
+        "system_guess": "sin_sistema",
+        "matched_keywords": [
+          "body"
+        ]
+      },
+      {
+        "name": "VH_F_fundus_of_uterus",
+        "triangles": 3062,
+        "vertices": 1640,
+        "system_guess": "viscera",
+        "matched_keywords": [
+          "uterus"
+        ]
+      },
+      {
+        "name": "VH_F_isthmus_of_fallopian_tube_L",
+        "triangles": 1870,
+        "vertices": 976,
+        "system_guess": "viscera",
+        "matched_keywords": [
+          "fallopian"
+        ]
+      },
+      {
+        "name": "VH_F_isthmus_of_fallopian_tube_R",
+        "triangles": 1600,
+        "vertices": 840,
+        "system_guess": "viscera",
+        "matched_keywords": [
+          "fallopian"
+        ]
+      },
+      {
+        "name": "VH_F_left_cardinal_ligament_of_uterus",
+        "triangles": 4056,
+        "vertices": 2030,
+        "system_guess": "skeleton",
+        "matched_keywords": [
+          "uterus"
+        ]
+      },
+      {
+        "name": "VH_F_left_ovary",
+        "triangles": 424,
+        "vertices": 214,
+        "system_guess": "viscera",
+        "matched_keywords": [
+          "ovary"
+        ]
+      },
+      {
+        "name": "VH_F_left_round_ligament_of_uterus",
+        "triangles": 1024,
+        "vertices": 514,
+        "system_guess": "skeleton",
+        "matched_keywords": [
+          "uterus"
+        ]
+      },
+      {
+        "name": "VH_F_mammary_lobes_L",
+        "triangles": 75788,
+        "vertices": 151586,
+        "system_guess": "skin",
+        "matched_keywords": [
+          "mammary"
+        ]
+      },
+      {
+        "name": "VH_F_mammary_lobes_R",
+        "triangles": 75788,
+        "vertices": 151586,
+        "system_guess": "skin",
+        "matched_keywords": [
+          "mammary"
+        ]
+      },
+      {
+        "name": "VH_F_posterior_wall_of_uterus",
+        "triangles": 12022,
+        "vertices": 6508,
+        "system_guess": "viscera",
+        "matched_keywords": [
+          "uterus"
+        ]
+      },
+      {
+        "name": "VH_F_right_cardinal_ligament_of_uterus",
+        "triangles": 4056,
+        "vertices": 2030,
+        "system_guess": "skeleton",
+        "matched_keywords": [
+          "uterus"
+        ]
+      },
+      {
+        "name": "VH_F_right_ovary",
+        "triangles": 410,
+        "vertices": 207,
+        "system_guess": "viscera",
+        "matched_keywords": [
+          "ovary"
+        ]
+      },
+      {
+        "name": "VH_F_right_round_ligament_of_uterus",
+        "triangles": 902,
+        "vertices": 453,
+        "system_guess": "skeleton",
+        "matched_keywords": [
+          "uterus"
+        ]
+      },
+      {
+        "name": "VH_F_skin",
+        "triangles": 382640,
+        "vertices": 191322,
+        "system_guess": "skin",
+        "matched_keywords": [
+          "skin"
+        ]
+      },
+      {
+        "name": "VH_F_suspensory_ligament_of_ovary_L",
+        "triangles": 1270,
+        "vertices": 637,
+        "system_guess": "skeleton",
+        "matched_keywords": [
+          "ovary"
+        ]
+      },
+      {
+        "name": "VH_F_suspensory_ligament_of_ovary_R",
+        "triangles": 880,
+        "vertices": 442,
+        "system_guess": "skeleton",
+        "matched_keywords": [
+          "ovary"
+        ]
+      },
+      {
+        "name": "VH_F_vagina",
+        "triangles": 8780,
+        "vertices": 4461,
+        "system_guess": "viscera",
+        "matched_keywords": [
+          "vagina"
+        ]
+      }
+    ],
+    "coverage_by_system": {
+      "skin": {
+        "meshes": 9,
+        "triangles": 610420,
+        "budget": {
+          "triangles": 610420,
+          "est_bytes_si1": 17091760,
+          "est_bytes_si_0_25": 4272940,
+          "est_bytes_si_0_1": 1709176,
+          "est_mb_si1": 16.3,
+          "est_mb_si_0_25": 4.07,
+          "est_mb_si_0_1": 1.63,
+          "adr_budget_mb": 15,
+          "fits_si_0_25": true,
+          "fits_si_0_1": true,
+          "note": "Estimación proporcional (no se corrió gltfpack); factor empírico ~28 B/tri a si=1"
+        },
+        "sample_names": [
+          "VH_F_areola_L",
+          "VH_F_areola_R",
+          "VH_F_areolar_tubercles_L",
+          "VH_F_areolar_tubercles_R",
+          "VH_F_mammary_lobes_L",
+          "VH_F_mammary_lobes_R",
+          "VH_F_nipple_L",
+          "VH_F_nipple_R",
+          "VH_F_skin"
+        ]
+      },
+      "muscles": {
+        "meshes": 20,
+        "triangles": 201807,
+        "budget": {
+          "triangles": 201807,
+          "est_bytes_si1": 5650596,
+          "est_bytes_si_0_25": 1412649,
+          "est_bytes_si_0_1": 565059,
+          "est_mb_si1": 5.39,
+          "est_mb_si_0_25": 1.35,
+          "est_mb_si_0_1": 0.54,
+          "adr_budget_mb": 15,
+          "fits_si_0_25": true,
+          "fits_si_0_1": true,
+          "note": "Estimación proporcional (no se corrió gltfpack); factor empírico ~28 B/tri a si=1"
+        },
+        "sample_names": [
+          "VH_F_ciliary_muscle_L",
+          "VH_F_ciliary_muscle_R",
+          "VH_F_inferior_oblique_extraocular_muscle_L",
+          "VH_F_inferior_oblique_extraocular_muscle_R",
+          "VH_F_inferior_rectus_extraocular_muscle_L",
+          "VH_F_inferior_rectus_extraocular_muscle_R",
+          "VH_F_lateral_rectus_extraocular_muscle_L",
+          "VH_F_lateral_rectus_extraocular_muscle_R",
+          "VH_F_medial_rectus_extraocular_muscle_L",
+          "VH_F_medial_rectus_extraocular_muscle_R",
+          "VH_F_papillary_muscle_of_heart_ant",
+          "VH_F_papillary_muscle_of_heart_antlat",
+          "VH_F_papillary_muscle_of_heart_med",
+          "VH_F_papillary_muscle_of_heart_pos",
+          "VH_F_papillary_muscle_of_heart_posmed"
+        ]
+      },
+      "skeleton": {
+        "meshes": 112,
+        "triangles": 1055911,
+        "budget": {
+          "triangles": 1055911,
+          "est_bytes_si1": 29565508,
+          "est_bytes_si_0_25": 7391377,
+          "est_bytes_si_0_1": 2956550,
+          "est_mb_si1": 28.2,
+          "est_mb_si_0_25": 7.05,
+          "est_mb_si_0_1": 2.82,
+          "adr_budget_mb": 15,
+          "fits_si_0_25": true,
+          "fits_si_0_1": true,
+          "note": "Estimación proporcional (no se corrió gltfpack); factor empírico ~28 B/tri a si=1"
+        },
+        "sample_names": [
+          "VH_F_anterior_cruciate_ligament_of_knee_L",
+          "VH_F_anterior_cruciate_ligament_of_knee_R",
+          "VH_F_anterolateral_ligament_of_knee_L",
+          "VH_F_anterolateral_ligament_of_knee_R",
+          "VH_F_articular_cartilage_of_knee_L",
+          "VH_F_articular_cartilage_of_knee_R",
+          "VH_F_arytenoid_cartilage_L",
+          "VH_F_arytenoid_cartilage_R",
+          "VH_F_broad_ligament",
+          "VH_F_cartilage_of_lobar_bronchus_L",
+          "VH_F_cartilage_of_lobar_bronchus_R",
+          "VH_F_cartilage_of_main_bronchus_L",
+          "VH_F_cartilage_of_main_bronchus_R",
+          "VH_F_cartilage_of_tertiary_bronchus_L",
+          "VH_F_cartilage_of_tertiary_bronchus_R"
+        ]
+      },
+      "vessels": {
+        "meshes": 110,
+        "triangles": 621155,
+        "budget": {
+          "triangles": 621155,
+          "est_bytes_si1": 17392340,
+          "est_bytes_si_0_25": 4348085,
+          "est_bytes_si_0_1": 1739234,
+          "est_mb_si1": 16.59,
+          "est_mb_si_0_25": 4.15,
+          "est_mb_si_0_1": 1.66,
+          "adr_budget_mb": 15,
+          "fits_si_0_25": true,
+          "fits_si_0_1": true,
+          "note": "Estimación proporcional (no se corrió gltfpack); factor empírico ~28 B/tri a si=1"
+        },
+        "sample_names": [
+          "VH_F_anterior_cardiac_vein",
+          "VH_F_anterior_segmental_right_hepatic_artery",
+          "VH_F_ascending_aorta",
+          "VH_F_brachiocephalic_artery_a",
+          "VH_F_brachiocephalic_artery_b",
+          "VH_F_central_retinal_artery_L",
+          "VH_F_central_retinal_artery_R",
+          "VH_F_central_retinal_vein_L",
+          "VH_F_central_retinal_vein_R",
+          "VH_F_common_hepatic_artery",
+          "VH_F_cystic_artery",
+          "VH_F_cystic_vein",
+          "VH_F_descending_aorta_a",
+          "VH_F_descending_aorta_b",
+          "VH_F_diagonal_branch_of_left_anterior_descending_artery"
+        ]
+      },
+      "nerves": {
+        "meshes": 319,
+        "triangles": 1028796,
+        "budget": {
+          "triangles": 1028796,
+          "est_bytes_si1": 28806288,
+          "est_bytes_si_0_25": 7201572,
+          "est_bytes_si_0_1": 2880628,
+          "est_mb_si1": 27.47,
+          "est_mb_si_0_25": 6.87,
+          "est_mb_si_0_1": 2.75,
+          "adr_budget_mb": 15,
+          "fits_si_0_25": true,
+          "fits_si_0_1": true,
+          "note": "Estimación proporcional (no se corrió gltfpack); factor empírico ~28 B/tri a si=1"
+        },
+        "sample_names": [
+          "Allen_amygdalohippocampal_area_L",
+          "Allen_amygdalohippocampal_area_R",
+          "Allen_amygdaloid_complex_L",
+          "Allen_amygdaloid_complex_R",
+          "Allen_angular_gyrus_L",
+          "Allen_angular_gyrus_R",
+          "Allen_anterior_amygdaloid_area_L",
+          "Allen_anterior_amygdaloid_area_R",
+          "Allen_anterior_commissure_L",
+          "Allen_anterior_commissure_R",
+          "Allen_anterior_cortical_nucleus_L",
+          "Allen_anterior_cortical_nucleus_R",
+          "Allen_anterior_horn_of_lateral_ventricle_L",
+          "Allen_anterior_horn_of_lateral_ventricle_R",
+          "Allen_anterior_intermediate_orbital_gyrus_L"
+        ]
+      },
+      "viscera": {
+        "meshes": 75,
+        "triangles": 455919,
+        "budget": {
+          "triangles": 455919,
+          "est_bytes_si1": 12765732,
+          "est_bytes_si_0_25": 3191433,
+          "est_bytes_si_0_1": 1276573,
+          "est_mb_si1": 12.17,
+          "est_mb_si_0_25": 3.04,
+          "est_mb_si_0_1": 1.22,
+          "adr_budget_mb": 15,
+          "fits_si_0_25": true,
+          "fits_si_0_1": true,
+          "note": "Estimación proporcional (no se corrió gltfpack); factor empírico ~28 B/tri a si=1"
+        },
+        "sample_names": [
+          "VH_F_abdominal_ostium_of_uterine_tube",
+          "VH_F_ampulla_of_uterine_tube_L",
+          "VH_F_ampulla_of_uterine_tube_R",
+          "VH_F_anterior_wall_of_uterus",
+          "VH_F_ascending_colon",
+          "VH_F_bare_area_of_liver",
+          "VH_F_body_of_pancreas",
+          "VH_F_body_of_uterus",
+          "VH_F_capsule_of_the_liver",
+          "VH_F_cervicovaginal_junction",
+          "VH_F_cervix",
+          "VH_F_colic_impression_of_liver",
+          "VH_F_colic_surface_of_spleen",
+          "VH_F_descending_colon",
+          "VH_F_diaphragmatic_surface_of_liver"
+        ]
+      },
+      "sin_sistema": {
+        "meshes": 243,
+        "triangles": 1580093,
+        "budget": {
+          "triangles": 1580093,
+          "est_bytes_si1": 44242604,
+          "est_bytes_si_0_25": 11060651,
+          "est_bytes_si_0_1": 4424260,
+          "est_mb_si1": 42.19,
+          "est_mb_si_0_25": 10.55,
+          "est_mb_si_0_1": 4.22,
+          "adr_budget_mb": 15,
+          "fits_si_0_25": true,
+          "fits_si_0_1": true,
+          "note": "Estimación proporcional (no se corrió gltfpack); factor empírico ~28 B/tri a si=1"
+        },
+        "sample_names": [
+          "VH_F_amnion",
+          "VH_F_anterior_cruciate_enthesis_L",
+          "VH_F_anterior_cruciate_enthesis_R",
+          "VH_F_aortic_arch",
+          "VH_F_aortic_valve",
+          "VH_F_aqueous_humor_L",
+          "VH_F_aqueous_humor_R",
+          "VH_F_basal_plate",
+          "VH_F_bulbar_conjunctiva_L",
+          "VH_F_bulbar_conjunctiva_R",
+          "VH_F_caecum",
+          "VH_F_carina",
+          "VH_F_celiac_trunk",
+          "VH_F_chorionic_plate",
+          "VH_F_ciliary_body_L"
+        ]
+      }
+    },
+    "tentative_mapping_note": "Heurística por keywords en el nombre; no es curación anatómica.",
+    "all_mesh_names": [
+      "Allen_amygdalohippocampal_area_L",
+      "Allen_amygdalohippocampal_area_R",
+      "Allen_amygdaloid_complex_L",
+      "Allen_amygdaloid_complex_R",
+      "Allen_angular_gyrus_L",
+      "Allen_angular_gyrus_R",
+      "Allen_anterior_amygdaloid_area_L",
+      "Allen_anterior_amygdaloid_area_R",
+      "Allen_anterior_commissure_L",
+      "Allen_anterior_commissure_R",
+      "Allen_anterior_cortical_nucleus_L",
+      "Allen_anterior_cortical_nucleus_R",
+      "Allen_anterior_horn_of_lateral_ventricle_L",
+      "Allen_anterior_horn_of_lateral_ventricle_R",
+      "Allen_anterior_intermediate_orbital_gyrus_L",
+      "Allen_anterior_intermediate_orbital_gyrus_R",
+      "Allen_anterior_nuclear_complex_of_thalamus_L",
+      "Allen_anterior_nuclear_complex_of_thalamus_R",
+      "Allen_anterior_olfactory_nucleus_L",
+      "Allen_anterior_olfactory_nucleus_R",
+      "Allen_anterior_parahippocampal_gyrus_L",
+      "Allen_anterior_parahippocampal_gyrus_R",
+      "Allen_atrium_of_lateral_ventricle_L",
+      "Allen_atrium_of_lateral_ventricle_R",
+      "Allen_basal_forebrain_L",
+      "Allen_basal_forebrain_R",
+      "Allen_basilar_part_of_pons_L",
+      "Allen_basilar_part_of_pons_R",
+      "Allen_basolateral_nucleus_basal_nucleus_L",
+      "Allen_basolateral_nucleus_basal_nucleus_R",
+      "Allen_basomedial_nucleus_accessory_basal_nucleus_L",
+      "Allen_basomedial_nucleus_accessory_basal_nucleus_R",
+      "Allen_bed_nucleus_of_stria_terminalis_L",
+      "Allen_bed_nucleus_of_stria_terminalis_R",
+      "Allen_body_of_caudate_L",
+      "Allen_body_of_caudate_R",
+      "Allen_body_of_hippocampus_L",
+      "Allen_body_of_hippocampus_R",
+      "Allen_body_of_lateral_ventricle_L",
+      "Allen_body_of_lateral_ventricle_R",
+      "Allen_central_canal_of_medulla_oblongata_L",
+      "Allen_central_canal_of_medulla_oblongata_R",
+      "Allen_central_nuclear_group_L",
+      "Allen_central_nuclear_group_R",
+      "Allen_centromedian_nucleus_of_thalamus_L",
+      "Allen_centromedian_nucleus_of_thalamus_R",
+      "Allen_cerebellar_deep_nuclei_L",
+      "Allen_cerebellar_deep_nuclei_R",
+      "Allen_cerebellar_vermis_L",
+      "Allen_cerebellar_vermis_R",
+      "Allen_cerebral_aqueduct_L",
+      "Allen_cerebral_aqueduct_R",
+      "Allen_cerebral_peduncle_crus_cerebri_L",
+      "Allen_cerebral_peduncle_crus_cerebri_R",
+      "Allen_cingulate_gyrus_caudal_posterior_part_L",
+      "Allen_cingulate_gyrus_caudal_posterior_part_R",
+      "Allen_cingulate_gyrus_rostral_anterior_part_L",
+      "Allen_cingulate_gyrus_rostral_anterior_part_R",
+      "Allen_claustrum_L",
+      "Allen_claustrum_R",
+      "Allen_corpus_callosum_L",
+      "Allen_corpus_callosum_R",
+      "Allen_cuneus_L",
+      "Allen_cuneus_R",
+      "Allen_dorsal_lateral_geniculate_nucleus_L",
+      "Allen_dorsal_lateral_geniculate_nucleus_R",
+      "Allen_external_segment_of_globus_pallidus_L",
+      "Allen_external_segment_of_globus_pallidus_R",
+      "Allen_fornix_L",
+      "Allen_fornix_R",
+      "Allen_fourth_ventricle_L",
+      "Allen_fourth_ventricle_R",
+      "Allen_frontal_agranular_insular_cortex_area_Fl_L",
+      "Allen_frontal_agranular_insular_cortex_area_Fl_R",
+      "Allen_frontal_operculum_L",
+      "Allen_frontal_operculum_R",
+      "Allen_frontal_pole_L",
+      "Allen_frontal_pole_R",
+      "Allen_frontomarginal_gyrus_L",
+      "Allen_frontomarginal_gyrus_R",
+      "Allen_gyrus_ambiens_L",
+      "Allen_gyrus_ambiens_R",
+      "Allen_gyrus_rectus_straight_gyrus_L",
+      "Allen_gyrus_rectus_straight_gyrus_R",
+      "Allen_habenular_nuclei_L",
+      "Allen_habenular_nuclei_R",
+      "Allen_head_of_caudate_L",
+      "Allen_head_of_caudate_R",
+      "Allen_head_of_hippocampus_L",
+      "Allen_head_of_hippocampus_R",
+      "Allen_hypothalamus_L",
+      "Allen_hypothalamus_R",
+      "Allen_inferior_cerebellar_peduncle_L",
+      "Allen_inferior_cerebellar_peduncle_R",
+      "Allen_inferior_colliculus_L",
+      "Allen_inferior_colliculus_R",
+      "Allen_inferior_frontal_gyrus_opercular_part_L",
+      "Allen_inferior_frontal_gyrus_opercular_part_R",
+      "Allen_inferior_frontal_gyrus_triangular_part_L",
+      "Allen_inferior_frontal_gyrus_triangular_part_R",
+      "Allen_inferior_horn_of_lateral_ventricle_L",
+      "Allen_inferior_horn_of_lateral_ventricle_R",
+      "Allen_inferior_occipital_gyrus_L",
+      "Allen_inferior_occipital_gyrus_R",
+      "Allen_inferior_olive_L",
+      "Allen_inferior_olive_R",
+      "Allen_inferior_temporal_gyrus_L",
+      "Allen_inferior_temporal_gyrus_R",
+      "Allen_ingulo_parahippocampal_isthmus_L",
+      "Allen_ingulo_parahippocampal_isthmus_R",
+      "Allen_internal_segment_of_globus_pallidus_L",
+      "Allen_internal_segment_of_globus_pallidus_R",
+      "Allen_lateral_dorsal_nucleus_of_thalamus_L",
+      "Allen_lateral_dorsal_nucleus_of_thalamus_R",
+      "Allen_lateral_hemisphere_of_cerebellum_L",
+      "Allen_lateral_hemisphere_of_cerebellum_R",
+      "Allen_lateral_nucleus_L",
+      "Allen_lateral_nucleus_R",
+      "Allen_lateral_occipitotemporal_fusiform_gyrus_occipital_part_L",
+      "Allen_lateral_occipitotemporal_fusiform_gyrus_occipital_part_R",
+      "Allen_lateral_olfactory_gyrus_L",
+      "Allen_lateral_olfactory_gyrus_R",
+      "Allen_lateral_orbital_gyrus_L",
+      "Allen_lateral_orbital_gyrus_R",
+      "Allen_lateral_posterior_nucleus_of_thalamus_L",
+      "Allen_lateral_posterior_nucleus_of_thalamus_R",
+      "Allen_limen_insula_L",
+      "Allen_limen_insula_R",
+      "Allen_lingual_gyrus_medial_occipitotemporal_gyrus_L",
+      "Allen_lingual_gyrus_medial_occipitotemporal_gyrus_R",
+      "Allen_long_insular_gyri_L",
+      "Allen_long_insular_gyri_R",
+      "Allen_mammillary_region_of_HTH_L",
+      "Allen_mammillary_region_of_HTH_R",
+      "Allen_mammillothalamic_tract_L",
+      "Allen_mammillothalamic_tract_R",
+      "Allen_medial_geniculate_nuclei_L",
+      "Allen_medial_geniculate_nuclei_R",
+      "Allen_medial_nucleus_L",
+      "Allen_medial_nucleus_R",
+      "Allen_medial_orbital_gyrus_L",
+      "Allen_medial_orbital_gyrus_R",
+      "Allen_mediodorsal_nucleus_of_thalamus_L",
+      "Allen_mediodorsal_nucleus_of_thalamus_R",
+      "Allen_midbrain_tegmentum_L",
+      "Allen_midbrain_tegmentum_R",
+      "Allen_middle_cerebellar_peduncle_L",
+      "Allen_middle_cerebellar_peduncle_R",
+      "Allen_middle_frontal_gyrus_L",
+      "Allen_middle_frontal_gyrus_R",
+      "Allen_middle_temporal_gyrus_L",
+      "Allen_middle_temporal_gyrus_R",
+      "Allen_midline_nuclear_complex_L",
+      "Allen_midline_nuclear_complex_R",
+      "Allen_nucleus_accumbens_L",
+      "Allen_nucleus_accumbens_R",
+      "Allen_occipital_pole_L",
+      "Allen_occipital_pole_R",
+      "Allen_occipitotemporal_fusiform_gyrus_temporal_part_L",
+      "Allen_occipitotemporal_fusiform_gyrus_temporal_part_R",
+      "Allen_olfactory_bulb_L",
+      "Allen_olfactory_bulb_R",
+      "Allen_olfactory_tract_L",
+      "Allen_olfactory_tract_R",
+      "Allen_optic_radiation_L",
+      "Allen_optic_radiation_R",
+      "Allen_optic_tract_L",
+      "Allen_optic_tract_R",
+      "Allen_paracentral_lobule_caudal_part_L",
+      "Allen_paracentral_lobule_caudal_part_R",
+      "Allen_paracentral_lobule_rostral_part_L",
+      "Allen_paracentral_lobule_rostral_part_R",
+      "Allen_paracingulate_gyrus_L",
+      "Allen_paracingulate_gyrus_R",
+      "Allen_parafascicular_nucleus_of_thalamus_L",
+      "Allen_parafascicular_nucleus_of_thalamus_R",
+      "Allen_paravermis_of_cerebellum_L",
+      "Allen_paravermis_of_cerebellum_R",
+      "Allen_parietal_operculum_L",
+      "Allen_parietal_operculum_R",
+      "Allen_perirhinal_gyrus_rostral_part_of_FuGt_L",
+      "Allen_perirhinal_gyrus_rostral_part_of_FuGt_R",
+      "Allen_pineal_body_L",
+      "Allen_pineal_body_R",
+      "Allen_piriform_region_L",
+      "Allen_piriform_region_R",
+      "Allen_planum_polare_L",
+      "Allen_planum_polare_R",
+      "Allen_planum_temporale_L",
+      "Allen_planum_temporale_R",
+      "Allen_pontine_tegmentum_L",
+      "Allen_pontine_tegmentum_R",
+      "Allen_postcentral_gyrus_L",
+      "Allen_postcentral_gyrus_R",
+      "Allen_posterior_cortical_nucleus_L",
+      "Allen_posterior_cortical_nucleus_R",
+      "Allen_posterior_horn_of_lateral_ventricle_L",
+      "Allen_posterior_horn_of_lateral_ventricle_R",
+      "Allen_posterior_intermediate_orbital_gyrus_L",
+      "Allen_posterior_intermediate_orbital_gyrus_R",
+      "Allen_posterior_parahippocampal_gyrus_L",
+      "Allen_posterior_parahippocampal_gyrus_R",
+      "Allen_posteroventral_putamen_L",
+      "Allen_posteroventral_putamen_R",
+      "Allen_precentral_gyrus_L",
+      "Allen_precentral_gyrus_R",
+      "Allen_precuneus_L",
+      "Allen_precuneus_R",
+      "Allen_preoptic_region_of_HTH_L",
+      "Allen_preoptic_region_of_HTH_R",
+      "Allen_pretectal_region_L",
+      "Allen_pretectal_region_R",
+      "Allen_pulvinar_of_thalamus_L",
+      "Allen_pulvinar_of_thalamus_R",
+      "Allen_putamen_L",
+      "Allen_putamen_R",
+      "Allen_pyramidal_part_of_medulla_oblongata_L",
+      "Allen_pyramidal_part_of_medulla_oblongata_R",
+      "Allen_red_nucleus_L",
+      "Allen_red_nucleus_R",
+      "Allen_reuniens_nucleus_medioventral_nucleus_of_thalamus_L",
+      "Allen_reuniens_nucleus_medioventral_nucleus_of_thalamus_R",
+      "Allen_rostral_gyrus_L",
+      "Allen_rostral_gyrus_R",
+      "Allen_septal_nuclei_L",
+      "Allen_septal_nuclei_R",
+      "Allen_short_insular_gyri_L",
+      "Allen_short_insular_gyri_R",
+      "Allen_subcallosal_gyrus_parolfactory_gyrus_L",
+      "Allen_subcallosal_gyrus_parolfactory_gyrus_R",
+      "Allen_substantia_nigra_L",
+      "Allen_substantia_nigra_R",
+      "Allen_subthalamic_nucleus_L",
+      "Allen_subthalamic_nucleus_R",
+      "Allen_superior_cerebellar_peduncle_brachium_conjunctivum_L",
+      "Allen_superior_cerebellar_peduncle_brachium_conjunctivum_R",
+      "Allen_superior_colliculus_L",
+      "Allen_superior_colliculus_R",
+      "Allen_superior_frontal_gyrus_L",
+      "Allen_superior_frontal_gyrus_R",
+      "Allen_superior_occipital_gyrus_L",
+      "Allen_superior_occipital_gyrus_R",
+      "Allen_superior_temporal_gyrus_L",
+      "Allen_superior_temporal_gyrus_R",
+      "Allen_supramarginal_gyrus_L",
+      "Allen_supramarginal_gyrus_R",
+      "Allen_supraoptic_region_of_HTH_L",
+      "Allen_supraoptic_region_of_HTH_R",
+      "Allen_supraparietal_lobule_L",
+      "Allen_supraparietal_lobule_R",
+      "Allen_tail_of_caudate_L",
+      "Allen_tail_of_caudate_R",
+      "Allen_tail_of_hippocampus_L",
+      "Allen_tail_of_hippocampus_R",
+      "Allen_tegmentum_of_medulla_oblongata_L",
+      "Allen_tegmentum_of_medulla_oblongata_R",
+      "Allen_temporal_agranular_insular_cortex_area_Tl_L",
+      "Allen_temporal_agranular_insular_cortex_area_Tl_R",
+      "Allen_temporal_pole_L",
+      "Allen_temporal_pole_R",
+      "Allen_thalamus_L",
+      "Allen_thalamus_R",
+      "Allen_third_ventricle_L",
+      "Allen_third_ventricle_R",
+      "Allen_transverse_temporal_gyrus_Heschls_gyrus_L",
+      "Allen_transverse_temporal_gyrus_Heschls_gyrus_R",
+      "Allen_tuberal_region_of_HTH_L",
+      "Allen_tuberal_region_of_HTH_R",
+      "Allen_ventral_anterior_nucleus_of_thalamus_L",
+      "Allen_ventral_anterior_nucleus_of_thalamus_R",
+      "Allen_ventral_lateral_nucleus_of_thalamus_L",
+      "Allen_ventral_lateral_nucleus_of_thalamus_R",
+      "Allen_ventral_posterior_lateral_nucleus_L",
+      "Allen_ventral_posterior_lateral_nucleus_R",
+      "Allen_ventral_posterior_medial_nucleus_L",
+      "Allen_ventral_posterior_medial_nucleus_R",
+      "Allen_white_matter_of_forebrain_L",
+      "Allen_white_matter_of_forebrain_R",
+      "Allen_white_matter_of_hindbrain_L",
+      "Allen_white_matter_of_hindbrain_R",
+      "Allen_zona_incerta_L",
+      "Allen_zona_incerta_R",
+      "VH_F_abdominal_ostium_of_uterine_tube",
+      "VH_F_amnion",
+      "VH_F_ampulla_of_uterine_tube_L",
+      "VH_F_ampulla_of_uterine_tube_R",
+      "VH_F_anterior_cardiac_vein",
+      "VH_F_anterior_cruciate_enthesis_L",
+      "VH_F_anterior_cruciate_enthesis_R",
+      "VH_F_anterior_cruciate_ligament_of_knee_L",
+      "VH_F_anterior_cruciate_ligament_of_knee_R",
+      "VH_F_anterior_segmental_right_hepatic_artery",
+      "VH_F_anterior_wall_of_uterus",
+      "VH_F_anterolateral_ligament_of_knee_L",
+      "VH_F_anterolateral_ligament_of_knee_R",
+      "VH_F_aortic_arch",
+      "VH_F_aortic_valve",
+      "VH_F_aqueous_humor_L",
+      "VH_F_aqueous_humor_R",
+      "VH_F_areola_L",
+      "VH_F_areola_R",
+      "VH_F_areolar_tubercles_L",
+      "VH_F_areolar_tubercles_R",
+      "VH_F_articular_cartilage_of_knee_L",
+      "VH_F_articular_cartilage_of_knee_R",
+      "VH_F_arytenoid_cartilage_L",
+      "VH_F_arytenoid_cartilage_R",
+      "VH_F_ascending_aorta",
+      "VH_F_ascending_colon",
+      "VH_F_bare_area_of_liver",
+      "VH_F_basal_plate",
+      "VH_F_body_of_pancreas",
+      "VH_F_body_of_uterus",
+      "VH_F_brachiocephalic_artery_a",
+      "VH_F_brachiocephalic_artery_b",
+      "VH_F_broad_ligament",
+      "VH_F_bulbar_conjunctiva_L",
+      "VH_F_bulbar_conjunctiva_R",
+      "VH_F_C1_segment_of_cervical_spinal_cord",
+      "VH_F_C2_segment_of_cervical_spinal_cord",
+      "VH_F_C3_segment_of_cervical_spinal_cord",
+      "VH_F_C4_segment_of_cervical_spinal_cord",
+      "VH_F_C5_segment_of_cervical_spinal_cord",
+      "VH_F_C6_segment_of_cervical_spinal_cord",
+      "VH_F_C7_segment_of_cervical_spinal_cord",
+      "VH_F_C8_segment_of_cervical_spinal_cord",
+      "VH_F_caecum",
+      "VH_F_capsule_of_the_liver",
+      "VH_F_carina",
+      "VH_F_cartilage_of_lobar_bronchus_L",
+      "VH_F_cartilage_of_lobar_bronchus_R",
+      "VH_F_cartilage_of_main_bronchus_L",
+      "VH_F_cartilage_of_main_bronchus_R",
+      "VH_F_cartilage_of_tertiary_bronchus_L",
+      "VH_F_cartilage_of_tertiary_bronchus_R",
+      "VH_F_caudate_lobe",
+      "VH_F_celiac_trunk",
+      "VH_F_central_retinal_artery_L",
+      "VH_F_central_retinal_artery_R",
+      "VH_F_central_retinal_vein_L",
+      "VH_F_central_retinal_vein_R",
+      "VH_F_cervical_vertebra_1",
+      "VH_F_cervical_vertebra_2",
+      "VH_F_cervical_vertebra_3",
+      "VH_F_cervical_vertebra_4",
+      "VH_F_cervical_vertebra_5",
+      "VH_F_cervical_vertebra_6",
+      "VH_F_cervical_vertebra_7",
+      "VH_F_cervicovaginal_junction",
+      "VH_F_cervix",
+      "VH_F_chorionic_plate",
+      "VH_F_ciliary_body_L",
+      "VH_F_ciliary_body_R",
+      "VH_F_ciliary_muscle_L",
+      "VH_F_ciliary_muscle_R",
+      "VH_F_ciliary_processes_L",
+      "VH_F_ciliary_processes_R",
+      "VH_F_coccyx",
+      "VH_F_colic_impression_of_liver",
+      "VH_F_colic_surface_of_spleen",
+      "VH_F_common_bile_duct",
+      "VH_F_common_hepatic_artery",
+      "VH_F_common_hepatic_duct",
+      "VH_F_cornea_L",
+      "VH_F_cornea_R",
+      "VH_F_corneo_scleral_junction_L",
+      "VH_F_corneo_scleral_junction_R",
+      "VH_F_corniculate_cartilage_L",
+      "VH_F_corniculate_cartilage_R",
+      "VH_F_cornua",
+      "VH_F_coronary_ligament_of_liver",
+      "VH_F_coronary_sinus",
+      "VH_F_cricoid_cartilage",
+      "VH_F_cystic_artery",
+      "VH_F_cystic_duct",
+      "VH_F_cystic_vein",
+      "VH_F_descending_aorta_a",
+      "VH_F_descending_aorta_b",
+      "VH_F_descending_colon",
+      "VH_F_diagonal_branch_of_left_anterior_descending_artery",
+      "VH_F_diaphragmatic_surface_of_liver",
+      "VH_F_diaphragmatic_surface_of_spleen",
+      "VH_F_distal_most_point_of_medial_condyle_L",
+      "VH_F_distal_most_point_of_medial_condyle_R",
+      "VH_F_dorsal_pancreatic_duct",
+      "VH_F_duodenal_ampulla",
+      "VH_F_duodenal_impression_of_liver",
+      "VH_F_duodenum_ascending",
+      "VH_F_duodenum_descending",
+      "VH_F_duodenum_horizontal",
+      "VH_F_duodenum_superior",
+      "VH_F_dura_mater_left",
+      "VH_F_dura_mater_right",
+      "VH_F_eigth_thoracic_spinal_cord_segment",
+      "VH_F_eleventh_thoracic_spinal_cord_segment",
+      "VH_F_epiglotic_cartilage",
+      "VH_F_esophageal_impression_of_liver",
+      "VH_F_external_cervical_os",
+      "VH_F_falciform_ligament",
+      "VH_F_fat_L",
+      "VH_F_fat_R",
+      "VH_F_femur_L",
+      "VH_F_femur_R",
+      "VH_F_fibria_of_uterine_tube_L",
+      "VH_F_fibria_of_uterine_tube_R",
+      "VH_F_fibula_L",
+      "VH_F_fibula_R",
+      "VH_F_fibular_collateral_ligament_L",
+      "VH_F_fibular_collateral_ligament_R",
+      "VH_F_fifth_lumbar_spinal_cord_segment",
+      "VH_F_fifth_thoracic_spinal_cord_segment",
+      "VH_F_first_lumbar_spinal_cord_segment",
+      "VH_F_first_sacral_spinal_cord_segment",
+      "VH_F_first_thoracic_spinal_cord_segment",
+      "VH_F_fourth_lumbar_spinal_cord_segment",
+      "VH_F_fourth_sacral_spinal_cord_segment",
+      "VH_F_fourth_thoracic_spinal_cord_segment",
+      "VH_F_fovea_L",
+      "VH_F_fovea_R",
+      "VH_F_fundus_of_urinary_bladder_base",
+      "VH_F_fundus_of_urinary_bladder_dome",
+      "VH_F_fundus_of_uterus",
+      "VH_F_gallbladder",
+      "VH_F_gastric_impression_of_liver",
+      "VH_F_gastric_surface_of_spleen",
+      "VH_F_great_cardiac_vein",
+      "VH_F_head_of_pancreas",
+      "VH_F_hepataduodenal_ligament",
+      "VH_F_hepatic_flexure_of_colon",
+      "VH_F_hepatic_portal_vein",
+      "VH_F_hepatopancreatic_ampulla",
+      "VH_F_hilum_L",
+      "VH_F_hilum_lower_L",
+      "VH_F_hilum_lower_R",
+      "VH_F_hilum_middle_R",
+      "VH_F_hilum_of_kidney_L",
+      "VH_F_hilum_of_kidney_R",
+      "VH_F_hilum_of_spleen",
+      "VH_F_hilum_R",
+      "VH_F_hilum_upper_L",
+      "VH_F_hilum_upper_R",
+      "VH_F_ileocecal_valve",
+      "VH_F_ileocolic_artery",
+      "VH_F_ileocolic_vein",
+      "VH_F_ileum",
+      "VH_F_ileum_terminal",
+      "VH_F_ilium_compact_bone_L",
+      "VH_F_ilium_compact_bone_R",
+      "VH_F_ilium_spongy_bone_L",
+      "VH_F_ilium_spongy_bone_R",
+      "VH_F_inferior_mesenteric_artery",
+      "VH_F_inferior_mesenteric_vein",
+      "VH_F_inferior_oblique_extraocular_muscle_L",
+      "VH_F_inferior_oblique_extraocular_muscle_R",
+      "VH_F_inferior_ophthalmic_vein_L",
+      "VH_F_inferior_ophthalmic_vein_R",
+      "VH_F_inferior_pancreaticoduodenal_vein",
+      "VH_F_inferior_rectal_vein_L",
+      "VH_F_inferior_rectal_vein_R",
+      "VH_F_inferior_rectus_extraocular_muscle_L",
+      "VH_F_inferior_rectus_extraocular_muscle_R",
+      "VH_F_inferior_vena_cava_a",
+      "VH_F_inferior_vena_cava_b",
+      "VH_F_intercondylar_fossa_L",
+      "VH_F_intercondylar_fossa_R",
+      "VH_F_internal_cervical_os",
+      "VH_F_internal_iliac_vein_L",
+      "VH_F_internal_iliac_vein_R",
+      "VH_F_internal_pudendal_vein_L",
+      "VH_F_internal_pudendal_vein_R",
+      "VH_F_interventricular_septum",
+      "VH_F_iris_L",
+      "VH_F_iris_R",
+      "VH_F_ischium_compact_bone_L",
+      "VH_F_ischium_compact_bone_R",
+      "VH_F_ischium_spongy_bone_L",
+      "VH_F_ischium_spongy_bone_R",
+      "VH_F_isthmus_of_fallopian_tube_L",
+      "VH_F_isthmus_of_fallopian_tube_R",
+      "VH_F_jejenum",
+      "VH_F_kidney_capsule_L",
+      "VH_F_kidney_capsule_R",
+      "VH_F_lateral_condyle_of_femur_frontal_L",
+      "VH_F_lateral_condyle_of_femur_frontal_R",
+      "VH_F_lateral_condyle_of_femur_inf_L",
+      "VH_F_lateral_condyle_of_femur_inf_R",
+      "VH_F_lateral_condyle_of_femur_sup_L",
+      "VH_F_lateral_condyle_of_femur_sup_R",
+      "VH_F_lateral_epicondylar_enthesis_L",
+      "VH_F_lateral_epicondylar_enthesis_R",
+      "VH_F_lateral_perichondular_surface_L",
+      "VH_F_lateral_perichondular_surface_R",
+      "VH_F_lateral_rectus_extraocular_muscle_L",
+      "VH_F_lateral_rectus_extraocular_muscle_R",
+      "VH_F_left_anterior_basal_bronchopulmonary_segment",
+      "VH_F_left_anterior_basal_bronchus",
+      "VH_F_left_anterior_bronchopulmonary_segment",
+      "VH_F_left_anterior_bronchus",
+      "VH_F_left_anterior_descending_artery",
+      "VH_F_left_anterolateral_segment",
+      "VH_F_left_apical_bronchopulmonary_segment",
+      "VH_F_left_apical_bronchus",
+      "VH_F_left_branch_of_portal_vein",
+      "VH_F_left_cardiac_atrium",
+      "VH_F_left_cardinal_ligament_of_uterus",
+      "VH_F_left_circumflex_artery",
+      "VH_F_left_colic_artery",
+      "VH_F_left_colic_vein",
+      "VH_F_left_common_carotid_artery_a",
+      "VH_F_left_common_carotid_artery_b",
+      "VH_F_left_common_iliac_vein",
+      "VH_F_left_coronary_artery",
+      "VH_F_left_hepatic_artery",
+      "VH_F_left_hepatic_duct",
+      "VH_F_left_hepatic_vein",
+      "VH_F_left_inferior_lobar_bronchus",
+      "VH_F_left_inferomedial_segment",
+      "VH_F_left_lateral_basal_bronchopulmonary_segment",
+      "VH_F_left_lateral_basal_bronchus",
+      "VH_F_left_lingula_inferior_bronchi",
+      "VH_F_left_lingula_superior_bronchus",
+      "VH_F_left_main_bronchus",
+      "VH_F_left_marginal_branch",
+      "VH_F_left_marginal_vein",
+      "VH_F_left_medial_basal_bronchopulmonary_segment",
+      "VH_F_left_medial_basal_bronchus",
+      "VH_F_left_optic_nerve",
+      "VH_F_left_ovary",
+      "VH_F_left_posterior_basal_bronchopulmonary_segment",
+      "VH_F_left_posterior_basal_bronchus",
+      "VH_F_left_posterior_bronchopulmonary_segment",
+      "VH_F_left_posterior_bronchus",
+      "VH_F_left_posterior_descending_branch_of_circumflex_branch_of_left_coronary_artery",
+      "VH_F_left_renal_artery",
+      "VH_F_left_renal_vein",
+      "VH_F_left_round_ligament_of_uterus",
+      "VH_F_left_subclavian_artery_a",
+      "VH_F_left_subclavian_artery_b",
+      "VH_F_left_superior_bronchopulmonary_segment",
+      "VH_F_left_superior_bronchus",
+      "VH_F_left_superior_lobar_bronchus",
+      "VH_F_left_superomedial_segment",
+      "VH_F_left_superomedial_segment1",
+      "VH_F_left_tibial_collateral_ligament",
+      "VH_F_left_ureter",
+      "VH_F_left_uterine_artery",
+      "VH_F_left_uterine_vein",
+      "VH_F_left_uterosacral_ligament",
+      "VH_F_left_ventricle",
+      "VH_F_lens_L",
+      "VH_F_lens_R",
+      "VH_F_ligamentum_venosum",
+      "VH_F_lingula_inferior_bronchopulmonary_segment",
+      "VH_F_lingula_superior_bronchopulmonary_segment",
+      "VH_F_long_posterior_ciliary_artery_L",
+      "VH_F_long_posterior_ciliary_artery_R",
+      "VH_F_lower_uterine_segment",
+      "VH_F_lumbar_vertebra_1",
+      "VH_F_lumbar_vertebra_2",
+      "VH_F_lumbar_vertebra_3",
+      "VH_F_lumbar_vertebra_4",
+      "VH_F_lumbar_vertebra_5",
+      "VH_F_lumbar_vertebra_6",
+      "VH_F_macula_lutea_L",
+      "VH_F_macula_lutea_R",
+      "VH_F_main_lactiferous_ducts_L",
+      "VH_F_main_lactiferous_ducts_R",
+      "VH_F_main_lactiferous_sinuses_L",
+      "VH_F_main_lactiferous_sinuses_R",
+      "VH_F_major_calyx_L_a",
+      "VH_F_major_calyx_L_b",
+      "VH_F_major_calyx_L_c",
+      "VH_F_major_calyx_L_d",
+      "VH_F_major_calyx_R_a",
+      "VH_F_major_calyx_R_b",
+      "VH_F_major_calyx_R_c",
+      "VH_F_mammary_lobes_L",
+      "VH_F_mammary_lobes_R",
+      "VH_F_marginal_artery_of_Drummond",
+      "VH_F_medial_condyle_of_left_femur_inf",
+      "VH_F_medial_condyle_of_left_femur_sup",
+      "VH_F_medial_condyle_of_right_femur_inf",
+      "VH_F_medial_condyle_of_right_femur_sup",
+      "VH_F_medial_epicondylar_enthesis_L",
+      "VH_F_medial_epicondylar_enthesis_R",
+      "VH_F_medial_perichondular_surface_L",
+      "VH_F_medial_perichondular_surface_R",
+      "VH_F_medial_rectus_extraocular_muscle_L",
+      "VH_F_medial_rectus_extraocular_muscle_R",
+      "VH_F_median_sacral_vein",
+      "VH_F_meniscus_L",
+      "VH_F_meniscus_R",
+      "VH_F_mesosalpinx_L",
+      "VH_F_mesosalpinx_R",
+      "VH_F_mesovarium_L",
+      "VH_F_mesovarium_R",
+      "VH_F_middle_cardiac_vein",
+      "VH_F_middle_colic_artery",
+      "VH_F_middle_colic_vein",
+      "VH_F_middle_hepatic_artery_branch_of_left_hepatic_artery",
+      "VH_F_middle_hepatic_vein",
+      "VH_F_middle_rectal_vein_L",
+      "VH_F_middle_rectal_vein_R",
+      "VH_F_minor_calyx_L_a",
+      "VH_F_minor_calyx_L_b",
+      "VH_F_minor_calyx_L_c",
+      "VH_F_minor_calyx_L_d",
+      "VH_F_minor_calyx_L_e",
+      "VH_F_minor_calyx_L_f",
+      "VH_F_minor_calyx_L_g",
+      "VH_F_minor_calyx_L_h",
+      "VH_F_minor_calyx_L_i",
+      "VH_F_minor_calyx_L_j",
+      "VH_F_minor_calyx_R_a",
+      "VH_F_minor_calyx_R_b",
+      "VH_F_minor_calyx_R_c",
+      "VH_F_minor_calyx_R_d",
+      "VH_F_minor_calyx_R_e",
+      "VH_F_minor_calyx_R_f",
+      "VH_F_minor_calyx_R_g",
+      "VH_F_minor_calyx_R_h",
+      "VH_F_minor_calyx_R_i",
+      "VH_F_minor_calyx_R_j",
+      "VH_F_mitral_valve",
+      "VH_F_neck_of_pancreas",
+      "VH_F_ninth_thoracic_spinal_cord_segment",
+      "VH_F_nipple_L",
+      "VH_F_nipple_R",
+      "VH_F_oblique_vein_of_left_atrium",
+      "VH_F_ophthalmic_vein_L",
+      "VH_F_ophthalmic_vein_R",
+      "VH_F_opthalmic_artery_L",
+      "VH_F_opthalmic_artery_R",
+      "VH_F_optic_chiasm",
+      "VH_F_optic_choroid_L",
+      "VH_F_optic_choroid_R",
+      "VH_F_optic_disc_L",
+      "VH_F_optic_disc_R",
+      "VH_F_ora_serrata_of_retina_L",
+      "VH_F_ora_serrata_of_retina_R",
+      "VH_F_outer_cortex_of_kidney_L",
+      "VH_F_outer_cortex_of_kidney_R",
+      "VH_F_ovarian_ligament_L",
+      "VH_F_ovarian_ligament_R",
+      "VH_F_palatine_tonsil_L",
+      "VH_F_palatine_tonsil_R",
+      "VH_F_palpebral_conjunctiva_of_left_lower_eyelid",
+      "VH_F_palpebral_conjunctiva_of_left_upper_eyelid",
+      "VH_F_palpebral_conjunctiva_of_right_lower_eyelid",
+      "VH_F_palpebral_conjunctiva_of_right_upper_eyelid",
+      "VH_F_papillary_muscle_of_heart_ant",
+      "VH_F_papillary_muscle_of_heart_antlat",
+      "VH_F_papillary_muscle_of_heart_med",
+      "VH_F_papillary_muscle_of_heart_pos",
+      "VH_F_papillary_muscle_of_heart_posmed",
+      "VH_F_patella_L",
+      "VH_F_patella_R",
+      "VH_F_patellar_ligament_L",
+      "VH_F_patellar_ligament_R",
+      "VH_F_placenta_vessels",
+      "VH_F_porta_hepatis",
+      "VH_F_posterior_cruciate_enthesis_L",
+      "VH_F_posterior_cruciate_enthesis_R",
+      "VH_F_posterior_cruciate_ligament_of_knee_L",
+      "VH_F_posterior_cruciate_ligament_of_knee_R",
+      "VH_F_posterior_left_ventricular_branch",
+      "VH_F_posterior_segmental_right_hepatic_artery",
+      "VH_F_posterior_vein_of_left_ventricle",
+      "VH_F_posterior_wall_of_uterus",
+      "VH_F_proper_hepatic_artery",
+      "VH_F_pubis_compact_bone_L",
+      "VH_F_pubis_compact_bone_R",
+      "VH_F_pubis_spongy_bone_L",
+      "VH_F_pubis_spongy_bone_R",
+      "VH_F_pulmonary_artery_L",
+      "VH_F_pulmonary_artery_R",
+      "VH_F_pulmonary_trunk",
+      "VH_F_pulmonary_valve",
+      "VH_F_pulmonary_vein_L_inf",
+      "VH_F_pulmonary_vein_L_sup",
+      "VH_F_pulmonary_vein_R_inf",
+      "VH_F_pulmonary_vein_R_sup",
+      "VH_F_pupil_L",
+      "VH_F_pupil_R",
+      "VH_F_quadrate_lobe",
+      "VH_F_rectum",
+      "VH_F_rectus_femoris_L",
+      "VH_F_rectus_femoris_R",
+      "VH_F_renal_column_L",
+      "VH_F_renal_column_R",
+      "VH_F_renal_impression_of_liver",
+      "VH_F_renal_papilla_L_a",
+      "VH_F_renal_papilla_L_b",
+      "VH_F_renal_papilla_L_c",
+      "VH_F_renal_papilla_L_d",
+      "VH_F_renal_papilla_L_e",
+      "VH_F_renal_papilla_L_f",
+      "VH_F_renal_papilla_L_g",
+      "VH_F_renal_papilla_L_h",
+      "VH_F_renal_papilla_L_i",
+      "VH_F_renal_papilla_L_j",
+      "VH_F_renal_papilla_L_k",
+      "VH_F_renal_papilla_R_a",
+      "VH_F_renal_papilla_R_b",
+      "VH_F_renal_papilla_R_c",
+      "VH_F_renal_papilla_R_d",
+      "VH_F_renal_papilla_R_e",
+      "VH_F_renal_papilla_R_f",
+      "VH_F_renal_papilla_R_g",
+      "VH_F_renal_papilla_R_h",
+      "VH_F_renal_papilla_R_i",
+      "VH_F_renal_papilla_R_j",
+      "VH_F_renal_pelvis_L",
+      "VH_F_renal_pelvis_R",
+      "VH_F_renal_pyramid_L_a",
+      "VH_F_renal_pyramid_L_b",
+      "VH_F_renal_pyramid_L_c",
+      "VH_F_renal_pyramid_L_d",
+      "VH_F_renal_pyramid_L_e",
+      "VH_F_renal_pyramid_L_f",
+      "VH_F_renal_pyramid_L_g",
+      "VH_F_renal_pyramid_L_h",
+      "VH_F_renal_pyramid_L_i",
+      "VH_F_renal_pyramid_L_j",
+      "VH_F_renal_pyramid_L_k",
+      "VH_F_renal_pyramid_R_a",
+      "VH_F_renal_pyramid_R_b",
+      "VH_F_renal_pyramid_R_c",
+      "VH_F_renal_pyramid_R_d",
+      "VH_F_renal_pyramid_R_e",
+      "VH_F_renal_pyramid_R_f",
+      "VH_F_renal_pyramid_R_g",
+      "VH_F_renal_pyramid_R_h",
+      "VH_F_renal_pyramid_R_i",
+      "VH_F_renal_pyramid_R_j",
+      "VH_F_renal_surface_of_spleen",
+      "VH_F_retina_L",
+      "VH_F_retina_R",
+      "VH_F_right_anterior_basal_bronchopulmonary_segment",
+      "VH_F_right_anterior_basal_bronchus",
+      "VH_F_right_anterior_bronchopulmonary_segm",
+      "VH_F_right_anterior_bronchus",
+      "VH_F_right_anteroinferior_segment",
+      "VH_F_right_anterosuperior_segment",
+      "VH_F_right_apical_bronchopulmonary_segment",
+      "VH_F_right_apical_bronchus",
+      "VH_F_right_branch_of_portal_vein",
+      "VH_F_right_cardiac_atrium",
+      "VH_F_right_cardinal_ligament_of_uterus",
+      "VH_F_right_colic_artery",
+      "VH_F_right_colic_vein",
+      "VH_F_right_common_iliac_vein",
+      "VH_F_right_coronary_artery",
+      "VH_F_right_hepatic_artery",
+      "VH_F_right_hepatic_duct",
+      "VH_F_right_hepatic_vein",
+      "VH_F_right_inferior_lobar_bronchus",
+      "VH_F_right_lateral_basal_bronchopulmonary_segment",
+      "VH_F_right_lateral_basal_bronchus",
+      "VH_F_right_lateral_bronchopulmonary_segmennt",
+      "VH_F_right_lateral_bronchus",
+      "VH_F_right_main_bronchus",
+      "VH_F_right_marginal_artery",
+      "VH_F_right_medial_basal_bronchopulmonary_segment",
+      "VH_F_right_medial_basal_bronchus",
+      "VH_F_right_medial_bronchopulmonary_segment",
+      "VH_F_right_medial_bronchus",
+      "VH_F_right_middle_lobar_bronchus",
+      "VH_F_right_optic_nerve",
+      "VH_F_right_ovary",
+      "VH_F_right_posterior_basal_bronchopulmonary_segment",
+      "VH_F_right_posterior_basal_bronchus",
+      "VH_F_right_posterior_bronchopulmonary_segment",
+      "VH_F_right_posterior_bronchus",
+      "VH_F_right_posteroinferior_segment",
+      "VH_F_right_posterosuperior_segment",
+      "VH_F_right_renal_artery",
+      "VH_F_right_renal_vein",
+      "VH_F_right_round_ligament_of_uterus",
+      "VH_F_right_superior_bronchopulmonary_segment",
+      "VH_F_right_superior_bronchus",
+      "VH_F_right_superior_lobar_bronchus",
+      "VH_F_right_tibial_collateral_ligament",
+      "VH_F_right_ureter",
+      "VH_F_right_uterine_artery",
+      "VH_F_right_uterine_vein",
+      "VH_F_right_uterosacral_ligament",
+      "VH_F_right_ventricle",
+      "VH_F_round_ligament_of_liver",
+      "VH_F_sacrum",
+      "VH_F_schlemms_canal_L",
+      "VH_F_schlemms_canal_R",
+      "VH_F_sclera_L",
+      "VH_F_sclera_R",
+      "VH_F_second_lumbar_spinal_cord_segment",
+      "VH_F_second_sacral_spinal_cord_segment",
+      "VH_F_second_thoracic_spinal_cord_segment",
+      "VH_F_seventh_thoracic_spinal_cord_segment",
+      "VH_F_sigmoid_artery_a",
+      "VH_F_sigmoid_artery_b",
+      "VH_F_sigmoid_artery_c",
+      "VH_F_sigmoid_colon",
+      "VH_F_sigmoid_vein_a",
+      "VH_F_sigmoid_vein_b",
+      "VH_F_sigmoid_vein_c",
+      "VH_F_sixth_thoracic_spinal_cord_segment",
+      "VH_F_skin",
+      "VH_F_small_cardiac_vein",
+      "VH_F_sphincter_of_heptopancreatic_ampulla",
+      "VH_F_splenic_artery",
+      "VH_F_splenic_flexure_of_colon",
+      "VH_F_splenic_vein",
+      "VH_F_superior_mesenteric_artery",
+      "VH_F_superior_mesenteric_vein",
+      "VH_F_superior_oblique_extraocular_muscle_L",
+      "VH_F_superior_oblique_extraocular_muscle_R",
+      "VH_F_superior_ophthalmic_vein_L",
+      "VH_F_superior_ophthalmic_vein_R",
+      "VH_F_superior_rectal_artery",
+      "VH_F_superior_rectal_vein",
+      "VH_F_superior_rectus_extraocular_muscle_L",
+      "VH_F_superior_rectus_extraocular_muscle_R",
+      "VH_F_superior_vena_cava",
+      "VH_F_suprarenal_impression_of_liver",
+      "VH_F_suspensory_ligament_of_lens_L",
+      "VH_F_suspensory_ligament_of_lens_R",
+      "VH_F_suspensory_ligament_of_ovary_L",
+      "VH_F_suspensory_ligament_of_ovary_R",
+      "VH_F_suspensory_ligaments_L",
+      "VH_F_suspensory_ligaments_R",
+      "VH_F_tail_of_pancreas",
+      "VH_F_tendon_of_quadriceps_femoris_L",
+      "VH_F_tendon_of_quadriceps_femoris_R",
+      "VH_F_tenth_thoracic_spinal_cord_segment",
+      "VH_F_third_lumbar_spinal_cord_segment",
+      "VH_F_third_sacral_spinal_cord_segment",
+      "VH_F_third_thoracic_spinal_cord_segment",
+      "VH_F_thoracic_vertebra_1",
+      "VH_F_thoracic_vertebra_10",
+      "VH_F_thoracic_vertebra_11",
+      "VH_F_thoracic_vertebra_12",
+      "VH_F_thoracic_vertebra_2",
+      "VH_F_thoracic_vertebra_3",
+      "VH_F_thoracic_vertebra_4",
+      "VH_F_thoracic_vertebra_5",
+      "VH_F_thoracic_vertebra_6",
+      "VH_F_thoracic_vertebra_7",
+      "VH_F_thoracic_vertebra_8",
+      "VH_F_thoracic_vertebra_9",
+      "VH_F_thymus_lobe_L",
+      "VH_F_thymus_lobe_R",
+      "VH_F_thyroid_cartilage",
+      "VH_F_tibia_L",
+      "VH_F_tibia_R",
+      "VH_F_trabecular_meshwork_L",
+      "VH_F_trabecular_meshwork_R",
+      "VH_F_trachea",
+      "VH_F_tracheal_cartilage",
+      "VH_F_transverse_colon",
+      "VH_F_triangular_ligament_of_liver",
+      "VH_F_tricuspid_valve",
+      "VH_F_trigone_of_urinary_bladder",
+      "VH_F_trochlear_groove_L",
+      "VH_F_trochlear_groove_R",
+      "VH_F_twelfth_thoracic_spinal_cord_segment",
+      "VH_F_ucinate_process1",
+      "VH_F_umbilical_artery_1",
+      "VH_F_umbilical_artery_2",
+      "VH_F_umbilical_cord",
+      "VH_F_umbilical_vein",
+      "VH_F_ureteral_orifice_L",
+      "VH_F_ureteral_orifice_R",
+      "VH_F_urinary_bladder_neck_smooth_muscle",
+      "VH_F_uterine_tube_infundibulum_L",
+      "VH_F_uterine_tube_infundibulum_R",
+      "VH_F_uterovesical_pouch",
+      "VH_F_vagina",
+      "VH_F_ventral_pancreatic_duct",
+      "VH_F_vermiform_appendix",
+      "VH_F_vitreous_humor_L",
+      "VH_F_vitreous_humor_R",
+      "Yao_afferent_lymphatic_vessel",
+      "Yao_blood_vasculature",
+      "Yao_capsule_of_lymph_node",
+      "Yao_efferent_lymph_node",
+      "Yao_follicles",
+      "Yao_medulla_of_lymph_node",
+      "Yao_paracortex"
+    ],
+    "mesh_count_listed": 888,
+    "axis_convention_note": "Tras import glTF: eje más largo = Z (altura 1.6663 m). No hay UBERON/FMA en nombres."
+  },
+  "web_budget_summary": {
+    "bp3d_skin": {
+      "triangles": 203382,
+      "est_bytes_si1": 5694696,
+      "est_bytes_si_0_25": 1423674,
+      "est_bytes_si_0_1": 569469,
+      "est_mb_si1": 5.43,
+      "est_mb_si_0_25": 1.36,
+      "est_mb_si_0_1": 0.54,
+      "adr_budget_mb": 15,
+      "fits_si_0_25": true,
+      "fits_si_0_1": true,
+      "note": "Estimación proporcional (no se corrió gltfpack); factor empírico ~28 B/tri a si=1"
+    },
+    "hra_by_system": {
+      "skin": {
+        "triangles": 610420,
+        "est_bytes_si1": 17091760,
+        "est_bytes_si_0_25": 4272940,
+        "est_bytes_si_0_1": 1709176,
+        "est_mb_si1": 16.3,
+        "est_mb_si_0_25": 4.07,
+        "est_mb_si_0_1": 1.63,
+        "adr_budget_mb": 15,
+        "fits_si_0_25": true,
+        "fits_si_0_1": true,
+        "note": "Estimación proporcional (no se corrió gltfpack); factor empírico ~28 B/tri a si=1"
+      },
+      "muscles": {
+        "triangles": 201807,
+        "est_bytes_si1": 5650596,
+        "est_bytes_si_0_25": 1412649,
+        "est_bytes_si_0_1": 565059,
+        "est_mb_si1": 5.39,
+        "est_mb_si_0_25": 1.35,
+        "est_mb_si_0_1": 0.54,
+        "adr_budget_mb": 15,
+        "fits_si_0_25": true,
+        "fits_si_0_1": true,
+        "note": "Estimación proporcional (no se corrió gltfpack); factor empírico ~28 B/tri a si=1"
+      },
+      "skeleton": {
+        "triangles": 1055911,
+        "est_bytes_si1": 29565508,
+        "est_bytes_si_0_25": 7391377,
+        "est_bytes_si_0_1": 2956550,
+        "est_mb_si1": 28.2,
+        "est_mb_si_0_25": 7.05,
+        "est_mb_si_0_1": 2.82,
+        "adr_budget_mb": 15,
+        "fits_si_0_25": true,
+        "fits_si_0_1": true,
+        "note": "Estimación proporcional (no se corrió gltfpack); factor empírico ~28 B/tri a si=1"
+      },
+      "vessels": {
+        "triangles": 621155,
+        "est_bytes_si1": 17392340,
+        "est_bytes_si_0_25": 4348085,
+        "est_bytes_si_0_1": 1739234,
+        "est_mb_si1": 16.59,
+        "est_mb_si_0_25": 4.15,
+        "est_mb_si_0_1": 1.66,
+        "adr_budget_mb": 15,
+        "fits_si_0_25": true,
+        "fits_si_0_1": true,
+        "note": "Estimación proporcional (no se corrió gltfpack); factor empírico ~28 B/tri a si=1"
+      },
+      "nerves": {
+        "triangles": 1028796,
+        "est_bytes_si1": 28806288,
+        "est_bytes_si_0_25": 7201572,
+        "est_bytes_si_0_1": 2880628,
+        "est_mb_si1": 27.47,
+        "est_mb_si_0_25": 6.87,
+        "est_mb_si_0_1": 2.75,
+        "adr_budget_mb": 15,
+        "fits_si_0_25": true,
+        "fits_si_0_1": true,
+        "note": "Estimación proporcional (no se corrió gltfpack); factor empírico ~28 B/tri a si=1"
+      },
+      "viscera": {
+        "triangles": 455919,
+        "est_bytes_si1": 12765732,
+        "est_bytes_si_0_25": 3191433,
+        "est_bytes_si_0_1": 1276573,
+        "est_mb_si1": 12.17,
+        "est_mb_si_0_25": 3.04,
+        "est_mb_si_0_1": 1.22,
+        "adr_budget_mb": 15,
+        "fits_si_0_25": true,
+        "fits_si_0_1": true,
+        "note": "Estimación proporcional (no se corrió gltfpack); factor empírico ~28 B/tri a si=1"
+      },
+      "sin_sistema": {
+        "triangles": 1580093,
+        "est_bytes_si1": 44242604,
+        "est_bytes_si_0_25": 11060651,
+        "est_bytes_si_0_1": 4424260,
+        "est_mb_si1": 42.19,
+        "est_mb_si_0_25": 10.55,
+        "est_mb_si_0_1": 4.22,
+        "adr_budget_mb": 15,
+        "fits_si_0_25": true,
+        "fits_si_0_1": true,
+        "note": "Estimación proporcional (no se corrió gltfpack); factor empírico ~28 B/tri a si=1"
+      }
+    }
+  }
+}

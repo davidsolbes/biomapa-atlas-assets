@@ -180,6 +180,25 @@ y `manifest/labels.es.json`.
 
 Lectura pública, sin PII, caché larga. No commitear `.glb` ni secretos.
 
+## Fuentes externas (inventario)
+
+Spike **ATLAS-FEM-00** (2026-09-14). Binarios en `source/external/` (git-ignored
+vía `source/`). Metadatos: `source/external/SOURCES.json` (local). Resultado
+versionado: `manifest/external-inventory.json`.
+
+```bash
+/Applications/Blender.app/Contents/MacOS/Blender -b -P pipeline/inventory-external.py -- \
+  --out manifest/external-inventory.json
+```
+
+Fuentes medidas:
+- **BodyParts3D 4.0** (`isa_BP3D_4.0_obj_99.zip`) — piel `FMA7163` → element
+  `FJ2810.obj`; fémur/coxal para alineación a Z-Anatomy. CC BY-SA 2.1 JP.
+- **HuBMAP HRA united-female v1.5** (`3d-vh-f-united.glb`) — cuerpo femenino
+  (Visible Human Female). CC BY 4.0.
+
+No publica a R2 ni modifica el manifiesto 0.2.3 / GLB de producción.
+
 ## Licencia
 
 Assets derivados: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
