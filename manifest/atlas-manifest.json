@@ -1,6 +1,6 @@
 {
-  "version": "0.2.3",
-  "generatedAt": "2026-09-13T15:32:29.128Z",
+  "version": "0.2.4",
+  "generatedAt": "2026-09-15T15:19:20.071Z",
   "baseLicense": "CC-BY-SA-4.0",
   "labelsFile": "manifest/labels.es.json",
   "attribution": {
@@ -23,7 +23,8 @@
       "Validación geométrica de cada GLB (nodos con nombre, altura ≤ 1.95 m, anchura ≤ 0.9 m, malla ≤ 1.2 m por eje).",
       "Exclusividad por sistema (skeleton > muscles > viscera > vessels > nerves > skin).",
       "Etiquetas en español desde source/z-anatomy/TA2.csv (Terminologia Anatomica 2; misma licencia CC BY-SA 4.0 de Z-Anatomy).",
-      "Grupos por aparato en vísceras (y huesos si la colección lo permite). Ganglios linfáticos defaultVisible=false. Solo metadatos; los GLB no cambian."
+      "Grupos por aparato en vísceras (y huesos si la colección lo permite). Ganglios linfáticos defaultVisible=false. Solo metadatos; los GLB no cambian.",
+      "superficie de piel FMA7163 de BodyParts3D 4.0 (DBCLS, CC BY-SA 2.1 JP): isla externa, limpieza, alineación y decimación"
     ],
     "citationText": "Atlas 3D de Biomapa basado en Z-Anatomy — The libre 3D atlas of anatomy (Gauthier Kervyn, diseño/3D/anatomía; Marcin Zielinski, add-on Blender), derivado de BodyParts3D — The Database Center for Life Science (Kousaku Okubo), CC BY-SA 4.0. Modelos de referencia adicionales según ATTRIBUTIONS.md de Z-Anatomy."
   },
@@ -32,9 +33,9 @@
       "id": "skin",
       "label": "Piel",
       "file": "skin.glb",
-      "bytes": 127320,
-      "sha256": "d2a922466cb51d98756bb8c3d7405a7f391866b5cb9012317711d0b5c4f7b4ae",
-      "meshCount": 14,
+      "bytes": 344236,
+      "sha256": "6d77c65a6772621d8f4c8f1d06be996c6d5a740e6ae17a4b8e10311520760934",
+      "meshCount": 15,
       "meshNames": [
         "Eyelashes.l",
         "Eyelashes.r",
@@ -49,7 +50,8 @@
         "Perionyx (foot).r",
         "Perionyx.l",
         "Perionyx.r",
-        "Pubic hairs"
+        "Pubic hairs",
+        "Skin"
       ],
       "defaultVisible": false,
       "order": 1,
@@ -57,16 +59,47 @@
       "excludedObjects": 1,
       "excludedByPrecedence": 0,
       "convertedCurves": 0,
-      "excludedProfiles": 0,
+      "excludedProfiles": 1,
       "simplifyRatio": 1,
-      "triangles": 34386,
-      "notes": "sourceCollection taxonómica «Integument»: solo apéndices (pelos, uñas). No hay malla continua de piel en el .blend (búsqueda skin / body surface / integument = 0). S2 evaluará BodyParts3D para piel, útero y ovario. «9: Regions of human body» no se exporta como skin.",
+      "triangles": 94385,
+      "notes": "sourceCollection «Integument» (anexos: pelos/uñas) + superficie Skin (BodyParts3D FMA7163 / FJ2810, isla externa, alineada y decimada). Sistema defaultVisible=false; grupos superficie y anexos defaultVisible=true. Residuo mediana alineación 9.384 mm (anisotropic); fuera músculos 5.86%; tris superficie 59999.",
       "bbox": [
-        0.6801,
-        1.7283,
-        0.2758
+        0.68,
+        1.7783,
+        0.2847
       ],
-      "validated": true
+      "validated": true,
+      "groups": [
+        {
+          "id": "superficie",
+          "label_es": "Superficie",
+          "meshNames": [
+            "Skin"
+          ],
+          "defaultVisible": true
+        },
+        {
+          "id": "anexos",
+          "label_es": "Anexos",
+          "meshNames": [
+            "Eyelashes.l",
+            "Eyelashes.r",
+            "Hairs of eyebrow.l",
+            "Hairs of eyebrow.r",
+            "Hairs of head",
+            "Nail plate (foot).l",
+            "Nail plate (foot).r",
+            "Nail plate.l",
+            "Nail plate.r",
+            "Perionyx (foot).l",
+            "Perionyx (foot).r",
+            "Perionyx.l",
+            "Perionyx.r",
+            "Pubic hairs"
+          ],
+          "defaultVisible": true
+        }
+      ]
     },
     {
       "id": "muscles",

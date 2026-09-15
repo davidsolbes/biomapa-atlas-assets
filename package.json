@@ -1,6 +1,6 @@
 {
   "name": "biomapa-atlas-assets",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "private": true,
   "description": "Pipeline y assets derivados de Z-Anatomy para el Atlas 3D de Biomapa (CC BY-SA 4.0).",
   "type": "module",

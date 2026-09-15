@@ -150,7 +150,32 @@ export function classifySkeletonGroup(meshName, collectionName) {
   return null;
 }
 
+export const SKIN_GROUP_DEFS = [
+  { id: 'superficie', label_es: 'Superficie', defaultVisible: true },
+  { id: 'anexos', label_es: 'Anexos', defaultVisible: true },
+];
+
+function classifySkinGroup(meshName) {
+  const n = norm(meshName);
+  if (n === 'skin' || n === 'piel' || n === 'cutis') return 'superficie';
+  return 'anexos';
+}
+
 export function buildSystemGroups(systemId, meshNames, meshGroups = {}) {
+  if (systemId === 'skin') {
+    const buckets = new Map(SKIN_GROUP_DEFS.map((d) => [d.id, []]));
+    for (const name of meshNames) {
+      const id = classifySkinGroup(name);
+      buckets.get(id)?.push(name);
+    }
+    return SKIN_GROUP_DEFS.map((def) => ({
+      id: def.id,
+      label_es: def.label_es,
+      meshNames: buckets.get(def.id) ?? [],
+      defaultVisible: def.defaultVisible,
+    })).filter((g) => g.meshNames.length > 0);
+  }
+
   const defs =
     systemId === 'viscera'
       ? VISCERA_GROUP_DEFS

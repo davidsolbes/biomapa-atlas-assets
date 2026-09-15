@@ -36,6 +36,12 @@ case "$SYSTEM" in
   skin)
     COLLECTION="Integument"
     EXTRA_ARGS+=(--search-skin-surface)
+    SKIN_SURFACE="$ROOT/dist/raw/skin-surface.glb"
+    if [[ -f "$SKIN_SURFACE" ]]; then
+      EXTRA_ARGS+=(--append-glb "$SKIN_SURFACE" --append-mesh-name Skin)
+    else
+      echo "Aviso: no hay $SKIN_SURFACE (solo apéndices). Corre pipeline/build-skin-surface.py" >&2
+    fi
     ;;
   muscles) COLLECTION="Muscular system" ;;
   skeleton) COLLECTION="Skeletal system" ;;

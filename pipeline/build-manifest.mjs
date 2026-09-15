@@ -34,7 +34,7 @@ const SYSTEM_NOTES = {
   skeleton:
     'sourceCollection taxonómica «Skeletal system». En el .blend no hay colecciones label/text/annotation; se excluyen FONT/CURVE y mallas en MAYÚSCULAS (p. ej. AXIAL SKELETON, BONES OF HAND).',
   skin:
-    'sourceCollection taxonómica «Integument» (pelos y uñas) más búsqueda de superficie corporal (skin / body surface / integument). Si no hay malla continua de piel, S2 evaluará BodyParts3D para piel, útero y ovario. «9: Regions of human body» no se exporta como skin.',
+    'sourceCollection «Integument» (anexos: pelos/uñas) + superficie Skin (BodyParts3D FMA7163 / FJ2810, isla externa, alineada y decimada). Sistema defaultVisible=false; grupos superficie y anexos defaultVisible=true.',
   muscles:
     'sourceCollection taxonómica «Muscular system». Precedencia skeleton > muscles. Solo MESH; se excluyen FONT y rótulos en MAYÚSCULAS.',
   vessels:
@@ -245,11 +245,27 @@ const systems = SYSTEMS.map((meta) => {
     );
   }
   let notes = SYSTEM_NOTES[meta.id];
-  if (meta.id === 'skin' && skinSurfaceFound === 0) {
-    notes =
-      'sourceCollection taxonómica «Integument»: solo apéndices (pelos, uñas). No hay malla continua de piel en el .blend (búsqueda skin / body surface / integument = 0). S2 evaluará BodyParts3D para piel, útero y ovario. «9: Regions of human body» no se exporta como skin.';
-  } else if (meta.id === 'skin' && skinSurfaceFound > 0) {
-    notes = `${SYSTEM_NOTES.skin} Superficie corporal extra: ${skinSurfaceFound} MESH.`;
+  if (meta.id === 'skin') {
+    const skinMetaPath = join(DIST, 'raw', 'skin-surface.meta.json');
+    let skinExtra = '';
+    if (existsSync(skinMetaPath)) {
+      try {
+        const sm = JSON.parse(readFileSync(skinMetaPath, 'utf8'));
+        skinExtra =
+          ` Residuo mediana alineación ${sm.median_residuo_mm ?? '?'} mm` +
+          ` (${sm.alignment_mode ?? '?'}); fuera músculos ${sm.envelope?.outside_pct ?? '?'}%;` +
+          ` tris superficie ${sm.triangles ?? sm.decimate?.after ?? '?'}.`;
+      } catch {
+        // ignore
+      }
+    }
+    if (skinSurfaceFound === 0) {
+      notes =
+        'sourceCollection taxonómica «Integument»: solo apéndices (pelos, uñas). No hay malla continua de piel.' +
+        skinExtra;
+    } else {
+      notes = SYSTEM_NOTES.skin + skinExtra;
+    }
   }
   return {
     id: meta.id,
@@ -299,14 +315,12 @@ modifications.push(
 modifications.push(
   'Grupos por aparato en vísceras (y huesos si la colección lo permite). Ganglios linfáticos defaultVisible=false. Solo metadatos; los GLB no cambian.',
 );
-if (modifications.length === 1) {
-  modifications.unshift(
-    'S1: pipeline listo; ningún sistema exportado todavía (file: null).',
-  );
-}
+modifications.push(
+  'superficie de piel FMA7163 de BodyParts3D 4.0 (DBCLS, CC BY-SA 2.1 JP): isla externa, limpieza, alineación y decimación',
+);
 
 const manifest = {
-  version: '0.2.3',
+  version: '0.2.4',
   generatedAt: new Date().toISOString(),
   baseLicense: 'CC-BY-SA-4.0',
   labelsFile: 'manifest/labels.es.json',

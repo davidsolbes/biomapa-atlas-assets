@@ -154,6 +154,16 @@ def _parse_args(argv: list[str]) -> argparse.Namespace:
         default=None,
         help="Id de sistema (skeleton/muscles/…). Solo metadatos.",
     )
+    parser.add_argument(
+        "--append-glb",
+        default=None,
+        help="GLB adicional cuyas mallas se unen a la selección (p. ej. skin-surface).",
+    )
+    parser.add_argument(
+        "--append-mesh-name",
+        default=None,
+        help="Si se indica, solo se añade la malla con este nombre del --append-glb.",
+    )
     return parser.parse_args(argv)
 
 
@@ -853,6 +863,35 @@ def _export(args: argparse.Namespace) -> None:
             exported_names.append(obj.name)
         print(f"Piel superficie extra: {skin_surface_found}")
 
+    appended_from_glb = 0
+    if args.append_glb:
+        before = {o.name for o in bpy.data.objects}
+        bpy.ops.import_scene.gltf(filepath=args.append_glb)
+        newcomers = [
+            o for o in bpy.data.objects if o.name not in before and o.type == "MESH"
+        ]
+        for obj in newcomers:
+            if args.append_mesh_name:
+                wanted = args.append_mesh_name
+                if obj.name != wanted and not obj.name.startswith(f"{wanted}."):
+                    continue
+                obj.name = wanted
+                if obj.data:
+                    obj.data.name = wanted
+            if obj.name in exclude_names:
+                continue
+            if not _select_object(obj):
+                continue
+            exported += 1
+            appended_from_glb += 1
+            exported_names.append(obj.name)
+            if args.system_id == "skin" or args.append_mesh_name == "Skin":
+                skin_surface_found += 1
+        print(
+            f"Append GLB {args.append_glb}: {appended_from_glb} mallas "
+            f"(filtro={args.append_mesh_name!r})"
+        )
+
     if exported == 0:
         raise SystemExit(f"La colección '{collection.name}' no tiene mallas exportables.")
 
@@ -893,6 +932,7 @@ def _export(args: argparse.Namespace) -> None:
             "excludedProfiles": excluded_profiles,
             "invalidNames": invalid_names,
             "skinSurfaceFound": skin_surface_found,
+            "appendedFromGlb": appended_from_glb,
             "femaleReproductiveNote": female_note,
             "exportedNames": sorted(set(exported_names)),
             "meshGroups": mesh_groups,

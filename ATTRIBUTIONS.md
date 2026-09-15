@@ -88,8 +88,10 @@ manifiesto:
   CURVE→MESH. Músculos enlazados por inervación se omiten por precedencia.
 - **vessels:** `Cardiovascular system` — corazón MESH + arterias/venas
   CURVE→MESH.
-- **skin:** `Integument` (apéndices: pelos y uñas). Colección `Skin` = 0 MESH;
-  no hay superficie corporal en este `.blend`. S2 evaluará BodyParts3D.
+- **skin:** `Integument` (apéndices: pelos y uñas) + superficie `Skin`
+  (BodyParts3D 4.0 FMA7163 / FJ2810, CC BY-SA 2.1 JP): isla externa,
+  limpieza, alineación rígida a Z-Anatomy y decimación ≤ 60k tris.
+  Grupos `superficie` / `anexos`.
 - **Etiquetas en español:** `source/z-anatomy/TA2.csv` (Terminologia Anatomica
   2, misma licencia CC BY-SA 4.0 de Z-Anatomy) → `manifest/labels.es.json`.
 

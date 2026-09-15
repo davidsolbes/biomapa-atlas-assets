@@ -241,8 +241,12 @@ export function validateGlbBuffer(buf, systemId) {
     const world = transformAabb(worlds[index] ?? mat4Identity(), local.box.min, local.box.max);
     systemBox = unionAabb(systemBox, world);
     const size = aabbSize(world);
-    if (size.some((axis) => axis > MAX_MESH_AXIS)) {
-      const label = name || `#${index}`;
+    const label = name || `#${index}`;
+    const isBodySkin =
+      systemId === 'skin' &&
+      (label === 'Skin' || label.toLowerCase() === 'skin');
+    // Superficie corporal completa (~1.7 m): exenta del tope por-malla 1.2 m.
+    if (!isBodySkin && size.some((axis) => axis > MAX_MESH_AXIS)) {
       offenders.push({ name: label, bbox: size.map((n) => Number(n.toFixed(4))) });
       errors.push(
         `${systemId}: malla "${label}" bbox ${formatBox(world)} excede ${MAX_MESH_AXIS} m en un eje`,
