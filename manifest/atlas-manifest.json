@@ -1,6 +1,6 @@
 {
-  "version": "0.2.4",
-  "generatedAt": "2026-09-15T15:19:20.071Z",
+  "version": "0.2.5",
+  "generatedAt": "2026-09-17T00:51:52.657Z",
   "baseLicense": "CC-BY-SA-4.0",
   "labelsFile": "manifest/labels.es.json",
   "attribution": {
@@ -24,7 +24,8 @@
       "Exclusividad por sistema (skeleton > muscles > viscera > vessels > nerves > skin).",
       "Etiquetas en español desde source/z-anatomy/TA2.csv (Terminologia Anatomica 2; misma licencia CC BY-SA 4.0 de Z-Anatomy).",
       "Grupos por aparato en vísceras (y huesos si la colección lo permite). Ganglios linfáticos defaultVisible=false. Solo metadatos; los GLB no cambian.",
-      "superficie de piel FMA7163 de BodyParts3D 4.0 (DBCLS, CC BY-SA 2.1 JP): isla externa, limpieza, alineación y decimación"
+      "superficie de piel FMA7163 de BodyParts3D 4.0 (DBCLS, CC BY-SA 2.1 JP): isla externa, limpieza, alineación y decimación",
+      "LOD1 opcional vessels/nerves (gltfpack -si 0.5 → *.lod1.glb); GLB base 0.2.4 intactos; manifiesto 0.2.5"
     ],
     "citationText": "Atlas 3D de Biomapa basado en Z-Anatomy — The libre 3D atlas of anatomy (Gauthier Kervyn, diseño/3D/anatomía; Marcin Zielinski, add-on Blender), derivado de BodyParts3D — The Database Center for Life Science (Kousaku Okubo), CC BY-SA 4.0. Modelos de referencia adicionales según ATTRIBUTIONS.md de Z-Anatomy."
   },
@@ -2191,7 +2192,13 @@
         1.6981,
         0.2489
       ],
-      "validated": true
+      "validated": true,
+      "lodFiles": {
+        "lod1": "vessels.lod1.glb",
+        "lod1Bytes": 4656960,
+        "lod1Sha256": "9e8126c1e64ecfc44a66c93e0dfb6fc334713db70e620f909b1620411798ba1b",
+        "lod1SimplifyRatio": 0.5
+      }
     },
     {
       "id": "nerves",
@@ -2733,7 +2740,13 @@
         1.6933,
         0.244
       ],
-      "validated": true
+      "validated": true,
+      "lodFiles": {
+        "lod1": "nerves.lod1.glb",
+        "lod1Bytes": 1084952,
+        "lod1Sha256": "242c7e9dc5859a47f3d4e958cf262a871f3fd14198a0e0339e2ae1940422348a",
+        "lod1SimplifyRatio": 0.5
+      }
     },
     {
       "id": "viscera",
